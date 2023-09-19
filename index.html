@@ -31,28 +31,84 @@
 </head>
 
 <body>
-    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-screen bg-[#FAFAFA]">
-        <div class="row-span-full col-span-3 bg-gray-400">
-            <div class="flex justify-between mt-4 px-5">
+    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-screen bg-[#FAFAFA] font-[poppins]">
+        <!-- Menubar Start -->
+        <div class="row-span-full col-span-3">
+            <div class="flex justify-between mt-10 px-5">
                 <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
                         class="text-xs">TM</sup></h1>
                 <i class="fa-solid fa-bars text-xl"></i>
             </div>
             <div class="mt-10 font-[poppins]">
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Dashboard</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Accessibility Rating</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> User Management</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Contribution Management</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Service Requests</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> System Stats</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Notification Center</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Settings</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Support Tickets</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> System Maintenance</div>
-                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Log Out</div>
+                <div class="bg-[#39CCCC] py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Dashboard<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Accessibility Rating<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">User Management<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Contribution Management<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Service Requests<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">System Stats<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Notification Center<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Settings<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Support Tickets<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">System Maintenance<i class="fa-solid fa-chevron-down"></i></span></div>
+                <div class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span class="flex justify-between flex-grow">Log Out<i class="fa-solid fa-chevron-down"></i></span></div>
             </div>
         </div>
-        <div class="row-span-full col-span-10 bg-white">
+        <!-- Menubar End -->
+
+        <div class="row-span-full col-span-10 mx-5">
+            <!-- Dashboard Contain Start -->
+            <div class="mt-10 font-[poppins] text-sm">
+                <!-- Search panel -->
+                <div class="flex justify-between p-5 rounded-xl text-xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <!-- Sorting panel -->
+                <div class="flex justify-end items-center gap-3 mt-5">
+                    <h3>Sort by Date Range: </h3>
+                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">From: <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">To: <i class="fa-solid fa-chevron-down"></i></div>
+                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">Type: <i class="fa-solid fa-chevron-down"></i></div>
+                    <button class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
+                </div>
+
+                <!-- user panel -->
+                <div class="grid grid-cols-3 gap-5 mt-10">
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <h5 class="text-lg">Total Users</h5>
+                            <h1 class="text-3xl font-bold my-3">29,542</h1>
+                            <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                        </div>
+                        <div class="px-6 py-5 bg-[#E7FAFC] rounded-2xl">
+                            <i class="fa-solid fa-chart-simple text-4xl text-[#39CCCC]"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <h5 class="text-lg">Active Users</h5>
+                            <h1 class="text-3xl font-bold my-3">2198</h1>
+                            <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                        </div>
+                        <div class="px-6 py-5 bg-[#DEF6E9] rounded-2xl">
+                            <i class="fa-solid fa-chart-simple text-4xl text-[#28C66F]"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <h5 class="text-lg">New Registrations</h5>
+                            <h1 class="text-3xl font-bold my-3">127</h1>
+                            <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                        </div>
+                        <div class="px-6 py-5 bg-[#F0D6CA] rounded-2xl">
+                            <i class="fa-solid fa-chart-simple text-4xl text-[#C34E2A]"></i>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- Dashboard Contain End -->
 
         </div>
     </div>
