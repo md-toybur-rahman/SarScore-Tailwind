@@ -104,27 +104,38 @@
                     <h3>Sort by Date Range: </h3>
                     <div class="relative">
                         <div onclick="handleFromButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                            <span>From:</span> <i class="fa-solid fa-chevron-down"></i>
+                            <span id="from">From:</span> <i class="fa-solid fa-chevron-down"></i>
                         </div>
                         <ul id="fromList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                            <li class="hover:font-semibold">ABC</li>
-                            <li class="hover:font-semibold">DEF</li>
-                            <li class="hover:font-semibold">GHI</li>
-                            <li class="hover:font-semibold">JKL</li>
+                            <li onclick="handleFromList('ABC')" class="hover:font-semibold">ABC</li>
+                            <li onclick="handleFromList('DEF')" class="hover:font-semibold">DEF</li>
+                            <li onclick="handleFromList('GHI')" class="hover:font-semibold">GHI</li>
+                            <li onclick="handleFromList('JKL')" class="hover:font-semibold">JKL</li>
                         </ul>
                     </div>
-                    <div>
-                        <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between"><span>To:</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="relative">
+                        <div onclick="handleToButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                            <span id="to">To:</span> <i class="fa-solid fa-chevron-down"></i>
                         </div>
+                        <ul id="toList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                            <li onclick="handleToList('MNO')" class="hover:font-semibold">MNO</li>
+                            <li onclick="handleToList('PQR')" class="hover:font-semibold">PQR</li>
+                            <li onclick="handleToList('STU')" class="hover:font-semibold">STU</li>
+                            <li onclick="handleToList('VWX')" class="hover:font-semibold">VWX</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                            <span>Type:</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                    <div class="relative">
+                        <div onclick="handleTypeButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                            <span id="type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
                         </div>
+                        <ul id="typeList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                            <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
+                            <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
+                            <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
+                            <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                        </ul>
                     </div>
-                    <button class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
+                    <button onclick="refreshSorting()" class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 
