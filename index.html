@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
     <script>
@@ -31,7 +33,7 @@
     <title>SarScore</title>
 </head>
 
-<body>
+<body class="max-w-[1440px] mx-auto">
     <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-screen bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
         <div class="row-span-full col-span-3">
@@ -90,15 +92,15 @@
 
         <div class="row-span-full col-span-10 mx-5">
             <!-- Dashboard Contain Start -->
-            <div class="mt-10 font-[poppins] text-sm">
+            <div class="mt-10 font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
-                <div class="flex justify-between p-5 rounded-xl text-xl">
+                <section class="flex justify-between p-5 rounded-xl text-xl">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-regular fa-bell"></i>
-                </div>
+                </section>
 
                 <!-- Sorting panel -->
-                <div class="flex justify-end items-center gap-3 mt-5">
+                <section class="flex justify-end items-center gap-3 mt-5">
                     <h3>Sort by Date Range: </h3>
                     <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">From: <i
                             class="fa-solid fa-chevron-down"></i></div>
@@ -107,10 +109,10 @@
                     <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">Type: <i
                             class="fa-solid fa-chevron-down"></i></div>
                     <button class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
-                </div>
+                </section>
 
                 <!-- user panel -->
-                <div class="grid grid-cols-3 gap-5 mt-10">
+                <section class="grid grid-cols-3 gap-5 mt-10">
                     <div class="flex items-center justify-between px-5">
                         <div>
                             <h5 class="text-lg">Total Users</h5>
@@ -141,11 +143,11 @@
                             <i class="fa-solid fa-chart-simple text-4xl text-[#C34E2A]"></i>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- end user panel -->
 
-                <!-- chart testing -->
-                <div class="grid grid-cols-3 mt-10 gap-10">
+                <!-- registration chart and service progress bar -->
+                <section class="grid grid-cols-3 mt-10 gap-10">
                     <div class="col-span-2">
                         <div class="flex items-center justify-between mb-5">
                             <h1 class="text-2xl font-semibold">New User Registration</h1>
@@ -185,8 +187,103 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- end chart testing -->
+                </section>
+                <!-- end registration chart and service progress bar -->
+
+                <!-- Popular Location -->
+                <section class="grid grid-cols-6 gap-10 mt-10">
+                    <div class="col-span-2">
+                        <div class="flex justify-between items-center mb-5">
+                            <h1 class="text-2xl font-semibold">Popular Locations</h1>
+                            <i class="fa-solid fa-ellipsis text-2xl font-semibold"></i>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1>London, UK</h1>
+                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                </div>
+                                <div class="text-end">
+                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                    <p class="text-[#A5A5A5]">Improved</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1>Manhattan, NY</h1>
+                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                </div>
+                                <div class="text-end">
+                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                    <p class="text-[#A5A5A5]">Improved</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1>Dublin, IRE</h1>
+                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                </div>
+                                <div class="text-end">
+                                    <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                                    <p class="text-[#A5A5A5]">Decreased</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h1>Melbourne, AUS</h1>
+                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                </div>
+                                <div class="text-end">
+                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                    <p class="text-[#A5A5A5]">Improved</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-5">
+                            <button class="underline">View All</button>
+                        </div>
+                    </div>
+                    <div class="col-span-3 flex items-center justify-center">
+                        <h1 class="text-6xl font-bold">MAP</h1>
+                    </div>
+                    <div class="col-span-1">
+                        <div class="flex flex-col gap-5">
+                            <div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="w-4 h-4 bg-[#28C66F] rounded-full"></div>
+                                    <h3>London, UK</h3>
+                                </div>
+                                <progress class="progress progress-success w-full my-1" value="70" max="100"></progress>
+                                <h1 class="text-xs">6.48%</h1>
+                            </div>
+                            <div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
+                                    <h3>Manhattan, NY</h3>
+                                </div>
+                                <progress class="progress progress-secondary w-full my-1" value="70" max="100"></progress>
+                                <h1 class="text-xs">6.48%</h1>
+                            </div>
+                            <div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
+                                    <h3>Melbourne, AUS</h3>
+                                </div>
+                                <progress class="progress progress-info w-full my-1" value="70" max="100"></progress>
+                                <h1 class="text-xs">6.48%</h1>
+                            </div>
+                            <div>
+                                <div class="flex gap-3 items-center">
+                                    <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
+                                    <h3>Texas, DW</h3>
+                                </div>
+                                <progress class="progress progress-warning w-full my-1" value="70" max="100"></progress>
+                                <h1 class="text-xs">6.48%</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Popular Location -->
             </div>
             <!-- Dashboard Contain End -->
 
