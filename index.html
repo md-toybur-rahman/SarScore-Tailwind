@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'poppins' : ['Poppins', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>SarScore</title>
+</head>
+
+<body>
+    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-screen bg-[#FAFAFA]">
+        <div class="row-span-full col-span-3 bg-gray-400">
+            <div class="flex justify-between mt-4 px-5">
+                <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
+                        class="text-xs">TM</sup></h1>
+                <i class="fa-solid fa-bars text-xl"></i>
+            </div>
+            <div class="mt-10 font-[poppins]">
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Dashboard</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Accessibility Rating</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> User Management</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Contribution Management</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Service Requests</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> System Stats</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Notification Center</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Settings</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Support Tickets</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> System Maintenance</div>
+                <div class="bg-[#39CCCC] py-4 px-5"><i class="fa-solid fa-angles-right"></i> Log Out</div>
+            </div>
+        </div>
+        <div class="row-span-full col-span-10 bg-white">
+
+        </div>
+    </div>
+</body>
+
+</html>
