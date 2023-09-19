@@ -34,7 +34,7 @@
 </head>
 
 <body class="max-w-[1440px] mx-auto">
-    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-screen bg-[#FAFAFA] font-[poppins]">
+    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
         <div class="row-span-full col-span-3">
             <div class="flex justify-between mt-10 px-5">
@@ -102,14 +102,31 @@
                 <!-- Sorting panel -->
                 <section class="flex justify-end items-center gap-3 mt-5">
                     <h3>Sort by Date Range: </h3>
-                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">From: <i
-                            class="fa-solid fa-chevron-down"></i></div>
-                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">To: <i
-                            class="fa-solid fa-chevron-down"></i></div>
-                    <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">Type: <i
-                            class="fa-solid fa-chevron-down"></i></div>
+                    <div class="relative">
+                        <div onclick="handleFromButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                            <span>From:</span> <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul id="fromList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                            <li class="hover:font-semibold">ABC</li>
+                            <li class="hover:font-semibold">DEF</li>
+                            <li class="hover:font-semibold">GHI</li>
+                            <li class="hover:font-semibold">JKL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between"><span>To:</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                            <span>Type:</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
                     <button class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                 </section>
+                <!-- End Sorting Panel -->
 
                 <!-- user panel -->
                 <section class="grid grid-cols-3 gap-5 mt-10">
@@ -250,7 +267,7 @@
                         <div class="flex flex-col gap-5">
                             <div>
                                 <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-[#28C66F] rounded-full"></div>
+                                    <div class="w-4 h-4 bg-success rounded-full"></div>
                                     <h3>London, UK</h3>
                                 </div>
                                 <progress class="progress progress-success w-full my-1" value="70" max="100"></progress>
@@ -258,15 +275,16 @@
                             </div>
                             <div>
                                 <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
+                                    <div class="w-4 h-4 bg-secondary rounded-full"></div>
                                     <h3>Manhattan, NY</h3>
                                 </div>
-                                <progress class="progress progress-secondary w-full my-1" value="70" max="100"></progress>
+                                <progress class="progress progress-secondary w-full my-1" value="70"
+                                    max="100"></progress>
                                 <h1 class="text-xs">6.48%</h1>
                             </div>
                             <div>
                                 <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
+                                    <div class="w-4 h-4 bg-info rounded-full"></div>
                                     <h3>Melbourne, AUS</h3>
                                 </div>
                                 <progress class="progress progress-info w-full my-1" value="70" max="100"></progress>
@@ -274,7 +292,7 @@
                             </div>
                             <div>
                                 <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
+                                    <div class="w-4 h-4 bg-warning rounded-full"></div>
                                     <h3>Texas, DW</h3>
                                 </div>
                                 <progress class="progress progress-warning w-full my-1" value="70" max="100"></progress>
@@ -291,6 +309,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/chart.js"></script>
     <script src="/main.js"></script>
 </body>
 
