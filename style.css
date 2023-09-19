@@ -1,0 +1,19 @@
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background:
+        radial-gradient(closest-side, white 79%, transparent 80% 100%),
+        conic-gradient(#28C66F 38%, #81DCAA 0);
+}
+
+.progress-bar::before {
+    content: "38%";
+    font-size: 36px;
+    font-weight: bold;
+    color: #656565;
+}
