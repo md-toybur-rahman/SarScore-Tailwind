@@ -34,7 +34,7 @@
 </head>
 
 <body class="max-w-[1440px] mx-auto">
-    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-auto bg-[#FAFAFA] font-[poppins]">
+    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
         <div class="row-span-full col-span-3 bg-white">
             <div class="flex justify-between mt-10 px-5">
@@ -101,9 +101,9 @@
                 </section>
 
                 <!-- Sorting panel -->
-                <section class="flex justify-end items-center gap-3 mt-5">
+                <section class="flex justify-end items-center gap-3 mt-10">
                     <h3>Sort by Date Range: </h3>
-                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                    <!-- <div class="relative bg-white px-1 py-2 rounded-xl">
                         <div onclick="handleFromButton()"
                             class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
                             <span id="from">From:</span> <i class="fa-solid fa-chevron-down"></i>
@@ -115,8 +115,13 @@
                             <li onclick="handleFromList('GHI')" class="hover:font-semibold">GHI</li>
                             <li onclick="handleFromList('JKL')" class="hover:font-semibold">JKL</li>
                         </ul>
-                    </div>
+                    </div> -->
 
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
+                            <p class="w-fit">From: <input class="outline-none" type="date" required></p>
+                        </div>
+                    </div>
                     <div class="relative bg-white px-1 py-2 rounded-xl">
                         <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
                             <p class="w-fit">To: <input class="outline-none" type="date" required></p>
@@ -141,7 +146,7 @@
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
-                <section class="grid grid-cols-3 gap-5 mt-10">
+                <section class="grid grid-cols-3 gap-5 mt-5">
                     <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
                         <div>
                             <h5 class="text-lg">Total Users</h5>
@@ -176,7 +181,7 @@
                 <!-- end user panel -->
 
                 <!-- registration chart and service progress bar -->
-                <section class="grid grid-cols-3 mt-10 gap-10">
+                <section class="grid grid-cols-3 mt-20 gap-10">
                     <div class="col-span-2 px-6 py-7 rounded-xl bg-white">
                         <div class="flex items-center justify-between mb-5">
                             <h1 class="text-2xl font-semibold">New User Registration</h1>
@@ -220,7 +225,7 @@
                 <!-- end registration chart and service progress bar -->
 
                 <!-- Popular Location -->
-                <section class="grid grid-cols-6 gap-10 mt-10">
+                <section class="grid grid-cols-6 gap-5 mt-20">
                     <div class="col-span-2 bg-white px-6 py-7 rounded-xl">
                         <div class="flex justify-between items-center mb-5">
                             <h1 class="text-2xl font-semibold">Popular Locations</h1>
@@ -321,7 +326,48 @@
                 <!-- End Popular Location -->
 
                 <!-- Support Tickets -->
-                <section>
+                <section class="mt-10">
+                    <h1 class="text-2xl font-semibold">Support Tickets</h1>
+                    <div class="mt-10 flex items-center justify-between">
+                        <div class="flex items-center gap-10">
+                            <div class="text-lg bg-white rounded-xl flex items-center justify-between">
+                                <i class="fa-brands fa-slack py-1 px-3 rounded-xl"></i>
+                                <i class="fa-solid fa-list py-1 px-3 rounded-xl bg-[#39CCCC] text-white"></i>
+                            </div>
+                            <div class=" bg-white rounded-xl flex justify-between">
+                                <h4 class="py-1 px-3 rounded-xl bg-[#39CCCC] text-white">All</h4>
+                                <h4 class="py-1 px-3 rounded-xl">Open</h4>
+                                <h4 class="py-1 px-3 rounded-xl">In Progress</h4>
+                                <h4 class="py-1 px-3 rounded-xl">Pending</h4>
+                                <h4 class="py-1 px-3 rounded-xl">Resolved</h4>
+                            </div>
+                        </div>
+                        <div class="flex justify-end items-center gap-3">
+                            <div class="relative bg-white px-1 py-2 rounded-xl">
+                                <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
+                                    <p class="w-fit">Date: <input class="outline-none" type="date" required></p>
+                                </div>
+                            </div>
+                            <div class="relative bg-white px-1 py-2 rounded-xl">
+                                <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
+                                    <p class="w-fit">To: <input class="outline-none" type="date" required></p>
+                                </div>
+                            </div>
+                            <div class="relative bg-white px-1 py-2 rounded-xl">
+                                <div onclick="handleTypeButton()"
+                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                    <span id="type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul id="typeList"
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
+                                    <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
+                                    <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
+                                    <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
 
                 </section>
                 <!-- End Support Tickets -->
