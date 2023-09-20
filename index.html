@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +23,8 @@
             theme: {
                 fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],
-                    'poppins': ['Poppins', 'sans-serif']
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
                 },
                 extend: {
                     colors: {
@@ -33,58 +37,69 @@
     <title>SarScore</title>
 </head>
 
-<body class="max-w-[1440px] mx-auto">
-    <div class="grid grid-rows-6 grid-cols-12 grid-flow-col h-auto bg-[#FAFAFA] font-[poppins]">
+<body class="max-w-[1573px] mx-auto">
+    <div class="grid grid-rows-6 grid-cols-11 grid-flow-col h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div class="row-span-full col-span-3 bg-white">
+        <div class="row-span-full col-span-2 bg-white">
             <div class="flex justify-between mt-10 px-5">
-                <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
-                        class="text-xs">TM</sup></h1>
-                <i class="fa-solid fa-bars text-xl"></i>
+                <!-- <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
+                        class="text-xs">TM</sup></h1> -->
+                <img src="/assets/icons/Group 2319.png" alt="">
+                <img class="h-4 w-6" src="/assets/icons/Group 2318.png" alt="">
             </div>
-            <div class="mt-10 font-[poppins]">
-                <a href="#" class="bg-[#39CCCC] py-4 px-5 flex items-center gap-2"><i
-                        class="fa-solid fa-angles-right"></i>
-                    <span class="flex justify-between flex-grow">Dashboard<i
+            <div class="mt-14 font-[poppins]">
+                <a href="#" class="bg-[#39CCCC] h-[63px] px-5 flex items-center gap-2">
+                    <img src="assets/icons/Group 48.png" alt="">
+                    <span class="text-white font-bold text-sm">Dashboard</span>
+                </a>
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="text-sm">Accessibility Rating</span>
+                </a>
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">User Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Accessibility Rating<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Contribution Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">User Management<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Service Requests<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Contribution Management<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">System Stats<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Service Requests<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Notification Center<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">System Stats<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 2324.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Settings<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Notification Center<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 2324.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Support Tickets<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Settings<i class="fa-solid fa-chevron-down"></i></span>
-                </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Support Tickets<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 2324.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">System Maintenance<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">System Maintenance<i
+                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 2324.png" alt="">
+                    <span class="flex justify-between flex-grow text-sm">Log Out<i
                             class="fa-solid fa-chevron-down"></i></span>
-                </a>
-                <a href="#" class="py-4 px-5 flex items-center gap-2"><i class="fa-solid fa-angles-right"></i> <span
-                        class="flex justify-between flex-grow">Log Out<i class="fa-solid fa-chevron-down"></i></span>
                 </a>
             </div>
         </div>
@@ -146,496 +161,572 @@
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
-                <section class="grid grid-cols-3 gap-5 mt-5">
-                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
-                        <div>
-                            <h5 class="text-lg">Total Users</h5>
-                            <h1 class="text-3xl font-bold my-3">29,542</h1>
-                            <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
-                        </div>
-                        <div class="px-6 py-5 bg-[#E7FAFC] rounded-2xl">
-                            <i class="fa-solid fa-chart-simple text-4xl text-[#39cccc]"></i>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
-                        <div>
-                            <h5 class="text-lg">Active Users</h5>
-                            <h1 class="text-3xl font-bold my-3">2198</h1>
-                            <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
-                        </div>
-                        <div class="px-6 py-5 bg-[#DEF6E9] rounded-2xl">
-                            <i class="fa-solid fa-chart-simple text-4xl text-[#28C66F]"></i>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
-                        <div>
-                            <h5 class="text-lg">New Registrations</h5>
-                            <h1 class="text-3xl font-bold my-3">127</h1>
-                            <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
-                        </div>
-                        <div class="px-6 py-5 bg-[#F0D6CA] rounded-2xl">
-                            <i class="fa-solid fa-chart-simple text-4xl text-[#C34E2A]"></i>
-                        </div>
-                    </div>
-                </section>
-                <!-- end user panel -->
-
-                <!-- registration chart and service progress bar -->
-                <section class="grid grid-cols-3 mt-20 gap-10">
-                    <div class="col-span-2 px-6 py-7 rounded-xl bg-white">
-                        <div class="flex items-center justify-between mb-5">
-                            <h1 class="text-2xl font-semibold">New User Registration</h1>
-                            <div class="flex items-center gap-10">
-                                <div class="flex gap-6 items-center">
-                                    <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
-                                    <h3>Daily</h3>
-                                </div>
-                                <div class="flex gap-6 items-center">
-                                    <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
-                                    <h3>Weekly</h3>
-                                </div>
-                                <div class="flex gap-6 items-center">
-                                    <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
-                                    <h3>Monthly</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <canvas id="registrations-chart"></canvas>
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-semibold mb-5">Service Requests</h1>
-                        <div class="flex justify-center">
-                            <div class="progress-bar">
-                                <progress value="75" min="0" max="100"
-                                    style="visibility:hidden;height:0;width:0;">38%</progress>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-end mt-5">
+                <!-- Dashboard Item -->
+                <section>
+                    <section class="grid grid-cols-3 gap-5 mt-5">
+                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
                             <div>
-                                <h1 class="text-sm text-[#A5A5A5]">Total Service Requests</h1>
-                                <h1 class="text-3xl font-bold mt-2">50,246</h1>
+                                <h5 class="text-base">Total Users</h5>
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">29,542</h1>
+                                <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
                             </div>
+                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#E7FAFC] rounded-2xl">
+                                <img src="assets/icons/Group 2495.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
                             <div>
-                                <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
-                                <p class="text-xs text-[#A5A5A5]">More than last month</p>
+                                <h5 class="text-base">Active Users</h5>
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
+                                <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                            </div>
+                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#DEF6E9] rounded-2xl">
+                                <img src="assets/icons/Group 2496.png" alt="">
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- end registration chart and service progress bar -->
+                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
+                            <div>
+                                <h5 class="text-base">New Registrations</h5>
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">127</h1>
+                                <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                            </div>
+                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#F0D6CA] rounded-2xl">
+                                <img src="assets/icons/Group 2497.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end user panel -->
 
-                <!-- Popular Location -->
-                <section class="grid grid-cols-6 gap-5 mt-20">
-                    <div class="col-span-2 bg-white px-6 py-7 rounded-xl">
-                        <div class="flex justify-between items-center mb-5">
-                            <h1 class="text-2xl font-semibold">Popular Locations</h1>
-                            <i class="fa-solid fa-ellipsis text-2xl font-semibold"></i>
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h1>London, UK</h1>
-                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
-                                </div>
-                                <div class="text-end">
-                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                    <p class="text-[#A5A5A5]">Improved</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h1>Manhattan, NY</h1>
-                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
-                                </div>
-                                <div class="text-end">
-                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                    <p class="text-[#A5A5A5]">Improved</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h1>Dublin, IRE</h1>
-                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
-                                </div>
-                                <div class="text-end">
-                                    <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
-                                    <p class="text-[#A5A5A5]">Decreased</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <h1>Melbourne, AUS</h1>
-                                    <p class="text-[#A5A5A5]">Last 30 Days</p>
-                                </div>
-                                <div class="text-end">
-                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                    <p class="text-[#A5A5A5]">Improved</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-center mt-5">
-                            <button class="underline">View All</button>
-                        </div>
-                    </div>
-                    <div class="col-span-4 grid grid-cols-4 bg-white px-6 py-7 ronded-xl">
-                        <div class="col-span-3 flex items-center justify-center">
-                            <h1 class="text-6xl font-bold">MAP</h1>
-                        </div>
-                        <div class="col-span-1">
-                            <div class="flex flex-col gap-5">
-                                <div>
-                                    <div class="flex gap-3 items-center">
-                                        <div class="w-4 h-4 bg-success rounded-full"></div>
-                                        <h3>London, UK</h3>
+                    <!-- registration chart and service progress bar -->
+                    <section class="grid grid-cols-3 mt-20 gap-10">
+                        <div class="col-span-2 px-6 py-7 rounded-xl bg-white">
+                            <div class="flex items-center justify-between mb-5">
+                                <h1 class="text-2xl font-semibold">New User Registration</h1>
+                                <div class="flex items-center gap-10">
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
+                                        <h3>Daily</h3>
                                     </div>
-                                    <progress class="progress progress-success w-full my-1" value="70"
-                                        max="100"></progress>
-                                    <h1 class="text-xs">6.48%</h1>
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
+                                        <h3>Weekly</h3>
+                                    </div>
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
+                                        <h3>Monthly</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas id="registrations-chart"></canvas>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl font-semibold mb-5">Service Requests</h1>
+                            <div class="flex justify-center">
+                                <div class="progress-bar">
+                                    <progress value="75" min="0" max="100"
+                                        style="visibility:hidden;height:0;width:0;">38%</progress>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-end mt-5">
+                                <div>
+                                    <h1 class="text-sm text-[#A5A5A5]">Total Service Requests</h1>
+                                    <h1 class="text-3xl font-bold mt-2">50,246</h1>
                                 </div>
                                 <div>
-                                    <div class="flex gap-3 items-center">
-                                        <div class="w-4 h-4 bg-secondary rounded-full"></div>
-                                        <h3>Manhattan, NY</h3>
-                                    </div>
-                                    <progress class="progress progress-secondary w-full my-1" value="70"
-                                        max="100"></progress>
-                                    <h1 class="text-xs">6.48%</h1>
-                                </div>
-                                <div>
-                                    <div class="flex gap-3 items-center">
-                                        <div class="w-4 h-4 bg-info rounded-full"></div>
-                                        <h3>Melbourne, AUS</h3>
-                                    </div>
-                                    <progress class="progress progress-info w-full my-1" value="70"
-                                        max="100"></progress>
-                                    <h1 class="text-xs">6.48%</h1>
-                                </div>
-                                <div>
-                                    <div class="flex gap-3 items-center">
-                                        <div class="w-4 h-4 bg-warning rounded-full"></div>
-                                        <h3>Texas, DW</h3>
-                                    </div>
-                                    <progress class="progress progress-warning w-full my-1" value="70"
-                                        max="100"></progress>
-                                    <h1 class="text-xs">6.48%</h1>
+                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
+                                    <p class="text-xs text-[#A5A5A5]">More than last month</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- End Popular Location -->
+                    </section>
+                    <!-- end registration chart and service progress bar -->
 
-                <!-- Support Tickets -->
-                <section class="mt-10">
-                    <h1 class="text-2xl font-semibold">Support Tickets</h1>
-                    <!-- Support Ticket menu section -->
-                    <div class="mt-10 flex items-center justify-between">
-                        <div class="flex items-center gap-5">
-                            <div class="text-lg bg-white rounded-xl flex items-center justify-between">
-                                <i class="fa-brands fa-slack py-1 px-3 rounded-xl"></i>
-                                <i class="fa-solid fa-list py-1 px-3 rounded-xl bg-[#39CCCC] text-white"></i>
+                    <!-- Popular Location -->
+                    <section class="grid grid-cols-6 gap-5 mt-20">
+                        <div class="col-span-2 bg-white px-6 py-7 rounded-xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-2xl font-semibold">Popular Locations</h1>
+                                <i class="fa-solid fa-ellipsis text-2xl font-semibold"></i>
                             </div>
-                            <div class=" bg-white rounded-xl flex justify-between">
-                                <h4 class="py-1 px-3 rounded-xl bg-[#39CCCC] text-white">All</h4>
-                                <h4 class="py-1 px-3 rounded-xl">Open</h4>
-                                <h4 class="py-1 px-3 rounded-xl">In Progress</h4>
-                                <h4 class="py-1 px-3 rounded-xl">Pending</h4>
-                                <h4 class="py-1 px-3 rounded-xl">Resolved</h4>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1>London, UK</h1>
+                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                        <p class="text-[#A5A5A5]">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1>Manhattan, NY</h1>
+                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                        <p class="text-[#A5A5A5]">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1>Dublin, IRE</h1>
+                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                                        <p class="text-[#A5A5A5]">Decreased</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1>Melbourne, AUS</h1>
+                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
+                                        <p class="text-[#A5A5A5]">Improved</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center mt-5">
+                                <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="flex justify-end items-center gap-3">
-                            <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                                    <p class="w-fit">Date: <input class="outline-none w-28" type="date" required></p>
-                                </div>
+                        <div class="col-span-4 grid grid-cols-4 bg-white px-6 py-7 ronded-xl">
+                            <div class="col-span-3 flex items-center justify-center">
+                                <h1 class="text-6xl font-bold">MAP</h1>
                             </div>
-                            <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div onclick="handlePriorityButton()"
-                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                    <span id="priority">Priority:</span> <i class="fa-solid fa-chevron-down"></i>
+                            <div class="col-span-1">
+                                <div class="flex flex-col gap-5">
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-4 h-4 bg-success rounded-full"></div>
+                                            <h3>London, UK</h3>
+                                        </div>
+                                        <progress class="progress progress-success w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-xs">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                            <h3>Manhattan, NY</h3>
+                                        </div>
+                                        <progress class="progress progress-secondary w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-xs">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-4 h-4 bg-info rounded-full"></div>
+                                            <h3>Melbourne, AUS</h3>
+                                        </div>
+                                        <progress class="progress progress-info w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-xs">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-4 h-4 bg-warning rounded-full"></div>
+                                            <h3>Texas, DW</h3>
+                                        </div>
+                                        <progress class="progress progress-warning w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-xs">6.48%</h1>
+                                    </div>
                                 </div>
-                                <ul id="priorityList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
-                                    <li onclick="handlePriorityList('Urgent')" class="hover:font-semibold bg-white">
-                                        Urgent</li>
-                                    <li onclick="handlePriorityList('High')" class="hover:font-semibold bg-white">High
-                                    </li>
-                                    <li onclick="handlePriorityList('Medium')" class="hover:font-semibold bg-white">
-                                        Medium</li>
-                                    <li onclick="handlePriorityList('Low')" class="hover:font-semibold bg-white">Low
-                                    </li>
-                                    <li onclick="handlePriorityList('Critical')" class="hover:font-semibold bg-white">
-                                        Critical</li>
-                                </ul>
-                            </div>
-                            <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div onclick="handleSupportTypeButton()"
-                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                    <span id="support-type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
-                                </div>
-                                <ul id="supportTypeList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
-                                    <li onclick="handleSupportTypeList('Technical Issues')"
-                                        class="hover:font-semibold bg-white">Technical Issues</li>
-                                    <li onclick="handleSupportTypeList('User Inquiries')"
-                                        class="hover:font-semibold bg-white">User Inquiries</li>
-                                    <li onclick="handleSupportTypeList('Accessibility Ratings')"
-                                        class="hover:font-semibold bg-white">Accessibility Ratings</li>
-                                    <li onclick="handleSupportTypeList('Service Provider Support')"
-                                        class="hover:font-semibold bg-white">Service Provider Support</li>
-                                </ul>
-                            </div>
-                            <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div onclick="handleCategoryButton()"
-                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                    <span id="category">Category:</span> <i class="fa-solid fa-chevron-down px-2"></i>
-                                </div>
-                                <ul id="categoryList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
-                                    <li onclick="handleCategoryList('Regular User')"
-                                        class="hover:font-semibold bg-white">Regular User</li>
-                                    <li onclick="handleCategoryList('Service Provider')"
-                                        class="hover:font-semibold bg-white">Service Provider</li>
-                                    <li onclick="handleCategoryList('Contributor')"
-                                        class="hover:font-semibold bg-white">Contributor</li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Support Ticket menu section -->
+                    </section>
+                    <!-- End Popular Location -->
 
-                    <!-- Support Table -->
-                    <div class="overflow-x-auto mt-10">
-                        <table class="table">
-                            <!-- head -->
-                            <thead class="bg-white">
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                        <label>
-                                            <input type="checkbox" class="checkbox" />
-                                        </label>
-                                    </th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Category</th>
-                                    <th>Priority</th>
-                                    <th>Type</th>
-                                    <th>Status</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody class="bg-white">
-                                <!-- row 1 -->
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                    </th>
-                                    <td>
-                                        Courtney Henry
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <td>Regular User</td>
-                                    <td>Urgent</td>
-                                    <td>Technical Issues</td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 2 -->
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                    </th>
-                                    <td>
-                                        Jacob Jones
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <td>Regular User</td>
-                                    <td>High</td>
-                                    <td>User Inquiries</td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 3 -->
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                    </th>
-                                    <td>
-                                        Guy Hawkins
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <td>Service Provider</td>
-                                    <td>Medium</td>
-                                    <td>Accessibility Ratings</td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 4 -->
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                    </th>
-                                    <td>
-                                        Darlene Robertson
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <td>Service Provider</td>
-                                    <td>Low</td>
-                                    <td>Service Provider Support</td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 5 -->
-                                <tr class="border-4 border-[#FAFAFA]">
-                                    <th>
-                                    </th>
-                                    <td>
-                                        Kristin Watson
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <td>Contributor</td>
-                                    <td>Critical</td>
-                                    <td>User Inquiries</td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <!-- Support Tickets -->
+                    <section class="mt-10">
+                        <h1 class="text-2xl font-semibold">Support Tickets</h1>
+                        <!-- Support Ticket menu section -->
+                        <div class="mt-10 flex items-center justify-between">
+                            <div class="flex items-center gap-5">
+                                <div class="text-md bg-white rounded-xl flex items-center justify-between">
+                                    <a href="#" class=" py-1 px-3 rounded-xl"><i class="fa-brands fa-slack"></i></a>
+                                    <a href="#" class=" py-1 px-3 rounded-xl bg-[#39CCCC] text-white"><i
+                                            class="fa-solid fa-list"></i></a>
+                                </div>
+                                <div class=" bg-white rounded-xl flex justify-between">
+                                    <a class="py-1 px-3 rounded-xl bg-[#39CCCC] text-white">All</a>
+                                    <a class="py-1 px-3 rounded-xl">Open</a>
+                                    <a class="py-1 px-3 rounded-xl">In Progress</a>
+                                    <a class="py-1 px-3 rounded-xl">Pending</h4>
+                                        <a class="py-1 px-3 rounded-xl">Resolved</a>
+                                </div>
+                            </div>
+                            <div class="flex justify-end items-center gap-3">
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
+                                        <p class="w-fit">Date: <input class="outline-none w-28" type="date" required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handlePriorityButton()"
+                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                        <span id="priority">Priority:</span> <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul id="priorityList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
+                                        <li onclick="handlePriorityList('Urgent')" class="hover:font-semibold bg-white">
+                                            Urgent</li>
+                                        <li onclick="handlePriorityList('High')" class="hover:font-semibold bg-white">
+                                            High
+                                        </li>
+                                        <li onclick="handlePriorityList('Medium')" class="hover:font-semibold bg-white">
+                                            Medium</li>
+                                        <li onclick="handlePriorityList('Low')" class="hover:font-semibold bg-white">Low
+                                        </li>
+                                        <li onclick="handlePriorityList('Critical')"
+                                            class="hover:font-semibold bg-white">
+                                            Critical</li>
+                                    </ul>
+                                </div>
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handleSupportTypeButton()"
+                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                        <span id="support-type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul id="supportTypeList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                        <li onclick="handleSupportTypeList('Technical Issues')"
+                                            class="hover:font-semibold bg-white">Technical Issues</li>
+                                        <li onclick="handleSupportTypeList('User Inquiries')"
+                                            class="hover:font-semibold bg-white">User Inquiries</li>
+                                        <li onclick="handleSupportTypeList('Accessibility Ratings')"
+                                            class="hover:font-semibold bg-white">Accessibility Ratings</li>
+                                        <li onclick="handleSupportTypeList('Service Provider Support')"
+                                            class="hover:font-semibold bg-white">Service Provider Support</li>
+                                    </ul>
+                                </div>
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handleCategoryButton()"
+                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                        <span id="category">Category:</span> <i
+                                            class="fa-solid fa-chevron-down px-2"></i>
+                                    </div>
+                                    <ul id="categoryList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                        <li onclick="handleCategoryList('Regular User')"
+                                            class="hover:font-semibold bg-white">Regular User</li>
+                                        <li onclick="handleCategoryList('Service Provider')"
+                                            class="hover:font-semibold bg-white">Service Provider</li>
+                                        <li onclick="handleCategoryList('Contributor')"
+                                            class="hover:font-semibold bg-white">Contributor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Support Ticket menu section -->
+
+                        <!-- Support Table -->
+                        <div class="overflow-x-auto mt-10">
+                            <table class="table">
+                                <!-- head -->
+                                <thead class="bg-white">
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                            <label>
+                                                <input type="checkbox" class="checkbox" />
+                                            </label>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Category</th>
+                                        <th>Priority</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white">
+                                    <!-- row 1 -->
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                        </th>
+                                        <td>
+                                            Courtney Henry
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Regular User</td>
+                                        <td>Urgent</td>
+                                        <td>Technical Issues</td>
+                                        <th>
+                                            <button
+                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                        </th>
+                                        <th>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </th>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                        </th>
+                                        <td>
+                                            Jacob Jones
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Regular User</td>
+                                        <td>High</td>
+                                        <td>User Inquiries</td>
+                                        <th>
+                                            <button
+                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                        </th>
+                                        <th>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </th>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Service Provider</td>
+                                        <td>Medium</td>
+                                        <td>Accessibility Ratings</td>
+                                        <th>
+                                            <button
+                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                        </th>
+                                        <th>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </th>
+                                    </tr>
+                                    <!-- row 4 -->
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Service Provider</td>
+                                        <td>Low</td>
+                                        <td>Service Provider Support</td>
+                                        <th>
+                                            <button
+                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                        </th>
+                                        <th>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </th>
+                                    </tr>
+                                    <!-- row 5 -->
+                                    <tr class="border-4 border-[#FAFAFA]">
+                                        <th>
+                                        </th>
+                                        <td>
+                                            Kristin Watson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Contributor</td>
+                                        <td>Critical</td>
+                                        <td>User Inquiries</td>
+                                        <th>
+                                            <button
+                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                        </th>
+                                        <th>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="flex justify-end">
+                                <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View
+                                    All</button>
+                            </div>
+                        </div>
+                        <!-- End Support Table -->
+                    </section>
+                    <!-- End Support Tickets -->
+                    <!-- Announcements Tickets -->
+                    <section class="mt-10 bg-white px-7 py-10 rounded-xl">
+                        <h1 class="text-2xl font-semibold">Announcements</h1>
+                        <!-- Support Table -->
+                        <div class="overflow-x-auto mt-10 h-[300px] overflow-y-scroll">
+                            <table class="table">
+                                <tbody class="bg-white">
+                                    <!-- row 1 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td class="font-semibold">
+                                            Daila Ouldcott
+                                        </td>
+                                        <td class="font-semibold">
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-[#6D65D1] bg-[#DFDDF4] text-xs font-thin px-5 py-1 rounded-lg float-right">Company</button>
+                                        </th>
+                                        <td class="text-xs font-semibold">
+                                            09:57 AM
+                                        </td>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Jacob Jones
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-success bg-[#D3F3E1] text-xs font-thin px-5 py-1 rounded-lg float-right">Contributor</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            09:57 AM
+                                        </td>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-error bg-[#FADCDC] text-xs font-thin px-5 py-1 rounded-lg float-right">New
+                                                Release</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            09:57 AM
+                                        </td>
+                                    </tr>
+                                    <!-- row 4 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            2 Sep 2021
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            2 Sep 2021
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            2 Sep 2021
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            2 Sep 2021
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- End Support Table -->
                         <div class="flex justify-end">
-                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View All</button>
+                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View
+                                All</button>
                         </div>
-                    </div>
-                    <!-- End Support Table -->
+                    </section>
+                    <!-- End Support Tickets -->
                 </section>
-                <!-- End Support Tickets -->
-                <!-- Announcements Tickets -->
-                <section class="mt-10 bg-white px-7 py-10 rounded-xl">
-                    <h1 class="text-2xl font-semibold">Announcements</h1>
-                    <!-- Support Table -->
-                    <div class="overflow-x-auto mt-10">
-                        <table class="table">
-                            <tbody class="bg-white">
-                                <!-- row 1 -->
-                                <tr class="border-b-2 border-[#FAFAFA]">
-                                    <th>
-                                        <i class="fa-solid fa-star"></i>
-                                    </th>
-                                    <td class="font-semibold">
-                                        Daila Ouldcott
-                                    </td>
-                                    <td  class="font-semibold">
-                                        <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                        <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                    </td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 2 -->
-                                <tr class="border-b-2 border-[#FAFAFA]">
-                                    <th>
-                                        <i class="fa-solid fa-star"></i>
-                                    </th>
-                                    <td>
-                                        Jacob Jones
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 3 -->
-                                <tr class="border-b-2 border-[#FAFAFA]">
-                                    <th>
-                                        <i class="fa-solid fa-star"></i>
-                                    </th>
-                                    <td>
-                                        Guy Hawkins
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                                <!-- row 4 -->
-                                <tr class="border-b-2 border-[#FAFAFA]">
-                                    <th>
-                                        <i class="fa-solid fa-star"></i>
-                                    </th>
-                                    <td>
-                                        Darlene Robertson
-                                    </td>
-                                    <td>
-                                        soffner19@mac.com
-                                    </td>
-                                    <th>
-                                        <button
-                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
-                                    </th>
-                                    <th>
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                                    </th>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="flex justify-end">
-                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View All</button>
-                        </div>
-                    </div>
-                    <!-- End Support Table -->
-                </section>
-                <!-- End Support Tickets -->
+                <!-- End Dashboard Item -->
             </div>
             <!-- Dashboard Contain End -->
-
+            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-20">
+                <h3>2023 &copy; SARSocore</h3>
+                <h3>Help & Support</h3>
+            </footer>
         </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
