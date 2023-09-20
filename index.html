@@ -355,11 +355,17 @@
                                     <span id="priority">Priority:</span> <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                                 <ul id="priorityList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                                    <li onclick="handlePriorityList('abc')" class="hover:font-semibold">abc</li>
-                                    <li onclick="handlePriorityList('def')" class="hover:font-semibold">def</li>
-                                    <li onclick="handlePriorityList('ghi')" class="hover:font-semibold">ghi</li>
-                                    <li onclick="handlePriorityList('jkl')" class="hover:font-semibold">jkl</li>
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
+                                    <li onclick="handlePriorityList('Urgent')" class="hover:font-semibold bg-white">
+                                        Urgent</li>
+                                    <li onclick="handlePriorityList('High')" class="hover:font-semibold bg-white">High
+                                    </li>
+                                    <li onclick="handlePriorityList('Medium')" class="hover:font-semibold bg-white">
+                                        Medium</li>
+                                    <li onclick="handlePriorityList('Low')" class="hover:font-semibold bg-white">Low
+                                    </li>
+                                    <li onclick="handlePriorityList('Critical')" class="hover:font-semibold bg-white">
+                                        Critical</li>
                                 </ul>
                             </div>
                             <div class="relative bg-white px-1 py-2 rounded-xl">
@@ -368,11 +374,15 @@
                                     <span id="support-type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                                 <ul id="supportTypeList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                                    <li onclick="handleSupportTypeList('abc')" class="hover:font-semibold">abc</li>
-                                    <li onclick="handleSupportTypeList('def')" class="hover:font-semibold">def</li>
-                                    <li onclick="handleSupportTypeList('ghi')" class="hover:font-semibold">ghi</li>
-                                    <li onclick="handleSupportTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                    <li onclick="handleSupportTypeList('Technical Issues')"
+                                        class="hover:font-semibold bg-white">Technical Issues</li>
+                                    <li onclick="handleSupportTypeList('User Inquiries')"
+                                        class="hover:font-semibold bg-white">User Inquiries</li>
+                                    <li onclick="handleSupportTypeList('Accessibility Ratings')"
+                                        class="hover:font-semibold bg-white">Accessibility Ratings</li>
+                                    <li onclick="handleSupportTypeList('Service Provider Support')"
+                                        class="hover:font-semibold bg-white">Service Provider Support</li>
                                 </ul>
                             </div>
                             <div class="relative bg-white px-1 py-2 rounded-xl">
@@ -381,11 +391,13 @@
                                     <span id="category">Category:</span> <i class="fa-solid fa-chevron-down px-2"></i>
                                 </div>
                                 <ul id="categoryList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                                    <li onclick="handleCategoryList('abc')" class="hover:font-semibold">abc</li>
-                                    <li onclick="handleCategoryList('def')" class="hover:font-semibold">def</li>
-                                    <li onclick="handleCategoryList('ghi')" class="hover:font-semibold">ghi</li>
-                                    <li onclick="handleCategoryList('jkl')" class="hover:font-semibold">jkl</li>
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                    <li onclick="handleCategoryList('Regular User')"
+                                        class="hover:font-semibold bg-white">Regular User</li>
+                                    <li onclick="handleCategoryList('Service Provider')"
+                                        class="hover:font-semibold bg-white">Service Provider</li>
+                                    <li onclick="handleCategoryList('Contributor')"
+                                        class="hover:font-semibold bg-white">Contributor</li>
                                 </ul>
                             </div>
                         </div>
@@ -393,11 +405,11 @@
                     <!-- End Support Ticket menu section -->
 
                     <!-- Support Table -->
-                    <div class="overflow-x-auto">
+                    <div class="overflow-x-auto mt-10">
                         <table class="table">
                             <!-- head -->
-                            <thead>
-                                <tr>
+                            <thead class="bg-white">
+                                <tr class="border-4 border-[#FAFAFA]">
                                     <th>
                                         <label>
                                             <input type="checkbox" class="checkbox" />
@@ -412,82 +424,107 @@
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="bg-white">
                                 <!-- row 1 -->
-                                <tr>
+                                <tr class="border-4 border-[#FAFAFA]">
                                     <th>
                                     </th>
                                     <td>
-                                        Name
+                                        Courtney Henry
                                     </td>
                                     <td>
-                                        Email
+                                        soffner19@mac.com
                                     </td>
-                                    <td>Category</td>
-                                    <td>Priority</td>
-                                    <td>Type</td>
+                                    <td>Regular User</td>
+                                    <td>Urgent</td>
+                                    <td>Technical Issues</td>
                                     <th>
-                                        <button class="btn btn-ghost btn-xs">details</button>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
                                     </th>
                                     <th>
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                     </th>
                                 </tr>
                                 <!-- row 2 -->
-                                <tr>
+                                <tr class="border-4 border-[#FAFAFA]">
                                     <th>
                                     </th>
                                     <td>
-                                        Name
+                                        Jacob Jones
                                     </td>
                                     <td>
-                                        Email
+                                        soffner19@mac.com
                                     </td>
-                                    <td>Category</td>
-                                    <td>Priority</td>
-                                    <td>Type</td>
+                                    <td>Regular User</td>
+                                    <td>High</td>
+                                    <td>User Inquiries</td>
                                     <th>
-                                        <button class="btn btn-ghost btn-xs">details</button>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
                                     </th>
                                     <th>
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                     </th>
                                 </tr>
                                 <!-- row 3 -->
-                                <tr>
+                                <tr class="border-4 border-[#FAFAFA]">
                                     <th>
                                     </th>
                                     <td>
-                                        Name
+                                        Guy Hawkins
                                     </td>
                                     <td>
-                                        Email
+                                        soffner19@mac.com
                                     </td>
-                                    <td>Category</td>
-                                    <td>Priority</td>
-                                    <td>Type</td>
+                                    <td>Service Provider</td>
+                                    <td>Medium</td>
+                                    <td>Accessibility Ratings</td>
                                     <th>
-                                        <button class="btn btn-ghost btn-xs">details</button>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
                                     </th>
                                     <th>
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
                                     </th>
                                 </tr>
                                 <!-- row 4 -->
-                                <tr>
+                                <tr class="border-4 border-[#FAFAFA]">
                                     <th>
                                     </th>
                                     <td>
-                                        Name
+                                        Darlene Robertson
                                     </td>
                                     <td>
-                                        Email
+                                        soffner19@mac.com
                                     </td>
-                                    <td>Category</td>
-                                    <td>Priority</td>
-                                    <td>Type</td>
+                                    <td>Service Provider</td>
+                                    <td>Low</td>
+                                    <td>Service Provider Support</td>
                                     <th>
-                                        <button class="btn btn-ghost btn-xs">details</button>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 5 -->
+                                <tr class="border-4 border-[#FAFAFA]">
+                                    <th>
+                                    </th>
+                                    <td>
+                                        Kristin Watson
+                                    </td>
+                                    <td>
+                                        soffner19@mac.com
+                                    </td>
+                                    <td>Contributor</td>
+                                    <td>Critical</td>
+                                    <td>User Inquiries</td>
+                                    <th>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
                                     </th>
                                     <th>
                                         <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -495,9 +532,104 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="flex justify-end">
+                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View All</button>
+                        </div>
                     </div>
                     <!-- End Support Table -->
-
+                </section>
+                <!-- End Support Tickets -->
+                <!-- Announcements Tickets -->
+                <section class="mt-10 bg-white px-7 py-10 rounded-xl">
+                    <h1 class="text-2xl font-semibold">Announcements</h1>
+                    <!-- Support Table -->
+                    <div class="overflow-x-auto mt-10">
+                        <table class="table">
+                            <tbody class="bg-white">
+                                <!-- row 1 -->
+                                <tr class="border-b-2 border-[#FAFAFA]">
+                                    <th>
+                                        <i class="fa-solid fa-star"></i>
+                                    </th>
+                                    <td class="font-semibold">
+                                        Daila Ouldcott
+                                    </td>
+                                    <td  class="font-semibold">
+                                        <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                        <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                    </td>
+                                    <th>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr class="border-b-2 border-[#FAFAFA]">
+                                    <th>
+                                        <i class="fa-solid fa-star"></i>
+                                    </th>
+                                    <td>
+                                        Jacob Jones
+                                    </td>
+                                    <td>
+                                        soffner19@mac.com
+                                    </td>
+                                    <th>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr class="border-b-2 border-[#FAFAFA]">
+                                    <th>
+                                        <i class="fa-solid fa-star"></i>
+                                    </th>
+                                    <td>
+                                        Guy Hawkins
+                                    </td>
+                                    <td>
+                                        soffner19@mac.com
+                                    </td>
+                                    <th>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr class="border-b-2 border-[#FAFAFA]">
+                                    <th>
+                                        <i class="fa-solid fa-star"></i>
+                                    </th>
+                                    <td>
+                                        Darlene Robertson
+                                    </td>
+                                    <td>
+                                        soffner19@mac.com
+                                    </td>
+                                    <th>
+                                        <button
+                                            class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="flex justify-end">
+                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View All</button>
+                        </div>
+                    </div>
+                    <!-- End Support Table -->
                 </section>
                 <!-- End Support Tickets -->
             </div>
