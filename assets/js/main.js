@@ -1,36 +1,53 @@
-const handleFromButton = () => {
-    const fromList = document.getElementById('fromList');
-    const fromListStyle = fromList.style.display;
-    if(fromListStyle != 'flex'){
-        fromList.style.display = 'flex';
+const handlePriorityButton = () => {
+    const priorityList = document.getElementById('priorityList');
+    const priorityListStyle = priorityList.style.display;
+    if(priorityListStyle != 'flex'){
+        priorityList.style.display = 'flex';
     }
     else{
-        fromList.style.display = 'none';
+        priorityList.style.display = 'none';
     }
 }
 
-const handleFromList = (value) => {
-    const fromValue = document.getElementById('from');
-    const fromList = document.getElementById('fromList');
-    fromValue.innerText = value;
-    fromList.style.display = 'none';
+const handlePriorityList = (value) => {
+    const priorityValue = document.getElementById('priority');
+    const priorityList = document.getElementById('priorityList');
+    priorityValue.innerText = value;
+    priorityList.style.display = 'none';
 }
-const handleToButton = () => {
-    const toList = document.getElementById('toList');
-    const toListStyle = toList.style.display;
-    if(toListStyle != 'flex'){
-        toList.style.display = 'flex';
+const handleCategoryButton = () => {
+    const categoryList = document.getElementById('categoryList');
+    const categoryListStyle = categoryList.style.display;
+    if(categoryListStyle != 'flex'){
+        categoryList.style.display = 'flex';
     }
     else{
-        toList.style.display = 'none';
+        categoryList.style.display = 'none';
+    }
+}
+
+const handleCategoryList = (value) => {
+    const categoryValue = document.getElementById('category');
+    const categoryList = document.getElementById('categoryList');
+    categoryValue.innerText = value;
+    categoryList.style.display = 'none';
+}
+const handleSupportTypeButton = () => {
+    const supportTypeList = document.getElementById('supportTypeList');
+    const supportTypeListStyle = supportTypeList.style.display;
+    if(supportTypeListStyle != 'flex'){
+        supportTypeList.style.display = 'flex';
+    }
+    else{
+        supportTypeList.style.display = 'none';
     }
 }
 
 const handleToList = (value) => {
-    const toValue = document.getElementById('to');
-    const toList = document.getElementById('toList');
-    toValue.innerText = value;
-    toList.style.display = 'none';
+    const supportTypeValue = document.getElementById('support-type');
+    const supportTypeList = document.getElementById('supportTypeList');
+    supportTypeValue.innerText = value;
+    supportTypeList.style.display = 'none';
 }
 const handleTypeButton = () => {
     const typeList = document.getElementById('typeList');

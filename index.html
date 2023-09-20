@@ -119,12 +119,12 @@
 
                     <div class="relative bg-white px-1 py-2 rounded-xl">
                         <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                            <p class="w-fit">From: <input class="outline-none" type="date" required></p>
+                            <p class="w-fit">From: <input class="outline-none w-28" type="date" required></p>
                         </div>
                     </div>
                     <div class="relative bg-white px-1 py-2 rounded-xl">
                         <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                            <p class="w-fit">To: <input class="outline-none" type="date" required></p>
+                            <p class="w-fit">To: <input class="outline-none w-28" type="date" required></p>
                         </div>
                     </div>
                     <div class="relative bg-white px-1 py-2 rounded-xl">
@@ -328,8 +328,9 @@
                 <!-- Support Tickets -->
                 <section class="mt-10">
                     <h1 class="text-2xl font-semibold">Support Tickets</h1>
+                    <!-- Support Ticket menu section -->
                     <div class="mt-10 flex items-center justify-between">
-                        <div class="flex items-center gap-10">
+                        <div class="flex items-center gap-5">
                             <div class="text-lg bg-white rounded-xl flex items-center justify-between">
                                 <i class="fa-brands fa-slack py-1 px-3 rounded-xl"></i>
                                 <i class="fa-solid fa-list py-1 px-3 rounded-xl bg-[#39CCCC] text-white"></i>
@@ -345,29 +346,157 @@
                         <div class="flex justify-end items-center gap-3">
                             <div class="relative bg-white px-1 py-2 rounded-xl">
                                 <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                                    <p class="w-fit">Date: <input class="outline-none" type="date" required></p>
+                                    <p class="w-fit">Date: <input class="outline-none w-28" type="date" required></p>
                                 </div>
                             </div>
                             <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                                    <p class="w-fit">To: <input class="outline-none" type="date" required></p>
-                                </div>
-                            </div>
-                            <div class="relative bg-white px-1 py-2 rounded-xl">
-                                <div onclick="handleTypeButton()"
+                                <div onclick="handlePriorityButton()"
                                     class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                    <span id="type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
+                                    <span id="priority">Priority:</span> <i class="fa-solid fa-chevron-down"></i>
                                 </div>
-                                <ul id="typeList"
+                                <ul id="priorityList"
                                     class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                                    <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
-                                    <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
-                                    <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
-                                    <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                                    <li onclick="handlePriorityList('abc')" class="hover:font-semibold">abc</li>
+                                    <li onclick="handlePriorityList('def')" class="hover:font-semibold">def</li>
+                                    <li onclick="handlePriorityList('ghi')" class="hover:font-semibold">ghi</li>
+                                    <li onclick="handlePriorityList('jkl')" class="hover:font-semibold">jkl</li>
+                                </ul>
+                            </div>
+                            <div class="relative bg-white px-1 py-2 rounded-xl">
+                                <div onclick="handleSupportTypeButton()"
+                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                    <span id="support-type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <ul id="supportTypeList"
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    <li onclick="handleSupportTypeList('abc')" class="hover:font-semibold">abc</li>
+                                    <li onclick="handleSupportTypeList('def')" class="hover:font-semibold">def</li>
+                                    <li onclick="handleSupportTypeList('ghi')" class="hover:font-semibold">ghi</li>
+                                    <li onclick="handleSupportTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                                </ul>
+                            </div>
+                            <div class="relative bg-white px-1 py-2 rounded-xl">
+                                <div onclick="handleCategoryButton()"
+                                    class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                                    <span id="category">Category:</span> <i class="fa-solid fa-chevron-down px-2"></i>
+                                </div>
+                                <ul id="categoryList"
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    <li onclick="handleCategoryList('abc')" class="hover:font-semibold">abc</li>
+                                    <li onclick="handleCategoryList('def')" class="hover:font-semibold">def</li>
+                                    <li onclick="handleCategoryList('ghi')" class="hover:font-semibold">ghi</li>
+                                    <li onclick="handleCategoryList('jkl')" class="hover:font-semibold">jkl</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    <!-- End Support Ticket menu section -->
+
+                    <!-- Support Table -->
+                    <div class="overflow-x-auto">
+                        <table class="table">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label>
+                                            <input type="checkbox" class="checkbox" />
+                                        </label>
+                                    </th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Category</th>
+                                    <th>Priority</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>Category</td>
+                                    <td>Priority</td>
+                                    <td>Type</td>
+                                    <th>
+                                        <button class="btn btn-ghost btn-xs">details</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>Category</td>
+                                    <td>Priority</td>
+                                    <td>Type</td>
+                                    <th>
+                                        <button class="btn btn-ghost btn-xs">details</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>Category</td>
+                                    <td>Priority</td>
+                                    <td>Type</td>
+                                    <th>
+                                        <button class="btn btn-ghost btn-xs">details</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
+                                    <th>
+                                    </th>
+                                    <td>
+                                        Name
+                                    </td>
+                                    <td>
+                                        Email
+                                    </td>
+                                    <td>Category</td>
+                                    <td>Priority</td>
+                                    <td>Type</td>
+                                    <th>
+                                        <button class="btn btn-ghost btn-xs">details</button>
+                                    </th>
+                                    <th>
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- End Support Table -->
 
                 </section>
                 <!-- End Support Tickets -->
