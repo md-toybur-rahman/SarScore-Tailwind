@@ -36,7 +36,7 @@
 <body class="max-w-[1440px] mx-auto">
     <div class="grid grid-rows-6 grid-cols-12 grid-flow-col gap-6 h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div class="row-span-full col-span-3">
+        <div class="row-span-full col-span-3 bg-white">
             <div class="flex justify-between mt-10 px-5">
                 <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
                         class="text-xs">TM</sup></h1>
@@ -94,54 +94,55 @@
             <!-- Dashboard Contain Start -->
             <div class="mt-10 font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
-                <section class="flex justify-between p-5 rounded-xl text-xl">
+                <section class="flex items-center justify-between p-5 rounded-xl text-xl bg-white">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="flex-grow outline-none mx-2 h-6" type="text">
                     <i class="fa-regular fa-bell"></i>
                 </section>
 
                 <!-- Sorting panel -->
                 <section class="flex justify-end items-center gap-3 mt-5">
                     <h3>Sort by Date Range: </h3>
-                    <div class="relative">
-                        <div onclick="handleFromButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div onclick="handleFromButton()"
+                            class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
                             <span id="from">From:</span> <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <ul id="fromList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                        <ul id="fromList"
+                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
                             <li onclick="handleFromList('ABC')" class="hover:font-semibold">ABC</li>
                             <li onclick="handleFromList('DEF')" class="hover:font-semibold">DEF</li>
                             <li onclick="handleFromList('GHI')" class="hover:font-semibold">GHI</li>
                             <li onclick="handleFromList('JKL')" class="hover:font-semibold">JKL</li>
                         </ul>
                     </div>
-                    <div class="relative">
-                        <div onclick="handleToButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                            <span id="to">To:</span> <i class="fa-solid fa-chevron-down"></i>
+
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
+                            <p class="w-fit">To: <input class="outline-none" type="date" required></p>
                         </div>
-                        <ul id="toList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                            <li onclick="handleToList('MNO')" class="hover:font-semibold">MNO</li>
-                            <li onclick="handleToList('PQR')" class="hover:font-semibold">PQR</li>
-                            <li onclick="handleToList('STU')" class="hover:font-semibold">STU</li>
-                            <li onclick="handleToList('VWX')" class="hover:font-semibold">VWX</li>
-                        </ul>
                     </div>
-                    <div class="relative">
-                        <div onclick="handleTypeButton()" class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div onclick="handleTypeButton()"
+                            class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
                             <span id="type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
                         </div>
-                        <ul id="typeList" class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                        <ul id="typeList"
+                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
                             <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
                             <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
                             <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
                             <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
                         </ul>
                     </div>
-                    <button onclick="refreshSorting()" class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
+                    <button onclick="refreshSorting()"
+                        class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
                 <section class="grid grid-cols-3 gap-5 mt-10">
-                    <div class="flex items-center justify-between px-5">
+                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
                         <div>
                             <h5 class="text-lg">Total Users</h5>
                             <h1 class="text-3xl font-bold my-3">29,542</h1>
@@ -151,7 +152,7 @@
                             <i class="fa-solid fa-chart-simple text-4xl text-[#39cccc]"></i>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between px-5">
+                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
                         <div>
                             <h5 class="text-lg">Active Users</h5>
                             <h1 class="text-3xl font-bold my-3">2198</h1>
@@ -161,7 +162,7 @@
                             <i class="fa-solid fa-chart-simple text-4xl text-[#28C66F]"></i>
                         </div>
                     </div>
-                    <div class="flex items-center justify-between px-5">
+                    <div class="flex items-center justify-between px-6 bg-white py-7 rounded-xl">
                         <div>
                             <h5 class="text-lg">New Registrations</h5>
                             <h1 class="text-3xl font-bold my-3">127</h1>
@@ -176,7 +177,7 @@
 
                 <!-- registration chart and service progress bar -->
                 <section class="grid grid-cols-3 mt-10 gap-10">
-                    <div class="col-span-2">
+                    <div class="col-span-2 px-6 py-7 rounded-xl bg-white">
                         <div class="flex items-center justify-between mb-5">
                             <h1 class="text-2xl font-semibold">New User Registration</h1>
                             <div class="flex items-center gap-10">
@@ -220,7 +221,7 @@
 
                 <!-- Popular Location -->
                 <section class="grid grid-cols-6 gap-10 mt-10">
-                    <div class="col-span-2">
+                    <div class="col-span-2 bg-white px-6 py-7 rounded-xl">
                         <div class="flex justify-between items-center mb-5">
                             <h1 class="text-2xl font-semibold">Popular Locations</h1>
                             <i class="fa-solid fa-ellipsis text-2xl font-semibold"></i>
@@ -271,43 +272,48 @@
                             <button class="underline">View All</button>
                         </div>
                     </div>
-                    <div class="col-span-3 flex items-center justify-center">
-                        <h1 class="text-6xl font-bold">MAP</h1>
-                    </div>
-                    <div class="col-span-1">
-                        <div class="flex flex-col gap-5">
-                            <div>
-                                <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-success rounded-full"></div>
-                                    <h3>London, UK</h3>
+                    <div class="col-span-4 grid grid-cols-4 bg-white px-6 py-7 ronded-xl">
+                        <div class="col-span-3 flex items-center justify-center">
+                            <h1 class="text-6xl font-bold">MAP</h1>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="flex flex-col gap-5">
+                                <div>
+                                    <div class="flex gap-3 items-center">
+                                        <div class="w-4 h-4 bg-success rounded-full"></div>
+                                        <h3>London, UK</h3>
+                                    </div>
+                                    <progress class="progress progress-success w-full my-1" value="70"
+                                        max="100"></progress>
+                                    <h1 class="text-xs">6.48%</h1>
                                 </div>
-                                <progress class="progress progress-success w-full my-1" value="70" max="100"></progress>
-                                <h1 class="text-xs">6.48%</h1>
-                            </div>
-                            <div>
-                                <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-secondary rounded-full"></div>
-                                    <h3>Manhattan, NY</h3>
+                                <div>
+                                    <div class="flex gap-3 items-center">
+                                        <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                        <h3>Manhattan, NY</h3>
+                                    </div>
+                                    <progress class="progress progress-secondary w-full my-1" value="70"
+                                        max="100"></progress>
+                                    <h1 class="text-xs">6.48%</h1>
                                 </div>
-                                <progress class="progress progress-secondary w-full my-1" value="70"
-                                    max="100"></progress>
-                                <h1 class="text-xs">6.48%</h1>
-                            </div>
-                            <div>
-                                <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-info rounded-full"></div>
-                                    <h3>Melbourne, AUS</h3>
+                                <div>
+                                    <div class="flex gap-3 items-center">
+                                        <div class="w-4 h-4 bg-info rounded-full"></div>
+                                        <h3>Melbourne, AUS</h3>
+                                    </div>
+                                    <progress class="progress progress-info w-full my-1" value="70"
+                                        max="100"></progress>
+                                    <h1 class="text-xs">6.48%</h1>
                                 </div>
-                                <progress class="progress progress-info w-full my-1" value="70" max="100"></progress>
-                                <h1 class="text-xs">6.48%</h1>
-                            </div>
-                            <div>
-                                <div class="flex gap-3 items-center">
-                                    <div class="w-4 h-4 bg-warning rounded-full"></div>
-                                    <h3>Texas, DW</h3>
+                                <div>
+                                    <div class="flex gap-3 items-center">
+                                        <div class="w-4 h-4 bg-warning rounded-full"></div>
+                                        <h3>Texas, DW</h3>
+                                    </div>
+                                    <progress class="progress progress-warning w-full my-1" value="70"
+                                        max="100"></progress>
+                                    <h1 class="text-xs">6.48%</h1>
                                 </div>
-                                <progress class="progress progress-warning w-full my-1" value="70" max="100"></progress>
-                                <h1 class="text-xs">6.48%</h1>
                             </div>
                         </div>
                     </div>
@@ -316,7 +322,7 @@
 
                 <!-- Support Tickets -->
                 <section>
-                    
+
                 </section>
                 <!-- End Support Tickets -->
             </div>
