@@ -149,7 +149,7 @@
                         </div>
                     </div>
                     <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div onclick="handleTypeButton()" class=" w- bg-white flex items-center justify-between">
+                        <div onclick="handleTypeButton()" class="bg-white flex items-center justify-between">
                             <p class="w-fit text-sm">Type: <input id="type" placeholder="Select"
                                     class="outline-none w-28" type="text" required></p>
                         </div>
@@ -251,99 +251,103 @@
                     <!-- end registration chart and service progress bar -->
 
                     <!-- Popular Location -->
-                    <section class="grid grid-cols-6 gap-5 mt-20">
-                        <div class="col-span-2 bg-white px-6 py-7 rounded-xl">
+                    <section class="grid grid-cols-6 gap-5 mt-[50px]">
+                        <div class="col-span-2 bg-white px-6 py-7 rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
                                 <h1 class="text-2xl font-semibold">Popular Locations</h1>
-                                <i class="fa-solid fa-ellipsis text-2xl font-semibold"></i>
+                                <img src="/assets/icons/Group 109.png" alt="">
                             </div>
                             <div class="flex flex-col gap-4">
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1>London, UK</h1>
-                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                        <h1 class="text-base text-[#1E1E1E]">London, UK</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
-                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                        <p class="text-[#A5A5A5]">Improved</p>
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1>Manhattan, NY</h1>
-                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                        <h1 class="text-base text-[#1E1E1E]">Manhattan, NY</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
-                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                        <p class="text-[#A5A5A5]">Improved</p>
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1>Dublin, IRE</h1>
-                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                        <h1 class="text-base text-[#1E1E1E]">Dublin, IRE</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
-                                        <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
-                                        <p class="text-[#A5A5A5]">Decreased</p>
+                                        <h6 class="text-[#C34E2A] text-base"><i class="fa-solid fa-arrow-down"></i>
+                                            6.48%</h6>
+                                        <p class="text-[#656565] text-sm">Decreased</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1>Melbourne, AUS</h1>
-                                        <p class="text-[#A5A5A5]">Last 30 Days</p>
+                                        <h1 class="text-base text-[#1E1E1E]">Melbourne, AUS</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
-                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 6.48%</h1>
-                                        <p class="text-[#A5A5A5]">Improved</p>
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flex justify-center mt-5">
+                            <div class="flex justify-center mt-10">
                                 <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="col-span-4 grid grid-cols-4 bg-white px-6 py-7 ronded-xl">
-                            <div class="col-span-3 flex items-center justify-center">
+                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
+                            <div class="col-span-6 flex items-center justify-center">
                                 <h1 class="text-6xl font-bold">MAP</h1>
                             </div>
                             <div class="col-span-1">
                                 <div class="flex flex-col gap-5">
                                     <div>
                                         <div class="flex gap-3 items-center">
-                                            <div class="w-4 h-4 bg-success rounded-full"></div>
-                                            <h3>London, UK</h3>
+                                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                                            <h3 class="text-[10px]">London, UK</h3>
                                         </div>
                                         <progress class="progress progress-success w-full my-1" value="70"
                                             max="100"></progress>
-                                        <h1 class="text-xs">6.48%</h1>
+                                        <h1 class="text-[10px]">6.48%</h1>
                                     </div>
                                     <div>
                                         <div class="flex gap-3 items-center">
-                                            <div class="w-4 h-4 bg-secondary rounded-full"></div>
-                                            <h3>Manhattan, NY</h3>
+                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                            <h3 class="text-[10px]">Manhattan, NY</h3>
                                         </div>
                                         <progress class="progress progress-secondary w-full my-1" value="70"
                                             max="100"></progress>
-                                        <h1 class="text-xs">6.48%</h1>
+                                        <h1 class="text-10px">6.48%</h1>
                                     </div>
                                     <div>
                                         <div class="flex gap-3 items-center">
-                                            <div class="w-4 h-4 bg-info rounded-full"></div>
-                                            <h3>Melbourne, AUS</h3>
+                                            <div class="w-3 h-3 bg-info rounded-full"></div>
+                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
                                         </div>
                                         <progress class="progress progress-info w-full my-1" value="70"
                                             max="100"></progress>
-                                        <h1 class="text-xs">6.48%</h1>
+                                        <h1 class="text-[10px]">6.48%</h1>
                                     </div>
                                     <div>
                                         <div class="flex gap-3 items-center">
-                                            <div class="w-4 h-4 bg-warning rounded-full"></div>
-                                            <h3>Texas, DW</h3>
+                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                            <h3 class="text-[10px]">Texas, DW</h3>
                                         </div>
                                         <progress class="progress progress-warning w-full my-1" value="70"
                                             max="100"></progress>
-                                        <h1 class="text-xs">6.48%</h1>
+                                        <h1 class="text-[10px]">6.48%</h1>
                                     </div>
                                 </div>
                             </div>
@@ -352,35 +356,38 @@
                     <!-- End Popular Location -->
 
                     <!-- Support Tickets -->
-                    <section class="mt-10">
+                    <section class="mt-12">
                         <h1 class="text-2xl font-semibold">Support Tickets</h1>
                         <!-- Support Ticket menu section -->
                         <div class="mt-10 flex items-center justify-between">
                             <div class="flex items-center gap-5">
                                 <div class="text-md bg-white rounded-xl flex items-center justify-between">
-                                    <a href="#" class=" py-1 px-3 rounded-xl"><i class="fa-brands fa-slack"></i></a>
-                                    <a href="#" class=" py-1 px-3 rounded-xl bg-[#39CCCC] text-white"><i
-                                            class="fa-solid fa-list"></i></a>
+                                    <a href="#" class=" py-3 px-4 rounded-xl"><img src="assets/icons/grid-outline.png"
+                                            alt=""></a>
+                                    <a href="#" class=" py-3 px-4 rounded-xl bg-[#39CCCC] text-white"><img
+                                            src="assets/icons/list-outline.png" alt=""></a>
                                 </div>
                                 <div class=" bg-white rounded-xl flex justify-between">
-                                    <a class="py-1 px-3 rounded-xl bg-[#39CCCC] text-white">All</a>
-                                    <a class="py-1 px-3 rounded-xl">Open</a>
-                                    <a class="py-1 px-3 rounded-xl">In Progress</a>
-                                    <a class="py-1 px-3 rounded-xl">Pending</h4>
-                                        <a class="py-1 px-3 rounded-xl">Resolved</a>
+                                    <a class="py-3 px-4 text-sm rounded-xl bg-[#39CCCC] text-white">All</a>
+                                    <a class="py-3 px-4 text-sm rounded-xl">Open</a>
+                                    <a class="py-3 px-4 text-sm rounded-xl">In Progress</a>
+                                    <a class="py-3 px-4 text-sm rounded-xl">Pending</a>
+                                    <a class="py-3 px-4 text-sm rounded-xl">Resolved</a>
                                 </div>
                             </div>
                             <div class="flex justify-end items-center gap-3">
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
-                                    <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
-                                        <p class="w-fit">Date: <input class="outline-none w-28" type="date" required>
+                                    <div class="px-2 w- bg-white font flex items-center justify-between">
+                                        <p class="w-fit text-sm">Date: <input id="ticketDatepicker"
+                                                class="outline-none w-20" placeholder="Select" type="text" required>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
                                     <div onclick="handlePriorityButton()"
-                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                        <span id="priority">Priority:</span> <i class="fa-solid fa-chevron-down"></i>
+                                        class="bg-white flex items-center justify-between">
+                                        <p class="w-fit text-sm">Priority: <input id="priority" placeholder="Select"
+                                                class="outline-none w-16" type="text" required></p>
                                     </div>
                                     <ul id="priorityList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
@@ -400,8 +407,9 @@
                                 </div>
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
                                     <div onclick="handleSupportTypeButton()"
-                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                        <span id="support-type">Type:</span> <i class="fa-solid fa-chevron-down"></i>
+                                        class="bg-white flex items-center justify-between">
+                                        <p class="w-fit text-sm">Type: <input id="support-type" placeholder="Select"
+                                                class="outline-none w-16" type="text" required></p>
                                     </div>
                                     <ul id="supportTypeList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
@@ -417,9 +425,9 @@
                                 </div>
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
                                     <div onclick="handleCategoryButton()"
-                                        class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                                        <span id="category">Category:</span> <i
-                                            class="fa-solid fa-chevron-down px-2"></i>
+                                        class="bg-white flex items-center justify-between">
+                                        <p class="w-fit text-sm">Category: <input id="category" placeholder="Select"
+                                                class="outline-none w-16" type="text" required></p>
                                     </div>
                                     <ul id="categoryList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
@@ -439,8 +447,8 @@
                         <div class="overflow-x-auto mt-10">
                             <table class="table">
                                 <!-- head -->
-                                <thead class="bg-white">
-                                    <tr class="border-4 border-[#FAFAFA]">
+                                <thead id="thead">
+                                    <tr class="border-4 bg-white border-[#FAFAFA]">
                                         <th>
                                             <label>
                                                 <input type="checkbox" class="checkbox" />

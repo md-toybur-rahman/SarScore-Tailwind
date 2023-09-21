@@ -15,7 +15,7 @@ const handlePriorityButton = () => {
 const handlePriorityList = (value) => {
     const priorityValue = document.getElementById('priority');
     const priorityList = document.getElementById('priorityList');
-    priorityValue.innerText = value;
+    priorityValue.value = value;
     priorityList.style.display = 'none';
 }
 const handleCategoryButton = () => {
@@ -32,7 +32,7 @@ const handleCategoryButton = () => {
 const handleCategoryList = (value) => {
     const categoryValue = document.getElementById('category');
     const categoryList = document.getElementById('categoryList');
-    categoryValue.innerText = value;
+    categoryValue.value = value;
     categoryList.style.display = 'none';
 }
 const handleSupportTypeButton = () => {
@@ -46,10 +46,10 @@ const handleSupportTypeButton = () => {
     }
 }
 
-const handleToList = (value) => {
+const handleSupportTypeList = (value) => {
     const supportTypeValue = document.getElementById('support-type');
     const supportTypeList = document.getElementById('supportTypeList');
-    supportTypeValue.innerText = value;
+    supportTypeValue.value = value;
     supportTypeList.style.display = 'none';
 }
 const handleTypeButton = () => {
@@ -71,17 +71,20 @@ const handleTypeList = (value) => {
 }
 
 const refreshSorting = () => {
-    const fromValue = document.getElementById('from');
-    const toValue = document.getElementById('to');
+    const fromValue = document.getElementById('fromDatepicker');
+    const toValue = document.getElementById('toDatepicker');
     const typeValue = document.getElementById('type');
-    fromValue.innerText = 'From:';
-    toValue.innerText = 'To:';
-    typeValue.innerText = 'Type:';
+    fromValue.value = '';
+    toValue.value = '';
+    typeValue.value = '';
 }
 
 new AirDatepicker('#fromDatepicker', {
     autoClose: true,
 })
 new AirDatepicker('#toDatepicker', {
+    autoClose: true,
+})
+new AirDatepicker('#ticketDatepicker', {
     autoClose: true,
 })

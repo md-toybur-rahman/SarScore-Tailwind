@@ -110,3 +110,11 @@ button.form-control{
 	-moz-box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
 	box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
 }
+
+#thead{
+    height: 38px;
+    border-radius: 16px;
+}
+#thead tr{
+    border-radius: 16px;
+}
