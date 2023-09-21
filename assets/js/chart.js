@@ -11,7 +11,7 @@ new Chart(registrationsChart, {
                 borderWidth: 1,
                 backgroundColor: '#39CCCC',
                 borderRadius: 20,
-                barThickness: 15
+                barThickness: 12
             },
             {
                 label: 'Weekly',
@@ -19,7 +19,7 @@ new Chart(registrationsChart, {
                 borderWidth: 1,
                 backgroundColor: '#484E80',
                 borderRadius: 20,
-                barThickness: 15
+                barThickness: 12
             },
             {
                 label: 'Monthly',
@@ -27,7 +27,7 @@ new Chart(registrationsChart, {
                 borderWidth: 1,
                 backgroundColor: '#A960D6',
                 borderRadius: 20,
-                barThickness: 15
+                barThickness: 12
 
             }
         ]

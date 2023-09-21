@@ -204,11 +204,11 @@
                     <!-- end user panel -->
 
                     <!-- registration chart and service progress bar -->
-                    <section class="grid grid-cols-3 mt-20 gap-10">
-                        <div class="col-span-2 px-6 py-7 rounded-xl bg-white">
+                    <section class="grid grid-cols-3 mt-20 gap-5">
+                        <div class="col-span-2 px-8 py-7 rounded-2xl bg-white">
                             <div class="flex items-center justify-between mb-5">
                                 <h1 class="text-2xl font-semibold">New User Registration</h1>
-                                <div class="flex items-center gap-10">
+                                <div class="flex items-center gap-10 text-lg text-[#656565]">
                                     <div class="flex gap-6 items-center">
                                         <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
                                         <h3>Daily</h3>
@@ -223,24 +223,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <canvas id="registrations-chart"></canvas>
+                            <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
                         </div>
-                        <div>
-                            <h1 class="text-2xl font-semibold mb-5">Service Requests</h1>
+                        <div class="px-8 py-7 bg-white rounded-2xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-2xl font-semibold">Service Requests</h1>
+                                <img src="/assets/icons/Group 109.png" alt="">
+                            </div>
                             <div class="flex justify-center">
                                 <div class="progress-bar">
                                     <progress value="75" min="0" max="100"
                                         style="visibility:hidden;height:0;width:0;">38%</progress>
                                 </div>
                             </div>
-                            <div class="flex justify-between items-end mt-5">
+                            <div class="flex justify-between items-end mt-7">
                                 <div>
-                                    <h1 class="text-sm text-[#A5A5A5]">Total Service Requests</h1>
-                                    <h1 class="text-3xl font-bold mt-2">50,246</h1>
+                                    <h1 class="text-sm text-[#656565]">Total Service Requests</h1>
+                                    <h1 class="text-[34px] font-bold mt-2">50,246</h1>
                                 </div>
                                 <div>
                                     <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
-                                    <p class="text-xs text-[#A5A5A5]">More than last month</p>
+                                    <p class="text-xs text-[#656565]">More than last month</p>
                                 </div>
                             </div>
                         </div>
