@@ -42,6 +42,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 ::-webkit-scrollbar-thumb {
     background: white;
     border-radius: 10px;
+    border: 1px solid #DDDDDD;
 }
 
 /* Handle on hover */
@@ -113,8 +114,8 @@ button.form-control{
 
 #thead{
     height: 38px;
-    border-radius: 16px;
+    margin-bottom: 10px;
 }
-#thead tr{
-    border-radius: 16px;
+#tbody tr{
+    height: 68px;
 }

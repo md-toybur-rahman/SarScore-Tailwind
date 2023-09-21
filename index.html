@@ -447,9 +447,9 @@
                         <div class="overflow-x-auto mt-10">
                             <table class="table">
                                 <!-- head -->
-                                <thead id="thead">
-                                    <tr class="border-4 bg-white border-[#FAFAFA]">
-                                        <th>
+                                <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
+                                    <tr class="bg-white text-sm">
+                                        <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox" />
                                             </label>
@@ -460,13 +460,13 @@
                                         <th>Priority</th>
                                         <th>Type</th>
                                         <th>Status</th>
-                                        <th></th>
+                                        <th class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
-                                <tbody class="bg-white">
+                                <tbody id="tbody" class="bg-white ">
                                     <!-- row 1 -->
-                                    <tr class="border-4 border-[#FAFAFA]">
-                                        <th>
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
                                         </th>
                                         <td>
                                             Courtney Henry
@@ -479,15 +479,15 @@
                                         <td>Technical Issues</td>
                                         <th>
                                             <button
-                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
-                                        <th>
+                                        <th class="rounded-e-2xl">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-4 border-[#FAFAFA]">
-                                        <th>
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
                                         </th>
                                         <td>
                                             Jacob Jones
@@ -500,15 +500,15 @@
                                         <td>User Inquiries</td>
                                         <th>
                                             <button
-                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">Pending</button>
                                         </th>
-                                        <th>
+                                        <th class="rounded-e-2xl">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </th>
                                     </tr>
                                     <!-- row 3 -->
-                                    <tr class="border-4 border-[#FAFAFA]">
-                                        <th>
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
                                         </th>
                                         <td>
                                             Guy Hawkins
@@ -521,16 +521,15 @@
                                         <td>Accessibility Ratings</td>
                                         <th>
                                             <button
-                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
-                                        <th>
+                                        <th class="rounded-e-2xl">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </th>
                                     </tr>
                                     <!-- row 4 -->
-                                    <tr class="border-4 border-[#FAFAFA]">
-                                        <th>
-                                        </th>
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
                                         <td>
                                             Darlene Robertson
                                         </td>
@@ -542,16 +541,16 @@
                                         <td>Service Provider Support</td>
                                         <th>
                                             <button
-                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">In
+                                                Progress</button>
                                         </th>
-                                        <th>
+                                        <th class="rounded-e-2xl">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </th>
                                     </tr>
                                     <!-- row 5 -->
-                                    <tr class="border-4 border-[#FAFAFA]">
-                                        <th>
-                                        </th>
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
                                         <td>
                                             Kristin Watson
                                         </td>
@@ -563,16 +562,16 @@
                                         <td>User Inquiries</td>
                                         <th>
                                             <button
-                                                class="text-success text-xs font-thin border border-success px-2 rounded-lg">active</button>
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
-                                        <th>
+                                        <th class="rounded-e-2xl">
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
                                         </th>
                                     </tr>
                                 </tbody>
                             </table>
                             <div class="flex justify-end">
-                                <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View
+                                <button class="bg-[#39CCCC] px-10 py-[10px] text-sm mt-4 text-white rounded-xl">View
                                     All</button>
                             </div>
                         </div>
@@ -580,156 +579,164 @@
                     </section>
                     <!-- End Support Tickets -->
                     <!-- Announcements Tickets -->
-                    <section class="mt-10 bg-white px-7 py-10 rounded-xl">
-                        <h1 class="text-2xl font-semibold">Announcements</h1>
-                        <!-- Support Table -->
-                        <div class="overflow-x-auto mt-10 h-[300px] overflow-y-scroll">
-                            <table class="table">
-                                <tbody class="bg-white">
-                                    <!-- row 1 -->
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td class="font-semibold">
-                                            Daila Ouldcott
-                                        </td>
-                                        <td class="font-semibold">
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-[#6D65D1] bg-[#DFDDF4] text-xs font-thin px-5 py-1 rounded-lg float-right">Company</button>
-                                        </th>
-                                        <td class="text-xs font-semibold">
-                                            09:57 AM
-                                        </td>
-                                    </tr>
-                                    <!-- row 2 -->
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Jacob Jones
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-success bg-[#D3F3E1] text-xs font-thin px-5 py-1 rounded-lg float-right">Contributor</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            09:57 AM
-                                        </td>
-                                    </tr>
-                                    <!-- row 3 -->
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-error bg-[#FADCDC] text-xs font-thin px-5 py-1 rounded-lg float-right">New
-                                                Release</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            09:57 AM
-                                        </td>
-                                    </tr>
-                                    <!-- row 4 -->
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            2 Sep 2021
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            2 Sep 2021
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            2 Sep 2021
-                                        </td>
-                                    </tr>
-                                    <tr class="border-b-2 border-[#FAFAFA]">
-                                        <th>
-                                            <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                            <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-warning bg-[#FEEDCB] text-xs font-thin px-5 py-1 rounded-lg float-right">News</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            2 Sep 2021
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <section class="mt-7">
+                        <div class=" bg-white px-7 py-10 rounded-2xl">
+                            <h1 class="text-2xl font-semibold">Announcements</h1>
+                            <!-- Support Table -->
+                            <div class="overflow-x-auto mt-10 h-[300px] overflow-y-scroll">
+                                <table class="table">
+                                    <tbody class="bg-white">
+                                        <!-- row 1 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td class="font-semibold">
+                                                Daila Ouldcott
+                                            </td>
+                                            <td class="font-semibold">
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#6D65D1] text-[9px] font-[inter] border bg-[#DFDDF4] px-7 rounded-xl float-right">Company</button>
+                                            </th>
+                                            <td class="text-xs font-semibold">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Jacob Jones
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-success text-[9px] font-[inter] border bg-[#D3F3E1] px-7 rounded-xl float-right">Contributor</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Guy Hawkins
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-error text-[9px] font-[inter] border bg-[#FADCDC] px-7 rounded-xl float-right">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 4 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-warning text-[9px] font-[inter] border bg-[#FEEDCB] px-7 rounded-xl float-right">News</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-error text-[9px] font-[inter] border bg-[#FADCDC] px-7 rounded-xl float-right">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-error text-[9px] font-[inter] border bg-[#FADCDC] px-7 rounded-xl float-right">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <i class="fa-solid fa-star text-[#39CCCC] border-2 rounded-md"></i>
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-error text-[9px] font-[inter] border bg-[#FADCDC] px-7 rounded-xl float-right">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Announcements Table -->
                         </div>
-                        <!-- End Support Table -->
                         <div class="flex justify-end">
-                            <button class="bg-[#39CCCC] px-6 py-2 text-sm font-thin mt-5 text-white rounded-xl">View
+                            <button class="bg-[#39CCCC] px-10 py-[10px] text-sm mt-4 text-white rounded-xl">View
                                 All</button>
                         </div>
                     </section>
@@ -738,7 +745,7 @@
                 <!-- End Dashboard Item -->
             </div>
             <!-- Dashboard Contain End -->
-            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-20">
+            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-[179px]">
                 <h3>2023 &copy; SARSocore</h3>
                 <h3>Help & Support</h3>
             </footer>
