@@ -15,7 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/assets/css/air-datepicker.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
@@ -130,12 +135,7 @@
                     <h3>Sort by Date Range: </h3>
 
 
-                    <!-- <button class="flex bg-cyan-200 px-2 py-1 rounded-lg">Date: <img class="ml-8" src="/assets/icons/Group 310.png" alt=""></button>
-                    <input id="datePickerButton" type="text"> -->
-                    <div class="container">
-                        <h1>Air Datepicker</h1>
-                        <input type="text" id="dp" />
-                    </div>
+
 
 
                     <div class="relative bg-white px-1 py-2 rounded-xl">
@@ -165,6 +165,16 @@
                         class="px-8 py-2 ml-2 bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
+
+                <div class="flex items-center my-5">
+                    <input type="text" id="datepicker" placeholder="Select..." class="rental-input" />
+                    Start Date <input type="text" id="arr_date"><br />
+                    End Date <input type="text" id="dep_date"><br />
+                </div>
+
+                <div>
+                    <input type="text" name="" id="airdatepicker" class="form-control">
+                </div>
 
                 <!-- user panel -->
                 <!-- Dashboard Item -->
@@ -736,18 +746,52 @@
     </div>
 
     <!-- <script src="/assets/js/air-datepicker.js"></script> -->
-    <script>
-        import AirDatepicker from 'air-datepicker';
-        import 'air-datepicker/air-datepicker.css';
-
-        new AirDatepicker('#dp', {
-            locale:localeEn
-        })
-    </script>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var block = document.querySelector("#block");
+        document.querySelector("#datepicker").addEventListener("click", function () {
+            block.style.display = "none";
+        }, false);
+        document.querySelector("#datepicker").addEventListener("blur", function () {
+            block.style.display = "block";
+        }, false);
+
+
+        var maxdate = new Date(); //get current date
+        maxdate.setDate(maxdate.getDate() + 14); //add 14 days
+        function parseDate(str) {
+            var mdy = str.split('/');
+            return new Date(mdy[2], mdy[0] - 1, mdy[1]);
+        }
+
+        function datediff(first, second) {
+            return Math.round((second - first) / (1000 * 60 * 60 * 24));
+        }
+
+        $(function () {
+            var myDatepicker = $('#datepicker').datepicker({
+                language: 'en',
+                range: true,
+                autoClose: 'true',
+                clearButton: 'true',
+                minDate: new Date(),
+                maxDate: maxdate,
+                multipleDatesSeparator: ' - ',
+                onSelect: function onSelect(selectedDates) {
+                    console.log(selectedDates);
+                    if (selectedDates !== undefined && selectedDates != '' && selectedDates.indexOf('-') > -1) {
+                        var mdy = selectedDates.split('-');
+                        $("#arr_date").val(mdy[0]);
+                        $("#dep_date").val(mdy[1]);
+                        $("#num_nights").val(datediff(parseDate(mdy[0]), parseDate(mdy[1])));
+                    }
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>
