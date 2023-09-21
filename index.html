@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/air-datepicker.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
@@ -112,25 +113,30 @@
                 <section class="flex items-center justify-between p-5 rounded-xl text-xl bg-white">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
-                    <i class="fa-regular fa-bell"></i>
+                    <div class="flex items-end gap-16">
+                        <div class="flex items-center gap-14">
+                            <img src="/assets/icons/Group 2372.png" alt="">
+                            <div>
+                                <h4 class="font-bold text-base">Joseph</h4>
+                                <p class="text-sm text-right">Admin</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-[#28C66F] rounded-full"></div>
+                    </div>
                 </section>
 
                 <!-- Sorting panel -->
                 <section class="flex justify-end items-center gap-3 mt-10">
                     <h3>Sort by Date Range: </h3>
-                    <!-- <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div onclick="handleFromButton()"
-                            class="px-2 w-24 bg-white font-semibold flex items-center justify-between">
-                            <span id="from">From:</span> <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <ul id="fromList"
-                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                            <li onclick="handleFromList('ABC')" class="hover:font-semibold">ABC</li>
-                            <li onclick="handleFromList('DEF')" class="hover:font-semibold">DEF</li>
-                            <li onclick="handleFromList('GHI')" class="hover:font-semibold">GHI</li>
-                            <li onclick="handleFromList('JKL')" class="hover:font-semibold">JKL</li>
-                        </ul>
-                    </div> -->
+
+
+                    <!-- <button class="flex bg-cyan-200 px-2 py-1 rounded-lg">Date: <img class="ml-8" src="/assets/icons/Group 310.png" alt=""></button>
+                    <input id="datePickerButton" type="text"> -->
+                    <div class="container">
+                        <h1>Air Datepicker</h1>
+                        <input type="text" id="dp" />
+                    </div>
+
 
                     <div class="relative bg-white px-1 py-2 rounded-xl">
                         <div class="px-2 w- bg-white font-semibold flex items-center justify-between">
@@ -729,6 +735,16 @@
 
     </div>
 
+    <!-- <script src="/assets/js/air-datepicker.js"></script> -->
+    <script>
+        import AirDatepicker from 'air-datepicker';
+        import 'air-datepicker/air-datepicker.css';
+
+        new AirDatepicker('#dp', {
+            locale:localeEn
+        })
+    </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/main.js"></script>

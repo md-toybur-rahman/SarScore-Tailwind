@@ -1,10 +1,13 @@
+
+
+
 const handlePriorityButton = () => {
     const priorityList = document.getElementById('priorityList');
     const priorityListStyle = priorityList.style.display;
-    if(priorityListStyle != 'flex'){
+    if (priorityListStyle != 'flex') {
         priorityList.style.display = 'flex';
     }
-    else{
+    else {
         priorityList.style.display = 'none';
     }
 }
@@ -18,10 +21,10 @@ const handlePriorityList = (value) => {
 const handleCategoryButton = () => {
     const categoryList = document.getElementById('categoryList');
     const categoryListStyle = categoryList.style.display;
-    if(categoryListStyle != 'flex'){
+    if (categoryListStyle != 'flex') {
         categoryList.style.display = 'flex';
     }
-    else{
+    else {
         categoryList.style.display = 'none';
     }
 }
@@ -35,10 +38,10 @@ const handleCategoryList = (value) => {
 const handleSupportTypeButton = () => {
     const supportTypeList = document.getElementById('supportTypeList');
     const supportTypeListStyle = supportTypeList.style.display;
-    if(supportTypeListStyle != 'flex'){
+    if (supportTypeListStyle != 'flex') {
         supportTypeList.style.display = 'flex';
     }
-    else{
+    else {
         supportTypeList.style.display = 'none';
     }
 }
@@ -52,10 +55,10 @@ const handleToList = (value) => {
 const handleTypeButton = () => {
     const typeList = document.getElementById('typeList');
     const typeListStyle = typeList.style.display;
-    if(typeListStyle != 'flex'){
+    if (typeListStyle != 'flex') {
         typeList.style.display = 'flex';
     }
-    else{
+    else {
         typeList.style.display = 'none';
     }
 }
@@ -75,3 +78,4 @@ const refreshSorting = () => {
     toValue.innerText = 'To:';
     typeValue.innerText = 'Type:';
 }
+

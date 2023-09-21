@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "air-datepicker": "^3.4.0",
     "js-datepicker": "^5.18.2"
   }
 }
