@@ -66,7 +66,7 @@ const handleTypeButton = () => {
 const handleTypeList = (value) => {
     const typeValue = document.getElementById('type');
     const typeList = document.getElementById('typeList');
-    typeValue.innerText = value;
+    typeValue.value = value;
     typeList.style.display = 'none';
 }
 
@@ -79,3 +79,9 @@ const refreshSorting = () => {
     typeValue.innerText = 'Type:';
 }
 
+new AirDatepicker('#fromDatepicker', {
+    autoClose: true,
+})
+new AirDatepicker('#toDatepicker', {
+    autoClose: true,
+})
