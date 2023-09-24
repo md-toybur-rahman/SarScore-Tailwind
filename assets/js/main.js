@@ -35,6 +35,40 @@ const handleCategoryList = (value) => {
     categoryValue.value = value;
     categoryList.style.display = 'none';
 }
+const handleTopCategoryButton = () => {
+    const topCategoryList = document.getElementById('topCategoryList');
+    const topCategoryListStyle = topCategoryList.style.display;
+    if (topCategoryListStyle != 'flex') {
+        topCategoryList.style.display = 'flex';
+    }
+    else {
+        topCategoryList.style.display = 'none';
+    }
+}
+
+const handleTopCategory= (value) => {
+    const topCategoryValue = document.getElementById('topCategory');
+    const topCategoryList = document.getElementById('topCategoryList');
+    topCategoryValue.innerText = value;
+    topCategoryList.style.display = 'none';
+}
+const handleTopLocationButton = () => {
+    const topLocationList = document.getElementById('topLocationList');
+    const topLocationListStyle = topLocationList.style.display;
+    if (topLocationListStyle != 'flex') {
+        topLocationList.style.display = 'flex';
+    }
+    else {
+        topLocationList.style.display = 'none';
+    }
+}
+
+const handleTopLocation= (value) => {
+    const topLocationValue = document.getElementById('topLocation');
+    const topLocationList = document.getElementById('topLocationList');
+    topLocationValue.innerText = value;
+    topLocationList.style.display = 'none';
+}
 const handleSupportTypeButton = () => {
     const supportTypeList = document.getElementById('supportTypeList');
     const supportTypeListStyle = supportTypeList.style.display;
@@ -145,9 +179,9 @@ new svgMap({
         },
         applyData: 'gdp',
         values: {
-            US: { gdp: 587, change: 4.73, color: 'green' },
-            AU: { gdp: 4583, change: 11.09, color: 'red' },
-            BD: { gdp: 4293, change: 10.01, color: 'blue' },
+            US: { gdp: 587, change: 4.73, color: '#36D399' },
+            AU: { gdp: 4583, change: 11.09, color: '#3ABFF8' },
+            BD: { gdp: 4293, change: 10.01, color: '#F000B8' },
             // ...
         }
     }

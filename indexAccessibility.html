@@ -171,35 +171,70 @@
                 <!-- user panel -->
                 <!-- Dashboard Item -->
                 <section>
-                    <section class="grid grid-cols-3 gap-5 mt-4">
+                    <section class="grid grid-cols-4 gap-5 mt-4">
                         <div class="p-8 bg-white rounded-2xl">
                             <div>
                                 <h5 class="text-base">Total Accessibility</h5>
                                 <div class="flex items-end gap-3">
                                     <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
-                                    <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                                    <h6 class="text-[#28C66F] font-[inter] text-base"><i
+                                            class="fa-solid fa-arrow-up"></i> 1.700</h6>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
-                            <div>
-                                <h5 class="text-base">Active Users</h5>
-                                <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
-                                <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                        <div class="p-8 bg-white rounded-2xl">
+                            <div class="relative bg-white rounded-xl">
+                                <div onclick="handleTopCategoryButton()" class="bg-white flex items-center gap-3 cursor-pointer">
+                                    <p class="text-sm flex">Top Category: </p>
+                                    <img src="/assets/icons/Group 310.png" alt="">
+                                </div>
+                                <ul id="topCategoryList"
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    <li onclick="handleTopCategory('Wheelchair Access')" class="hover:font-semibold">Wheelchair Access</li>
+                                    <li onclick="handleTopCategory('def')" class="hover:font-semibold">def</li>
+                                    <li onclick="handleTopCategory('ghi')" class="hover:font-semibold">ghi</li>
+                                    <li onclick="handleTopCategory('jkl')" class="hover:font-semibold">jkl</li>
+                                </ul>
                             </div>
-                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#DEF6E9] rounded-2xl">
-                                <img src="assets/icons/Group 2496.png" alt="">
+                            <div class="flex items-end gap-3">
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">234</h1>
+                                <h6 class="text-[#28C66F] font-[inter] text-base"><i class="fa-solid fa-arrow-up"></i>
+                                    1.700</h6>
+                            </div>
+                            <h4 id="topCategory" class="text-xs font-bold">Wheelchair Access</h4>
+                        </div>
+                        <div class="p-8 bg-white rounded-2xl">
+                            <div>
+                                <h5 class="text-base">Average Accessibility Score</h5>
+                                <div class="flex items-end gap-3">
+                                    <h1 class="text-[34px] font-[inter] font-bold my-3">4</h1>
+                                    <h6 class="text-[#C34E2A] font-[inter] text-base"><i
+                                            class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
-                            <div>
-                                <h5 class="text-base">New Registrations</h5>
-                                <h1 class="text-[34px] font-[inter] font-bold my-3">127</h1>
-                                <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                        <div class="p-8 bg-white rounded-2xl">
+                            <div class="relative bg-white rounded-xl">
+                                <div onclick="handleTopLocationButton()" class="bg-white flex items-center gap-3 cursor-pointer">
+                                    <p class="text-sm flex">Top-Rated Location: </p>
+                                    <img src="/assets/icons/Group 310.png" alt="">
+                                </div>
+                                <ul id="topLocationList"
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    <li onclick="handleTopLocation('London')" class="hover:font-semibold">London</li>
+                                    <li onclick="handleTopLocation('Manhattan')" class="hover:font-semibold">Manhattan
+                                    </li>
+                                    <li onclick="handleTopLocation('Melbourne')" class="hover:font-semibold">Melbourne
+                                    </li>
+                                    <li onclick="handleTopLocation('Texas')" class="hover:font-semibold">Texas</li>
+                                </ul>
                             </div>
-                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#F0D6CA] rounded-2xl">
-                                <img src="assets/icons/Group 2497.png" alt="">
+                            <div class="flex items-end gap-3">
+                                <h1 id="topLocation" class="text-[34px] font-[inter] font-bold my-3">London</h1>
+                                <h6 class="text-[#28C66F] font-[inter] text-base"><i class="fa-solid fa-arrow-up"></i>
+                                    1.700</h6>
                             </div>
+                            <h4 class="text-xs font-bold">Wheelchair Access</h4>
                         </div>
                     </section>
                     <!-- end user panel -->
@@ -424,7 +459,7 @@
 
                     <!-- Overview Global Ratings -->
                     <section class="mt-12">
-                        
+
 
                     </section>
                     <!-- End Overview Global Ratings -->
