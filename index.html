@@ -45,74 +45,73 @@
 </head>
 
 <body class="max-w-[1573px] mx-auto">
-    <div class="grid grid-rows-6 grid-cols-11 grid-flow-col h-auto bg-[#FAFAFA] font-[poppins]">
+    <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div class="row-span-full col-span-2 bg-white">
+        <div id="dashboard" class="row-span-full w-[314px] duration-500 bg-white">
             <div class="flex justify-between mt-10 px-5">
-                <!-- <h1 class="text-xl font-semibold font-[montserrat]">SAR<span class="text-[#39CCCC]">Score</span> <sup
-                        class="text-xs">TM</sup></h1> -->
-                <img src="/assets/icons/Group 2319.png" alt="">
-                <img class="h-4 w-6" src="/assets/icons/Group 2318.png" alt="">
+                <img id="logo" src="/assets/icons/Group 2319.png" alt="">
+                <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer" src="/assets/icons/Group 2318.png"
+                    alt="">
             </div>
             <div class="mt-14 font-[poppins]">
                 <a href="#" class="bg-[#39CCCC] h-[63px] px-5 flex items-center gap-2">
                     <img src="assets/icons/Group 48.png" alt="">
-                    <span class="text-white font-bold text-sm">Dashboard</span>
+                    <span class="menuTitle delay-500 text-white font-bold text-sm">Dashboard</span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="text-sm">Accessibility Rating</span>
+                    <span class="menuTitle text-sm">Accessibility Rating</span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">User Management<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">User Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Contribution Management<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Contribution Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Service Requests<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Service Requests<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">System Stats<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">System Stats<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Notification Center<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Notification Center<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Settings<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Settings<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Support Tickets<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Support Tickets<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">System Maintenance<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">System Maintenance<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="flex justify-between flex-grow text-sm">Log Out<i
+                    <span class="menuTitle flex justify-between flex-grow text-sm">Log Out<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
             </div>
         </div>
         <!-- Menubar End -->
 
-        <div class="row-span-full col-span-10 mx-5">
+        <div class="mx-5 w-full">
             <!-- Dashboard Contain Start -->
             <div class="mt-10 font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
@@ -751,7 +750,7 @@
             </footer>
         </div>
 
-    </div>
+    </main>
 
     </script>
     <script src="/assets/js/datepicker.js"></script>

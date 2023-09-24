@@ -79,6 +79,8 @@ const refreshSorting = () => {
     typeValue.value = '';
 }
 
+// Air Datepicker function
+
 new AirDatepicker('#fromDatepicker', {
     autoClose: true,
 })
@@ -88,3 +90,28 @@ new AirDatepicker('#toDatepicker', {
 new AirDatepicker('#ticketDatepicker', {
     autoClose: true,
 })
+
+// Menu Button Handler
+
+const menuButtonHandler = () => {
+    const dashboard = document.getElementById('dashboard');
+    const dashboardStyle = dashboard.style.width;
+    const logo = document.getElementById('logo');
+    const menuTitle = document.querySelectorAll(".menuTitle");
+    if (dashboardStyle != '81px') {
+        dashboard.style.width = '81px'
+        logo.style.display = 'none';
+        menuTitle.forEach(title => {
+            title.style.display = 'none'
+            title.style.fontSize = '2px'
+        })
+    }
+    else {
+        dashboard.style.width = '314px'
+        logo.style.display = 'block';
+        menuTitle.forEach(title => {
+            title.style.display = 'block'
+            title.style.fontSize = '14px'
+        })
+    }
+}
