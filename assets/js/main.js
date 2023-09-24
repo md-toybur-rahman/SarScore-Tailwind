@@ -123,9 +123,5 @@ for (let i = 0; i < btns.length; i++) {
         const current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
-        const previousImg = document.querySelector(".active :nth-child(1)");
-        const currentImg = document.querySelector(".active :nth-child(2)");
-        previousImg.style.display = 'none'
-        currentImg.style.display = 'block';
     });
 }

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/datepicker.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>SARScore | Accessibility Rating</title>
+</head>
+
+<body class="max-w-[1573px] mx-auto">
+    <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
+        <div id="dashboard" class="row-span-full w-[350px] duration-500 bg-white">
+            <div class="flex justify-between mt-10 px-5">
+                <img id="logo" src="/assets/icons/Group 2319.png" alt="">
+                <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer" src="/assets/icons/Group 2318.png"
+                    alt="">
+            </div>
+            <div id="menubar" class="mt-14 font-[poppins]">
+                <a href="index.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="assets/icons/Group 481.png" alt="">
+                    <img class="lightIcon" src="assets/icons/Group 48.png" alt="">
+                    <span class="menuTitle text-sm">Dashboard</span>
+                </a>
+                <a href="#" class="menuButton active h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle text-sm">Accessibility Rating</span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
+                        Management<i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Service Requests<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 2324.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 2324.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 2324.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img class="darkIcon" src="/assets/icons/Group 2324.png" alt="">
+                    <img class="lightIcon" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<i
+                            class="fa-solid fa-chevron-down"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="mx-5 w-full">
+            <!-- Dashboard Contain Start -->
+            <div class="mt-10 font-[poppins] text-sm pb-20">
+                <!-- Search panel -->
+                <section class="flex items-center justify-between p-7 rounded-xl text-xl bg-white">
+                    <img src="assets/icons/Group 2368 (1).png" alt="">
+                    <input class="flex-grow outline-none mx-2 h-6" type="text">
+                    <div class="flex items-end gap-16">
+                        <div class="flex items-center gap-14">
+                            <img src="/assets/icons/Group 2372.png" alt="">
+                            <div>
+                                <h4 class="font-bold text-base">Joseph</h4>
+                                <p class="text-sm text-right">Admin</p>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-[#28C66F] rounded-full"></div>
+                    </div>
+                </section>
+
+                <!-- Sorting panel -->
+                <section class="flex justify-end items-center gap-[10px] mt-12">
+                    <h3 class="text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
+
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div class="px-2 w- bg-white font flex items-center justify-between">
+                            <p class="w-fit text-sm">From: <input id="fromDatepicker" class="outline-none w-20"
+                                    placeholder="Select" type="text" required> </p>
+                        </div>
+                    </div>
+
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div class="px-2 w- bg-white flex items-center justify-between">
+                            <p class="w-fit text-sm">To: <input id="toDatepicker" placeholder="Select"
+                                    class="outline-none w-28" type="text" required></p>
+                        </div>
+                    </div>
+                    <div class="relative bg-white px-1 py-2 rounded-xl">
+                        <div onclick="handleTypeButton()" class="bg-white flex items-center justify-between">
+                            <p class="w-fit text-sm">Type: <input id="type" placeholder="Select"
+                                    class="outline-none w-28" type="text" required></p>
+                        </div>
+                        <ul id="typeList"
+                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                            <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
+                            <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
+                            <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
+                            <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                        </ul>
+                    </div>
+                    <button onclick="refreshSorting()"
+                        class="ml-[35px] px-10 py-[10px] text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>
+                </section>
+                <!-- End Sorting Panel -->
+
+                <!-- user panel -->
+                <!-- Dashboard Item -->
+                <section>
+                    <section class="grid grid-cols-3 gap-5 mt-4">
+                        <div class="p-8 bg-white rounded-2xl">
+                            <div>
+                                <h5 class="text-base">Total Accessibility</h5>
+                                <div class="flex items-end gap-3">
+                                    <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
+                                    <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
+                            <div>
+                                <h5 class="text-base">Active Users</h5>
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
+                                <h6 class="text-[#C34E2A]"><i class="fa-solid fa-arrow-down"></i> 1.700</h6>
+                            </div>
+                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#DEF6E9] rounded-2xl">
+                                <img src="assets/icons/Group 2496.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
+                            <div>
+                                <h5 class="text-base">New Registrations</h5>
+                                <h1 class="text-[34px] font-[inter] font-bold my-3">127</h1>
+                                <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                            </div>
+                            <div class="h-[94px] w-[94px] flex items-center justify-center bg-[#F0D6CA] rounded-2xl">
+                                <img src="assets/icons/Group 2497.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end user panel -->
+
+                    <!-- registration chart and service progress bar -->
+                    <section class="mt-20 gap-5">
+                        <div class="px-8 py-7 rounded-2xl bg-white">
+                            <div class="flex items-center justify-between mb-5">
+                                <h1 class="text-2xl font-semibold">New User Registration</h1>
+                                <div class="flex items-center gap-10 text-lg text-[#656565]">
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
+                                        <h3>Daily</h3>
+                                    </div>
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
+                                        <h3>Weekly</h3>
+                                    </div>
+                                    <div class="flex gap-6 items-center">
+                                        <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
+                                        <h3>Monthly</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
+                        </div>
+
+                    </section>
+                    <!-- end registration chart and service progress bar -->
+
+                    <!-- Popular Location -->
+                    <section class="grid grid-cols-6 gap-5 mt-[50px]">
+                        <div class="px-8 py-7 col-span-2 bg-white rounded-2xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-2xl font-semibold">Service Requests</h1>
+                                <img src="/assets/icons/Group 109.png" alt="">
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="progress-bar">
+                                    <progress value="75" min="0" max="100"
+                                        style="visibility:hidden;height:0;width:0;">38%</progress>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-end mt-7">
+                                <div>
+                                    <h1 class="text-sm text-[#656565]">Total Service Requests</h1>
+                                    <h1 class="text-[34px] font-bold mt-2">50,246</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
+                                    <p class="text-xs text-[#656565]">More than last month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
+                            <div class="col-span-6 flex items-center justify-center">
+                                <h1 class="text-6xl font-bold">MAP</h1>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="flex flex-col gap-5">
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                                            <h3 class="text-[10px]">London, UK</h3>
+                                        </div>
+                                        <progress class="progress progress-success w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                            <h3 class="text-[10px]">Manhattan, NY</h3>
+                                        </div>
+                                        <progress class="progress progress-secondary w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-10px">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-info rounded-full"></div>
+                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                        </div>
+                                        <progress class="progress progress-info w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                            <h3 class="text-[10px]">Texas, DW</h3>
+                                        </div>
+                                        <progress class="progress progress-warning w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Popular Location -->
+
+
+                    <!-- Data Accuracy and Verification -->
+                    <section>
+
+
+
+                    </section>
+                    <!-- End Data Accuracy and Verification -->
+
+
+
+
+                    <!-- Popular Location new -->
+                    <section class="grid grid-cols-6 gap-5 mt-[50px]">
+                        <div class="col-span-2 bg-white px-6 py-7 rounded-2xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-2xl font-semibold">Popular Locations</h1>
+                                <img src="/assets/icons/Group 109.png" alt="">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-base text-[#1E1E1E]">London, UK</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-base text-[#1E1E1E]">Manhattan, NY</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-base text-[#1E1E1E]">Dublin, IRE</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6 class="text-[#C34E2A] text-base"><i class="fa-solid fa-arrow-down"></i>
+                                            6.48%</h6>
+                                        <p class="text-[#656565] text-sm">Decreased</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-base text-[#1E1E1E]">Melbourne, AUS</h1>
+                                        <p class="text-[#656565] text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565] text-sm">Improved</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center mt-10">
+                                <button class="underline">View All</button>
+                            </div>
+                        </div>
+                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
+                            <div class="col-span-6 flex items-center justify-center">
+                                <h1 class="text-6xl font-bold">MAP</h1>
+                            </div>
+                            <div class="col-span-1">
+                                <div class="flex flex-col gap-5">
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-success rounded-full"></div>
+                                            <h3 class="text-[10px]">London, UK</h3>
+                                        </div>
+                                        <progress class="progress progress-success w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                            <h3 class="text-[10px]">Manhattan, NY</h3>
+                                        </div>
+                                        <progress class="progress progress-secondary w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-10px">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-info rounded-full"></div>
+                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                        </div>
+                                        <progress class="progress progress-info w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-3 items-center">
+                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                            <h3 class="text-[10px]">Texas, DW</h3>
+                                        </div>
+                                        <progress class="progress progress-warning w-full my-1" value="70"
+                                            max="100"></progress>
+                                        <h1 class="text-[10px]">6.48%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Popular Location new -->
+
+
+
+
+                    <!-- Overview Global Ratings -->
+                    <section class="mt-12">
+                        
+
+                    </section>
+                    <!-- End Overview Global Ratings -->
+
+                </section>
+                <!-- End Dashboard Item -->
+            </div>
+            <!-- Dashboard Contain End -->
+            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-[179px]">
+                <h3>2023 &copy; SARSocore</h3>
+                <h3>Help & Support</h3>
+            </footer>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <script src="/assets/js/datepicker.js"></script>
+    <script src="/assets/js/en.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

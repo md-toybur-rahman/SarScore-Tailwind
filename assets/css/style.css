@@ -132,3 +132,13 @@ button.form-control{
 	background: #39CCCC;
 	font: bold;
 }
+
+.lightIcon{
+	display: none;
+}
+.active .lightIcon{
+	display: block;
+}
+.active .darkIcon{
+	display: none;
+}
