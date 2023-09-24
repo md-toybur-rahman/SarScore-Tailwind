@@ -20,6 +20,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
+    <!-- map CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.7.2/dist/svgMap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.7.2/dist/svgMap.min.css" rel="stylesheet">
+    <!-- end map CDN -->
+
     <script>
         tailwind.config = {
             theme: {
@@ -55,7 +61,7 @@
                     <span class="menuTitle text-sm">Dashboard</span>
                 </a>
                 <a href="/indexAccessibility.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt=""> 
+                    <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle text-sm">Accessibility Rating</span>
                 </a>
@@ -68,8 +74,8 @@
                 <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="/assets/icons/Group 2331.png" alt="">
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution Management<i
-                            class="fa-solid fa-chevron-down"></i></span>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
+                        Management<i class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="/assets/icons/Group 53.png" alt="">
@@ -312,47 +318,53 @@
                                 <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
-                            <div class="col-span-6 flex items-center justify-center">
-                                <h1 class="text-6xl font-bold">MAP</h1>
-                            </div>
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-5">
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-success rounded-full"></div>
-                                            <h3 class="text-[10px]">London, UK</h3>
-                                        </div>
-                                        <progress class="progress progress-success w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                        <div class="col-span-4  bg-white px-[33px] py-5 ronded-2xl">
+                            <h1 class="text-2xl font-semibold mb-3">Map View</h1>
+                            <div class="grid grid-cols-12 justify-center">
+                                <div class="col-span-9">
+                                    <div id="svgMap">
+
                                     </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
-                                            <h3 class="text-[10px]">Manhattan, NY</h3>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 w-[110px]">
+                                    <div class="flex flex-col gap-5">
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                                <h3 class="text-[10px]">London, UK</h3>
+                                            </div>
+                                            <progress class="progress progress-success w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-secondary w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-10px">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-info rounded-full"></div>
-                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                                <h3 class="text-[10px]">Manhattan, NY</h3>
+                                            </div>
+                                            <progress class="progress progress-secondary w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-10px">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-info w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
-                                            <h3 class="text-[10px]">Texas, DW</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-info rounded-full"></div>
+                                                <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                            </div>
+                                            <progress class="progress progress-info w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-warning w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                                <h3 class="text-[10px]">Texas, DW</h3>
+                                            </div>
+                                            <progress class="progress progress-warning w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
