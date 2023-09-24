@@ -20,6 +20,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9c9266f050.js" crossorigin="anonymous"></script>
+
+    <!-- map CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.7.2/dist/svgMap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.7.2/dist/svgMap.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -184,13 +189,15 @@
                         </div>
                         <div class="p-8 bg-white rounded-2xl">
                             <div class="relative bg-white rounded-xl">
-                                <div onclick="handleTopCategoryButton()" class="bg-white flex items-center gap-3 cursor-pointer">
+                                <div onclick="handleTopCategoryButton()"
+                                    class="bg-white flex items-center gap-3 cursor-pointer">
                                     <p class="text-sm flex">Top Category: </p>
                                     <img src="/assets/icons/Group 310.png" alt="">
                                 </div>
                                 <ul id="topCategoryList"
                                     class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                                    <li onclick="handleTopCategory('Wheelchair Access')" class="hover:font-semibold">Wheelchair Access</li>
+                                    <li onclick="handleTopCategory('Wheelchair Access')" class="hover:font-semibold">
+                                        Wheelchair Access</li>
                                     <li onclick="handleTopCategory('def')" class="hover:font-semibold">def</li>
                                     <li onclick="handleTopCategory('ghi')" class="hover:font-semibold">ghi</li>
                                     <li onclick="handleTopCategory('jkl')" class="hover:font-semibold">jkl</li>
@@ -215,7 +222,8 @@
                         </div>
                         <div class="p-8 bg-white rounded-2xl">
                             <div class="relative bg-white rounded-xl">
-                                <div onclick="handleTopLocationButton()" class="bg-white flex items-center gap-3 cursor-pointer">
+                                <div onclick="handleTopLocationButton()"
+                                    class="bg-white flex items-center gap-3 cursor-pointer">
                                     <p class="text-sm flex">Top-Rated Location: </p>
                                     <img src="/assets/icons/Group 310.png" alt="">
                                 </div>
@@ -239,49 +247,101 @@
                     </section>
                     <!-- end user panel -->
 
-                    <!-- registration chart and service progress bar -->
+                    <!-- registration chart -->
                     <section class="mt-20 gap-5">
                         <div class="px-8 py-7 rounded-2xl bg-white">
-                            <div class="flex items-center justify-between mb-5">
-                                <h1 class="text-2xl font-semibold">New User Registration</h1>
-                                <div class="flex items-center gap-10 text-lg text-[#656565]">
-                                    <div class="flex gap-6 items-center">
-                                        <div class="w-4 h-4 bg-[#39CCCC] rounded-full"></div>
-                                        <h3>Daily</h3>
-                                    </div>
-                                    <div class="flex gap-6 items-center">
-                                        <div class="w-4 h-4 bg-[#484E80] rounded-full"></div>
-                                        <h3>Weekly</h3>
-                                    </div>
-                                    <div class="flex gap-6 items-center">
-                                        <div class="w-4 h-4 bg-[#A960D6] rounded-full"></div>
-                                        <h3>Monthly</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
+                            <canvas style="height:333px; width:900px; font-size:24px;"
+                                id="accessibility-chart"></canvas>
                         </div>
 
                     </section>
-                    <!-- end registration chart and service progress bar -->
+                    <!-- end  chart-->
+
+
+                    <!-- Category Brake Down -->
+                    <section>
+                        <div class="mt-10 flex items-center justify-between">
+                            <h1 class="text-2xl font-semibold">Category Brake Down</h1>
+                            <div class="flex justify-end items-center gap-3">
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handlePriorityButton()"
+                                        class="bg-white flex gap-8 px-4 items-center justify-between">
+                                        <p class="text-sm flex">Sort By Category: </p>
+                                        <img src="/assets/icons/Group 310.png" alt="">
+                                    </div>
+                                    <ul id="priorityList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
+                                        <li onclick="handlePriorityList('Urgent')" class="hover:font-semibold bg-white">
+                                            Urgent</li>
+                                        <li onclick="handlePriorityList('High')" class="hover:font-semibold bg-white">
+                                            High
+                                        </li>
+                                        <li onclick="handlePriorityList('Medium')" class="hover:font-semibold bg-white">
+                                            Medium</li>
+                                        <li onclick="handlePriorityList('Low')" class="hover:font-semibold bg-white">Low
+                                        </li>
+                                        <li onclick="handlePriorityList('Critical')"
+                                            class="hover:font-semibold bg-white">
+                                            Critical</li>
+                                    </ul>
+                                </div>
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handleSupportTypeButton()"
+                                        class="bg-white flex gap-8 px-4 items-center justify-between">
+                                        <p class="text-sm flex">Postcode: </p>
+                                        <img src="/assets/icons/Group 310.png" alt="">
+                                    </div>
+                                    <ul id="supportTypeList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                        <li onclick="handleSupportTypeList('Technical Issues')"
+                                            class="hover:font-semibold bg-white">Technical Issues</li>
+                                        <li onclick="handleSupportTypeList('User Inquiries')"
+                                            class="hover:font-semibold bg-white">User Inquiries</li>
+                                        <li onclick="handleSupportTypeList('Accessibility Ratings')"
+                                            class="hover:font-semibold bg-white">Accessibility Ratings</li>
+                                        <li onclick="handleSupportTypeList('Service Provider Support')"
+                                            class="hover:font-semibold bg-white">Service Provider Support</li>
+                                    </ul>
+                                </div>
+                                <div class="relative bg-white px-1 py-2 rounded-xl">
+                                    <div onclick="handleCategoryButton()"
+                                        class="bg-white flex gap-8 px-4 items-center justify-between">
+                                        <p class="text-sm flex">3+ Miles: </p>
+                                        <img src="/assets/icons/Group 310.png" alt="">
+                                    </div>
+                                    <ul id="categoryList"
+                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                                        <li onclick="handleCategoryList('Regular User')"
+                                            class="hover:font-semibold bg-white">Regular User</li>
+                                        <li onclick="handleCategoryList('Service Provider')"
+                                            class="hover:font-semibold bg-white">Service Provider</li>
+                                        <li onclick="handleCategoryList('Contributor')"
+                                            class="hover:font-semibold bg-white">Contributor</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- End Category Brake Down -->
 
                     <!-- Popular Location -->
                     <section class="grid grid-cols-6 gap-5 mt-[50px]">
                         <div class="px-8 py-7 col-span-2 bg-white rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-2xl font-semibold">Service Requests</h1>
+                                <h1 class="text-lg font-semibold">Time To Access From Vehicle</h1>
                                 <img src="/assets/icons/Group 109.png" alt="">
                             </div>
                             <div class="flex justify-center">
                                 <div class="progress-bar">
                                     <progress value="75" min="0" max="100"
-                                        style="visibility:hidden;height:0;width:0;">38%</progress>
+                                        style="visibility:hidden;height:0;width:0;">23,456</progress>
                                 </div>
                             </div>
                             <div class="flex justify-between items-end mt-7">
                                 <div>
-                                    <h1 class="text-sm text-[#656565]">Total Service Requests</h1>
-                                    <h1 class="text-[34px] font-bold mt-2">50,246</h1>
+                                    <h1 class="text-sm text-[#656565]">Time</h1>
+                                    <h1 class="text-[34px] font-bold mt-2">1-2 min</h1>
                                 </div>
                                 <div>
                                     <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
@@ -289,47 +349,45 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
-                            <div class="col-span-6 flex items-center justify-center">
-                                <h1 class="text-6xl font-bold">MAP</h1>
-                            </div>
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-5">
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-success rounded-full"></div>
-                                            <h3 class="text-[10px]">London, UK</h3>
-                                        </div>
-                                        <progress class="progress progress-success w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                        <div class="col-span-4  bg-white px-[33px] py-7 ronded-2xl">
+                            <h1 class="text-2xl font-semibold mb-5">Map View</h1>
+                            <div class="grid grid-cols-12 justify-center">
+                                <div class="col-span-9">
+                                    <div id="svgMap">
+
                                     </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
-                                            <h3 class="text-[10px]">Manhattan, NY</h3>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 w-[110px]">
+                                    <div class="flex flex-col gap-1">
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                                <h3 class="text-[10px]">Under Minute</h3>
+                                            </div>
+                                            <h1 class="text-[10px]">18%</h1>
                                         </div>
-                                        <progress class="progress progress-secondary w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-10px">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-info rounded-full"></div>
-                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                                <h3 class="text-[10px]">1-2 Minutes</h3>
+                                            </div>
+                                            <h1 class="text-[10px]">39%</h1>
                                         </div>
-                                        <progress class="progress progress-info w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
-                                            <h3 class="text-[10px]">Texas, DW</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-info rounded-full"></div>
+                                                <h3 class="text-[10px]">2-3 Minutes</h3>
+                                            </div>
+                                            <h1 class="text-[10px]">39%</h1>
                                         </div>
-                                        <progress class="progress progress-warning w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                                <h3 class="text-[10px]">5 + Minutes</h3>
+                                            </div>
+                                            <h1 class="text-[10px]">39%</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

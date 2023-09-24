@@ -40,3 +40,36 @@ new Chart(registrationsChart, {
         }
     }
 });
+const accessibilityChart = document.getElementById('accessibility-chart');
+
+new Chart(accessibilityChart, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Spt', 'Oct', 'Nov', 'Dec'],
+        datasets: [
+            {
+                label: 'Daily',
+                data: [20, 35, 15, 5, 30, 45, 10, 25, 50, 40, 15, 35],
+                borderWidth: 1,
+                backgroundColor: '#484E80',
+                borderRadius: 5,
+                barThickness: 25
+            },
+            {
+                label: 'Weekly',
+                data: [35, 15, 40, 50, 25, 10, 45, 30, 5, 15, 35, 20],
+                borderWidth: 1,
+                backgroundColor: '#39CCCC',
+                borderRadius: 5,
+                barThickness: 25
+            },
+        ]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+            }
+        }
+    }
+});
