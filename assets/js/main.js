@@ -127,7 +127,6 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 
-
 new svgMap({
     targetElementID: 'svgMap',
     data: {
@@ -146,10 +145,9 @@ new svgMap({
         },
         applyData: 'gdp',
         values: {
-            AF: { gdp: 587, change: 4.73 },
-            AL: { gdp: 4583, change: 11.09 },
-            DZ: { gdp: 4293, change: 10.01 },
-            AF_NA: { gdp: 4293, change: 10.01 }
+            US: { gdp: 587, change: 4.73, color: 'green' },
+            AU: { gdp: 4583, change: 11.09, color: 'red' },
+            BD: { gdp: 4293, change: 10.01, color: 'blue' },
             // ...
         }
     }
