@@ -119,3 +119,16 @@ button.form-control{
 #tbody tr{
     height: 68px;
 }
+
+/* #dashboard a img:nth-child(2n + 2) {
+	display: none;
+} */
+
+#menubar a{
+
+}
+.active, #menubar a:hover{
+	color: white;
+	background: #39CCCC;
+	font: bold;
+}

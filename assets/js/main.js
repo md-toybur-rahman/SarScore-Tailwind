@@ -103,15 +103,29 @@ const menuButtonHandler = () => {
         logo.style.display = 'none';
         menuTitle.forEach(title => {
             title.style.display = 'none'
-            title.style.fontSize = '2px'
         })
     }
     else {
-        dashboard.style.width = '314px'
+        dashboard.style.width = '350px'
         logo.style.display = 'block';
         menuTitle.forEach(title => {
-            title.style.display = 'block'
-            title.style.fontSize = '14px'
+            title.style.display = 'flex'
         })
     }
+}
+
+
+// Active NavLink
+const header = document.getElementById("menubar");
+const btns = header.getElementsByClassName("menuButton");
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        const previousImg = document.querySelector(".active :nth-child(1)");
+        const currentImg = document.querySelector(".active :nth-child(2)");
+        previousImg.style.display = 'none'
+        currentImg.style.display = 'block';
+    });
 }

@@ -47,64 +47,75 @@
 <body class="max-w-[1573px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div id="dashboard" class="row-span-full w-[314px] duration-500 bg-white">
+        <div id="dashboard" class="row-span-full w-[350px] duration-500 bg-white">
             <div class="flex justify-between mt-10 px-5">
                 <img id="logo" src="/assets/icons/Group 2319.png" alt="">
                 <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer" src="/assets/icons/Group 2318.png"
                     alt="">
             </div>
-            <div class="mt-14 font-[poppins]">
-                <a href="#" class="bg-[#39CCCC] h-[63px] px-5 flex items-center gap-2">
+            <div id="menubar" class="mt-14 font-[poppins]">
+                <a href="#" class="menuButton active h-[63px] px-5 flex items-center gap-2">
                     <img src="assets/icons/Group 48.png" alt="">
-                    <span class="menuTitle delay-500 text-white font-bold text-sm">Dashboard</span>
+                    <img class="hidden" src="assets/icons/Group 481.png" alt="">
+                    <span class="menuTitle text-sm">Dashboard</span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
-                    <img src="/assets/icons/Group 53.png" alt="">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                    <img src="/assets/icons/Group 53.png" alt=""> 
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle text-sm">Accessibility Rating</span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">User Management<i
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Contribution Management<i
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Service Requests<i
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Service Requests<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">System Stats<i
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 53.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Notification Center<i
+                    <img class="hidden" src="/assets/icons/Group 2331.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Settings<i
+                    <img class="hidden" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Support Tickets<i
+                    <img class="hidden" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">System Maintenance<i
+                    <img class="hidden" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="#" class="h-[63px] px-5 flex items-center gap-2">
+                <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img src="/assets/icons/Group 2324.png" alt="">
-                    <span class="menuTitle flex justify-between flex-grow text-sm">Log Out<i
+                    <img class="hidden" src="/assets/icons/Group 23241.png" alt="">
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
             </div>
