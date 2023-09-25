@@ -47,10 +47,12 @@
 <body class="max-w-[1573px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <div id="dashboard" class="row-span-full w-[350px] duration-500 bg-white">
-            <div class="flex justify-between mt-10 px-5">
+            <div class="flex items-end justify-between mt-10 px-5">
                 <img id="logo" src="/assets/icons/Group 2319.png" alt="">
-                <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer" src="/assets/icons/Group 2318.png"
-                    alt="">
+                <div onclick="menuButtonHandler()" class="cursor-pointer">
+                    <img class="h-4 w-6" src="/assets/icons/Group 2318.png"
+                        alt="">
+                </div>
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
                 <a href="index.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
@@ -120,7 +122,7 @@
             </div>
         </div>
         <div class="mx-5 w-full">
-            <!-- Dashboard Contain Start -->
+            <!-- Accessibility Contain Start -->
             <div class="mt-10 font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
                 <section class="flex items-center justify-between p-7 rounded-xl text-xl bg-white">
@@ -156,16 +158,19 @@
                         </div>
                     </div>
                     <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div onclick="handleTypeButton()" class="bg-white flex items-center justify-between">
-                            <p class="w-fit text-sm">Type: <input id="type" placeholder="Select"
-                                    class="outline-none w-28" type="text" required></p>
+                        <div onclick="dropdownButtonHandler('typeList')"
+                            class="bg-white flex gap-8 px-4 items-center justify-between">
+                            <p id="type" class="text-sm flex">Types: </p>
+                            <img src="/assets/icons/Group 310.png" alt="">
                         </div>
                         <ul id="typeList"
-                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                            <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
-                            <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
-                            <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
-                            <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
+                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
+                            <li onclick="dropdownListHandler('type', 
+                                        'typeList', 'ABC')" class="hover:font-semibold bg-white">ABC</li>
+                            <li onclick="dropdownListHandler('type', 
+                                        'typeList', 'DEF')" class="hover:font-semibold bg-white">DEF</li>
+                            <li onclick="dropdownListHandler('type', 
+                                        'typeList', 'GHI')" class="hover:font-semibold bg-white">GHI</li>
                         </ul>
                     </div>
                     <button onclick="refreshSorting()"
@@ -174,8 +179,9 @@
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
-                <!-- Dashboard Item -->
+                <!-- Accessability Item -->
                 <section>
+                    <h1 class="text-2xl font-semibold mt-2 mb-10">Accessibility Ratings</h1>
                     <section class="grid grid-cols-4 gap-5 mt-4">
                         <div class="p-8 bg-white rounded-2xl">
                             <div>
@@ -242,7 +248,6 @@
                                 <h6 class="text-[#28C66F] font-[inter] text-base"><i class="fa-solid fa-arrow-up"></i>
                                     1.700</h6>
                             </div>
-                            <h4 class="text-xs font-bold">Wheelchair Access</h4>
                         </div>
                     </section>
                     <!-- end user panel -->
@@ -264,59 +269,69 @@
                             <h1 class="text-2xl font-semibold">Category Brake Down</h1>
                             <div class="flex justify-end items-center gap-3">
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
-                                    <div onclick="handlePriorityButton()"
+                                    <div onclick="dropdownButtonHandler('brakeDownCategoryList')"
                                         class="bg-white flex gap-8 px-4 items-center justify-between">
-                                        <p class="text-sm flex">Sort By Category: </p>
+                                        <p id="brakeDownCategory" class="text-sm flex">Sort By Category: </p>
                                         <img src="/assets/icons/Group 310.png" alt="">
                                     </div>
-                                    <ul id="priorityList"
+                                    <ul id="brakeDownCategoryList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10">
-                                        <li onclick="handlePriorityList('Urgent')" class="hover:font-semibold bg-white">
+                                        <li onclick="dropdownListHandler('brakeDownCategory', 'brakeDownCategoryList' ,'Urgent')"
+                                            class="hover:font-semibold bg-white">
                                             Urgent</li>
-                                        <li onclick="handlePriorityList('High')" class="hover:font-semibold bg-white">
+                                        <li onclick="dropdownListHandler('brakeDownCategory', 'brakeDownCategoryList' ,'High')"
+                                            class="hover:font-semibold bg-white">
                                             High
                                         </li>
-                                        <li onclick="handlePriorityList('Medium')" class="hover:font-semibold bg-white">
+                                        <li onclick="dropdownListHandler('brakeDownCategory', 'brakeDownCategoryList' ,'Medium')"
+                                            class="hover:font-semibold bg-white">
                                             Medium</li>
-                                        <li onclick="handlePriorityList('Low')" class="hover:font-semibold bg-white">Low
+                                        <li onclick="dropdownListHandler('brakeDownCategory', 'brakeDownCategoryList' ,'Low')"
+                                            class="hover:font-semibold bg-white">Low
                                         </li>
-                                        <li onclick="handlePriorityList('Critical')"
+                                        <li onclick="dropdownListHandler('brakeDownCategory', 'brakeDownCategoryList' ,'Critical')"
                                             class="hover:font-semibold bg-white">
                                             Critical</li>
                                     </ul>
                                 </div>
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
-                                    <div onclick="handleSupportTypeButton()"
+                                    <div onclick="dropdownButtonHandler('brakeDownPostcodeList')"
                                         class="bg-white flex gap-8 px-4 items-center justify-between">
-                                        <p class="text-sm flex">Postcode: </p>
+                                        <p id="brakeDownPostcode" class="text-sm flex">Postcode: </p>
                                         <img src="/assets/icons/Group 310.png" alt="">
                                     </div>
-                                    <ul id="supportTypeList"
+                                    <ul id="brakeDownPostcodeList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
-                                        <li onclick="handleSupportTypeList('Technical Issues')"
+                                        <li onclick="dropdownListHandler('brakeDownPostcode', 'brakeDownPostcodeList' ,'Technical Issues')"
                                             class="hover:font-semibold bg-white">Technical Issues</li>
-                                        <li onclick="handleSupportTypeList('User Inquiries')"
+                                        <li onclick="dropdownListHandler('brakeDownPostcode', 'brakeDownPostcodeList' ,'User Inquiries')"
                                             class="hover:font-semibold bg-white">User Inquiries</li>
-                                        <li onclick="handleSupportTypeList('Accessibility Ratings')"
+                                        <li onclick="dropdownListHandler('brakeDownPostcode', 'brakeDownPostcodeList' ,'Accessibility Ratings')"
                                             class="hover:font-semibold bg-white">Accessibility Ratings</li>
-                                        <li onclick="handleSupportTypeList('Service Provider Support')"
+                                        <li onclick="dropdownListHandler('brakeDownPostcode', 'brakeDownPostcodeList' ,'Service Provider Support')"
                                             class="hover:font-semibold bg-white">Service Provider Support</li>
                                     </ul>
                                 </div>
                                 <div class="relative bg-white px-1 py-2 rounded-xl">
-                                    <div onclick="handleCategoryButton()"
+                                    <div onclick="dropdownButtonHandler('brakeDownMilesList')"
                                         class="bg-white flex gap-8 px-4 items-center justify-between">
-                                        <p class="text-sm flex">3+ Miles: </p>
+                                        <p id="brakeDownMiles" class="text-sm flex">3+ Miles: </p>
                                         <img src="/assets/icons/Group 310.png" alt="">
                                     </div>
-                                    <ul id="categoryList"
+                                    <ul id="brakeDownMilesList"
                                         class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden z-10 text-center">
-                                        <li onclick="handleCategoryList('Regular User')"
-                                            class="hover:font-semibold bg-white">Regular User</li>
-                                        <li onclick="handleCategoryList('Service Provider')"
-                                            class="hover:font-semibold bg-white">Service Provider</li>
-                                        <li onclick="handleCategoryList('Contributor')"
-                                            class="hover:font-semibold bg-white">Contributor</li>
+                                        <li onclick="dropdownListHandler('brakeDownMiles', 
+                                        
+                                        'brakeDownMilesList', '3+ Miles')" class="hover:font-semibold bg-white">3+
+                                            Miles</li>
+                                        <li onclick="dropdownListHandler('brakeDownMiles', 
+                                        
+                                        'brakeDownMilesList', '4+ Miles')" class="hover:font-semibold bg-white">4+
+                                            Miles</li>
+                                        <li onclick="dropdownListHandler('brakeDownMiles', 
+                                        
+                                        'brakeDownMilesList', '5+ Miles')" class="hover:font-semibold bg-white">5+
+                                            Miles</li>
                                     </ul>
                                 </div>
                             </div>
@@ -351,7 +366,7 @@
                         </div>
                         <div class="col-span-4  bg-white px-[33px] py-7 ronded-2xl">
                             <h1 class="text-2xl font-semibold mb-5">Map View</h1>
-                            <div class="grid grid-cols-12 justify-center">
+                            <div class="grid grid-cols-12 justify-center items-center">
                                 <div class="col-span-9">
                                     <div id="svgMap">
 
@@ -359,34 +374,23 @@
                                 </div>
                                 <div class="col-span-1"></div>
                                 <div class="col-span-2 w-[110px]">
-                                    <div class="flex flex-col gap-1">
+                                    <div class="flex flex-col gap-7">
                                         <div>
-                                            <div class="flex gap-3 items-center">
-                                                <div class="w-3 h-3 bg-success rounded-full"></div>
-                                                <h3 class="text-[10px]">Under Minute</h3>
-                                            </div>
-                                            <h1 class="text-[10px]">18%</h1>
+                                            <h3 class="text-[12px]">Under Minute</h3>
+
+                                            <h1 class="text-[12px]">18%</h1>
                                         </div>
                                         <div>
-                                            <div class="flex gap-3 items-center">
-                                                <div class="w-3 h-3 bg-secondary rounded-full"></div>
-                                                <h3 class="text-[10px]">1-2 Minutes</h3>
-                                            </div>
-                                            <h1 class="text-[10px]">39%</h1>
+                                            <h3 class="text-[12px]">1-2 Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
                                         </div>
                                         <div>
-                                            <div class="flex gap-3 items-center">
-                                                <div class="w-3 h-3 bg-info rounded-full"></div>
-                                                <h3 class="text-[10px]">2-3 Minutes</h3>
-                                            </div>
-                                            <h1 class="text-[10px]">39%</h1>
+                                            <h3 class="text-[12px]">2-3 Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
                                         </div>
                                         <div>
-                                            <div class="flex gap-3 items-center">
-                                                <div class="w-3 h-3 bg-warning rounded-full"></div>
-                                                <h3 class="text-[10px]">5 + Minutes</h3>
-                                            </div>
-                                            <h1 class="text-[10px]">39%</h1>
+                                            <h3 class="text-[12px]">5 + Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
                                         </div>
                                     </div>
                                 </div>
@@ -544,6 +548,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="assets/js/chart.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/dropdown.js"></script>
 </body>
 
 </html>
