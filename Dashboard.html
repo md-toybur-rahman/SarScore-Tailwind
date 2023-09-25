@@ -20,6 +20,9 @@
     <script src="/assets/js/libs/svg_map.js"></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slim Select -->
+    <link rel="stylesheet" href="assets/css/libs/slimselect.css">
+    <script src="assets/js/libs/slimselect.min.js"></script>
 
 
     <script>
@@ -155,18 +158,15 @@
                                     class="outline-none w-28" type="text" required></p>
                         </div>
                     </div>
-                    <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div onclick="handleTypeButton()" class="bg-white flex items-center justify-between">
-                            <p class="w-fit text-sm">Type: <input id="type" placeholder="Select"
-                                    class="outline-none w-28" type="text" required></p>
+                    <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                        <div class="bg-white flex items-center justify-between">
+                            <p class="w-fit text-sm">Type: </p>
+                            <select class="border-0 outline-none" id="selectElement">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
                         </div>
-                        <ul id="typeList"
-                            class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
-                            <li onclick="handleTypeList('abc')" class="hover:font-semibold">abc</li>
-                            <li onclick="handleTypeList('def')" class="hover:font-semibold">def</li>
-                            <li onclick="handleTypeList('ghi')" class="hover:font-semibold">ghi</li>
-                            <li onclick="handleTypeList('jkl')" class="hover:font-semibold">jkl</li>
-                        </ul>
                     </div>
                     <button onclick="refreshSorting()"
                         class="ml-[35px] px-10 py-[10px] text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>

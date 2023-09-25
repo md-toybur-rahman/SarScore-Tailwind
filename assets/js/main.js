@@ -24,7 +24,9 @@ const dropdownInputListHandler = (Id, ListId, value) => {
 }
 
 
-
+new SlimSelect({
+    select: '#selectElement'
+  })
 
 
 const handlePriorityButton = () => {
