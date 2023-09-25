@@ -1,4 +1,4 @@
-
+// Dropdown function
 const dropdownButtonHandler = (ListId) => {
     const List = document.getElementById(ListId);
     const ListStyle = List.style.display;
@@ -16,34 +16,19 @@ const dropdownListHandler = (Id, ListId, value) => {
     Value.innerText = value;
     List.style.display = 'none';
 }
+// End Dropdown function
 
-
-
-new SlimSelect({
-    select: '#selectElement'
-  })
-
-
+// Refresh Button Handler
 const refreshSorting = () => {
     const fromValue = document.getElementById('fromDatepicker');
     const toValue = document.getElementById('toDatepicker');
-    const typeValue = document.getElementById('type');
+    const typeValue = document.getElementById('selectElement');
     fromValue.value = '';
     toValue.value = '';
     typeValue.value = '';
 }
+// End Refresh Button Handler
 
-// Air Datepicker function
-
-new AirDatepicker('#fromDatepicker', {
-    autoClose: true,
-})
-new AirDatepicker('#toDatepicker', {
-    autoClose: true,
-})
-new AirDatepicker('#ticketDatepicker', {
-    autoClose: true,
-})
 
 // Menu Button Handler
 
@@ -67,7 +52,7 @@ const menuButtonHandler = () => {
         })
     }
 }
-
+// End Menu Button Handler
 
 // Active NavLink
 const header = document.getElementById("menubar");
@@ -79,30 +64,5 @@ for (let i = 0; i < btns.length; i++) {
         this.className += " active";
     });
 }
+// End Active NavLink
 
-
-new svgMap({
-    targetElementID: 'svgMap',
-    data: {
-        data: {
-            gdp: {
-                name: 'GDP per capita',
-                format: '{0} USD',
-                thousandSeparator: ',',
-                thresholdMax: 50000,
-                thresholdMin: 1000
-            },
-            change: {
-                name: 'Change to year before',
-                format: '{0} %'
-            }
-        },
-        applyData: 'gdp',
-        values: {
-            US: { gdp: 587, change: 4.73, color: '#36D399' },
-            AU: { gdp: 4583, change: 11.09, color: '#3ABFF8' },
-            BD: { gdp: 4293, change: 10.01, color: '#F000B8' },
-            // ...
-        }
-    }
-});
