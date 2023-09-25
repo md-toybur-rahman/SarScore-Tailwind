@@ -122,3 +122,44 @@ new Chart(verificationChart, {
         }]
     }
 })
+
+const globalChart = document.getElementById('global-chart');
+
+new Chart(globalChart, {
+    type: 'bar',
+    data: {
+        datasets: [
+            {
+                // label: 'Daily',
+                data: [{ id: 50,  value: 'Time To Access From Vehicle' }, { id: 45,  value: 'Parking Availability' },{ id: 46,  value: 'Wheelchair Access' },{ id: 40,  value: 'Road And Terrain Conditions' },{ id: 30,  value: 'Building Type And Elevation' },{ id: 25,  value: 'Time To Access From Vehicle' },{ id: 25,  value: 'Time To Access From Vehicle' },{ id: 20,  value: 'Exposure To Elements' }, { id: 30,  value: 'Lift Availability' },{ id: 50,  value: 'Risk Of Parking Penalties' },],
+                borderWidth: 1,
+                backgroundColor: [
+                    '#FFAB00',
+                    '#60D684',
+                    '#484E80',
+                    '#A960D6',
+                    '#39CCCC',
+                    '#656565',
+                    '#EC5453',
+                    '#1E1E1E',
+
+                ],
+                borderRadius: 20,
+                barThickness: 12
+            }
+        ]
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false,
+            }
+        },
+        parsing: {
+            xAxisKey: 'id',
+            yAxisKey: 'value',
+            
+        },
+        indexAxis: 'y'
+    }
+});
