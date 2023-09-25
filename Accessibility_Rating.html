@@ -306,7 +306,7 @@
 
                     <!-- End Category Brake Down -->
 
-                    <!-- Popular Location -->
+                    <!-- Access From Vehicle -->
                     <section class="grid grid-cols-6 gap-5 mt-[50px]">
                         <div class="px-8 py-7 col-span-2 bg-white rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
@@ -363,18 +363,60 @@
                             </div>
                         </div>
                     </section>
-                    <!-- End Popular Location -->
+                    <!-- End Access From Vehicle -->
 
 
                     <!-- Data Accuracy and Verification -->
-                    <section>
+                    <section class="mt-12">
+                        <h1 class="text-2xl font-semibold mb-11">Data Accuracy And Verification</h1>
+                        <div class="grid grid-cols-3 gap-5 ">
+                            <div class="p-8 bg-white rounded-2xl">
+                                <div class="flex justify-between items-center mb-5">
+                                    <h1 class="text-2xl font-semibold">Accuracy Trends</h1>
+                                    <img src="assets/icons/Group 109.png" alt="">
+                                </div>
+                                <div class="py-1 rounded-2xl bg-white">
+                                    <canvas style="height:450px; width:530px; font-size:24px;"
+                                        id="accuracy-chart"></canvas>
+                                </div>
+                            </div>
+                            <div class="p-8 bg-white rounded-2xl">
+                                <div class="flex justify-between items-center mb-5">
+                                    <h1 class="text-2xl font-semibold">Verification Efforts</h1>
+                                    <img src="assets/icons/Group 109.png" alt="">
+                                </div>
+                                <div class="flex justify-center">
+                                    <div class="progress-bar">
+                                        <progress value="75" min="0" max="100"
+                                            style="visibility:hidden;height:0;width:0;">23,456</progress>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-end mt-7">
+                                    <div>
+                                        <h1 class="text-sm text-[#656565]">Rejected</h1>
+                                        <h1 class="text-[34px] font-bold mt-2">16</h1>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
+                                        <p class="text-xs text-[#656565]">More than last month</p>
+                                    </div>
+                                </div>
+                            </div>
 
-
-
+                            <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
+                                <div>
+                                    <h5 class="text-base">New Registrations</h5>
+                                    <h1 class="text-[34px] font-[inter] font-bold my-3">127</h1>
+                                    <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                                </div>
+                                <div
+                                    class="h-[94px] w-[94px] flex items-center justify-center bg-[#F0D6CA] rounded-2xl">
+                                    <img src="assets/icons/Group 2497.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <!-- End Data Accuracy and Verification -->
-
-
 
 
                     <!-- Popular Location new -->
@@ -434,47 +476,53 @@
                                 <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="col-span-4 grid grid-cols-7 bg-white px-6 py-7 ronded-2xl">
-                            <div class="col-span-6 flex items-center justify-center">
-                                <h1 class="text-6xl font-bold">MAP</h1>
-                            </div>
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-5">
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-success rounded-full"></div>
-                                            <h3 class="text-[10px]">London, UK</h3>
-                                        </div>
-                                        <progress class="progress progress-success w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                        <div class="col-span-4  bg-white px-[33px] py-7 ronded-2xl">
+                            <h1 class="text-2xl font-semibold mb-5">Heat Map</h1>
+                            <div class="grid grid-cols-12 justify-center">
+                                <div class="col-span-9">
+                                    <div id="heatSvgMap">
+
                                     </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-secondary rounded-full"></div>
-                                            <h3 class="text-[10px]">Manhattan, NY</h3>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 w-[110px]">
+                                    <div class="flex flex-col gap-1">
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                                <h3 class="text-[10px]">London, UK</h3>
+                                            </div>
+                                            <progress class="progress progress-success w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-secondary w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-10px">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-info rounded-full"></div>
-                                            <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-secondary rounded-full"></div>
+                                                <h3 class="text-[10px]">Manhattan, NY</h3>
+                                            </div>
+                                            <progress class="progress progress-secondary w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-info w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
-                                    </div>
-                                    <div>
-                                        <div class="flex gap-3 items-center">
-                                            <div class="w-3 h-3 bg-warning rounded-full"></div>
-                                            <h3 class="text-[10px]">Texas, DW</h3>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-info rounded-full"></div>
+                                                <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                            </div>
+                                            <progress class="progress progress-info w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
                                         </div>
-                                        <progress class="progress progress-warning w-full my-1" value="70"
-                                            max="100"></progress>
-                                        <h1 class="text-[10px]">6.48%</h1>
+                                        <div>
+                                            <div class="flex gap-3 items-center">
+                                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                                <h3 class="text-[10px]">Texas, DW</h3>
+                                            </div>
+                                            <progress class="progress progress-warning w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
