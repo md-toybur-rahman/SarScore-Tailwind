@@ -131,7 +131,7 @@ new Chart(globalChart, {
         datasets: [
             {
                 // label: 'Daily',
-                data: [{ id: 50,  value: 'Time To Access From Vehicle' }, { id: 45,  value: 'Parking Availability' },{ id: 46,  value: 'Wheelchair Access' },{ id: 40,  value: 'Road And Terrain Conditions' },{ id: 30,  value: 'Building Type And Elevation' },{ id: 25,  value: 'Time To Access From Vehicle' },{ id: 25,  value: 'Time To Access From Vehicle' },{ id: 20,  value: 'Exposure To Elements' }, { id: 30,  value: 'Lift Availability' },{ id: 50,  value: 'Risk Of Parking Penalties' },],
+                data: [{ id: 50,  value: 'Time To Access From Vehicle' }, { id: 45,  value: 'Parking Availability' },{ id: 46,  value: 'Wheelchair Access' },{ id: 40,  value: 'Road And Terrain Conditions' },{ id: 30,  value: 'Building Type And Elevation' },{ id: 20,  value: 'Exposure To Elements' }, { id: 30,  value: 'Lift Availability' },{ id: 50,  value: 'Risk Of Parking Penalties' },],
                 borderWidth: 1,
                 backgroundColor: [
                     '#FFAB00',
