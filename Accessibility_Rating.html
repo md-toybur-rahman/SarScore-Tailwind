@@ -376,7 +376,7 @@
                                     <img src="assets/icons/Group 109.png" alt="">
                                 </div>
                                 <div class="py-1 rounded-2xl bg-white">
-                                    <canvas style="height:450px; width:530px; font-size:24px;"
+                                    <canvas style="height:440px; width:530px; font-size:24px;"
                                         id="accuracy-chart"></canvas>
                                 </div>
                             </div>
@@ -386,32 +386,55 @@
                                     <img src="assets/icons/Group 109.png" alt="">
                                 </div>
                                 <div class="flex justify-center">
-                                    <div class="progress-bar">
-                                        <progress value="75" min="0" max="100"
-                                            style="visibility:hidden;height:0;width:0;">23,456</progress>
+                                    <div class="w-[180px] h-[180px]">
+                                        <canvas style="font-size:24px;" id="verification-chart"></canvas>
                                     </div>
                                 </div>
-                                <div class="flex justify-between items-end mt-7">
+                                <div class="flex justify-between items-end mt-9">
                                     <div>
                                         <h1 class="text-sm text-[#656565]">Rejected</h1>
-                                        <h1 class="text-[34px] font-bold mt-2">16</h1>
+                                        <h1 class="text-[34px] font-bold mt-4">16</h1>
                                     </div>
                                     <div>
-                                        <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
-                                        <p class="text-xs text-[#656565]">More than last month</p>
+                                        <h1 class="text-[#28C66F] text-base"><i class="fa-solid fa-arrow-up"></i> 62%
+                                        </h1>
+                                        <p class="text-xs text-[#656565] mt-2">More than last month</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="flex items-center justify-between p-8 bg-white rounded-2xl">
-                                <div>
-                                    <h5 class="text-base">New Registrations</h5>
-                                    <h1 class="text-[34px] font-[inter] font-bold my-3">127</h1>
-                                    <h6 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                            <div class="p-8 bg-white rounded-2xl">
+                                <div class="flex justify-between items-center mb-5">
+                                    <h1 class="text-2xl font-semibold">Score Disputes</h1>
+                                    <img src="assets/icons/Group 109.png" alt="">
                                 </div>
-                                <div
-                                    class="h-[94px] w-[94px] flex items-center justify-center bg-[#F0D6CA] rounded-2xl">
-                                    <img src="assets/icons/Group 2497.png" alt="">
+                                <div class="mt-12">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-12 h-12 bg-info rounded-xl"></div>
+                                        <div class="flex-grow">
+                                            <h3 class="text-[14px]">Total</h3>
+                                            <h3 class="text-[14px] text-[#77838F]">248</h3>
+                                            <progress class="progress progress-info w-full my-1" value="70"
+                                                max="100"></progress>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4 my-8">
+                                        <div class="w-12 h-12 bg-success rounded-xl"></div>
+                                        <div class="flex-grow">
+                                            <h3 class="text-[14px]">Total</h3>
+                                            <h3 class="text-[14px] text-[#77838F]">248</h3>
+                                            <progress class="progress progress-success w-full my-1" value="70"
+                                                max="100"></progress>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-12 h-12 bg-primary rounded-xl"></div>
+                                        <div class="flex-grow">
+                                            <h3 class="text-[14px]">Total</h3>
+                                            <h3 class="text-[14px] text-[#77838F]">248</h3>
+                                            <progress class="progress progress-primary w-full my-1" value="70"
+                                                max="100"></progress>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
