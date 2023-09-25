@@ -16,121 +16,13 @@ const dropdownListHandler = (Id, ListId, value) => {
     Value.innerText = value;
     List.style.display = 'none';
 }
-const dropdownInputListHandler = (Id, ListId, value) => {
-    const Value = document.getElementById(Id);
-    const List = document.getElementById(ListId);
-    Value.value = value;
-    List.style.display = 'none';
-}
+
 
 
 new SlimSelect({
     select: '#selectElement'
   })
 
-
-const handlePriorityButton = () => {
-    const priorityList = document.getElementById('priorityList');
-    const priorityListStyle = priorityList.style.display;
-    if (priorityListStyle != 'flex') {
-        priorityList.style.display = 'flex';
-    }
-    else {
-        priorityList.style.display = 'none';
-    }
-}
-
-const handlePriorityList = (value) => {
-    const priorityValue = document.getElementById('priority');
-    const priorityList = document.getElementById('priorityList');
-    priorityValue.value = value;
-    priorityList.style.display = 'none';
-}
-const handleCategoryButton = () => {
-    const categoryList = document.getElementById('categoryList');
-    const categoryListStyle = categoryList.style.display;
-    if (categoryListStyle != 'flex') {
-        categoryList.style.display = 'flex';
-    }
-    else {
-        categoryList.style.display = 'none';
-    }
-}
-
-const handleCategoryList = (value) => {
-    const categoryValue = document.getElementById('category');
-    const categoryList = document.getElementById('categoryList');
-    categoryValue.value = value;
-    categoryList.style.display = 'none';
-}
-const handleTopCategoryButton = () => {
-    const topCategoryList = document.getElementById('topCategoryList');
-    const topCategoryListStyle = topCategoryList.style.display;
-    if (topCategoryListStyle != 'flex') {
-        topCategoryList.style.display = 'flex';
-    }
-    else {
-        topCategoryList.style.display = 'none';
-    }
-}
-
-const handleTopCategory= (value) => {
-    const topCategoryValue = document.getElementById('topCategory');
-    const topCategoryList = document.getElementById('topCategoryList');
-    topCategoryValue.innerText = value;
-    topCategoryList.style.display = 'none';
-}
-const handleTopLocationButton = () => {
-    const topLocationList = document.getElementById('topLocationList');
-    const topLocationListStyle = topLocationList.style.display;
-    if (topLocationListStyle != 'flex') {
-        topLocationList.style.display = 'flex';
-    }
-    else {
-        topLocationList.style.display = 'none';
-    }
-}
-
-const handleTopLocation= (value) => {
-    const topLocationValue = document.getElementById('topLocation');
-    const topLocationList = document.getElementById('topLocationList');
-    topLocationValue.innerText = value;
-    topLocationList.style.display = 'none';
-}
-const handleSupportTypeButton = () => {
-    const supportTypeList = document.getElementById('supportTypeList');
-    const supportTypeListStyle = supportTypeList.style.display;
-    if (supportTypeListStyle != 'flex') {
-        supportTypeList.style.display = 'flex';
-    }
-    else {
-        supportTypeList.style.display = 'none';
-    }
-}
-
-const handleSupportTypeList = (value) => {
-    const supportTypeValue = document.getElementById('support-type');
-    const supportTypeList = document.getElementById('supportTypeList');
-    supportTypeValue.value = value;
-    supportTypeList.style.display = 'none';
-}
-const handleTypeButton = () => {
-    const typeList = document.getElementById('typeList');
-    const typeListStyle = typeList.style.display;
-    if (typeListStyle != 'flex') {
-        typeList.style.display = 'flex';
-    }
-    else {
-        typeList.style.display = 'none';
-    }
-}
-
-const handleTypeList = (value) => {
-    const typeValue = document.getElementById('type');
-    const typeList = document.getElementById('typeList');
-    typeValue.value = value;
-    typeList.style.display = 'none';
-}
 
 const refreshSorting = () => {
     const fromValue = document.getElementById('fromDatepicker');
