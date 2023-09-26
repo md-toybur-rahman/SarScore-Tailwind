@@ -161,9 +161,11 @@ button.form-control {
 	background: #39CCCC;
 	font: bold;
 }
-#mobile_menubar{
+
+#mobile_menubar {
 	width: 260px;
 }
+
 #mobile_menubar .lightIcon {
 	width: 18px;
 }
@@ -172,12 +174,26 @@ button.form-control {
 	width: 18px;
 }
 
-#mobile_menubar span{
+#mobile_menubar span {
 	font-size: 12px;
 }
 
 @media only screen and (max-width: 1440px) {
 	#main_content {
-	  max-width: 1116px;
+		max-width: 1116px;
 	}
-  }
+}
+
+@media only screen and (max-width: 768px) {
+	.progress-bar {
+		width: 150px;
+		height: 150px;
+	}
+
+	.progress-bar::before {
+		content: "38%";
+		font-size: 26px;
+		font-weight: bold;
+		color: #656565;
+	}
+}
