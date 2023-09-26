@@ -49,7 +49,7 @@ new Chart(accessibilityChart, {
         datasets: [
             {
                 label: 'Daily',
-                data: [20, 35, 15, 5, 30, 45, 10, 25, 50, 40, 15, 35],
+                data: [20, 35, 15, 5, 30, 45, 10, 25, 45, 40, 15, 35],
                 borderWidth: 1,
                 backgroundColor: '#484E80',
                 borderRadius: 5,
@@ -57,7 +57,7 @@ new Chart(accessibilityChart, {
             },
             {
                 label: 'Weekly',
-                data: [35, 15, 40, 50, 25, 10, 45, 30, 5, 15, 35, 20],
+                data: [35, 15, 40, 40, 25, 10, 45, 30, 5, 15, 35, 20],
                 borderWidth: 1,
                 backgroundColor: '#39CCCC',
                 borderRadius: 5,
@@ -70,6 +70,12 @@ new Chart(accessibilityChart, {
             legend: {
                 display: false,
             }
+        },
+        scales: {
+            y: { // defining min and max so hiding the dataset does not change scale range
+                min: 0,
+                max: 50
+            },
         }
     }
 });
@@ -131,7 +137,7 @@ new Chart(globalChart, {
         datasets: [
             {
                 // label: 'Daily',
-                data: [{ id: 50,  value: 'Time To Access From Vehicle' }, { id: 45,  value: 'Parking Availability' },{ id: 46,  value: 'Wheelchair Access' },{ id: 40,  value: 'Road And Terrain Conditions' },{ id: 30,  value: 'Building Type And Elevation' },{ id: 20,  value: 'Exposure To Elements' }, { id: 30,  value: 'Lift Availability' },{ id: 50,  value: 'Risk Of Parking Penalties' },],
+                data: [{ id: 50, value: 'Time To Access From Vehicle' }, { id: 45, value: 'Parking Availability' }, { id: 46, value: 'Wheelchair Access' }, { id: 40, value: 'Road And Terrain Conditions' }, { id: 30, value: 'Building Type And Elevation' }, { id: 20, value: 'Exposure To Elements' }, { id: 30, value: 'Lift Availability' }, { id: 50, value: 'Risk Of Parking Penalties' },],
                 borderWidth: 1,
                 backgroundColor: [
                     '#FFAB00',
@@ -158,8 +164,14 @@ new Chart(globalChart, {
         parsing: {
             xAxisKey: 'id',
             yAxisKey: 'value',
-            
+
         },
-        indexAxis: 'y'
-    }
+        indexAxis: 'y',
+        scales: {
+            x: { // defining min and max so hiding the dataset does not change scale range
+                min: 0,
+                max: 100
+            },
+        }
+    },
 });
