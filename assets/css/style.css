@@ -175,3 +175,9 @@ button.form-control {
 #mobile_menubar span{
 	font-size: 12px;
 }
+
+@media only screen and (max-width: 1440px) {
+	#main_content {
+	  max-width: 1116px;
+	}
+  }

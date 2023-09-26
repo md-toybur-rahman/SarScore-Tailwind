@@ -43,12 +43,11 @@
 
 <body class="max-w-[1573px] min-w-[360px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
-        <div id="dashboard" class="hidden md:block row-span-full w-[350px] duration-500 bg-white">
-            <div class="flex items-end justify-between mt-10 px-5">
+        <div id="dashboard" class="hidden md:block w-[350px] duration-500 bg-white">
+            <div class="flex justify-between mt-10 px-5">
                 <img id="logo" src="assets/icons/Group 2319.png" alt="">
-                <div onclick="menuButtonHandler()" class="cursor-pointer">
-                    <img class="h-4 w-6" src="assets/icons/Group 2318.png" alt="">
-                </div>
+                <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer" src="assets/icons/Group 2318.png"
+                    alt="">
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
                 <a href="/Dashboard.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
@@ -117,18 +116,18 @@
                 </a>
             </div>
         </div>
-        <div class="px-3 md:px-0 md:mx-5 w-full">
+        <div id="main_content" class="px-3 md:px-0 md:mx-5 flex-grow">
             <!-- Accessibility Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Mobile menubar -->
-                <section>
+                <section class="md:hidden">
                     <div class="flex justify-between px-5 py-5">
-                        <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
                         <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
-                            src="assets/icons/Group 2318.png" alt="">
+                        src="assets/icons/Group 2318.png" alt="">
+                        <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
                     </div>
                     <div class="relative">
-                        <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -right-72 z-10">
+                        <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10">
                             <a href="/Dashboard.html" class="mobile_menuButton h-[63px] px-5 flex items-center gap-2">
                                 <img class="darkIcon" src="assets/icons/Group 481.png" alt="">
                                 <img class="lightIcon" src="assets/icons/Group 48.png" alt="">

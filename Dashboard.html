@@ -127,11 +127,21 @@
             <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Mobile menubar -->
-                <section>
-                    <div class="flex justify-between px-5 py-5">
-                        <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
+                <section class="md:hidden">
+                    <div class="flex justify-between items-center px-5 py-5">
                         <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
                             src="assets/icons/Group 2318.png" alt="">
+                        <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
+                        <div class="flex items-end gap-3">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[16px] md:w-auto" src="assets/icons/Group 2372.png" alt="">
+                                <div>
+                                    <h4 class="font-bold text-sm">Joseph</h4>
+                                    <p class="text-xs text-right">Admin</p>
+                                </div>
+                            </div>
+                            <div class="w-3 h-3 bg-[#28C66F] rounded-full"></div>
+                        </div>
                     </div>
                     <div class="relative">
                         <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -right-72 z-10">
@@ -140,7 +150,7 @@
                                 <img class="lightIcon" src="assets/icons/Group 48.png" alt="">
                                 <span class="menuTitle text-sm">Dashboard</span>
                             </a>
-                            <a href="/Accessibility_Rating.html"
+                            <a href="Accessibility_Rating.html"
                                 class="menuButton h-[63px] px-5 flex items-center gap-2">
                                 <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                                 <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
@@ -207,7 +217,7 @@
                 <section class="flex items-center justify-between p-3 md:p-7 rounded-xl text-base md:text-xl bg-white">
                     <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368 (1).png" alt="">
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
-                    <div class="flex items-end gap-10 md:gap-16">
+                    <div class="hidden md:flex items-end gap-16">
                         <div class="flex items-center gap-5 md:gap-14">
                             <img class="w-[18px] md:w-auto" src="assets/icons/Group 2372.png" alt="">
                             <div>
@@ -220,35 +230,37 @@
                 </section>
 
                 <!-- Sorting panel -->
-                <section class="flex justify-end items-center gap-[10px] mt-12">
+                <section class="md:flex justify-end items-center gap-[10px] mt-12">
                     <h3 class="text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
 
-                    <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div class="px-2 w- bg-white font flex items-center justify-between">
-                            <p class="w-fit text-sm">From: <input id="fromDatepicker" class="outline-none w-20"
-                                    placeholder="Select" type="text" required> </p>
+                    <div class="flex justify-end items-center gap-[10px]">
+                        <div class="relative bg-white px-1 py-2 rounded-xl">
+                            <div class="px-2 w- bg-white font flex items-center justify-between">
+                                <p class="w-fit text-sm">From: <input id="fromDatepicker" class="outline-none w-20"
+                                        placeholder="Select" type="text" required> </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="relative bg-white px-1 py-2 rounded-xl">
-                        <div class="px-2 w- bg-white flex items-center justify-between">
-                            <p class="w-fit text-sm">To: <input id="toDatepicker" placeholder="Select"
-                                    class="outline-none w-28" type="text" required></p>
+                        <div class="relative bg-white px-1 py-2 rounded-xl">
+                            <div class="px-2 w- bg-white flex items-center justify-between">
+                                <p class="w-fit text-sm">To: <input id="toDatepicker" placeholder="Select"
+                                        class="outline-none w-28" type="text" required></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
-                        <div class="bg-white flex items-center justify-between">
-                            <p class="w-fit text-sm">Type: </p>
-                            <select class="border-0 outline-none w-28" id="selectElement">
-                                <option value=""></option>
-                                <option>Option 1</option>
-                                <option>Option 2</option>
-                                <option>Option 3</option>
-                            </select>
+                        <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                            <div class="bg-white flex items-center justify-between">
+                                <p class="w-fit text-sm">Type: </p>
+                                <select class="border-0 outline-none w-28" id="selectElement">
+                                    <option value=""></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <button onclick="refreshSorting()"
-                        class="ml-[35px] px-10 py-[10px] text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>
+                        class="md:ml-[35px] px-10 py-[10px] text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 

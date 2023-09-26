@@ -57,15 +57,15 @@ const menuButtonHandler = () => {
 // Mobile Menu button handler
 const mobileMenuButtonHandler = () => {
     const menubar = document.getElementById('mobile_menubar');
-    if(menubar.style.right != '0px'){
+    if(menubar.style.left != '0px'){
         // menubar.classList.add('right-0');
         // menubar.classList.remove('-right-72');
-        menubar.style.right = '0px'
+        menubar.style.left = '0px'
     }
     else{
         // menubar.classList.remove('right-0');
         // menubar.classList.add('-right-72');
-        menubar.style.right = '-288px'
+        menubar.style.left = '-288px'
     }
 }
 // End Mobile Menu button handler
