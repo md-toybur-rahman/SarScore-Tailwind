@@ -1,83 +1,90 @@
 .progress-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    width: 188px;
-    height: 188px;
-    border-radius: 50%;
-    background:
-        radial-gradient(closest-side, white 79%, transparent 80% 100%),
-        conic-gradient(#28C66F 38%, #81DCAA 0);
+	width: 188px;
+	height: 188px;
+	border-radius: 50%;
+	background:
+		radial-gradient(closest-side, white 79%, transparent 80% 100%),
+		conic-gradient(#28C66F 38%, #81DCAA 0);
 }
 
 .progress-bar::before {
-    content: "38%";
-    font-size: 36px;
-    font-weight: bold;
-    color: #656565;
+	content: "38%";
+	font-size: 36px;
+	font-weight: bold;
+	color: #656565;
 }
 
 input[type=date]:required:invalid::-webkit-datetime-edit {
-    color: transparent;
+	color: transparent;
 }
 
 input[type=date]:focus::-webkit-datetime-edit {
-    color: black !important;
+	color: black !important;
 }
 
 
 
 ::-webkit-scrollbar {
-    width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: #DDDDDD;
+	border-radius: 10px;
+	background-color: #DDDDDD;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #DDDDDD;
+	background: white;
+	border-radius: 10px;
+	border: 1px solid #DDDDDD;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: gray;
+	background: gray;
 }
 
 
 
 
-.box .form-control{
+.box .form-control {
 	max-width: 300px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
-.datepicker{
+
+.datepicker {
 	font-family: 'Exo 2', sans-serif;
 }
-.datepicker--cell.-range-to-{
+
+.datepicker--cell.-range-to- {
 	background: rgba(248, 206, 236, 0.4);
 	border-color: rgba(248, 206, 236, 1);
 }
-.datepicker--cell.-current-{}
-.datepicker--cell.-selected-,.datepicker--cell.-selected-.-focus-{
+
+.datepicker--cell.-current- {}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-focus- {
 	background-color: #f8ceec;
 	color: #000000;
 }
-.datepicker--cell.-in-range-{
+
+.datepicker--cell.-in-range- {
 	background: rgba(248, 206, 236, 0.2);
 }
+
 .datepicker--cell-day {
-    font-weight: 500;
-    color: #000000;
+	font-weight: 500;
+	color: #000000;
 }
 
-.form-control{
+.form-control {
 	height: 50px;
 	font-size: 16px;
 	color: #414D64;
@@ -93,52 +100,78 @@ input[type=date]:focus::-webkit-datetime-edit {
 	transition: all 0.3s ease-in-out;
 	text-align: center;
 }
-textarea.form-control{
+
+textarea.form-control {
 	height: 120px;
 	padding-top: 15px;
 }
-.form-control-plaintext{
+
+.form-control-plaintext {
 	font-size: 18px;
 	color: #434343;
 }
-button.form-control{
+
+button.form-control {
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.form-control:focus{
+
+.form-control:focus {
 	border-color: #37B448;
 	-webkit-box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
 	-moz-box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
 	box-shadow: 0px 2px 6px rgba(55, 180, 72, .15);
 }
 
-#thead{
-    height: 38px;
-    margin-bottom: 10px;
-}
-#tbody tr{
-    height: 68px;
+#thead {
+	height: 38px;
+	margin-bottom: 10px;
 }
 
-/* #dashboard a img:nth-child(2n + 2) {
-	display: none;
-} */
-
-#menubar a{
-
+#tbody tr {
+	height: 68px;
 }
-.active, #menubar a:hover{
+
+
+.active,
+#menubar a:hover {
 	color: white;
 	background: #39CCCC;
 	font: bold;
 }
 
-.lightIcon{
+.lightIcon {
 	display: none;
 }
-.active .lightIcon{
+
+.active .lightIcon {
 	display: block;
 }
-.active .darkIcon{
+
+.active .darkIcon {
 	display: none;
+}
+
+
+
+/* Responsive Style */
+.active,
+#mobile_menubar a:hover {
+	color: white;
+	background: #39CCCC;
+	font: bold;
+}
+#mobile_menubar{
+	width: 260px;
+}
+#mobile_menubar .lightIcon {
+	width: 18px;
+}
+
+#mobile_menubar .darkIcon {
+	width: 18px;
+}
+
+#mobile_menubar span{
+	font-size: 12px;
 }

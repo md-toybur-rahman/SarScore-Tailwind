@@ -54,9 +54,36 @@ const menuButtonHandler = () => {
 }
 // End Menu Button Handler
 
+// Mobile Menu button handler
+const mobileMenuButtonHandler = () => {
+    const menubar = document.getElementById('mobile_menubar');
+    if(menubar.style.right != '0px'){
+        // menubar.classList.add('right-0');
+        // menubar.classList.remove('-right-72');
+        menubar.style.right = '0px'
+    }
+    else{
+        // menubar.classList.remove('right-0');
+        // menubar.classList.add('-right-72');
+        menubar.style.right = '-288px'
+    }
+}
+// End Mobile Menu button handler
+
 // Active NavLink
 const header = document.getElementById("menubar");
 const btns = header.getElementsByClassName("menuButton");
+for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+// End Active NavLink
+// Active NavLink
+const mobile_header = document.getElementById("mobile_menubar");
+const mobile_btns = header.getElementsByClassName("mobile_menuButton");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function () {
         const current = document.getElementsByClassName("active");
