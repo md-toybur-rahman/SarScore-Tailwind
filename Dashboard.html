@@ -233,22 +233,22 @@
                 <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
                     <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
 
-                    <div class="flex items-center md:gap-[10px]">
+                    <div class="flex items-center gap-2 md:gap-[10px]">
                         <div class="relative bg-white md:px-1 py-2 rounded-xl">
-                            <div class="md:px-2 bg-white font flex items-center justify-between">
+                            <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
                                         class="outline-none w-16 md:w-20" placeholder="Select" type="text" required>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="relative bg-white md:px-1 py-2 rounded-xl">
+                        <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
                             <div class="px-2 w- bg-white flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
                                         class="outline-none w-16 md:w-28" type="text" required></p>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-xl">
+                        <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
                             <div class="bg-white flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">Type: </p>
                                 <select class="border-0 text-xs md:text-sm outline-none overflow-hidden w-20 md:w-28"
@@ -260,9 +260,9 @@
                                 </select>
                             </div>
                         </div>
-                        <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                     </div>
+                    <button onclick="refreshSorting()"
+                    class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 
@@ -279,7 +279,7 @@
                             </div>
                             <div
                                 class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px]" src="assets/icons/Group 2495.png" alt="">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
                             </div>
                         </div>
                         <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-2xl">
@@ -291,7 +291,7 @@
                             </div>
                             <div
                                 class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px]" src="assets/icons/Group 2496.png" alt="">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
                             </div>
                         </div>
                         <div class="flex items-center justify-between py-2 md:p-8 bg-white rounded-2xl">
@@ -303,7 +303,7 @@
                             </div>
                             <div
                                 class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px]" src="assets/icons/Group 2497.png" alt="">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
                             </div>
                         </div>
                     </section>
@@ -499,8 +499,8 @@
                                 </div>
                             </div>
                             <div class="md:flex justify-end items-center gap-3">
-                                <div class="flex items-center gap-3">
-                                    <div class="relative bg-white md:px-1 py-2 rounded-xl">
+                                <div class="grid grid-cols-2 md:flex items-center gap-3 mb-2 md:mb-0">
+                                    <div class="relative bg-white md:px-1 py-2 rounded-lg md:rounded-xl">
                                         <div class="md:px-2 bg-white font flex items-center justify-between">
                                             <p class="w-fit text-xs md:text-sm">From: <input id="ticketDatepicker"
                                                     class="outline-none w-16 md:w-20" placeholder="Select" type="text"
@@ -508,7 +508,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-xl">
+                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
                                         <div class="bg-white flex items-center justify-between">
                                             <p class="w-fit text-xs md:text-sm">Priority: </p>
                                             <select
@@ -522,8 +522,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-xl">
+                                <div class="grid grid-cols-2 md:flex items-center gap-3">
+                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
                                         <div class="bg-white flex items-center justify-between">
                                             <p class="w-fit text-xs md:text-sm">Type: </p>
                                             <select
@@ -536,7 +536,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-xl">
+                                    <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
                                         <div class="bg-white flex items-center justify-between">
                                             <p class="w-fit text-xs md:text-sm">Category: </p>
                                             <select
@@ -556,13 +556,13 @@
 
                         <!-- Support Table -->
                         <div class="overflow-x-auto mt-10">
-                            <table class="table">
+                            <table class="table text-xs md:text-sm">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
-                                    <tr class="bg-white text-sm">
+                                    <tr class="bg-white text-xs md:text-sm">
                                         <th class="rounded-s-2xl">
                                             <label>
-                                                <input type="checkbox" class="checkbox" />
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
                                             </label>
                                         </th>
                                         <th>Name</th>
@@ -681,10 +681,10 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <div class="flex justify-end">
-                                <button class="bg-[#39CCCC] px-10 py-[10px] text-sm mt-4 text-white rounded-xl">View
-                                    All</button>
-                            </div>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="mt-2 px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
+                                All</button>
                         </div>
                         <!-- End Support Table -->
                     </section>
@@ -692,10 +692,10 @@
                     <!-- Announcements Tickets -->
                     <section class="mt-7">
                         <div class=" bg-white px-7 py-10 rounded-2xl">
-                            <h1 class="text-2xl font-semibold">Announcements</h1>
+                            <h1 class="text-lg md:text-2xl font-semibold">Announcements</h1>
                             <!-- Support Table -->
                             <div class="overflow-x-auto mt-10 h-[300px] overflow-y-scroll">
-                                <table class="table">
+                                <table class="table text-xs md:text-base">
                                     <tbody class="bg-white">
                                         <!-- row 1 -->
                                         <tr class="border-b-2 border-[#FAFAFA]">
@@ -706,8 +706,8 @@
                                                 Daila Ouldcott
                                             </td>
                                             <td class="font-semibold">
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -726,8 +726,8 @@
                                                 Jacob Jones
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -746,8 +746,8 @@
                                                 Guy Hawkins
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -767,8 +767,8 @@
                                                 Darlene Robertson
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -787,8 +787,8 @@
                                                 Darlene Robertson
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -808,8 +808,8 @@
                                                 Darlene Robertson
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -829,8 +829,8 @@
                                                 Darlene Robertson
                                             </td>
                                             <td>
-                                                <h5>campimetrical lentisk excluding portlet coccinellid</h5>
-                                                <h5>Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
+                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet coccinellid</h5>
+                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish laminable ineunt popshop catalyte prismatize</h5>
                                             </td>
                                             <th>
                                                 <button
@@ -847,7 +847,7 @@
                             <!-- End Announcements Table -->
                         </div>
                         <div class="flex justify-end">
-                            <button class="bg-[#39CCCC] px-10 py-[10px] text-sm mt-4 text-white rounded-xl">View
+                            <button class="mt-2 px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
                                 All</button>
                         </div>
                     </section>
@@ -856,7 +856,7 @@
                 <!-- End Dashboard Item -->
             </div>
             <!-- Dashboard Contain End -->
-            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-[179px]">
+            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-5 md:py-10 mt-10 md:mt-[179px] text-xs md:text-base">
                 <h3>2023 &copy; SARSocore</h3>
                 <h3>Help & Support</h3>
             </footer>
