@@ -225,26 +225,26 @@
                 <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
                     <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
 
-                    <div class="flex items-center gap-[10px]">
+                    <div class="flex items-center gap-2 md:gap-[10px]">
                         <div class="relative bg-white md:px-1 py-2 rounded-xl">
-                            <div class="md:px-2 bg-white font flex items-center justify-between">
+                            <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
                                         class="outline-none w-16 md:w-20" placeholder="Select" type="text" required>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="relative bg-white md:px-1 py-2 rounded-xl">
+                        <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
                             <div class="px-2 w- bg-white flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
                                         class="outline-none w-16 md:w-28" type="text" required></p>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                        <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
                             <div class="bg-white flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">Type: </p>
                                 <select class="border-0 text-xs md:text-sm outline-none overflow-hidden w-20 md:w-28"
-                                    id="selectElement4">
+                                    id="selectElement">
                                     <option value=""></option>
                                     <option>Option 1</option>
                                     <option>Option 2</option>
@@ -252,24 +252,24 @@
                                 </select>
                             </div>
                         </div>
-                        <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">Refresh</button>
                     </div>
+                    <button onclick="refreshSorting()"
+                        class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
                 <!-- Accessability Item -->
                 <section>
-                    <h1 class="text-2xl font-semibold mt-2 mb-10">Accessibility Ratings</h1>
+                    <h1 class="text-lg md:text-2xl font-semibold mt-2 mb-10">Accessibility Ratings</h1>
                     <section class="grid grid-cols-4 gap-5 mt-4">
                         <div class="p-8 bg-white rounded-2xl">
                             <div>
-                                <h5 class="text-base">Total Accessibility</h5>
+                                <h5 class="text-xs md:text-sm">Total Accessibility</h5>
                                 <div class="flex items-end gap-3">
-                                    <h1 class="text-[34px] font-[inter] font-bold my-3">2198</h1>
-                                    <h6 class="text-[#28C66F] font-[inter] text-base"><i
-                                            class="fa-solid fa-arrow-up"></i> 1.700</h6>
+                                    <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198</h1>
+                                    <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                        1.700</h6>
                                 </div>
                             </div>
                         </div>
@@ -277,11 +277,11 @@
                             <div class="relative bg-white rounded-xl">
                                 <div onclick="dropdownButtonHandler('topCategoryList')"
                                     class="bg-white flex items-center gap-3 cursor-pointer">
-                                    <p class="text-sm flex">Top Category: </p>
+                                    <p class="text-xs md:text-sm flex">Top Category: </p>
                                     <img src="assets/icons/Group 310.png" alt="">
                                 </div>
                                 <ul id="topCategoryList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden text-xs md:text-sm">
                                     <li onclick="dropdownListHandler('topCategory', 'topCategoryList' ,'Wheelchair Access')"
                                         class="hover:font-semibold">
                                         Wheelchair Access</li>
@@ -294,18 +294,18 @@
                                 </ul>
                             </div>
                             <div class="flex items-end gap-3">
-                                <h1 class="text-[34px] font-[inter] font-bold my-3">234</h1>
-                                <h6 class="text-[#28C66F] font-[inter] text-base"><i class="fa-solid fa-arrow-up"></i>
+                                <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">234</h1>
+                                <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
                                     1.700</h6>
                             </div>
-                            <h4 id="topCategory" class="text-xs font-bold">Wheelchair Access</h4>
+                            <h4 id="topCategory" class="text-[10px] md:text-xs font-bold">Wheelchair Access</h4>
                         </div>
                         <div class="p-8 bg-white rounded-2xl">
                             <div>
-                                <h5 class="text-base">Average Accessibility Score</h5>
+                                <h5 class="text-xs md:text-sm">Average Accessibility Score</h5>
                                 <div class="flex items-end gap-3">
-                                    <h1 class="text-[34px] font-[inter] font-bold my-3">4</h1>
-                                    <h6 class="text-[#C34E2A] font-[inter] text-base"><i
+                                    <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">4</h1>
+                                    <h6 class="text-[#C34E2A] font-[inter] text-xs md:text-base"><i
                                             class="fa-solid fa-arrow-down"></i> 1.700</h6>
                                 </div>
                             </div>
@@ -314,11 +314,11 @@
                             <div class="relative bg-white rounded-xl">
                                 <div onclick="dropdownButtonHandler('topLocationList')"
                                     class="bg-white flex items-center gap-3 cursor-pointer">
-                                    <p class="text-sm flex">Top-Rated Location: </p>
+                                    <p class="text-xs md:text-sm flex">Top-Rated Location: </p>
                                     <img src="assets/icons/Group 310.png" alt="">
                                 </div>
                                 <ul id="topLocationList"
-                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden">
+                                    class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden text-xs md:text-sm">
                                     <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'London')"
                                         class="hover:font-semibold">London</li>
                                     <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'Manhattan')"
@@ -332,8 +332,9 @@
                                 </ul>
                             </div>
                             <div class="flex items-end gap-3">
-                                <h1 id="topLocation" class="text-[34px] font-[inter] font-bold my-3">London</h1>
-                                <h6 class="text-[#28C66F] font-[inter] text-base"><i class="fa-solid fa-arrow-up"></i>
+                                <h1 id="topLocation"
+                                    class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">London</h1>
+                                <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
                                     1.700</h6>
                             </div>
                         </div>
@@ -341,8 +342,8 @@
                     <!-- end user panel -->
 
                     <!-- registration chart -->
-                    <section class="mt-20 gap-5 flex justify-center">
-                        <div class="px-8 py-7 rounded-2xl bg-white w-[1253px]">
+                    <section class="mt-10 md:mt-20 gap-5 flex justify-center">
+                        <div class="px-8 py-7 rounded-2xl bg-white md:w-[1253px]">
                             <canvas style="height:333px; width:900px; font-size:24px;"
                                 id="accessibility-chart"></canvas>
                         </div>
@@ -353,13 +354,15 @@
 
                     <!-- Category Brake Down -->
                     <section>
-                        <div class="mt-10 flex items-center justify-between">
-                            <h1 class="text-2xl font-semibold">Category Brake Down</h1>
-                            <div class="flex justify-end items-center gap-3">
-                                <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                        <div class="mt-10 flex flex-col md:flex-row md:items-center md:justify-between">
+                            <h1 class="text-lg md:text-2xl font-semibold">Category Brake Down</h1>
+                            <div class="flex md:justify-end md:items-center gap-3">
+                                <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
                                     <div class="bg-white flex items-center justify-between">
-                                        <p class="w-fit text-sm">Sort By Category: </p>
-                                        <select class="border-0 outline-none w-20" id="selectElement5">
+                                        <p class="w-fit text-xs md:text-sm">Sort By Category: </p>
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20"
+                                            id="selectElement">
                                             <option value=""></option>
                                             <option>High</option>
                                             <option>Medium</option>
@@ -367,10 +370,12 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                                <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
                                     <div class="bg-white flex items-center justify-between">
-                                        <p class="w-fit text-sm">Postcode: </p>
-                                        <select class="border-0 outline-none w-20" id="selectElement6">
+                                        <p class="w-fit text-xs md:text-sm">Postcode: </p>
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20"
+                                            id="selectElement">
                                             <option value=""></option>
                                             <option>Option 1</option>
                                             <option>Option 2</option>
@@ -378,17 +383,19 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white px-4 h-[36px] rounded-xl">
+                                <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
                                     <div class="bg-white flex items-center justify-between">
-                                        <p class="w-fit text-sm">3+ Miles: </p>
-                                        <select class="border-0 outline-none w-20" id="selectElement7">
+                                        <p class="w-fit text-xs md:text-sm">3+ Miles: </p>
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20"
+                                            id="selectElement7">
                                             <option value=""></option>
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div>>
                             </div>
                         </div>
                     </section>
@@ -396,10 +403,10 @@
                     <!-- End Category Brake Down -->
 
                     <!-- Access From Vehicle -->
-                    <section class="grid grid-cols-6 gap-5 mt-[50px]">
-                        <div class="px-8 py-7 col-span-2 bg-white rounded-2xl">
+                    <section class="grid md:grid-cols-6 gap-5 mt-[50px]">
+                        <div class="md:px-8 md:py-7 py-4 col-span-2 bg-white rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-lg font-semibold">Time To Access From Vehicle</h1>
+                                <h1 class="text-lg md:text-2xl font-semibold">Time To Access From Vehicle</h1>
                                 <img src="assets/icons/Group 109.png" alt="">
                             </div>
                             <div class="flex justify-center">
@@ -416,11 +423,12 @@
                             </div>
                             <div class="flex justify-between items-end mt-7">
                                 <div>
-                                    <h1 class="text-sm text-[#656565]">Time</h1>
-                                    <h1 class="text-[34px] font-bold mt-2">1-2 min</h1>
+                                    <h1 class="text-xs md:text-sm text-[#656565]">Time</h1>
+                                    <h1 class="text-2xl md:text-[34px] font-bold mt-2">1-2 min</h1>
                                 </div>
                                 <div>
-                                    <h1 class="text-[#28C66F]"><i class="fa-solid fa-arrow-up"></i> 62%</h1>
+                                    <h1 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                        62%</h1>
                                     <p class="text-xs text-[#656565]">More than last month</p>
                                 </div>
                             </div>
