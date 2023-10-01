@@ -1,8 +1,4 @@
-console.log(window.scrollY);
-function getScroll () {
-    console.log(scrollY);
-}
-abc();
+
 
 // Dropdown function
 const dropdownButtonHandler = (ListId) => {
