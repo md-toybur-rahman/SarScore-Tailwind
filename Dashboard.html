@@ -45,7 +45,7 @@
     <title>SARScore</title>
 </head>
 
-<body class="max-w-[1573px] min-w-[360px] mx-auto">
+<body onscroll="getScroll()" class="max-w-[1573px] min-w-[360px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
         <div id="dashboard" class="hidden md:block row-span-full w-[350px] duration-500 bg-white">
@@ -123,98 +123,99 @@
         </div>
         <!-- Menubar End -->
 
+        <!-- Mobile menubar -->
+        <section id="menubar_container" class="fixed top-0 z-20 md:hidden bg-white">
+            <div class="flex justify-between items-center px-2 py-3 w-[100vw]">
+                <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
+                    src="assets/icons/Group 2318.png" alt="">
+                <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
+                <div class="flex items-end gap-3">
+                    <div class="flex items-center gap-3">
+                        <img class="w-[16px] md:w-auto" src="assets/icons/Group 2372.png" alt="">
+                        <div>
+                            <h4 class="font-bold text-sm">Joseph</h4>
+                            <p class="text-xs text-right">Admin</p>
+                        </div>
+                    </div>
+                    <div class="w-3 h-3 bg-[#28C66F] rounded-full"></div>
+                </div>
+            </div>
+            <div class="relative">
+                <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10 overflow-y-scroll">
+                    <a href="#" class="menuButton active h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 481.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 48.png" alt="">
+                        <span class="menuTitle text-sm">Dashboard</span>
+                    </a>
+                    <a href="Accessibility_Rating.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle text-sm">Accessibility Rating</span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">User
+                            Management<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
+                            Management<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Service
+                            Requests<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
+                            Stats<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
+                            Center<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
+                            Tickets<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
+                            Maintenance<i class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<i
+                                class="fa-solid fa-chevron-down"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Menubar -->
         <div class="px-3 md:px-0 md:mx-5 w-full">
             <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
-                <!-- Mobile menubar -->
-                <section id="menubar_container" class="fixed z-20 md:hidden">
-                    <div class="flex justify-between items-center px-2 pe-7 py-5 w-[100vw]">
-                        <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
-                            src="assets/icons/Group 2318.png" alt="">
-                        <img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.png" alt="">
-                        <div class="flex items-end gap-3">
-                            <div class="flex items-center gap-3">
-                                <img class="w-[16px] md:w-auto" src="assets/icons/Group 2372.png" alt="">
-                                <div>
-                                    <h4 class="font-bold text-sm">Joseph</h4>
-                                    <p class="text-xs text-right">Admin</p>
-                                </div>
-                            </div>
-                            <div class="w-3 h-3 bg-[#28C66F] rounded-full"></div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10">
-                            <a href="#" class="menuButton active h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 481.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 48.png" alt="">
-                                <span class="menuTitle text-sm">Dashboard</span>
-                            </a>
-                            <a href="Accessibility_Rating.html"
-                                class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle text-sm">Accessibility Rating</span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">User
-                                    Management<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
-                                    Management<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Service
-                                    Requests<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
-                                    Stats<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
-                                    Center<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
-                                        class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
-                                    Tickets<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
-                                    Maintenance<i class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                            <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
-                                <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
-                                <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
-                                <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<i
-                                        class="fa-solid fa-chevron-down"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
                 <!-- Search panel -->
-                <section class="flex items-center justify-between p-3 md:p-7 rounded-xl text-base md:text-xl bg-white">
+                <section
+                    class="flex items-center justify-between p-3 md:p-7 rounded-xl text-base md:text-xl bg-white mt-16 md:mt-0">
                     <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368 (1).png" alt="">
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
                     <div class="hidden md:flex items-end gap-16">

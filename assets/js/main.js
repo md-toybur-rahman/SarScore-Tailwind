@@ -1,9 +1,6 @@
 console.log(window.scrollY);
-function abc () {
-    const menubarContainer = document.getElementById('menubar_container')
-    if(window.scrollY >= 48) {
-        menubarContainer.style.background = 'red';
-    }
+function getScroll () {
+    console.log(scrollY);
 }
 abc();
 
@@ -64,7 +61,7 @@ const menuButtonHandler = () => {
 // End Menu Button Handler
 
 // Mobile Menu button handler
-const mobileMenuButtonHandler = () => {
+function mobileMenuButtonHandler ()  {
     const menubar = document.getElementById('mobile_menubar');
     if(menubar.style.left != '0px'){
         // menubar.classList.add('right-0');
