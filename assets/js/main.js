@@ -1,3 +1,12 @@
+console.log(window.scrollY);
+function abc () {
+    const menubarContainer = document.getElementById('menubar_container')
+    if(window.scrollY >= 48) {
+        menubarContainer.style.background = 'red';
+    }
+}
+abc();
+
 // Dropdown function
 const dropdownButtonHandler = (ListId) => {
     const List = document.getElementById(ListId);

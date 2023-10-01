@@ -343,9 +343,13 @@
 
                     <!-- registration chart -->
                     <section class="mt-10 md:mt-20 gap-5 gird grid-cols-1 justify-center">
-                        <div class="px-8 py-7 rounded-2xl bg-white md:w-[1253px]">
+                        <div class="px-8 py-7 rounded-2xl bg-white md:w-[1253px] md:hidden">
                             <canvas style=" font-size:24px;"
                                 id="accessibility-chart"></canvas>
+                        </div>
+                        <div class="px-8 py-7 rounded-2xl bg-white md:w-[1253px] hidden md:block">
+                            <canvas style=" font-size:24px;"
+                                id="accessibility-chart2"></canvas>
                         </div>
 
                     </section>
@@ -686,7 +690,7 @@
                 <!-- End Dashboard Item -->
             </div>
             <!-- Dashboard Contain End -->
-            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-[179px]">
+            <footer class="border-t-2 border-[#EAEAEA] flex justify-between py-10 mt-10 md:mt-[179px]">
                 <h3>2023 &copy; SARSocore</h3>
                 <h3>Help & Support</h3>
             </footer>
