@@ -65,13 +65,14 @@
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle text-sm">Accessibility Rating</span>
                 </a>
-                <a href="User_Management.html" class="menuButton active h-[63px] px-5 flex items-center gap-2">
+                <a href="User_Management.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Contributions_Managements.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                <a href="Contributions_Managements.html"
+                    class="menuButton active h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
@@ -104,7 +105,7 @@
                 <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Lists<i
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
                 <a href="#" class="menuButton h-[63px] px-5 flex items-center gap-2">
@@ -152,13 +153,14 @@
                         <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                         <span class="menuTitle text-sm">Accessibility Rating</span>
                     </a>
-                    <a href="User_Management.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
+                    <a href="User_Management.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                         <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">User
                             Management<i class="fa-solid fa-chevron-down"></i></span>
                     </a>
-                    <a href="Contributions_Managements.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                    <a href="Contributions_Managements.html"
+                        class="menuButton active h-[45px] px-3 flex items-center gap-2">
                         <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                         <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
@@ -211,7 +213,7 @@
         </section>
         <!-- End Mobile Menubar -->
         <div class="px-3 md:px-0 md:mx-5 w-full">
-            <!-- user management Contain Start -->
+            <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
                 <section
@@ -274,12 +276,52 @@
                 </section>
                 <!-- End Sorting Panel -->
 
+                <!-- user panel -->
                 <!-- Dashboard Item -->
                 <section>
-                    <!-- User List -->
-                    <section class="mt-2">
-                        <h1 class="text-lg md:text-2xl font-semibold md:ms-8">User List</h1>
-                        <!-- User List menu section -->
+                    <section class="grid grid-cols-3 gap-2 md:gap-5 mt-4">
+                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                            <div>
+                                <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
+                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Corporate</h1>
+                                <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                    1.700</h6>
+                            </div>
+                            <div
+                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                            <div>
+                                <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues Reported</h5>
+                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Time To Access
+                                </h1>
+                            </div>
+                            <div
+                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                            <div>
+                                <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
+                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">3 Days</h1>
+                                <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                    1.700</h6>
+                            </div>
+                            <div
+                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end user panel -->
+
+                    <!-- Contribution List -->
+                    <section class="mt-2 md:mt-[92px] ">
+                        <h1 class="text-lg md:text-2xl font-semibold md:ms-8">Contribution List</h1>
+                        <!-- Contribution List menu section -->
                         <div class="mt-5 md:mt-10 md:flex items-center justify-between">
                             <div class="flex items-center gap-2 md:gap-5">
                                 <div class="text-base bg-white rounded-xl flex items-center justify-between">
@@ -303,9 +345,9 @@
                                         src="assets/icons/Group 2618.png" alt=""></a>
                             </div>
                         </div>
-                        <!-- End user List menu section -->
+                        <!-- End Contribution List menu section -->
 
-                        <!-- User List Table -->
+                        <!-- Contribution List Table -->
                         <div class="overflow-x-auto mt-10">
                             <table class="table text-xs md:text-sm">
                                 <!-- head -->
@@ -422,16 +464,16 @@
                                 class="mt-[49px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
                                 More</button>
                         </div>
-                        <!-- End Support Table -->
+                        <!-- End Contribution Table -->
                     </section>
-                    <!-- End User list -->
+                    <!-- End Contribution List -->
 
 
 
-                    <!-- User Registration Management -->
+                    <!-- Status Management Management -->
                     <section class="mt-8 md:mt-[74px]">
-                        <h1 class="text-lg md:text-2xl font-semibold md:ms-8">User Registration Management</h1>
-                        <!-- User Registration management menu section -->
+                        <h1 class="text-lg md:text-2xl font-semibold md:ms-8">Status Management</h1>
+                        <!-- Status Management management menu section -->
                         <div class="mt-5 md:mt-10 md:flex items-center justify-between">
                             <div class="flex items-center gap-2 md:gap-5">
                                 <div class="text-base bg-white rounded-xl flex items-center justify-between">
@@ -496,9 +538,9 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End User List menu section -->
+                        <!-- End Contribution List menu section -->
 
-                        <!-- User registration management Table -->
+                        <!-- Status Management management Table -->
                         <div class="overflow-x-auto mt-10">
                             <table class="table text-xs md:text-sm">
                                 <!-- head -->
@@ -615,13 +657,13 @@
                                 class="mt-[74px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
                                 More</button>
                         </div>
-                        <!-- End user registration Table -->
+                        <!-- End Status Management Table -->
                     </section>
-                    <!-- End User Registration Management -->
+                    <!-- End Status Management Management -->
                 </section>
-                <!-- End user management Item -->
+                <!-- End Dashboard Item -->
             </div>
-            <!-- user management Contain End -->
+            <!-- Dashboard Contain End -->
             <footer
                 class="border-t-2 border-[#EAEAEA] flex justify-between py-5 md:py-10 mt-10 md:mt-[179px] text-xs md:text-base">
                 <h3>2023 &copy; SARSocore</h3>
