@@ -89,7 +89,7 @@
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Notification_Center.html" class="menuButton active h-[63px] px-5 flex items-center gap-2">
+                <a href="Notification_Center.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<i
@@ -101,7 +101,7 @@
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Support_Tickets.html" class="menuButton h-[63px] px-5 flex items-center gap-2">
+                <a href="Support_Tickets.html" class="menuButton active h-[63px] px-5 flex items-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<i
@@ -176,7 +176,7 @@
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
                             Stats<i class="fa-solid fa-chevron-down"></i></span>
                     </a>
-                    <a href="Notification_Center.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
+                    <a href="Notification_Center.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                         <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
@@ -188,7 +188,7 @@
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<i
                                 class="fa-solid fa-chevron-down"></i></span>
                     </a>
-                    <a href="Support_Tickets.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                    <a href="Support_Tickets.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
                         <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
                         <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
@@ -214,65 +214,44 @@
             <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
-                <section
-                    class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
-                    <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368 (1).png" alt="">
-                    <input class="flex-grow outline-none mx-2 h-6" type="text">
-                    <div class="hidden md:flex items-end gap-16">
-                        <div class="flex items-center gap-5 md:gap-14">
-                            <img class="w-[18px] md:w-auto" src="assets/icons/Group 2372.png" alt="">
-                            <div>
-                                <h4 class="font-bold text-sm md:text-base">Joseph</h4>
-                                <p class="text-xs md:text-sm text-right">Admin</p>
-                            </div>
+                <section <section class="grid grid-cols-3 gap-2 md:gap-5 mt-4">
+                    <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                        <div>
+                            <h5 class="text-xs md:text-base">Total Tickets</h5>
+                            <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2387</h1>
+                            <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                1.700</h6>
                         </div>
-                        <div class="w-4 h-3 md:h-4 bg-[#28C66F] rounded-full"></div>
+                        <div
+                            class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                            <img class="w-[20px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                        <div>
+                            <h5 class="text-xs md:text-base">Todays Tickets</h5>
+                            <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">47</h1>
+                            <h6 class="text-[#C34E2A] text-xs md:text-base"><i class="fa-solid fa-arrow-down"></i>
+                                1.700</h6>
+                        </div>
+                        <div
+                            class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                            <img class="w-[20px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                        <div>
+                            <h5 class="text-xs md:text-base">Open Tickets</h5>
+                            <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
+                            <h6 class="text-[#28C66F] text-xs md:text-base"><i class="fa-solid fa-arrow-up"></i>
+                                1.700</h6>
+                        </div>
+                        <div
+                            class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                            <img class="w-[20px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                        </div>
                     </div>
                 </section>
-
-                <!-- Sorting panel -->
-                <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
-                    <div>
-                        <h1 class="text-[#656565] text-xs md:text-sm md:ms-8">Breadcrumb > Page</h1>
-                    </div>
-                    <div class="md:flex items-center gap-[10px]">
-                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
-
-                        <div class="flex items-center gap-2 md:gap-[10px]">
-                            <div class="relative bg-white md:px-1 py-2 rounded-xl">
-                                <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
-                                    <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                            class="outline-none w-16 md:w-20" placeholder="Select" type="text" required>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
-                                <div class="px-2 w- bg-white flex items-center justify-between">
-                                    <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker"
-                                            placeholder="Select" class="outline-none w-16 md:w-28" type="text" required>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
-                                <div class="bg-white flex items-center justify-between">
-                                    <p class="w-fit text-xs md:text-sm">Type: </p>
-                                    <select
-                                        class="border-0 text-xs md:text-sm outline-none overflow-hidden w-20 md:w-28"
-                                        id="selectElement">
-                                        <option value=""></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
-                    </div>
-                </section>
-                <!-- End Sorting Panel -->
 
                 <!-- user panel -->
                 <!-- Dashboard Item -->
@@ -329,7 +308,7 @@
                         <!-- End Contribution List menu section -->
 
                         <!-- Status Management management Table -->
-                        <div class="overflow-x-auto mt-10 h-[350px] overflow-y-scroll">
+                        <div class="overflow-x-auto mt-10 ">
                             <table class="table text-xs md:text-base">
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
@@ -338,10 +317,10 @@
                                                 <img src="assets/icons/Group 240.png" alt="">
                                             </label>
                                         </th>
-                                        <th></th>
-                                        <th></th>
-                                        <th>Type</th>
-                                        <th>Date & Time</th>
+                                        <th>Customer</th>
+                                        <th>Subject</th>
+                                        <th>Status</th>
+                                        <th>Timestamp</th>
                                         <th class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
@@ -361,10 +340,11 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Alerts</h1>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <td class="text-xs font-semibold">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td>
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -385,10 +365,12 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Announcements</h1>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
+                                                Hold</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td>
                                             <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -409,10 +391,11 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Alerts</h1>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
@@ -431,10 +414,11 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Updates</h1>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
@@ -453,10 +437,11 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">System Alerts</h1>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
@@ -475,10 +460,11 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Announcements</h1>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
                                         </td>
                                         <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
@@ -497,20 +483,183 @@
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
                                         <th>
-                                            <h1 class="text-xs font-bold text-[#656565]">Alerts</h1>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
+                                                Hold</button>
                                         </th>
                                         <td class="text-xs">
-                                            27/09/23 9:57 AM
+                                            9:57 AM
+                                        </td>
+                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr>
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td class="font-semibold">
+                                            Daila Ouldcott
+                                        </td>
+                                        <td class="font-semibold">
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                        </th>
+                                        <td class="text-xs font-semibold">
+                                            9:57 AM
+                                        </td>
+                                        <td>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </td>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Jacob Jones
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
+                                                Hold</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
+                                        </td>
+                                        <td>
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </td>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
+                                        </td>
+                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr>
+                                    <!-- row 4 -->
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
+                                        </td>
+                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr>
+
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
+                                        </td>
+                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr>
+
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
+                                        </td>
+                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr>
+
+                                    <tr class="border-b-2 border-[#FAFAFA]">
+                                        <th>
+                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                        </th>
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                coccinellid</h5>
+                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
+                                                laminable ineunt popshop catalyte prismatize</h5>
+                                        </td>
+                                        <th>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
+                                                Hold</button>
+                                        </th>
+                                        <td class="text-xs">
+                                            9:57 AM
                                         </td>
                                         <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="flex justify-center">
-                            <button
-                                class="mt-[74px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
-                                More</button>
                         </div>
                         <!-- End Status Management Table -->
                     </section>

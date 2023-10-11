@@ -60,13 +60,9 @@ const menuButtonHandler = () => {
 function mobileMenuButtonHandler ()  {
     const menubar = document.getElementById('mobile_menubar');
     if(menubar.style.left != '0px'){
-        // menubar.classList.add('right-0');
-        // menubar.classList.remove('-right-72');
         menubar.style.left = '0px'
     }
     else{
-        // menubar.classList.remove('right-0');
-        // menubar.classList.add('-right-72');
         menubar.style.left = '-288px'
     }
 }
