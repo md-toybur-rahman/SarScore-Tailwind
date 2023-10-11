@@ -54,15 +54,35 @@ const menuButtonHandler = () => {
         })
     }
 }
+const menuButtonHandler2 = () => {
+    const dashboard = document.getElementById('dashboard');
+    const dashboardStyle = dashboard.style.width;
+    const logo = document.getElementById('logo');
+    const menuTitle = document.querySelectorAll(".menuTitle");
+    if (dashboardStyle != '350px') {
+        dashboard.style.width = '350px'
+        logo.style.display = 'block';
+        menuTitle.forEach(title => {
+            title.style.display = 'flex'
+        })
+    }
+    else {
+        dashboard.style.width = '81px'
+        logo.style.display = 'none';
+        menuTitle.forEach(title => {
+            title.style.display = 'none'
+        })
+    }
+}
 // End Menu Button Handler
 
 // Mobile Menu button handler
-function mobileMenuButtonHandler ()  {
+function mobileMenuButtonHandler() {
     const menubar = document.getElementById('mobile_menubar');
-    if(menubar.style.left != '0px'){
+    if (menubar.style.left != '0px') {
         menubar.style.left = '0px'
     }
-    else{
+    else {
         menubar.style.left = '-288px'
     }
 }
