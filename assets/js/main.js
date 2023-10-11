@@ -1,3 +1,14 @@
+function optionActivate (id) {
+    const buttonContainer = document.getElementById('buttonTest');
+    const selectedButton = document.getElementById(id)
+    const allButtons = buttonContainer.getElementsByTagName('button');
+    for (let i = 0; i < allButtons.length; i++) {
+        const element = allButtons[i];
+        element.classList.remove('bg-[#39CCCC]')
+    }
+    selectedButton.classList.add('bg-[#39CCCC]')
+
+}
 
 
 // Dropdown function

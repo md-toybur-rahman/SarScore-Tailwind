@@ -227,15 +227,22 @@
             </div>
             <ul class="grid grid-cols-1 gap-5 mt-[38px] text-sm">
                 <li><a class="text-[#3ACCCC] font-semibold" href="#">All Tickets</a></li>
-                <li><a class="flex items-center justify-between" href="#">Tickets to handle <span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">4</span></a></li>
-                <li><a class="flex items-center justify-between" href="#">Tickets to handle <span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
+                <li><a class="flex items-center justify-between" href="#">Tickets to handle <span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">4</span></a></li>
+                <li><a class="flex items-center justify-between" href="#">Tickets to handle <span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
             </ul>
             <ul class="grid grid-cols-1 gap-5 mt-[38px] text-sm">
-                <li><a class="text-[#3ACCCC] font-semibold flex items-center justify-between" href="#">Status <img src="assets/icons/Group 2728.png" alt=""></a></li>
-                <li><a class="flex items-center justify-between" href="#">Open<span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
-                <li><a class="flex items-center justify-between" href="#">Pending<span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
-                <li><a class="flex items-center justify-between" href="#">On hold<span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
-                <li><a class="flex items-center justify-between" href="#">Resolved<span class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
+                <li><a class="text-[#3ACCCC] font-semibold flex items-center justify-between" href="#">Status <img
+                            src="assets/icons/Group 2728.png" alt=""></a></li>
+                <li><a class="flex items-center justify-between" href="#">Open<span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
+                <li><a class="flex items-center justify-between" href="#">Pending<span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
+                <li><a class="flex items-center justify-between" href="#">On hold<span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
+                <li><a class="flex items-center justify-between" href="#">Resolved<span
+                            class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
                 <li><a href="#">Close</a></li>
                 <li><a href="#">Spam</a></li>
             </ul>
@@ -250,6 +257,160 @@
 
 
         <div class="px-3 md:px-0 md:mx-5 w-full">
+
+            <!-- Support Tickets Single Page -->
+            <section class="mt-[62px]">
+                <Button class="flex items-center gap-2">
+                    <img src="assets/icons/Group 26187.png" alt="">
+                    Back
+                </Button>
+
+                <section class="flex gap-[31px]">
+                    <div class="flex-grow bg-white rounded-xl">
+                        <div class="border-2 border-[#959090] flex items-center justify-between px-6 py-5 mb-[386px]">
+                            <h1 class="ms-4">Missing Rating</h1>
+                            <img src="assets/icons/ellipsis-vertical-outline.png" alt="">
+                        </div>
+                        <div class="m-3 px-3 rounded-lg border border-[#656565] py-5">
+                            <textarea class="w-full resize-none px-5 outline-none" placeholder="Enter Your Message"
+                                name="" id="" cols="" rows="4"></textarea>
+                            <div id="buttonTest"
+                                class="support-shadow px-4 py-[10px] rounded-2xl flex items-center gap-4">
+                                <button id="bold" class="rounded-md p-[7px]" onclick="optionActivate('bold')"><img
+                                        src="assets/icons/B.png" alt=""></button>
+                                <button id="italic" class="rounded-md p-[7px]" onclick="optionActivate('italic')"><img
+                                        src="assets/icons/I.png" alt=""></button>
+                                <button id="underline" class="rounded-md p-[7px]"
+                                    onclick="optionActivate('underline')"><img src="assets/icons/U.png" alt=""></button>
+                                <button id="subscript" class="rounded-md p-[7px]"
+                                    onclick="optionActivate('subscript')"><img src="assets/icons/𝚂̶.png"
+                                        alt=""></button>
+                                <button id="superscript" class="rounded-md p-[7px]"
+                                    onclick="optionActivate('superscript')"><img src="assets/icons/_.png"
+                                        alt=""></button>
+                                <img src="assets/icons/Line 146.png" alt="">
+                                <button id="numberBullet" class="rounded-md p-[7px]"
+                                    onclick="optionActivate('numberBullet')"><img src="assets/icons/Group 2832.png"
+                                        alt=""></button>
+                                <button id="listBullet" class="rounded-md p-[7px]"
+                                    onclick="optionActivate('listBullet')"><img src="assets/icons/Group 2833.png"
+                                        alt=""></button>
+                                <img src="assets/icons/Line 146.png" alt="">
+                                <button class="rounded-md p-[7px]"><img src="assets/icons/Icon feather-link-2.png"
+                                        alt=""></button>
+                                <button class="rounded-md p-[7px]"><img src="assets/icons/Icon metro-file-picture.png"
+                                        alt=""></button>
+                            </div>
+                            <div class="ps-4 py-[10px] flex items-center justify-between mt-2">
+                                <div class="flex items-center gap-4">
+                                    <button class="rounded-md p-[7px]" onclick="optionActivate()"><img
+                                            src="assets/icons/hash.png" alt=""></button>
+                                    <img src="assets/icons/Line 146.png" alt="">
+                                    <button class="rounded-md p-[7px]" onclick="optionActivate()"><img
+                                            src="assets/icons/Icon feather-paperclip.png" alt=""></button>
+                                    <img src="assets/icons/Line 146.png" alt="">
+                                    <button class="bg-[#39CCCC] rounded-md p-[7px]" onclick="optionActivate()"><img
+                                            src="assets/icons/Group 2754.png" alt=""></button>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <h1>Ticket Status</h1>
+                                    <div
+                                        class="flex items-center bg-white px-1 md:px-2 h-[33px] rounded-lg md:rounded-xl border border-black w-fit">
+                                        <div
+                                            class="bg-white flex items-center justify-between text-xs md:text-sm rounded-lg md:rounded-xl">
+                                            <select
+                                                class="border-0 text-xs md:text-sm outline-none overflow-hidden rounded-lg md:rounded-xl"
+                                                id="selectElement2">
+                                                <option value="Pending" selected>Pending</option>
+                                                <option value="Active">Active</option>
+                                                <option value="On Hold">On Hold</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button onclick="refreshSorting()"
+                                        class="submit-button h-[33px] w-[83px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[327px] flex flex-col gap-5">
+                        <div class="px-6 py-9 bg-white rounded-xl text-sm">
+                            <ul class="grid grid-cols-1 gap-5">
+                                <li><a class="text-[#3ACCCC] font-semibold" href="#">Ticket information</a>
+                                </li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Ticket ID:<span
+                                            class="text-[#656565]">Ticket ID</span></a>
+                                </li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Created:<span
+                                            class="text-[#656565]">19-09-23 5:03 GMT</span></a>
+                                </li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Last Message:<span
+                                            class="text-[#656565]">21-09-23 4:23 GMT</span></a>
+                                </li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Status:
+                                        <div
+                                            class="flex items-center justify-center bg-white w-[95px] h-[26px] rounded-lg md:rounded-xl border border-[#F3F3F3]">
+                                            <div
+                                                class="bg-white flex items-center justify-between text-[#656565] rounded-lg md:rounded-xl">
+                                                <select
+                                                    class="border-0 text-[10px] outline-none overflow-hidden rounded-lg md:rounded-xl"
+                                                    id="selectElement2">
+                                                    <option value="Pending" selected>Pending</option>
+                                                    <option value="Active">Active</option>
+                                                    <option value="On Hold">On Hold</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a href="#">Rating: <span class="text-[#656565]">Wheelchair Access</span></a></li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Priority:
+                                        <div
+                                            class="flex items-center justify-center bg-white w-[95px] h-[26px] rounded-lg md:rounded-xl border border-[#F3F3F3]">
+                                            <div
+                                                class="bg-white flex items-center justify-between text-[10px] rounded-lg md:rounded-xl">
+                                                <select
+                                                    class="border-0 outline-none overflow-hidden rounded-lg md:rounded-xl"
+                                                    id="selectElement2">
+                                                    <option class="text-[#EC5453]" value="High" selected>High</option>
+                                                    <option class="text-[#656565]" value="Medium">Medium</option>
+                                                    <option class="text-yellow-500" value="Low">Low</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                <li><a href="#">Source: <span class="text-[#656565]">Website Form</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="px-6 py-9 bg-white rounded-xl text-sm">
+                            <ul class="grid grid-cols-1 gap-5 mb-[53px]">
+                                <li><a class="text-[#3ACCCC] font-semibold" href="#">Responsibility</a>
+                                </li>
+                                <li class="flex items-center justify-between"><a class="flex items-center gap-[10px]"
+                                        href="#">Team:<span class="text-[#656565]">Support Tickets</span></a>
+                                    <h6 class="text-[10px] text-[#656565] underline">Change</h6>
+                                </li>
+                                <li class="flex items-center justify-between"><a class="flex items-center gap-[10px]"
+                                        href="#">Agent:<span class="text-[#656565]">Christine Haire</span></a>
+                                    <h6 class="text-[10px] text-[#656565] underline">Change</h6>
+                                </li>
+                                <li><a class="flex items-center gap-[10px]" href="#">Customer:<span
+                                            class="text-[#656565]">Coutney Henry</span></a>
+                                </li>
+                            </ul>
+                            <h6 class="text-[10px] text-[#656565] underline text-right">Add another Agent</h6>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+            <!-- End Support Tickets Single Page -->
+
+
+
+
+
+
             <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
