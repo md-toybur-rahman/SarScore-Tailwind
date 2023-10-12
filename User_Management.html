@@ -230,9 +230,9 @@
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8">Breadcrumb > Page</h1>
                     </div>
                     <div class="md:flex items-center gap-[10px]">
-                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
+                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mt-2 md:mt-0">Sort by Date Range: </h3>
 
-                        <div class="flex items-center gap-2 md:gap-[10px]">
+                        <div class="flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
                             <div class="relative bg-white md:px-1 py-2 rounded-xl">
                                 <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
                                     <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                            class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
@@ -277,10 +277,10 @@
                         <div class="mt-5 md:mt-10 md:flex items-center justify-between">
                             <div class="flex items-center gap-2 md:gap-5">
                                 <div class="text-base bg-white rounded-xl flex items-center justify-between">
-                                    <a href="#" class=" md:py-3 md:px-4 px-2 py-[7px] rounded-md md:rounded-xl"><img
+                                    <a href="#" class=" md:py-3 md:px-4 px-3 py-[11px] rounded-md md:rounded-xl"><img
                                             class="w-3 md:w-4" src="assets/icons/grid-outline.png" alt=""></a>
                                     <a href="#"
-                                        class=" md:py-3 md:px-4 px-2 py-[7px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
+                                        class=" md:py-3 md:px-4 px-3 py-[11px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
                                             class="w-3 md:w-5" src="assets/icons/list-outline.png" alt=""></a>
                                 </div>
                             </div>
@@ -300,17 +300,14 @@
                         <!-- End user List menu section -->
 
                         <!-- User List Table -->
-                        <div class="overflow-x-auto mt-10">
+                        <div class="overflow-x-auto overflow-y-hidden mt-10">
                             <table class="table text-xs md:text-sm">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
                                         <th class="rounded-s-2xl">
-                                            <label>
-                                                <input type="checkbox" class="checkbox w-5 h-5" />
-                                            </label>
                                         </th>
-                                        <th>Name</th>
+                                        <th>Full Name</th>
                                         <th>Email</th>
                                         <th>Username</th>
                                         <th>Registration Date</th>
@@ -453,7 +450,7 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="mt-[49px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
+                                class="mt-[49px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
                                 More</button>
                         </div>
                         <!-- End Support Table -->
@@ -469,19 +466,19 @@
                         <div class="mt-5 md:mt-10 md:flex items-center justify-between">
                             <div class="flex items-center gap-2 md:gap-5">
                                 <div class="text-base bg-white rounded-xl flex items-center justify-between">
-                                    <a href="#" class=" md:py-3 md:px-4 px-2 py-[7px] rounded-md md:rounded-xl"><img
+                                    <a href="#" class=" md:py-3 md:px-4 px-3 py-[11px] rounded-md md:rounded-xl"><img
                                             class="w-3 md:w-4" src="assets/icons/grid-outline.png" alt=""></a>
                                     <a href="#"
-                                        class=" md:py-3 md:px-4 px-2 py-[7px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
+                                        class=" md:py-3 md:px-4 px-3 py-[11px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
                                             class="w-3 md:w-5" src="assets/icons/list-outline.png" alt=""></a>
                                 </div>
                                 <div class=" bg-white rounded-xl flex justify-between">
                                     <a
-                                        class="md:py-3 md:px-4 px-2 py-1 text-xs md:text-sm rounded-md md:rounded-xl bg-[#39CCCC] text-white">All</a>
+                                        class="md:py-3 md:px-4 px-3 py-2 text-xs md:text-sm rounded-md md:rounded-xl bg-[#39CCCC] text-white">All</a>
                                     <a
-                                        class="md:py-3 md:px-4 px-2 py-1 text-xs md:text-sm rounded-md md:rounded-xl">Pending</a>
+                                        class="md:py-3 md:px-4 px-3 py-2 text-xs md:text-sm rounded-md md:rounded-xl">Pending</a>
                                     <a
-                                        class="md:py-3 md:px-4 px-2 py-1 text-xs md:text-sm rounded-md md:rounded-xl">Rejected</a>
+                                        class="md:py-3 md:px-4 px-3 py-2 text-xs md:text-sm rounded-md md:rounded-xl">Rejected</a>
                                 </div>
                             </div>
                             <div class="md:flex justify-end items-center gap-3">
@@ -533,7 +530,7 @@
                         <!-- End User List menu section -->
 
                         <!-- User registration management Table -->
-                        <div class="overflow-x-auto mt-10">
+                        <div class="overflow-x-auto overflow-y-hidden mt-10">
                             <table class="table text-xs md:text-sm">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
@@ -543,12 +540,13 @@
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
                                             </label>
                                         </th>
-                                        <th>Name</th>
+                                        <th>Full Name</th>
                                         <th>Email</th>
                                         <th>Username</th>
                                         <th>Registration Date</th>
                                         <th>Last Log In</th>
                                         <th>User Role</th>
+                                        <th>Status</th>
                                         <th class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
@@ -556,6 +554,9 @@
                                     <!-- row 1 -->
                                     <tr class="border-y-[10px] border-[#FAFAFA]">
                                         <th class="rounded-s-2xl">
+                                            <label>
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
                                         </th>
                                         <td>
                                             Courtney Henry
@@ -567,6 +568,10 @@
                                         <td>19-05-23</td>
                                         <td>19-05-23</td>
                                         <td>Standard User</td>
+                                        <td>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
+                                        </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
@@ -582,6 +587,9 @@
                                     <!-- row 2 -->
                                     <tr class="border-y-[10px] border-[#FAFAFA]">
                                         <th class="rounded-s-2xl">
+                                            <label>
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
                                         </th>
                                         <td>
                                             Jacob Jones
@@ -593,6 +601,10 @@
                                         <td>19-05-23</td>
                                         <td>19-05-23</td>
                                         <td>Contributor</td>
+                                        <td>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">Rejected</button>
+                                        </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
@@ -608,6 +620,9 @@
                                     <!-- row 3 -->
                                     <tr class="border-y-[10px] border-[#FAFAFA]">
                                         <th class="rounded-s-2xl">
+                                            <label>
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
                                         </th>
                                         <td>
                                             Guy Hawkins
@@ -619,6 +634,10 @@
                                         <td>19-05-23</td>
                                         <td>19-05-23</td>
                                         <td>Contributor</td>
+                                        <td>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">Rejected</button>
+                                        </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
@@ -634,6 +653,10 @@
                                     <!-- row 4 -->
                                     <tr class="border-y-[10px] border-[#FAFAFA]">
                                         <th class="rounded-s-2xl">
+                                            <label>
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
+                                        </th>
                                         <td>
                                             Darlene Robertson
                                         </td>
@@ -644,6 +667,10 @@
                                         <td>19-05-23</td>
                                         <td>19-05-23</td>
                                         <td>Premium User</td>
+                                        <td>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
+                                        </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
@@ -659,6 +686,10 @@
                                     <!-- row 5 -->
                                     <tr class="border-y-[10px] border-[#FAFAFA]">
                                         <th class="rounded-s-2xl">
+                                            <label>
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
+                                        </th>
                                         <td>
                                             Kristin Watson
                                         </td>
@@ -669,6 +700,10 @@
                                         <td>19-05-23</td>
                                         <td>19-05-23</td>
                                         <td>Admin</td>
+                                        <td>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
+                                        </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
@@ -686,7 +721,7 @@
                         </div>
                         <div class="flex justify-center">
                             <button
-                                class="mt-[74px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
+                                class="mt-[74px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
                                 More</button>
                         </div>
                         <!-- End user registration Table -->

@@ -230,9 +230,9 @@
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8">Breadcrumb > Page</h1>
                     </div>
                     <div class="md:flex items-center gap-[10px]">
-                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
+                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mt-2 md:mt-0">Sort by Date Range: </h3>
 
-                        <div class="flex items-center gap-2 md:gap-[10px]">
+                        <div class="flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
                             <div class="relative bg-white md:px-1 py-2 rounded-xl">
                                 <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
                                     <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
@@ -248,7 +248,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="flex items-center bg-white px-2 md:px-4 md:h-[36px] rounded-xl">
+                            <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
                                 <div class="bg-white flex items-center justify-between">
                                     <p class="w-fit text-xs md:text-sm">Type: </p>
                                     <select
@@ -263,7 +263,7 @@
                             </div>
                         </div>
                         <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                            class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
@@ -285,37 +285,31 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="md:flex justify-end items-center gap-3">
-                                <div class="grid grid-cols-2 md:flex items-center gap-3 mb-2 md:mb-0">
-                                    <div
-                                        class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <p class="w-fit text-xs md:text-sm">Action: </p>
-                                            <select
-                                                class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20"
-                                                id="selectElement2">
-                                                <option value=""></option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
+                            <div class="grid grid-cols-2 md:flex justify-end items-center gap-3 mt-2 mb:mt-0">
+                                <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <p class="w-fit text-xs md:text-sm">Action: </p>
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-24 md:w-20"
+                                            id="selectElement2">
+                                            <option value=""></option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-4 md:flex items-center gap-3">
-                                    <div
-                                        class="flex col-span-3 items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <p class="w-fit text-xs md:text-sm">Filter By: </p>
-                                            <select
-                                                class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20"
-                                                id="selectElement3">
-                                                <option value=""></option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
+                                <div class="flex items-center bg-white px-1 md:px-4 h-[36px] rounded-lg md:rounded-xl">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <p class="w-fit text-xs md:text-sm">Filter By: </p>
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-24 md:w-20"
+                                            id="selectElement2">
+                                            <option value=""></option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -323,8 +317,8 @@
                         <!-- End Contribution List menu section -->
 
                         <!-- Status Management management Table -->
-                        <div class="overflow-x-auto mt-10 h-[350px] overflow-y-scroll">
-                            <table class="table text-xs md:text-base">
+                        <div class="overflow-x-scroll md:overflow-x-auto overflow-y-hidden mt-10">
+                            <table class="table text-xs md:text-base min-w-[900px]">
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
                                         <th class="rounded-s-2xl">
@@ -566,11 +560,6 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="flex justify-center">
-                            <button
-                                class="mt-[74px] px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
-                                More</button>
                         </div>
                         <!-- End Status Management Table -->
                     </section>
