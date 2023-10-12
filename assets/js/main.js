@@ -86,17 +86,21 @@ const refreshSorting = () => {
 
 // Menu Button Handler
 
-const menuButtonHandler = () => {
+function menuButtonHandler() {
     const dashboard = document.getElementById('dashboard');
     const dashboardStyle = dashboard.style.width;
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
+    const menuButton = document.querySelectorAll(".menuButton");
     if (dashboardStyle != '81px') {
         dashboard.style.width = '81px'
         logo.style.display = 'none';
         menuTitle.forEach(title => {
             title.style.display = 'none'
         })
+        menuButton.forEach(button => {
+            button.classList.add('justify-center')
+        })
     }
     else {
         dashboard.style.width = '350px'
@@ -104,18 +108,25 @@ const menuButtonHandler = () => {
         menuTitle.forEach(title => {
             title.style.display = 'flex'
         })
+        menuButton.forEach(button => {
+            button.classList.remove('justify-center')
+        })
     }
 }
-const menuButtonHandler2 = () => {
+function menuButtonHandler2() {
     const dashboard = document.getElementById('dashboard');
     const dashboardStyle = dashboard.style.width;
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
+    const menuButton = document.querySelectorAll(".menuButton");
     if (dashboardStyle != '350px') {
         dashboard.style.width = '350px'
         logo.style.display = 'block';
         menuTitle.forEach(title => {
             title.style.display = 'flex'
+        })
+        menuButton.forEach(button => {
+            button.classList.remove('justify-center')
         })
     }
     else {
@@ -123,6 +134,9 @@ const menuButtonHandler2 = () => {
         logo.style.display = 'none';
         menuTitle.forEach(title => {
             title.style.display = 'none'
+        })
+        menuButton.forEach(button => {
+            button.classList.add('justify-center')
         })
     }
 }
