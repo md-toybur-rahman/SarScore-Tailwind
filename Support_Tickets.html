@@ -38,13 +38,16 @@
 </head>
 
 <body class="max-w-[1573px] min-w-[360px] mx-auto">
-    <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
+    <main class="relative flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div id="dashboard" class="hidden md:block row-span-full w-[81px] duration-500 bg-white">
+        <div id="dashboard" class="hidden absolute z-20 md:block row-span-full w-[81px] duration-500 bg-white">
             <div class="flex justify-between mt-[60px] px-3">
-                <img class="hidden" id="logo" src="assets/icons/Group 2319.png" alt="">
-                <img onclick="menuButtonHandler2()" class="h-4 w-6 cursor-pointer flex justify-center"
-                    src="assets/icons/Group 2318.png" alt="">
+                <div>
+                    <img class="hidden" id="logo" src="assets/icons/Group 2319.png" alt="">
+                </div>
+                <div id="hamburg" onclick="menuButtonHandler2()" class="mx-auto">
+                    <img class="h-4 w-6 cursor-pointer" src="assets/icons/Group 2318.png" alt="">
+                </div>
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
                 <a href="Dashboard.html" class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
@@ -211,7 +214,7 @@
         <!-- Support Ticket Navbar-->
 
         <section id="ticketMenu"
-            class="absolute z-10 md:static h-[150px] md:h-auto overflow-hidden md:overflow-visible w-full md:w-[278px] px-5 py-[53px] bg-[#F4F4F4] mt-4 md:mt-0">
+            class="absolute z-10 md:static h-[150px] md:h-auto overflow-hidden md:overflow-visible w-full md:w-[278px] px-5 py-[53px] bg-[#F4F4F4] mt-4 md:mt-0 md:ml-[81px]">
             <div
                 class="border-b border-[#D8D8D8] pb-4 flex md:gap-6 items-center justify-between md:justify-start w-full">
                 <h1 class=" text-[22px] font-bold">Tickets</h1>

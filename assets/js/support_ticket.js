@@ -58,9 +58,11 @@ function menuButtonHandler2() {
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
     const menuButton = document.querySelectorAll(".menuButton");
+    const hamburg = document.getElementById("hamburg");
     if (dashboardStyle != '350px') {
         dashboard.style.width = '350px'
         logo.style.display = 'block';
+        hamburg.classList.remove('mx-auto');
         menuTitle.forEach(title => {
             title.style.display = 'flex'
         })
@@ -71,6 +73,7 @@ function menuButtonHandler2() {
     else {
         dashboard.style.width = '81px'
         logo.style.display = 'none';
+        hamburg.classList.add('mx-auto');
         menuTitle.forEach(title => {
             title.style.display = 'none'
         })
