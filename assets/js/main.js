@@ -1,5 +1,5 @@
 const ticketList = document.getElementById('ticketList');
-const singleTicket = ticketList.getElementsByTagName('tr');
+const singleTicket = ticketList.getElementsByTagName('td');
 for (let i = 0; i < singleTicket.length; i++) {
     const element = singleTicket[i];
 

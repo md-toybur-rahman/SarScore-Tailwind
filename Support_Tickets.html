@@ -10,14 +10,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/libs/fontawesome.css">
     <script src="assets/js/libs/font_awesome/fontawesome.js"></script>
-    <!-- Datepicker -->
-    <link rel="stylesheet" href="assets/css/libs/datepicker.css">
     <!-- Daisyui -->
     <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
-    <!-- SVG Map -->
-    <link href="assets/css/libs/svg_map.css" rel="stylesheet">
-    <script src="assets/js/libs/svg_map/svg_map_zoom.js"></script>
-    <script src="assets/js/libs/svg_map/svg_map.js"></script>
     <!-- Tailwind CSS -->
     <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
@@ -51,8 +45,8 @@
         <div id="dashboard" class="hidden md:block row-span-full w-[81px] duration-500 bg-white">
             <div class="flex justify-between mt-[60px] px-3">
                 <img class="hidden" id="logo" src="assets/icons/Group 2319.png" alt="">
-                <img onclick="menuButtonHandler2()" class="h-4 w-6 cursor-pointer flex justify-center" src="assets/icons/Group 2318.png"
-                    alt="">
+                <img onclick="menuButtonHandler2()" class="h-4 w-6 cursor-pointer flex justify-center"
+                    src="assets/icons/Group 2318.png" alt="">
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
                 <a href="Dashboard.html" class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
@@ -60,7 +54,8 @@
                     <img class="lightIcon" src="assets/icons/Group 48.png" alt="">
                     <span class="menuTitle hidden text-sm">Dashboard</span>
                 </a>
-                <a href="Accessibility_Rating.html" class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
+                <a href="Accessibility_Rating.html"
+                    class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle hidden text-sm">Accessibility Rating</span>
@@ -71,7 +66,8 @@
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">User Management<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Contributions_Managements.html" class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
+                <a href="Contributions_Managements.html"
+                    class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">Contribution
@@ -89,7 +85,8 @@
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">System Stats<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Notification_Center.html" class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
+                <a href="Notification_Center.html"
+                    class="menuButton h-[63px] px-3 flex items-center justify-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 53.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 2331.png" alt="">
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">Notification Center<i
@@ -101,7 +98,8 @@
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">Settings<i
                             class="fa-solid fa-chevron-down"></i></span>
                 </a>
-                <a href="Support_Tickets.html" class="menuButton active h-[63px] px-3 flex items-center justify-center gap-2">
+                <a href="Support_Tickets.html"
+                    class="menuButton active h-[63px] px-3 flex items-center justify-center gap-2">
                     <img class="darkIcon" src="assets/icons/Group 2324.png" alt="">
                     <img class="lightIcon" src="assets/icons/Group 23241.png" alt="">
                     <span class="menuTitle hidden justify-between items-center flex-grow text-sm">Support Tickets<i
@@ -530,9 +528,9 @@
                                 <tbody id="ticketList" class="">
                                     <!-- row 1 -->
                                     <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
+                                        <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
+                                        </td>
                                         <td class="font-semibold">
                                             Daila Ouldcott
                                         </td>
@@ -542,22 +540,30 @@
                                             <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
-                                        <th>
+                                        <td>
                                             <button
                                                 class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
+                                        </td>
                                         <td class="text-xs font-semibold">
                                             9:57 AM
                                         </td>
-                                        <td>
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        </td>
+                                        <th>
+                                            <div class="dropdown dropdown-end z-10">
+                                                <label tabindex="0" class="m-1"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                                    <li><a>Edit</a></li>
+                                                    <li><a>Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
                                     </tr>
                                     <!-- row 2 -->
                                     <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
+                                        <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
+                                        </td>
                                         <td>
                                             Jacob Jones
                                         </td>
@@ -567,46 +573,31 @@
                                             <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
-                                        <th>
+                                        <td>
                                             <button
                                                 class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
                                                 Hold</button>
-                                        </th>
+                                        </td>
                                         <td class="text-xs">
                                             9:57 AM
                                         </td>
-                                        <td>
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        </td>
+                                        <th>
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="m-1"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                                    <li><a>Edit</a></li>
+                                                    <li><a>Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
                                     </tr>
-                                    <!-- row 3 -->
+
                                     <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
                                         <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-                                    <!-- row 4 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
+                                        </td>
                                         <td>
                                             Darlene Robertson
                                         </td>
@@ -616,20 +607,30 @@
                                             <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
-                                        <th>
+                                        <td>
                                             <button
                                                 class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
-                                        </th>
+                                        </td>
                                         <td class="text-xs">
                                             9:57 AM
                                         </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                        <th>
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="m-1"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                                    <li><a>Edit</a></li>
+                                                    <li><a>Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
                                     </tr>
 
                                     <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
+                                        <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
+                                        </td>
                                         <td>
                                             Darlene Robertson
                                         </td>
@@ -639,43 +640,30 @@
                                             <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
-                                        <th>
-                                            <button
-                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
                                         <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
                                             <button
                                                 class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
+                                        </td>
                                         <td class="text-xs">
                                             9:57 AM
                                         </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                        <th>
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="m-1"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                                    <li><a>Edit</a></li>
+                                                    <li><a>Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
                                     </tr>
 
                                     <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
+                                        <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
+                                        </td>
                                         <td>
                                             Darlene Robertson
                                         </td>
@@ -685,181 +673,25 @@
                                             <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
                                                 laminable ineunt popshop catalyte prismatize</h5>
                                         </td>
-                                        <th>
+                                        <td>
                                             <button
                                                 class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
                                                 Hold</button>
-                                        </th>
+                                        </td>
                                         <td class="text-xs">
                                             9:57 AM
                                         </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
                                         <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="m-1"><i
+                                                        class="fa-solid fa-ellipsis-vertical"></i></label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
+                                                    <li><a>Edit</a></li>
+                                                    <li><a>Delete</a></li>
+                                                </ul>
+                                            </div>
                                         </th>
-                                        <td class="font-semibold">
-                                            Daila Ouldcott
-                                        </td>
-                                        <td class="font-semibold">
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
-                                        <td class="text-xs font-semibold">
-                                            9:57 AM
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        </td>
-                                    </tr>
-                                    <!-- row 2 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Jacob Jones
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
-                                                Hold</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td>
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        </td>
-                                    </tr>
-                                    <!-- row 3 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-                                    <!-- row 4 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
-                                    </tr>
-
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
-                                        <th>
-                                            <input type="checkbox" class="checkbox w-5 h-5" />
-                                        </th>
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                coccinellid</h5>
-                                            <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                laminable ineunt popshop catalyte prismatize</h5>
-                                        </td>
-                                        <th>
-                                            <button
-                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">On
-                                                Hold</button>
-                                        </th>
-                                        <td class="text-xs">
-                                            9:57 AM
-                                        </td>
-                                        <td> <i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -880,16 +712,8 @@
 
     </main>
 
-    <!-- Chart js -->
-    <script src="assets/js/libs/chart_js/chart_cdn.js"></script>
-    <script src="assets/js/libs/chart_js/chart.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
-    <!-- Svg map -->
-    <script src="assets/js/libs/svg_map/svg_map_customize.js"></script>
-    <!-- Datepicker -->
-    <script src="assets/js/libs/datepicker/datepicker.js"></script>
-    <script src="assets/js/libs/datepicker/datepicker_customize.js"></script>
     <!-- SlimSelect -->
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
 </body>
