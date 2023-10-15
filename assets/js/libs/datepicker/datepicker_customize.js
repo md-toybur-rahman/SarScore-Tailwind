@@ -3,6 +3,7 @@ new AirDatepicker('#fromDatepicker', {
 })
 new AirDatepicker('#toDatepicker', {
     autoClose: true,
+    position: 'bottom right'
 })
 new AirDatepicker('#ticketDatepicker', {
     autoClose: true,

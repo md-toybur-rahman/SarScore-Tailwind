@@ -20,6 +20,10 @@
     <!-- Tailwind CSS -->
     <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
+    <!-- Slim Select -->
+    <link rel="stylesheet" href="assets/css/libs/slimselect.css">
+    <script src="assets/js/libs/slim_select/slimselect.min.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -229,26 +233,25 @@
                     <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mb-2 md:mb-0">Sort by Date Range: </h3>
 
                     <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px]">
-                        <div class="relative bg-white md:px-1 py-2 rounded-xl">
+                        <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
                             <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                        class="outline-none w-16 md:w-20" placeholder="Select" type="text" required>
+                                        class="outline-none w-28 md:w-20" placeholder="Select" type="text" required>
                                 </p>
                             </div>
                         </div>
 
-                        <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
+                        <div class="relative bg-white px-2 md:px-1 py-[7px] rounded-xl">
                             <div class="px-2 w- bg-white flex items-center justify-between">
                                 <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
-                                        class="outline-none w-16 md:w-28" type="text" required></p>
+                                        class="outline-none w-28 md:w-28" type="text" required></p>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
+                        <div class="flex items-center bg-white px-2 md:px-4 py-[1px] rounded-xl">
                             <div class="bg-white flex items-center justify-between">
-                                <p class="w-fit text-xs md:text-sm">Type: </p>
-                                <select class="border-0 text-xs md:text-sm outline-none overflow-hidden w-28 md:w-28"
-                                    id="selectElement4">
-                                    <option value=""></option>
+                                <select class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28"
+                                    id="selectElement5">
+                                    <option value="" selected disabled>Type</option>
                                     <option>Option 1</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
@@ -368,39 +371,36 @@
                             <h1 class="text-lg md:text-2xl font-semibold">Category Brake Down</h1>
                             <div class="grid grid-cols-2 md:flex md:justify-end md:items-center gap-3 mt-3 md:mt-0">
                                 <!-- <div class="grid grid-cols-3 gap-3"> -->
-                                <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
+                                <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between">
-                                        <p class="w-fit text-xs md:text-sm">Sort By Category: </p>
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-16 md:w-20 bg-white"
-                                            id="selectElement5">
-                                            <option value=""></option>
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-40 bg-white"
+                                            id="selectElement6">
+                                            <option value="" selected disabled>Sort By Category</option>
                                             <option>High</option>
                                             <option>Medium</option>
                                             <option>Low</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
+                                <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between px-2 md:px-0">
-                                        <p class="w-fit text-xs md:text-sm">Postcode: </p>
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-24 md:w-20 bg-white"
-                                            id="selectElement6">
-                                            <option value=""></option>
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                            id="selectElement7">
+                                            <option value="" selected disabled>Postcode</option>
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
+                                <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between px-2 md:px-0">
-                                        <p class="w-fit text-xs md:text-sm">3+ Miles: </p>
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-24 md:w-20 bg-white"
-                                            id="selectElement7">
-                                            <option value=""></option>
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                            id="selectElement8">
+                                            <option value="" selected disabled>3+ Miles</option>
                                             <option>Option 1</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
