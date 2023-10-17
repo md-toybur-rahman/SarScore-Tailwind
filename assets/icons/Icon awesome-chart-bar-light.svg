@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" width="18" height="14">
+	<title>Icon awesome-chart-bar</title>
+	<defs>
+		<image  width="18" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOBAMAAADQ9FGEAAAAAXNSR0IB2cksfwAAAC1QTFRF////////////AAAA////////////////////////////////////////////wawMJwAAAA90Uk5Tr78gAECf/xBg3x+AsDBwhhSAGgAAAE1JREFUeJxjYFQ2BgHHYIY0Z2Pz0GLjtskgllHaYjhrSROMtTAbzCoqgrG2HYKzhDBZKsq+Ru4ll0F6IYAhLXo3GOxjSIMBho2CECAAAPcTMARf0nEpAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

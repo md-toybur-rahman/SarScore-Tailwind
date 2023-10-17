@@ -146,6 +146,15 @@ button.form-control {
 	font: bold;
 }
 
+.active,
+#menubar a:hover .darkIcon{
+	display: none;
+}
+.active,
+#menubar a:hover .lightIcon{
+	display: block;
+}
+
 .lightIcon {
 	display: none;
 }

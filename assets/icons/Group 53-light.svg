@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 29" width="28" height="29">
+	<title>Group 53</title>
+	<defs>
+		<image  width="23" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAbCAMAAACgNuTpAAAAAXNSR0IB2cksfwAAAGBQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////fCUcugAAACB0Uk5TABBggHAgX+//f1DfQJC/MG8BAp8DrwcMERMECAsNBQaIon3GAAAAnklEQVR4nJXQ2xaCIBAFUECMIVKCTAwr/v8vY6VxlYfOk+zFcBCEtmDS0R5VOTHw4SWfYQstXOwOOGP8YyCZX4LThg+ZD8HH41oAmfA1cjrQs8RjsxSQhR/tjhNjycC+Py3qSKTKB9zTch2++M0nrKYwQH3hPXocJWMXH181Cv69T+iZzfJYzDzlG5W26/Nl1rcuD9DWOWcr9hdTOtMPBaEKifyTq1kAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="4" y="1"/>
+</svg>
