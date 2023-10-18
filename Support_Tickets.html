@@ -289,8 +289,9 @@
                             class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
             </ul>
             <ul class="grid grid-cols-1 gap-5 mt-[38px] text-sm">
-                <li><a class="text-[#3ACCCC] font-semibold flex items-center justify-between" href="#">Status <img
-                            src="assets/icons/Group 2728.png" alt=""></a></li>
+                <li><a class="text-[#3ACCCC] font-semibold flex items-center justify-between" href="#">Status <div class="tooltip" data-tip="Tooltip Text">
+                            <img src="assets/icons/Group 2728.png" alt="">
+                        </div></a></li>
                 <li><a class="flex items-center justify-between" href="#">Open<span
                             class="h-[22px] px-3 text-sm bg-[#DDDDDD] rounded-xl text-center">0</span></a></li>
                 <li><a class="flex items-center justify-between" href="#">Pending<span
@@ -560,7 +561,7 @@
                         <!-- End Contribution List menu section -->
 
                         <!-- Status Management management Table -->
-                        <div class="overflow-y-hidden overflow-x-scroll md:overflow-x-auto mt-10 ">
+                        <div class="overflow-x-scroll md:overflow-x-auto mt-10 ">
                             <table class="table text-xs md:text-base min-w-[900px]">
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
@@ -601,11 +602,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -640,11 +641,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -678,11 +679,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -716,11 +717,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -755,11 +756,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -793,11 +794,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -832,11 +833,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -870,11 +871,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -908,11 +909,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
@@ -947,11 +948,11 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="cursor-pointer m-0"><img
-                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                            <div onclick="handleActionButton(this)"
+                                                class="relative action-container cursor-pointer">
+                                                <img src="assets/icons/3dot-icon.svg" alt="">
+                                                <ul
+                                                    class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
                                                     <li><a href="#">View</a></li>
                                                     <li><a href="#">Mark as pending</a></li>
                                                     <li><a href="#">Mark as on hold</a></li>
