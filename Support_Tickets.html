@@ -325,7 +325,7 @@
                     <div class="flex-grow bg-white rounded-xl">
                         <div class="border border-[#959090] flex items-center justify-between px-6 py-5 mb-[386px]">
                             <h1 class="ms-4">Missing Rating</h1>
-                            <img src="assets/icons/Group 317.png" alt="">
+                            <img src="assets/icons/3dot-icon.svg" alt="">
                         </div>
                         <div class="m-3 px-3 rounded-lg border border-[#959090] pt-[30px] pb-5">
                             <textarea class="w-full resize-none px-5 outline-none" placeholder="Enter Your Message"
@@ -391,7 +391,7 @@
                     </div>
                     <div class="w-full md:w-[327px] flex flex-col gap-5">
                         <div class="px-6 py-9 bg-white rounded-xl text-sm">
-                            <ul class="grid grid-cols-1 gap-5">
+                            <ul class="grid grid-cols-1 gap-5 text-[#1E1E1E]">
                                 <li><a class="text-[#3ACCCC] font-semibold" href="#">Ticket information</a>
                                 </li>
                                 <li><a class="flex items-center gap-[10px]" href="#">Ticket ID:<span
@@ -409,7 +409,7 @@
                                             <div
                                                 class="bg-white flex items-center justify-between text-[#656565] rounded-lg md:rounded-xl">
                                                 <select
-                                                    class="border-0 text-[10px] outline-none overflow-hidden rounded-lg md:rounded-xl w-28"
+                                                    class="border border-[#F3F3F3] text-[10px] outline-none overflow-hidden rounded-lg md:rounded-xl w-[95px] px-3"
                                                     id="selectElement20">
                                                     <option value="Pending" selected>Pending</option>
                                                     <option value="Active">Active</option>
@@ -424,9 +424,9 @@
                                         <div
                                             class="flex items-center justify-center bg-white h-[26px] rounded-lg md:rounded-xl border border-[#F3F3F3]">
                                             <div
-                                                class="bg-white flex items-center justify-between text-[10px] rounded-lg md:rounded-xl">
+                                                class="bg-white flex items-center justify-between text-[#656565] rounded-lg md:rounded-xl">
                                                 <select
-                                                    class="border-0 text-[10px] outline-none overflow-hidden rounded-lg md:rounded-xl w-28"
+                                                    class="border border-[#F3F3F3] text-[10px] outline-none overflow-hidden rounded-lg md:rounded-xl w-[95px] px-3"
                                                     id="selectElement21">
                                                     <option class="text-[#EC5453]" value="High" selected>High</option>
                                                     <option class="text-[#656565]" value="Medium">Medium</option>
@@ -439,7 +439,7 @@
                             </ul>
                         </div>
                         <div class="px-6 py-9 bg-white rounded-xl text-sm">
-                            <ul class="grid grid-cols-1 gap-5 mb-[53px]">
+                            <ul class="grid grid-cols-1 gap-5 mb-[53px] text-[#1E1E1E]">
                                 <li><a class="text-[#3ACCCC] font-semibold" href="#">Responsibility</a>
                                 </li>
                                 <li class="flex items-center justify-between"><a class="flex items-center gap-[10px]"
@@ -601,13 +601,16 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end z-10">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -638,12 +641,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -673,12 +679,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -708,12 +717,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -744,12 +756,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -778,13 +793,16 @@
                                             9:57 AM
                                         </td>
                                         <th>
-                                            <div class="dropdown dropdown-end z-10">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -815,12 +833,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -850,12 +871,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -885,12 +909,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>
@@ -921,12 +948,15 @@
                                         </td>
                                         <th>
                                             <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
+                                                <label tabindex="0" class="cursor-pointer m-0"><img
+                                                        src="assets/icons/3dot-icon.svg" alt=""></label>
                                                 <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
+                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-48">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
                                                 </ul>
                                             </div>
                                         </th>

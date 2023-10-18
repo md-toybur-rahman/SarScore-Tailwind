@@ -401,7 +401,15 @@
                         <div class="md:px-8 md:py-7 py-4 bg-white p-3 rounded-lg md:rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
                                 <h1 class="text-lg md:text-2xl font-semibold">Service Requests</h1>
-                                <img src="assets/icons/Group 109.png" alt="">
+                                <div onclick="handleActionButton(this)"
+                                    class="relative action-container cursor-pointer">
+                                    <img src="assets/icons/horizontal-3dot.svg" alt="">
+                                    <ul
+                                        class="absolute right-0 top-5 p-3 w-32 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                        <li><a href="#">View</a></li>
+                                        <li><a href="#">Export CSV</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="flex justify-center">
                                 <div class="progress-bar">
@@ -430,7 +438,15 @@
                         <div class="col-span-2 bg-white md:px-6 py-7 p-3 rounded-lg md:rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
                                 <h1 class="text-lg md:text-2xl font-semibold">Popular Locations</h1>
-                                <img src="assets/icons/Group 109.png" alt="">
+                                <div onclick="handleActionButton(this)"
+                                    class="relative action-container cursor-pointer">
+                                    <img src="assets/icons/horizontal-3dot.svg" alt="">
+                                    <ul
+                                        class="absolute right-0 top-5 p-3 w-32 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                        <li><a href="#">View</a></li>
+                                        <li><a href="#">Export CSV</a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-4">
                                 <div class="flex items-center justify-between">
@@ -623,7 +639,7 @@
                         <!-- End Support Ticket menu section -->
 
                         <!-- Support Table -->
-                        <div class="overflow-x-scroll md:overflow-x-hidden mt-10 overflow-y-hidden">
+                        <div class="overflow-x-scroll md:overflow-x-hidden mt-10">
                             <table class="table text-xs md:text-sm min-w-[950px]">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
@@ -648,37 +664,31 @@
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
-                                            Courtney Henry
+                                            Guy Hawkins
                                         </td>
                                         <td>
                                             soffner19@mac.com
                                         </td>
-                                        <td>Regular User</td>
-                                        <td>Urgent</td>
-                                        <td>Technical Issues</td>
+                                        <td>Service Provider</td>
+                                        <td>Medium</td>
+                                        <td>Accessibility Ratings</td>
                                         <th>
                                             <button
                                                 class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1">
-                                                    <div class="dropdown dropdown-end">
-                                                        <label tabindex="0" class="m-1"><img
-                                                                src="assets/icons/Group 317.png" alt=""></label>
-                                                        <ul tabindex="0"
-                                                            class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                            <li><a>Edit</a></li>
-                                                            <li><a>Delete</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
-                                                </ul>
-                                            </div>
+                                            <div onclick="handleActionButton(this)"
+                                        class="relative action-container cursor-pointer">
+                                        <img src="assets/icons/3dot-icon.svg" alt="">
+                                        <ul
+                                            class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                            <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
@@ -699,15 +709,18 @@
                                                 class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">Pending</button>
                                         </th>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
-                                                </ul>
-                                            </div>
+                                            <div onclick="handleActionButton(this)"
+                                        class="relative action-container cursor-pointer">
+                                        <img src="assets/icons/3dot-icon.svg" alt="">
+                                        <ul
+                                            class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                            <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                         </th>
                                     </tr>
                                     <!-- row 3 -->
@@ -728,15 +741,18 @@
                                                 class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
-                                                </ul>
-                                            </div>
+                                            <div onclick="handleActionButton(this)"
+                                        class="relative action-container cursor-pointer">
+                                        <img src="assets/icons/3dot-icon.svg" alt="">
+                                        <ul
+                                            class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                            <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                         </th>
                                     </tr>
                                     <!-- row 4 -->
@@ -757,15 +773,18 @@
                                                 Progress</button>
                                         </th>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
-                                                </ul>
-                                            </div>
+                                            <div onclick="handleActionButton(this)"
+                                        class="relative action-container cursor-pointer">
+                                        <img src="assets/icons/3dot-icon.svg" alt="">
+                                        <ul
+                                            class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                            <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                         </th>
                                     </tr>
                                     <!-- row 5 -->
@@ -785,15 +804,18 @@
                                                 class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
                                         </th>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="m-1"><img src="assets/icons/Group 317.png"
-                                                        alt=""></label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-32">
-                                                    <li><a>Edit</a></li>
-                                                    <li><a>Delete</a></li>
-                                                </ul>
-                                            </div>
+                                            <div onclick="handleActionButton(this)"
+                                        class="relative action-container cursor-pointer">
+                                        <img src="assets/icons/3dot-icon.svg" alt="">
+                                        <ul
+                                            class="absolute right-0 top-8 p-3 w-48 flex-col gap-3 font-bold action-content rounded-lg z-10 bg-white hidden">
+                                            <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                         </th>
                                     </tr>
                                 </tbody>
@@ -826,10 +848,12 @@
                                             </td>
                                             <td class="font-semibold">
                                                 <a href="#">
-                                                <h5 class="font-semibold">campimetrical lentisk excluding portlet
-                                                    coccinellid</h5>
-                                                <h5 class="text-[#656565] text-[10px] md:text-base">Hey John, wellish
-                                                    laminable ineunt popshop catalyte prismatize</h5></a>
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
                                             </td>
                                             <th>
                                                 <button

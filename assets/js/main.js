@@ -1,4 +1,16 @@
 
+function handleActionButton (event) {
+    const actionContent = event.getElementsByClassName('action-content')
+    if(actionContent[0].classList.contains('hidden')){
+        actionContent[0].classList.remove('hidden');
+        actionContent[0].classList.add('flex');
+    }
+    else if(actionContent[0].classList.contains('flex')){
+        actionContent[0].classList.remove('flex');
+        actionContent[0].classList.add('hidden');
+    }
+}
+
 
 
 // Refresh Button Handler
