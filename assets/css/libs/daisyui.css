@@ -2935,7 +2935,7 @@ html {
     padding-left: var(--tab-padding, 1rem);
     padding-right: var(--tab-padding, 1rem)}
 .table {
-    /* position: relative; */
+    position: relative;
     width: 100%;
     text-align: left;
     font-size: 0.875rem;
