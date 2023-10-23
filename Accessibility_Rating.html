@@ -310,8 +310,12 @@
                 </section>
 
                 <!-- Sorting panel -->
-                <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
-                    <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mb-2 md:mb-0">Sort by Date Range: </h3>
+                <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
+                    <div>
+                        <h1 class="text-[#656565] text-xs md:text-sm md:ms-8">Breadcrumb > Page</h1>
+                    </div>
+                    <div class="md:flex items-center gap-[10px]">
+                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mb-2 md:mb-0">Sort by Date Range: </h3>
 
                     <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px]">
                         <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
@@ -342,13 +346,14 @@
                     </div>
                     <button onclick="refreshSorting()"
                         class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                    </div>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- user panel -->
                 <!-- Accessability Item -->
                 <section>
-                    <h1 class="text-lg md:text-2xl font-semibold mt-2 md:mb-10">Accessibility Ratings</h1>
+                    <h1 class="text-lg md:text-2xl font-semibold mt-2 md:mb-10 md:ms-8">Accessibility Ratings</h1>
                     <section class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 mt-4">
                         <div class="p-8 bg-white rounded-2xl">
                             <div>
@@ -455,7 +460,7 @@
                                 <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between">
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-40 bg-white"
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 md:w-40 h-[38px] bg-white"
                                             id="selectElement6">
                                             <option value="" selected disabled>Sort By Category</option>
                                             <option>High</option>
@@ -467,7 +472,7 @@
                                 <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between px-2 md:px-0">
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 md:w-28 h-[38px] bg-white"
                                             id="selectElement7">
                                             <option value="" selected disabled>Postcode</option>
                                             <option>Option 1</option>
@@ -479,7 +484,7 @@
                                 <div class="flex items-center bg-white px-2 md:px-4 rounded-xl">
                                     <div class="bg-white flex items-center justify-between px-2 md:px-0">
                                         <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 md:w-28 h-[38px] bg-white"
                                             id="selectElement8">
                                             <option value="" selected disabled>3+ Miles</option>
                                             <option>Option 1</option>
