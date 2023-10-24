@@ -2606,12 +2606,12 @@ html {
     pointer-events: none;
     position: fixed;
     inset: 0px;
-    margin: 0px;
+    margin: 0px auto;
     display: grid;
     height: 100%;
     max-height: none;
     width: 100%;
-    max-width: none;
+    max-width: 1573px;
     justify-items: center;
     padding: 0px;
     opacity: 0;
@@ -4353,8 +4353,8 @@ details.collapse summary::-webkit-details-marker {
     opacity: 0.6}
 .modal:not(dialog:not(.modal-open)),
   .modal::backdrop {
-    background-color: rgba(0, 0, 0, 0.3);
-    animation: modal-pop 0.2s ease-out}
+      background-color: rgba(0, 0, 0, 0.3);
+      animation: modal-pop 0.2s ease-out};
 .modal-backdrop {
     z-index: -1;
     grid-column-start: 1;
@@ -4362,7 +4362,8 @@ details.collapse summary::-webkit-details-marker {
     display: grid;
     align-self: stretch;
     justify-self: stretch;
-    color: transparent}
+    color: transparent
+}
 .modal-open .modal-box,
 .modal-toggle:checked + .modal .modal-box,
 .modal:target .modal-box,
