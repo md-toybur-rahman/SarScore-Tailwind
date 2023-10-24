@@ -259,8 +259,23 @@
             </div>
         </section>
         <!-- End Mobile Menubar -->
+
+
         <div class="px-3 md:px-0 md:mx-5 w-full">
             <!-- user management Contain Start -->
+
+            <div class="px-3 md:px-0 md:mx-5 w-full">
+                <div class="bg-red-300 w-full h-[100vh] z-50">
+                    <div class="bg-white rounded-xl w-fit">
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click the button below to close</p>
+                        <div class="">
+                            <button class="btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
                 <section
@@ -377,7 +392,15 @@
                                     <h1 class="text-sm font-bold">
                                         Status: <span> Approved</span>
                                     </h1>
-                                    <button onclick="my_modal_1.showModal()">
+                                    <button onclick="handleModal()">
+                                        <a class="mt-[2px]">
+                                            <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
+                                        </a>
+                                    </button>
+
+
+
+                                    <!-- <button onclick="my_modal_1.showModal()">
                                         <a class="mt-[2px]">
                                             <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
                                         </a></button>
@@ -387,12 +410,11 @@
                                             <p class="py-4">Press ESC key or click the button below to close</p>
                                             <div class="modal-action">
                                                 <form method="dialog">
-                                                    <!-- if there is a button in form, it will close the modal -->
                                                     <button class="btn">Close</button>
                                                 </form>
                                             </div>
                                         </div>
-                                    </dialog>
+                                    </dialog> -->
                                 </div>
                             </div>
                         </div>
