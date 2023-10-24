@@ -261,235 +261,262 @@
         <!-- End Mobile Menubar -->
 
 
-        <div class="px-3 md:px-0 md:mx-5 w-full">
+        <div class="w-full relative">
             <!-- user management Contain Start -->
+            <!-- onmouseover="document.body.style.overflow='hidden';"  onmouseout="document.body.style.overflow='auto';" -->
+            <div class="absolute w-full">
+                <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                    <div class="w-full absolute z-10 bg-black h-full opacity-10">
 
-            <div class="px-3 md:px-0 md:mx-5 w-full">
-                <div class="bg-red-300 w-full h-[100vh] z-50">
-                    <div class="bg-white rounded-xl w-fit">
-                        <h3 class="font-bold text-lg">Hello!</h3>
-                        <p class="py-4">Press ESC key or click the button below to close</p>
-                        <div class="">
-                            <button class="btn">Close</button>
+                    </div>
+                    <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
+                        <div class="flex items-center justify-end mb-7">
+                            <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                        </div>
+                        <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
+                        <div class="bg-white flex items-center justify-center mb-11">
+                            <select class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
+                                id="selectElement27">
+                                <option>Approved</option>
+                                <option>Pending</option>
+                                <option>On Hold</option>
+                            </select>
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="font-[poppins] text-sm pb-20">
-                <!-- Search panel -->
-                <section
-                    class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
-                    <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368.svg" alt="">
-                    <input class="flex-grow outline-none mx-2 h-6" type="text">
-                    <div class="hidden md:flex items-end gap-6">
-                        <div class="flex items-center gap-5 md:gap-14">
-                            <img class="w-[18px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
-                            <div>
-                                <h4 class="font-bold text-sm md:text-base">Joseph</h4>
-                                <p class="text-xs md:text-sm text-right">Admin</p>
-                            </div>
-                        </div>
-                        <div class="dropdown dropdown-end">
-                            <label tabindex="0" class="">
-                                <div class="relative cursor-pointer">
-                                    <div class="w-12 h-12 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
-                                    </div>
-                                    <div
-                                        class="absolute right-0 bottom-0 w-4 h-3 md:h-4 bg-[#28C66F] rounded-full border-2">
-                                    </div>
-                                </div>
-                            </label>
-                            <ul tabindex="0"
-                                class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
-                                <li><a href="#">My Profile</a></li>
-                                <li><a href="#">Billing</a></li>
-                                <li><a href="#">My Account</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Sorting panel -->
-                <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
-                    <div>
-                        <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            User Management</h1>
-                    </div>
-                    <div class="md:flex items-center gap-[10px]">
-                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mt-2 md:mt-0">Sort by Date Range: </h3>
-
-                        <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
-                            <div class="relative bg-white md:px-1 py-2 rounded-xl">
-                                <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
-                                    <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                            class="outline-none w-16 md:w-20" placeholder="Select" type="text" required>
-                                    </p>
+            <div class="px-3 md:px-0 md:mx-5">
+                <div class="font-[poppins] text-sm pb-20">
+                    <!-- Search panel -->
+                    <section
+                        class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
+                        <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368.svg" alt="">
+                        <input class="flex-grow outline-none mx-2 h-6" type="text">
+                        <div class="hidden md:flex items-end gap-6">
+                            <div class="flex items-center gap-5 md:gap-14">
+                                <img class="w-[18px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
+                                <div>
+                                    <h4 class="font-bold text-sm md:text-base">Joseph</h4>
+                                    <p class="text-xs md:text-sm text-right">Admin</p>
                                 </div>
                             </div>
-
-                            <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
-                                <div class="px-2 w- bg-white flex items-center justify-between">
-                                    <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker"
-                                            placeholder="Select" class="outline-none w-16 md:w-28" type="text" required>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
-                                <div class="bg-white flex items-center justify-between">
-                                    <select
-                                        class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
-                                        id="selectElement31">
-                                        <option value="" selected disabled>Type</option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <button onclick="refreshSorting()"
-                            class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
-                    </div>
-                </section>
-                <!-- End Sorting Panel -->
-
-                <!-- Dashboard Item -->
-                <section class="">
-                    <!-- User List -->
-                    <h1 class="text-lg md:text-2xl font-semibold md:ms-8 mt-2">View Rating</h1>
-                    <section class="mt-8 md:mt-[52px] md:grid grid-cols-3 gap-[18px]">
-                        <div
-                            class="col-span-1 md:h-[437px] bg-white rounded-2xl px-7 py-11 flex items-end mb-10 md:mb-0">
-                            <div class="w-full">
-                                <h1 class="text-sm text-[#1E1E1E] text-center mb-11">Soffner_19</h1>
-                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Full Name: <span> Courtney
-                                        Henry</span>
-                                </h1>
-                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">User: <span> Standard User</span></h1>
-                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Email: <span> soffner19@mac.com</span>
-                                </h1>
-                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-8">Location: <span> London</span></h1>
-
-                                <a class="flex items-center gap-[107px] text-sm text-[#1E1E1E] font-bold"
-                                    href="#">Support Tickets<span
-                                        class="h-[22px] px-3 bg-[#DDDDDD] rounded-xl text-center">0</span></a>
-
-                                <h6 class="text-[10px] text-[#656565] underline mt-7">Contact User</h6>
-
-                            </div>
-                        </div>
-
-                        <div class="col-span-2 bg-white rounded-2xl p-10 h-fit">
-                            <div>
-                                <h1 class="text-sm text-[#656565] font-bold mb-5">Address: <span> 124 Apple Beat Road,
-                                        London, SE231NE</span></h1>
-                                <h1 class="text-sm text-[#656565] font-bold mb-5">Date: <span> 19-05-23</span></h1>
-                                <h1 class="text-sm text-[#656565] font-bold mb-5">Time: <span> 14:03 GMT</span></h1>
-                                <h1 class="text-sm text-[#656565] font-bold mb-5">Type: <span> Wheelchair Access</span>
-                                </h1>
-                                <div class="text-[#656565] mb-5 flex gap-3">
-                                    <h1 class="text-sm font-bold">
-                                        Status: <span> Approved</span>
-                                    </h1>
-                                    <button onclick="handleModal()">
-                                        <a class="mt-[2px]">
-                                            <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
-                                        </a>
-                                    </button>
-
-
-
-                                    <!-- <button onclick="my_modal_1.showModal()">
-                                        <a class="mt-[2px]">
-                                            <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
-                                        </a></button>
-                                    <dialog id="my_modal_1" class="modal">
-                                        <div class="modal-box">
-                                            <h3 class="font-bold text-lg">Hello!</h3>
-                                            <p class="py-4">Press ESC key or click the button below to close</p>
-                                            <div class="modal-action">
-                                                <form method="dialog">
-                                                    <button class="btn">Close</button>
-                                                </form>
-                                            </div>
+                            <div class="dropdown dropdown-end">
+                                <label tabindex="0" class="">
+                                    <div class="relative cursor-pointer">
+                                        <div
+                                            class="w-12 h-12 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
                                         </div>
-                                    </dialog> -->
+                                        <div
+                                            class="absolute right-0 bottom-0 w-4 h-3 md:h-4 bg-[#28C66F] rounded-full border-2">
+                                        </div>
+                                    </div>
+                                </label>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
+                                    <li><a href="#">My Profile</a></li>
+                                    <li><a href="#">Billing</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sorting panel -->
+                    <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
+                        <div>
+                            <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb
+                                </a> >
+                                User Management</h1>
+                        </div>
+                        <div class="md:flex items-center gap-[10px]">
+                            <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mt-2 md:mt-0">Sort by Date Range:
+                            </h3>
+
+                            <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
+                                <div class="relative bg-white md:px-1 py-2 rounded-xl">
+                                    <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
+                                        <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
+                                                class="outline-none w-16 md:w-20" placeholder="Select" type="text"
+                                                required>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
+                                    <div class="px-2 w- bg-white flex items-center justify-between">
+                                        <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker"
+                                                placeholder="Select" class="outline-none w-16 md:w-28" type="text"
+                                                required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <select
+                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                            id="selectElement31">
+                                            <option value="" selected disabled>Type</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="refreshSorting()"
+                                class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                        </div>
+                    </section>
+                    <!-- End Sorting Panel -->
+
+                    <!-- Dashboard Item -->
+                    <section class="">
+                        <!-- User List -->
+                        <h1 class="text-lg md:text-2xl font-semibold md:ms-8 mt-2">View Rating</h1>
+                        <section class="mt-8 md:mt-[52px] md:grid grid-cols-3 gap-[18px]">
+                            <div
+                                class="col-span-1 md:h-[437px] bg-white rounded-2xl px-7 py-11 flex items-end mb-10 md:mb-0">
+                                <div class="w-full">
+                                    <h1 class="text-sm text-[#1E1E1E] text-center mb-11">Soffner_19</h1>
+                                    <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Full Name: <span> Courtney
+                                            Henry</span>
+                                    </h1>
+                                    <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">User: <span> Standard User</span>
+                                    </h1>
+                                    <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Email: <span>
+                                            soffner19@mac.com</span>
+                                    </h1>
+                                    <h1 class="text-sm text-[#1E1E1E] font-bold mb-8">Location: <span> London</span>
+                                    </h1>
+
+                                    <a class="flex items-center gap-[107px] text-sm text-[#1E1E1E] font-bold"
+                                        href="#">Support Tickets<span
+                                            class="h-[22px] px-3 bg-[#DDDDDD] rounded-xl text-center">0</span></a>
+
+                                    <h6 class="text-[10px] text-[#656565] underline mt-7">Contact User</h6>
+
+                                </div>
+                            </div>
+
+                            <div class="col-span-2 bg-white rounded-2xl p-10 h-fit">
+                                <div>
+                                    <h1 class="text-sm text-[#656565] font-bold mb-5">Address: <span> 124 Apple Beat
+                                            Road,
+                                            London, SE231NE</span></h1>
+                                    <h1 class="text-sm text-[#656565] font-bold mb-5">Date: <span> 19-05-23</span></h1>
+                                    <h1 class="text-sm text-[#656565] font-bold mb-5">Time: <span> 14:03 GMT</span></h1>
+                                    <h1 class="text-sm text-[#656565] font-bold mb-5">Type: <span> Wheelchair
+                                            Access</span>
+                                    </h1>
+                                    <div class="text-[#656565] mb-5 flex gap-3">
+                                        <h1 class="text-sm font-bold">
+                                            Status: <span> Approved</span>
+                                        </h1>
+                                        <button onclick="handleModal()">
+                                            <a class="mt-[2px]">
+                                                <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
+                                            </a>
+                                        </button>
+
+
+
+                                        <!-- <button onclick="my_modal_1.showModal()">
+                                            <a class="mt-[2px]">
+                                                <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
+                                            </a></button>
+                                        <dialog id="my_modal_1" class="modal">
+                                            <div class="modal-box">
+                                                <h3 class="font-bold text-lg">Hello!</h3>
+                                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <button class="btn">Close</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                    <!-- End user management Item -->
+
+
+                    <section class="md:grid md:grid-cols-6 gap-5 mt-[47px]">
+                        <div
+                            class="md:px-8 md:py-7 py-4 col-span-2 bg-white p-3 rounded-lg md:rounded-2xl mb-10 md:mb-0">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-lg md:text-lg font-semibold">Time To Access From Vehicle</h1>
+                            </div>
+                            <div class="flex justify-center">
+                                <div
+                                    class="w-[177px] h-[177px] bg-gradient-to-tr from-[#39CCCC] via-[#6259CE] to-[#39CCCC] rounded-full flex items-center justify-center">
+                                    <div
+                                        class="bg-white flex items-center justify-center w-[150px] h-[150px] rounded-full">
+                                        <div>
+                                            <h1 class="text-[28px] font-[inter] text-[#656565] mb-2">1-2 min</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-end mt-7">
+                                <div>
+                                    <h1 class="text-xs md:text-sm text-[#656565]">Time</h1>
+                                    <h1 class="text-2xl md:text-[34px] font-bold mt-2 font-[inter]">1-2 min</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                            src="assets/icons/Path 649.png" alt="">
+                                        62%</h1>
+                                    <p class="text-xs text-[#656565]">More than last month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
+                            <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
+                            <div class="md:grid grid-cols-12 justify-center">
+                                <div class="col-span-9">
+                                    <div id="svgMap">
+
+                                    </div>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 md:w-[110px] mt-5 md:mt-0">
+                                    <div class="flex md:flex-col justify-between gap-3 md:gap-7">
+                                        <div>
+                                            <h3 class="text-[12px]">Under Minute</h3>
+                                            <h1 class="text-[12px]">18%</h1>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-[12px]">1-2 Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-[12px]">2-3 Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-[12px]">5 + Minutes</h3>
+                                            <h1 class="text-[12px]">39%</h1>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                </section>
-                <!-- End user management Item -->
-
-
-                <section class="md:grid md:grid-cols-6 gap-5 mt-[47px]">
-                    <div class="md:px-8 md:py-7 py-4 col-span-2 bg-white p-3 rounded-lg md:rounded-2xl mb-10 md:mb-0">
-                        <div class="flex justify-between items-center mb-5">
-                            <h1 class="text-lg md:text-lg font-semibold">Time To Access From Vehicle</h1>
-                        </div>
-                        <div class="flex justify-center">
-                            <div
-                                class="w-[177px] h-[177px] bg-gradient-to-tr from-[#39CCCC] via-[#6259CE] to-[#39CCCC] rounded-full flex items-center justify-center">
-                                <div class="bg-white flex items-center justify-center w-[150px] h-[150px] rounded-full">
-                                    <div>
-                                        <h1 class="text-[28px] font-[inter] text-[#656565] mb-2">1-2 min</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-end mt-7">
-                            <div>
-                                <h1 class="text-xs md:text-sm text-[#656565]">Time</h1>
-                                <h1 class="text-2xl md:text-[34px] font-bold mt-2 font-[inter]">1-2 min</h1>
-                            </div>
-                            <div>
-                                <h1 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649.png" alt="">
-                                    62%</h1>
-                                <p class="text-xs text-[#656565]">More than last month</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
-                        <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
-                        <div class="md:grid grid-cols-12 justify-center">
-                            <div class="col-span-9">
-                                <div id="svgMap">
-
-                                </div>
-                            </div>
-                            <div class="col-span-1"></div>
-                            <div class="col-span-2 md:w-[110px] mt-5 md:mt-0">
-                                <div class="flex md:flex-col justify-between gap-3 md:gap-7">
-                                    <div>
-                                        <h3 class="text-[12px]">Under Minute</h3>
-                                        <h1 class="text-[12px]">18%</h1>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-[12px]">1-2 Minutes</h3>
-                                        <h1 class="text-[12px]">39%</h1>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-[12px]">2-3 Minutes</h3>
-                                        <h1 class="text-[12px]">39%</h1>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-[12px]">5 + Minutes</h3>
-                                        <h1 class="text-[12px]">39%</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
+                <!-- user management Contain End -->
+                <footer
+                    class="border-t-2 border-[#EAEAEA] flex justify-between py-5 md:py-10 mt-10 md:mt-[179px] text-xs md:text-base">
+                    <h3>2023 &copy; SARSocore</h3>
+                    <h3>Help & Support</h3>
+                </footer>
             </div>
-            <!-- user management Contain End -->
-            <footer
-                class="border-t-2 border-[#EAEAEA] flex justify-between py-5 md:py-10 mt-10 md:mt-[179px] text-xs md:text-base">
-                <h3>2023 &copy; SARSocore</h3>
-                <h3>Help & Support</h3>
-            </footer>
         </div>
 
     </main>
