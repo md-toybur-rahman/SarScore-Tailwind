@@ -73,3 +73,51 @@ new SlimSelect({
 new SlimSelect({
     select: '#selectElement24'
 })
+new SlimSelect({
+    select: '#selectElement25'
+})
+new SlimSelect({
+    select: '#selectElement26'
+})
+new SlimSelect({
+    select: '#selectElement27'
+})
+new SlimSelect({
+    select: '#selectElement28'
+})
+new SlimSelect({
+    select: '#selectElement29'
+})
+new SlimSelect({
+    select: '#selectElement30'
+})
+new SlimSelect({
+    select: '#selectElement31'
+})
+new SlimSelect({
+    select: '#selectElement32'
+})
+new SlimSelect({
+    select: '#selectElement33'
+})
+new SlimSelect({
+    select: '#selectElement34'
+})
+new SlimSelect({
+    select: '#selectElement35'
+})
+new SlimSelect({
+    select: '#selectElement36'
+})
+new SlimSelect({
+    select: '#selectElement37'
+})
+new SlimSelect({
+    select: '#selectElement38'
+})
+new SlimSelect({
+    select: '#selectElement39'
+})
+new SlimSelect({
+    select: '#selectElement40'
+})

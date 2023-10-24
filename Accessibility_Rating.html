@@ -343,7 +343,7 @@
                 <!-- Accessability Item -->
                 <section>
                     <h1 class="text-lg md:text-2xl font-semibold mt-2 md:mb-10 md:ms-8">Accessibility Ratings</h1>
-                    
+
                     <!-- end user panel -->
 
                     <!-- registration chart -->
@@ -362,25 +362,14 @@
                                 </div>
                             </div>
                             <div class="pt-7 pb-4 bg-white rounded-2xl">
-                                <div class="relative bg-white rounded-xl">
-                                    <div onclick="dropdownButtonHandler('topCategoryList')"
-                                        class="bg-white flex items-center gap-3 cursor-pointer">
-                                        <p class="text-xs md:text-sm flex">Top Category: </p>
-                                        <img src="assets/icons/Group 310.svg" alt="">
-                                    </div>
-                                    <ul id="topCategoryList"
-                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden text-xs md:text-sm">
-                                        <li onclick="dropdownListHandler('topCategory', 'topCategoryList' ,'Wheelchair Access')"
-                                            class="hover:font-semibold">
-                                            Wheelchair Access</li>
-                                        <li onclick="dropdownListHandler('topCategory', 'topCategoryList' ,'def')"
-                                            class="hover:font-semibold">def</li>
-                                        <li onclick="dropdownListHandler('topCategory', 'topCategoryList' ,'ghi')"
-                                            class="hover:font-semibold">ghi</li>
-                                        <li onclick="dropdownListHandler('topCategory', 'topCategoryList' ,'jkl')"
-                                            class="hover:font-semibold">jkl</li>
-                                    </ul>
-                                </div>
+                                <select class="border-0 outline-none overflow-hidden w-40 md:w-40 bg-white -mt-1"
+                                    id="selectElement29">
+                                    <option selected disabled value="Top Category">Top Category</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+
                                 <div class="flex items-end gap-3">
                                     <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">234</h1>
                                     <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
@@ -402,26 +391,13 @@
                                 </div>
                             </div>
                             <div class="pt-7 pb-4 bg-white rounded-2xl">
-                                <div class="relative bg-white rounded-xl">
-                                    <div onclick="dropdownButtonHandler('topLocationList')"
-                                        class="bg-white flex items-center gap-3 cursor-pointer">
-                                        <p class="text-xs md:text-sm flex">Top-Rated Location: </p>
-                                        <img src="assets/icons/Group 310.svg" alt="">
-                                    </div>
-                                    <ul id="topLocationList"
-                                        class="absolute bg-[#FAFAFA] w-24 flex-col gap-1 items-center justify-center top-7 py-1 hidden text-xs md:text-sm">
-                                        <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'London')"
-                                            class="hover:font-semibold">London</li>
-                                        <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'Manhattan')"
-                                            class="hover:font-semibold">Manhattan
-                                        </li>
-                                        <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'Melbourne')"
-                                            class="hover:font-semibold">Melbourne
-                                        </li>
-                                        <li onclick="dropdownListHandler('topLocation', 'topLocationList' ,'Texas')"
-                                            class="hover:font-semibold">Texas</li>
-                                    </ul>
-                                </div>
+                                <select class="border-0 outline-none overflow-hidden w-48 md:w-48 bg-white -mt-1"
+                                    id="selectElement30">
+                                    <option selected disabled value="Top-Rated Locations">Top-Rated Locations</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
                                 <div class="flex items-end gap-3">
                                     <h1 id="topLocation"
                                         class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">London</h1>
