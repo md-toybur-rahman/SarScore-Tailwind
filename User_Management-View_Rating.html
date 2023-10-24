@@ -10,6 +10,10 @@
 
     <!-- Datepicker -->
     <link rel="stylesheet" href="assets/css/libs/datepicker.css">
+    <!-- SVG Map -->
+    <link rel="stylesheet" href="assets/css/libs/svg_map.css">
+    <script src="assets/js/libs/svg_map/svg_map_zoom.js"></script>
+    <script src="assets/js/libs/svg_map/svg_map.js"></script>
     <!-- Daisyui -->
     <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS -->
@@ -338,17 +342,22 @@
                 <!-- Dashboard Item -->
                 <section class="">
                     <!-- User List -->
-                    <h1 class="text-lg md:text-2xl font-semibold md:ms-8 mt-2">View User</h1>
-                    <section class="mt-8 md:mt-[74px] md:grid grid-cols-3 gap-[18px]">
-                        <div class="col-span-1 md:h-[437px] bg-white rounded-3xl px-7 py-11 flex items-end mb-10 md:mb-0">
+                    <h1 class="text-lg md:text-2xl font-semibold md:ms-8 mt-2">View Rating</h1>
+                    <section class="mt-8 md:mt-[52px] md:grid grid-cols-3 gap-[18px]">
+                        <div
+                            class="col-span-1 md:h-[437px] bg-white rounded-2xl px-7 py-11 flex items-end mb-10 md:mb-0">
                             <div class="w-full">
                                 <h1 class="text-sm text-[#1E1E1E] text-center mb-11">Soffner_19</h1>
-                                <h1 class="text-sm font-bold mb-3">Full Name: <span>Courtney Henry</span></h1>
-                                <h1 class="text-sm font-bold mb-3">User: <span>Standard User</span></h1>
-                                <h1 class="text-sm font-bold mb-3">Email: <span>soffner19@mac.com</span></h1>
-                                <h1 class="text-sm font-bold mb-8">Location: <span>London</span></h1>
+                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Full Name: <span> Courtney
+                                        Henry</span>
+                                </h1>
+                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">User: <span> Standard User</span></h1>
+                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-3">Email: <span> soffner19@mac.com</span>
+                                </h1>
+                                <h1 class="text-sm text-[#1E1E1E] font-bold mb-8">Location: <span> London</span></h1>
 
-                                <a class="flex items-center gap-[107px] text-sm font-bold" href="#">Support Tickets<span
+                                <a class="flex items-center gap-[107px] text-sm text-[#1E1E1E] font-bold"
+                                    href="#">Support Tickets<span
                                         class="h-[22px] px-3 bg-[#DDDDDD] rounded-xl text-center">0</span></a>
 
                                 <h6 class="text-[10px] text-[#656565] underline mt-7">Contact User</h6>
@@ -356,224 +365,89 @@
                             </div>
                         </div>
 
-                        <div class="col-span-2">
-                            <h1 class="text-lg md:text-2xl font-semibold md:ms-8">Contribution List</h1>
-                            <!-- User Registration management menu section -->
-                            <div class="mt-5 md:mt-10 md:flex items-center justify-between">
-                                <div class="flex items-center justify-between gap-2 md:gap-3">
-                                    <div class=" bg-white rounded-xl flex justify-between items-center">
-                                        <a
-                                            class="py-3 md:px-4 px-3 h-[38px] text-xs rounded-md md:rounded-xl bg-[#39CCCC] text-white">All</a>
-                                        <a
-                                            class="py-3 md:px-4 px-3 h-[38px] text-xs rounded-md md:rounded-xl">Pending</a>
-                                        <a
-                                            class="py-3 md:px-4 px-3 h-[38px] text-xs rounded-md md:rounded-xl">Rejected</a>
-                                    </div>
-                                    <div
-                                        class="flex col-span-3 items-center bg-white px-1 md:px-2 h-[38px] rounded-lg md:rounded-xl">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-40 md:w-24 bg-white"
-                                                id="selectElement32">
-                                                <option selected disabled value="Bulk Action">Bulk Action</option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="md:flex justify-end items-center gap-2">
-                                    <div class="grid grid-cols-2 md:flex items-center gap-3 mb-2 md:mb-0  mt-2 md:mt-0">
-                                        <div class="relative bg-white md:px-1 rounded-lg md:rounded-xl">
-                                            <div
-                                                class="md:px-2 bg-white font flex items-center justify-between px-2 h-[38px]">
-                                                <p class="w-fit text-xs">Date: <input id="ticketDatepicker"
-                                                        class="outline-none cursor-text flex-grow w-28 md:w-10" placeholder="Select"
-                                                        type="text" required>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="flex items-center bg-white px-1 md:px-2 h-[38px] rounded-lg md:rounded-xl">
-                                            <div class="bg-white flex items-center justify-between">
-                                                <select
-                                                    class="border-0 text-xs outline-none overflow-hidden w-40 md:w-20 bg-white"
-                                                    id="selectElement33">
-                                                    <option selected disabled value="Bulk Action">Type</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid grid-cols-4 md:flex items-center gap-3">
-                                        <div
-                                            class="flex col-span-3 items-center bg-white px-1 md:px-2 h-[38px] rounded-lg md:rounded-xl">
-                                            <div class="bg-white flex items-center justify-between">
-                                                <select
-                                                    class="border-0 text-xs outline-none overflow-hidden w-40 md:w-24 bg-white"
-                                                    id="selectElement34">
-                                                    <option selected disabled value="Bulk Action">Category</option>
-                                                    <option>Option 1</option>
-                                                    <option>Option 2</option>
-                                                    <option>Option 3</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-span-1">
-                                            <a
-                                                class="h-[36px] flex items-center justify-center w-[49px] py-1 text-xs md:text-sm rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></a>
-                                        </div>
-                                    </div>
+                        <div class="col-span-2 bg-white rounded-2xl p-10 h-fit">
+                            <div>
+                                <h1 class="text-sm text-[#656565] font-bold mb-5">Address: <span> 124 Apple Beat Road,
+                                        London, SE231NE</span></h1>
+                                <h1 class="text-sm text-[#656565] font-bold mb-5">Date: <span> 19-05-23</span></h1>
+                                <h1 class="text-sm text-[#656565] font-bold mb-5">Time: <span> 14:03 GMT</span></h1>
+                                <h1 class="text-sm text-[#656565] font-bold mb-5">Type: <span> Wheelchair Access</span>
+                                </h1>
+                                <div class="text-[#656565] mb-5 flex gap-3">
+                                    <h1 class="text-sm font-bold">
+                                        Status: <span> Approved</span>
+                                    </h1>
+                                    <a href="#" class="mt-[2px]">
+                                        <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
+                                    </a>
                                 </div>
                             </div>
-                            <!-- End User List menu section -->
-
-                            <!-- User registration management Table -->
-                            <div class="overflow-x-scroll lg:overflow-x-hidden mt-10">
-                                <table class="table text-xs md:text-sm min-w-[650px]">
-                                    <tbody id="tbody" class="bg-white ">
-                                        <!-- row 1 -->
-                                        <tr class="border-y-[10px] border-[#FAFAFA]">
-                                            <th class="rounded-s-2xl">
-                                                <label>
-                                                    <input type="checkbox" class="checkbox w-5 h-5" />
-                                                </label>
-                                            </th>
-                                            <td>
-                                                London
-                                            </td>
-                                            <td>19-05-23</td>
-                                            <td>Wheelchair Access</td>
-                                            <td>Standard User</td>
-                                            <td>
-                                                <button
-                                                    class="text-[#FFAB00] border border-[#FFAB00] text-[9px] font-[inter] px-7 rounded-xl">Pending</button>
-                                            </td>
-                                            <td class="rounded-e-2xl">
-                                                <div class="dropdown dropdown-end">
-                                                    <label tabindex="0" class="">
-                                                        <img class="cursor-pointer" src="assets/icons/3dot-icon.svg"
-                                                            alt="">
-                                                    </label>
-                                                    <ul tabindex="0"
-                                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                        <li><a href="#">View User</a></li>
-                                                        <li><a href="#">Edit User Role</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="border-y-[10px] border-[#FAFAFA]">
-                                            <th class="rounded-s-2xl">
-                                                <label>
-                                                    <input type="checkbox" class="checkbox w-5 h-5" />
-                                                </label>
-                                            </th>
-                                            <td>
-                                                London
-                                            </td>
-                                            <td>19-05-23</td>
-                                            <td>Wheelchair Access</td>
-                                            <td>Standard User</td>
-                                            <td>
-                                                <button
-                                                    class="text-[#FFAB00] border border-[#FFAB00] text-[9px] font-[inter] px-7 rounded-xl">Pending</button>
-                                            </td>
-                                            <td class="rounded-e-2xl">
-                                                <div class="dropdown dropdown-end">
-                                                    <label tabindex="0" class="">
-                                                        <img class="cursor-pointer" src="assets/icons/3dot-icon.svg"
-                                                            alt="">
-                                                    </label>
-                                                    <ul tabindex="0"
-                                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                        <li><a href="#">View User</a></li>
-                                                        <li><a href="#">Edit User Role</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="border-y-[10px] border-[#FAFAFA]">
-                                            <th class="rounded-s-2xl">
-                                                <label>
-                                                    <input type="checkbox" class="checkbox w-5 h-5" />
-                                                </label>
-                                            </th>
-                                            <td>
-                                                London
-                                            </td>
-                                            <td>19-05-23</td>
-                                            <td>Wheelchair Access</td>
-                                            <td>Standard User</td>
-                                            <td>
-                                                <button
-                                                    class="text-[#FFAB00] border border-[#FFAB00] text-[9px] font-[inter] px-7 rounded-xl">Pending</button>
-                                            </td>
-                                            <th class="rounded-e-2xl">
-                                                <div class="dropdown dropdown-top dropdown-end">
-                                                    <label tabindex="0" class="">
-                                                        <img class="cursor-pointer" src="assets/icons/3dot-icon.svg"
-                                                            alt="">
-                                                    </label>
-                                                    <ul tabindex="0"
-                                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                        <li><a href="#">View User</a></li>
-                                                        <li><a href="#">Edit User Role</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                        <tr class="border-y-[10px] border-[#FAFAFA]">
-                                            <th class="rounded-s-2xl">
-                                                <label>
-                                                    <input type="checkbox" class="checkbox w-5 h-5" />
-                                                </label>
-                                            </th>
-                                            <td>
-                                                London
-                                            </td>
-                                            <td>19-05-23</td>
-                                            <td>Wheelchair Access</td>
-                                            <td>Standard User</td>
-                                            <td>
-                                                <button
-                                                    class="text-[#FFAB00] border border-[#FFAB00] text-[9px] font-[inter] px-7 rounded-xl">Pending</button>
-                                            </td>
-                                            <th class="rounded-e-2xl">
-                                                <div class="dropdown dropdown-top dropdown-end">
-                                                    <label tabindex="0" class="">
-                                                        <img class="cursor-pointer" src="assets/icons/3dot-icon.svg"
-                                                            alt="">
-                                                    </label>
-                                                    <ul tabindex="0"
-                                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                        <li><a href="#">View User</a></li>
-                                                        <li><a href="#">Edit User Role</a></li>
-                                                        <li><a href="#">Delete</a></li>
-                                                    </ul>
-                                                </div>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="flex justify-center md:justify-end">
-                                <button
-                                    class="mt-[38px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
-                                    More</button>
-                            </div>
-                            <!-- End user registration Table -->
                         </div>
                     </section>
                 </section>
                 <!-- End user management Item -->
+
+
+                <section class="md:grid md:grid-cols-6 gap-5 mt-[47px]">
+                    <div class="md:px-8 md:py-7 py-4 col-span-2 bg-white p-3 rounded-lg md:rounded-2xl">
+                        <div class="flex justify-between items-center mb-5">
+                            <h1 class="text-lg md:text-lg font-semibold">Time To Access From Vehicle</h1>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="w-[177px] h-[177px] bg-gradient-to-tr from-[#39CCCC] via-[#6259CE] to-[#39CCCC] rounded-full flex items-center justify-center">
+                                <div class="bg-white flex items-center justify-center w-[150px] h-[150px] rounded-full">
+                                    <div>
+                                        <h1 class="text-[28px] font-[inter] text-[#656565] mb-2">1-2 min</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-end mt-7">
+                            <div>
+                                <h1 class="text-xs md:text-sm text-[#656565]">Time</h1>
+                                <h1 class="text-2xl md:text-[34px] font-bold mt-2 font-[inter]">1-2 min</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                        src="assets/icons/Path 649.png" alt="">
+                                    62%</h1>
+                                <p class="text-xs text-[#656565]">More than last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
+                        <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
+                        <div class="md:grid grid-cols-12 justify-center">
+                            <div class="col-span-9">
+                                <div id="svgMap">
+
+                                </div>
+                            </div>
+                            <div class="col-span-1"></div>
+                            <div class="col-span-2 md:w-[110px] mt-5 md:mt-0">
+                                <div class="flex md:flex-col justify-between gap-3 md:gap-7">
+                                    <div>
+                                        <h3 class="text-[12px]">Under Minute</h3>
+                                        <h1 class="text-[12px]">18%</h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[12px]">1-2 Minutes</h3>
+                                        <h1 class="text-[12px]">39%</h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[12px]">2-3 Minutes</h3>
+                                        <h1 class="text-[12px]">39%</h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-[12px]">5 + Minutes</h3>
+                                        <h1 class="text-[12px]">39%</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <!-- user management Contain End -->
             <footer
@@ -590,6 +464,8 @@
     <!-- Datepicker -->
     <script src="assets/js/libs/datepicker/datepicker.js"></script>
     <script src="assets/js/libs/datepicker/datepicker_customize.js"></script>
+    <!-- Svg map -->
+    <script src="assets/js/libs/svg_map/svg_map_customize.js"></script>
     <!-- SlimSelect -->
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
 </body>
