@@ -261,16 +261,73 @@
         <!-- End Mobile Menubar -->
 
 
+        <div id="changeStatusModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
+                    <div onclick="HandleChangeStatusCloseButton()"
+                        class="flex items-center justify-end mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
+                    <div class="bg-white flex items-center justify-center mb-11">
+                        <select
+                            class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
+                            id="selectElement27">
+                            <option>Approved</option>
+                            <option>Pending</option>
+                            <option>On Hold</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-center">
+                        <button onclick="HandleChangeStatusConfirmButton()"
+                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="deleteUserModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
+                    <div onclick="HandleChangeStatusCloseButton()"
+                        class="flex items-center justify-end mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
+                    <div class="bg-white flex items-center justify-center mb-11">
+                        <select
+                            class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
+                            id="selectElement27">
+                            <option>Approved</option>
+                            <option>Pending</option>
+                            <option>On Hold</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-center">
+                        <button onclick="HandleChangeStatusConfirmButton()"
+                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="w-full relative">
             <!-- user management Contain Start -->
-            <!-- onmouseover="document.body.style.overflow='hidden';"  onmouseout="document.body.style.overflow='auto';" -->
-            <div class="absolute w-full">
+            <!-- -->
+            <!-- <div id="changeStatusModal" class="fixed top-0 bottom-0 w-screen max-w-[1287px] z-20 ">
                 <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
-                    <div class="w-full absolute z-10 bg-black h-full opacity-10">
+                    <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
                     </div>
                     <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
-                        <div class="flex items-center justify-end mb-7">
+                        <div onclick="HandleChangeStatusCloseButton()" class="flex items-center justify-end mb-7 cursor-pointer">
                             <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
                         </div>
                         <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
@@ -283,12 +340,12 @@
                             </select>
                         </div>
                         <div class="flex justify-center">
-                            <button
+                            <button onclick="HandleChangeStatusConfirmButton()"
                                 class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="px-3 md:px-0 md:mx-5">
                 <div class="font-[poppins] text-sm pb-20">
                     <!-- Search panel -->
@@ -330,45 +387,7 @@
                         <div>
                             <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb
                                 </a> >
-                                User Management</h1>
-                        </div>
-                        <div class="md:flex items-center gap-[10px]">
-                            <h3 class="text-xs md:text-sm text[#656565] mr-[10px] mt-2 md:mt-0">Sort by Date Range:
-                            </h3>
-
-                            <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
-                                <div class="relative bg-white md:px-1 py-2 rounded-xl">
-                                    <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
-                                        <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                                class="outline-none w-16 md:w-20" placeholder="Select" type="text"
-                                                required>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="relative bg-white px-2 md:px-1 py-2 rounded-xl">
-                                    <div class="px-2 w- bg-white flex items-center justify-between">
-                                        <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker"
-                                                placeholder="Select" class="outline-none w-16 md:w-28" type="text"
-                                                required>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center bg-white px-2 md:px-4 h-[33px] md:h-[36px] rounded-xl">
-                                    <div class="bg-white flex items-center justify-between">
-                                        <select
-                                            class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
-                                            id="selectElement31">
-                                            <option value="" selected disabled>Type</option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <button onclick="refreshSorting()"
-                                class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                                User Management > View Rating</h1>
                         </div>
                     </section>
                     <!-- End Sorting Panel -->
@@ -416,7 +435,7 @@
                                         <h1 class="text-sm font-bold">
                                             Status: <span> Approved</span>
                                         </h1>
-                                        <button onclick="handleModal()">
+                                        <button onclick="handleChangeStatusModal()">
                                             <a class="mt-[2px]">
                                                 <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
                                             </a>

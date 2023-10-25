@@ -1,4 +1,17 @@
-
+function handleChangeStatusModal() {
+    const changeStatusModal = document.getElementById('changeStatusModal');
+    if (changeStatusModal.classList.contains('hidden')) {
+        changeStatusModal.classList.remove('hidden');
+    }
+}
+function HandleChangeStatusConfirmButton() {
+    const changeStatusModal = document.getElementById('changeStatusModal');
+    changeStatusModal.classList.add('hidden');
+}
+function HandleChangeStatusCloseButton() {
+    const changeStatusModal = document.getElementById('changeStatusModal');
+    changeStatusModal.classList.add('hidden');
+}
 
 // Refresh Button Handler
 const refreshSorting = () => {
