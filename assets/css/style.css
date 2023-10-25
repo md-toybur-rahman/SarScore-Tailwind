@@ -228,3 +228,6 @@ input[type=radio] {
  input[type=radio]:checked {
     background-color: #656565;
  }
+ #settings {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }

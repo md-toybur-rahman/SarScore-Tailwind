@@ -19,7 +19,7 @@
                 fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],
                     'poppins': ['Poppins', 'sans-serif'],
-                    'inter': ['Inter', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
                 },
                 extend: {
                     colors: {
@@ -288,43 +288,33 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            Settings</h1>
+                            <a href="Settings.html">Settings</a> > Account Communication Preferences
+                        </h1>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- Settings Item -->
-                <section id="settings" class="mt-10 flex md:flex-row flex-col gap-10 md:gap-[75px]">
-                    <div class="md:w-[289px] w-full px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Billing</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Account Verification</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Profile Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Privacy Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Account Security</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Security Logs</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Connected Account</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Preferences</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Account_Communication_Preferences.html">Account Communication Preferences</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Privacy Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Email Preferences</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Accessability Settings</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Account Settings</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Account Verification</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Profile Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Privacy Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Account Security</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Security Logs</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Connected Account</a></li>
-                        </ul>
+                <section class="md:ms-8 mt-[30px]">
+                    <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Account Communication Preferences</h1>
+                    <p class="text-sm text-[#656565]">SARScore needs to occasionally send you emails related to your
+                        account, like billing issues or security alerts. These emails will be sent to your primary email
+                        address. You can also opt to receive updates by text message (SMS).</p>
+                    <div class="w-full max-w-[963px] bg-[white] pt-[26px] pr-10 pb-[67px] pl-[29px] rounded-lg mt-10">
+                        <div>
+                            <h1 class="text-lg font-bold text-[#1E1E1E] mb-4">Email</h1>
+                            <div class="flex items-center justify-between">
+                                <input class="text-[#656565]" type="email" value="" placeholder="email@email.com">
+                                <h6 class="text-sm text-[#656565] underline mt-7 cursor-pointer">(required)</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
+                            <div class="flex items-center justify-between">
+                                <input class="text-[#656565]" type="email" value="" placeholder="email@email.com">
+                                <h6 class="text-sm text-[#656565] underline mt-7 cursor-pointer">(required)</h6>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- End Settings Item -->
