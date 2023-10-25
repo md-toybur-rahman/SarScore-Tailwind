@@ -8,9 +8,11 @@ function HandleChangeStatusConfirmButton() {
     const changeStatusModal = document.getElementById('changeStatusModal');
     changeStatusModal.classList.add('hidden');
 }
-function HandleChangeStatusCloseButton() {
+function HandleCloseButton() {
     const changeStatusModal = document.getElementById('changeStatusModal');
+    const deleteUserModal = document.getElementById('deleteUserModal');
     changeStatusModal.classList.add('hidden');
+    deleteUserModal.classList.add('hidden')
 }
 
 // Refresh Button Handler
