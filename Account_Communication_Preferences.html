@@ -301,18 +301,22 @@
                         account, like billing issues or security alerts. These emails will be sent to your primary email
                         address. You can also opt to receive updates by text message (SMS).</p>
                     <div class="w-full max-w-[963px] bg-[white] pt-[26px] pr-10 pb-[67px] pl-[29px] rounded-lg mt-10">
-                        <div>
-                            <h1 class="text-lg font-bold text-[#1E1E1E] mb-4">Email</h1>
+                        <div class="mb-10">
+                            <h1 class="text-lg font-bold text-[#1E1E1E]">Email</h1>
                             <div class="flex items-center justify-between">
-                                <input class="text-[#656565]" type="email" value="" placeholder="email@email.com">
+                                <input class="text-[#656565]" type="email" value="email@email.com" placeholder="Your Email">
                                 <h6 class="text-sm text-[#656565] underline mt-7 cursor-pointer">(required)</h6>
                             </div>
                         </div>
                         <div>
                             <h1 class="text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
                             <div class="flex items-center justify-between">
-                                <input class="text-[#656565]" type="email" value="" placeholder="email@email.com">
-                                <h6 class="text-sm text-[#656565] underline mt-7 cursor-pointer">(required)</h6>
+                                <input class="text-[#656565]" type="text" value="+44 7371945932" placeholder="Your Phone Number">
+                                <input type="checkbox" class="toggle toggle-error" checked />
+                                <!-- <input type="checkbox" class="custom-toggle" id=""> -->
+                                <div onclick="handleToggle()" id="toogleContainer" class="toggle-deactivate-container duration-300">
+                                    <div id="toogle" class="toggle-deactivate duration-300"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

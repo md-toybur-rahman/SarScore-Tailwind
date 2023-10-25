@@ -5171,12 +5171,13 @@ details.collapse summary::-webkit-details-marker {
 .toggle-error:checked,
     .toggle-error[checked="true"],
     .toggle-error[aria-checked="true"] {
-    border-color: hsl(var(--er) / var(--tw-border-opacity));
+    border-color: #39CCCC;
     --tw-border-opacity: 0.1;
     --tw-bg-opacity: 1;
-    background-color: hsl(var(--er) / var(--tw-bg-opacity));
+    background-color: #39CCCC;
     --tw-text-opacity: 1;
-    color: hsl(var(--erc) / var(--tw-text-opacity))}
+    color: hsl(var(--erc) / var(--tw-text-opacity))
+}
 .toggle:disabled {
     cursor: not-allowed;
     --tw-border-opacity: 1;

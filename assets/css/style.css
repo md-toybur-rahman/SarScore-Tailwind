@@ -231,3 +231,33 @@ input[type=radio] {
  #settings {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
+
+ .toggle-deactivate-container {
+	border: 1px solid #656565;
+	width: 36px;
+	height: 24px;
+	border-radius: 20px;
+	padding: 1px;
+ }
+ .toggle-activate-container {
+	border: 1px solid #39CCCC;
+	background-color: #39CCCC;
+	width: 36px;
+	height: 24px;
+	border-radius: 20px;
+	padding: 1px;
+ }
+ .toggle-deactivate{
+	float: left;
+	width: 20px;
+	height: 100%;
+	background-color: #656565;
+	border-radius: 50%;
+ }
+ .toggle-activate{
+	float: right;
+	width: 20px;
+	height: 100%;
+	background-color: white;
+	border-radius: 50%;
+ }
