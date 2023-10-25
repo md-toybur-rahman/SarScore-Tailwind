@@ -237,7 +237,7 @@ input[type=radio] {
 	width: 36px;
 	height: 24px;
 	border-radius: 20px;
-	padding: 1px;
+	padding: 2px;
  }
  .toggle-activate-container {
 	border: 1px solid #39CCCC;
@@ -245,18 +245,18 @@ input[type=radio] {
 	width: 36px;
 	height: 24px;
 	border-radius: 20px;
-	padding: 1px;
+	padding: 2px;
  }
  .toggle-deactivate{
 	float: left;
-	width: 20px;
+	width: 18px;
 	height: 100%;
 	background-color: #656565;
 	border-radius: 50%;
  }
  .toggle-activate{
 	float: right;
-	width: 20px;
+	width: 18px;
 	height: 100%;
 	background-color: white;
 	border-radius: 50%;

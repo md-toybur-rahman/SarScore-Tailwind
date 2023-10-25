@@ -1,4 +1,21 @@
 
+function handleToggle (containerId, id) {
+    const toggleContainer = document.getElementById(containerId);
+    const toggle = document.getElementById(id);
+    if(toggleContainer.classList.contains('toggle-deactivate-container')){
+        toggleContainer.classList.remove('toggle-deactivate-container');
+        toggleContainer.classList.add('toggle-activate-container');
+        toggle.classList.remove('toggle-deactivate');
+        toggle.classList.add('toggle-activate');
+    }
+    else {
+        toggleContainer.classList.add('toggle-deactivate-container');
+        toggleContainer.classList.remove('toggle-activate-container');
+        toggle.classList.add('toggle-deactivate');
+        toggle.classList.remove('toggle-activate');
+    }
+}
+
 // Refresh Button Handler
 const refreshSorting = () => {
     const fromValue = document.getElementById('fromDatepicker');
