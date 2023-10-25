@@ -260,15 +260,14 @@
         </section>
         <!-- End Mobile Menubar -->
 
-
-        <div id="changeStatusModall" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+        <!-- Change Status modal -->
+        <div id="changeStatusModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
             <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
                 <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
                 </div>
                 <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
-                    <div onclick="HandleChangeStatusCloseButton()"
-                        class="flex items-center justify-end mb-7 cursor-pointer">
+                    <div onclick="HandleCloseButton('changeStatusModal')" class="flex items-center justify-end mb-7 cursor-pointer">
                         <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
                     </div>
                     <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
@@ -288,33 +287,85 @@
                 </div>
             </div>
         </div>
-        <div id="changeStatusModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+
+        <!-- Change User Category modal -->
+        <div id="changeUserCategoryModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
             <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
                 <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
                 </div>
                 <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
-                    <div onclick="HandleCloseButton()" class="flex items-center justify-end mb-7 cursor-pointer">
+                    <div onclick="HandleCloseButton('changeUserCategoryModal')" class="flex items-center justify-end mb-7 cursor-pointer">
                         <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
                     </div>
-                    <h3 class="font-bold text-sm text-[#656565] text-center mb-[30px]">Are you sure you want to delete
-                        this user?</h3>
-                    <div class="flex items-center justify-center gap-4">
-                        <button class="w-[60px] h-[36px] rounded-lg border border-[#656565]">Yes</button>
-                        <button class="w-[60px] h-[36px] rounded-lg border border-[#656565]">No</button>
-                    </div>
+                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
                     <div class="bg-white flex items-center justify-center mb-11">
                         <select
                             class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
-                            id="selectElement27">
-                            <option>Approved</option>
-                            <option>Pending</option>
-                            <option>On Hold</option>
+                            id="selectElement31">
+                            <option>Standard User</option>
+                            <option>Regular User</option>
+                            <option>Contributor</option>
+                            <option>Premium User</option>
+                            <option>Admin</option>
                         </select>
                     </div>
                     <div class="flex justify-center">
-                        <button onclick="HandleChangeStatusConfirmButton()"
+                        <button onclick="HandleChangeUserCategoryConfirmButton()"
                             class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete user modal -->
+        <div id="deleteUserModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl w-[423px] z-30">
+                    <div onclick="HandleCloseButton('deleteUserModal')" class="flex items-center justify-end px-[14px] pt-[14px] mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <div class="px-10 pb-10">
+                        <h3 class="font-bold text-sm text-[#656565] text-center mb-[30px]">Are you sure you want to
+                            delete
+                            this user?</h3>
+                        <div class="flex items-center justify-center gap-4 mb-[43px]">
+                            <button class="w-[60px] h-[36px] rounded-lg border border-[#656565]">Yes</button>
+                            <button class="w-[60px] h-[36px] rounded-lg border border-[#656565]">No</button>
+                        </div>
+                        <h3 class="font-bold text-sm text-[#656565] mb-3">What is the reason?</h3>
+                        <ul class="flex flex-col gap-3 text-[#656565] text-sm mb-[26px]">
+                            <li class="flex items-center justify-between">
+                                <h3>User asked to be deleted</h3>
+                                <input type="radio" name="delete_reason" id="userAsked" value="User asked to be deleted">
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <h3>Wrong information given multiple times</h3>
+                                <input type="radio" name="delete_reason" id="wrongInformation" value="Wrong information given multiple times">
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <h3>Abusive behavior</h3>
+                                <input type="radio" name="delete_reason" id="abusiveBehavior" value="Abusive behavior">
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <h3>Inactive</h3>
+                                <input type="radio" name="delete_reason" id="inactive" value="Inactive">
+                            </li>
+                            <li class="flex items-center justify-between">
+                                <h3>Other</h3>
+                                <input type="radio" name="delete_reason" id="other" value="Other">
+                            </li>
+                        </ul>
+                        <div class="mb-8">
+                            <textarea class="w-[345px] h-[95px] resize-none border border-[#656565] rounded-md px-3 py-[14px] text-[10px] text-[#656565]" name="" id="deleteUserTextarea" placeholder="If you have selected other, please explain why you want to delete this user."></textarea>
+                        </div>
+                        <div class="flex justify-center">
+                            <button onclick="HandleDeleteUserConfirmButton()"
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,32 +375,6 @@
 
         <div class="w-full relative">
             <!-- user management Contain Start -->
-            <!-- -->
-            <!-- <div id="changeStatusModal" class="fixed top-0 bottom-0 w-screen max-w-[1287px] z-20 ">
-                <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
-                    <div class="w-full absolute z-20 bg-black h-full opacity-10">
-
-                    </div>
-                    <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
-                        <div onclick="HandleChangeStatusCloseButton()" class="flex items-center justify-end mb-7 cursor-pointer">
-                            <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
-                        </div>
-                        <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
-                        <div class="bg-white flex items-center justify-center mb-11">
-                            <select class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
-                                id="selectElement27">
-                                <option>Approved</option>
-                                <option>Pending</option>
-                                <option>On Hold</option>
-                            </select>
-                        </div>
-                        <div class="flex justify-center">
-                            <button onclick="HandleChangeStatusConfirmButton()"
-                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="px-3 md:px-0 md:mx-5">
                 <div class="font-[poppins] text-sm pb-20">
                     <!-- Search panel -->
@@ -412,7 +437,8 @@
                                         <h1 class="text-sm text-[#1E1E1E] text-center">Soffner_19</h1>
                                     </div>
                                     <h1 class="text-sm font-bold mb-3">Full Name: <span>Courtney Henry</span></h1>
-                                    <h1 class="text-sm font-bold mb-3">User: <span>Standard User</span></h1>
+                                    <h1 class="text-sm font-bold mb-3">User: <span onclick="handleUserCategoryModal()"
+                                            class="cursor-pointer">Standard User</span></h1>
                                     <h1 class="text-sm font-bold mb-3">Email: <span>soffner19@mac.com</span></h1>
                                     <h1 class="text-sm font-bold mb-8">Location: <span>London</span></h1>
 
@@ -420,7 +446,13 @@
                                         Tickets<span
                                             class="h-[22px] px-3 bg-[#DDDDDD] rounded-xl text-center">0</span></a>
 
-                                    <h6 class="text-[10px] text-[#656565] underline mt-7">Contact User</h6>
+                                    <div class="flex items-center gap-[125px]">
+                                        <h6 class="text-[10px] text-[#656565] underline mt-7 cursor-pointer">Contact
+                                            User</h6>
+                                        <h6 onclick="handleDeleteUserModal()"
+                                            class="text-[10px] text-[#F90000] underline mt-7 cursor-pointer">Delete User
+                                        </h6>
+                                    </div>
 
                                 </div>
                             </div>

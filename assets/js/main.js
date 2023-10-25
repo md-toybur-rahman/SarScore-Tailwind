@@ -8,12 +8,42 @@ function HandleChangeStatusConfirmButton() {
     const changeStatusModal = document.getElementById('changeStatusModal');
     changeStatusModal.classList.add('hidden');
 }
-function HandleCloseButton() {
-    const changeStatusModal = document.getElementById('changeStatusModal');
-    const deleteUserModal = document.getElementById('deleteUserModal');
-    changeStatusModal.classList.add('hidden');
-    deleteUserModal.classList.add('hidden')
+function handleUserCategoryModal () {
+    const changeUserCategoryModal = document.getElementById('changeUserCategoryModal');
+    if (changeUserCategoryModal.classList.contains('hidden')) {
+        changeUserCategoryModal.classList.remove('hidden');
+    }
 }
+function HandleChangeUserCategoryConfirmButton() {
+    const changeUserCategoryModal = document.getElementById('changeUserCategoryModal');
+    changeUserCategoryModal.classList.add('hidden');
+}
+function changeUserCategoryModal_viewUser () {
+    const changeUserCategoryModal_viewUser = document.getElementById('changeUserCategoryModal_viewUser');
+    if (changeUserCategoryModal_viewUser.classList.contains('hidden')) {
+        changeUserCategoryModal_viewUser.classList.remove('hidden');
+    }
+}
+function HandleChangeUserCategoryConfirmButton_viewUser() {
+    const changeUserCategoryModal_viewUser = document.getElementById('changeUserCategoryModal_viewUser');
+    changeUserCategoryModal_viewUser.classList.add('hidden');
+}
+function handleDeleteUserModal () {
+    const deleteUserModal = document.getElementById('deleteUserModal');
+    if (deleteUserModal.classList.contains('hidden')) {
+        deleteUserModal.classList.remove('hidden');
+    }
+}
+function HandleDeleteUserConfirmButton() {
+    const deleteUserModal = document.getElementById('deleteUserModal');
+    deleteUserModal.classList.add('hidden');
+}
+function HandleCloseButton(id) {
+    const closeModal = document.getElementById(id);
+    closeModal.classList.add('hidden')
+}
+
+
 
 // Refresh Button Handler
 const refreshSorting = () => {

@@ -255,6 +255,40 @@
             </div>
         </section>
         <!-- End Mobile Menubar -->
+
+
+        <!-- Change User Category modal -->
+        <div id="changeUserCategoryModal_viewUser" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30">
+                    <div onclick="HandleCloseButton('changeUserCategoryModal_viewUser')" class="flex items-center justify-end mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Courtney Henry</h3>
+                    <div class="bg-white flex items-center justify-center mb-11">
+                        <select
+                            class="border-1 border-[#656565] text-xs text-[#656565] outline-none overflow-hidden w-36 py-[10px] px-4 bg-white rounded-xl"
+                            id="selectElement32">
+                            <option>Standard User</option>
+                            <option>Regular User</option>
+                            <option>Contributor</option>
+                            <option>Premium User</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-center">
+                        <button onclick="HandleChangeUserCategoryConfirmButton_viewUser()"
+                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="px-3 md:px-0 md:mx-5 w-full">
             <!-- user management Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
@@ -309,13 +343,15 @@
                             class="col-span-1 md:h-[437px] bg-white rounded-2xl px-7 py-11 flex items-end mb-10 md:mb-0">
                             <div class="w-full">
                                 <div class="flex flex-col items-center justify-center mb-10">
-                                    <div class="w-[71px] h-[71px] rounded-3xl bg-[url('assets/icons/image.svg')] bg-cover mb-2">
+                                    <div
+                                        class="w-[71px] h-[71px] rounded-3xl bg-[url('assets/icons/image.svg')] bg-cover mb-2">
 
                                     </div>
                                     <h1 class="text-sm text-[#1E1E1E] text-center">Soffner_19</h1>
                                 </div>
                                 <h1 class="text-sm font-bold mb-3">Full Name: <span>Courtney Henry</span></h1>
-                                <h1 class="text-sm font-bold mb-3">User: <span>Standard User</span></h1>
+                                <h1 class="text-sm font-bold mb-3">User: <span onclick="changeUserCategoryModal_viewUser()"
+                                    class="cursor-pointer">Standard User</span></h1>
                                 <h1 class="text-sm font-bold mb-3">Email: <span>soffner19@mac.com</span></h1>
                                 <h1 class="text-sm font-bold mb-8">Location: <span>London</span></h1>
 
