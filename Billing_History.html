@@ -19,7 +19,7 @@
                 fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],
                     'poppins': ['Poppins', 'sans-serif'],
-                    'inter': ['Inter', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
                 },
                 extend: {
                     colors: {
@@ -288,37 +288,106 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            Settings</h1>
+                            <a href="Settings.html">Settings</a> > Billing History
+                        </h1>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- Settings Item -->
-                <section id="settings" class="mt-10 flex md:flex-row flex-col gap-10 md:gap-[75px]">
-                    <div class="md:w-[289px] w-full px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Billing</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Subscription_Plan.html">Subscription Plan</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Payment_Methods.html">Payment Methods</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Billing_History.html">Billing History</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Preferences</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Account_Communication_Preferences.html">Account Communication Preferences</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Offers_And_Insights.html">Offer and Insights</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Account Settings</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Account Verification</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Profile Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Privacy Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Password and Security</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Support and Help</a></li>
-                        </ul>
+                <section class="md:ms-8 mt-[30px]">
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Invoice And Billing History</h1>
+                    <p class="text-xs md:text-sm text-[#656565]">Review your billing history and manage your invoices.
+                    </p>
+
+                    <div class="overflow-x-scroll md:overflow-x-hidden mt-[49px] text-[#656565]">
+                        <table class="w-full text-xs md:text-base min-w-[900px]">
+                            <thead class="h-[44px]">
+                                <td class="text-start ps-9 text-sm">Date</td>
+                                <td class="text-start text-sm">Type</td>
+                                <td class="text-start text-sm">Order Number</td>
+                                <td class="text-start text-sm">Plan</td>
+                                <td class="text-start text-sm">Amount</td>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody class="bg-white rounded-2xl text-sm">
+                                <tr class="h-[91px] border-b border-[#F3F3F3]">
+                                    <td class="rounded-tl-2xl ps-9">Oct,16,2023</td>
+                                    <td>Subscription</td>
+                                    <td>185TGG6W56</td>
+                                    <td>Premium Plan</td>
+                                    <td>£19.99</td>
+                                    <td></td>
+                                    <td class="rounded-tr-2xl">
+                                        <div class="flex items-center justify-end gap-2 me-[33px]">
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Group 2618.svg" alt=""></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="h-[91px] border-b border-[#F3F3F3]">
+                                    <td class="ps-9">Oct,16,2023</td>
+                                    <td>Subscription</td>
+                                    <td>185TGG6W56</td>
+                                    <td>Premium Plan</td>
+                                    <td>£19.99</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="flex items-center justify-end gap-2 me-[33px]">
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Group 2618.svg" alt=""></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="h-[91px] border-b border-[#F3F3F3]">
+                                    <td class="ps-9">Oct,16,2023</td>
+                                    <td>Subscription</td>
+                                    <td>185TGG6W56</td>
+                                    <td>Premium Plan</td>
+                                    <td>£19.99</td>
+                                    <td></td>
+                                    <td>
+                                        <div class="flex items-center justify-end gap-2 me-[33px]">
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Group 2618.svg" alt=""></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="h-[91px]">
+                                    <td class="rounded-bl-2xl ps-9">Oct,16,2023</td>
+                                    <td>Subscription</td>
+                                    <td>185TGG6W56</td>
+                                    <td>Premium Plan</td>
+                                    <td>£19.99</td>
+                                    <td></td>
+                                    <td class="rounded-br-2xl">
+                                        <div class="flex items-center justify-end gap-2 me-[33px]">
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Group 2618.svg" alt=""></button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                 </section>
                 <!-- End Settings Item -->
