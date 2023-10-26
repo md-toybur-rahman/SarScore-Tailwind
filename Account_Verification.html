@@ -19,7 +19,7 @@
                 fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],
                     'poppins': ['Poppins', 'sans-serif'],
-                    'inter': ['Inter', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
                 },
                 extend: {
                     colors: {
@@ -288,37 +288,105 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            Settings</h1>
+                            <a href="Settings.html">Settings</a> > Account Verification
+                        </h1>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- Settings Item -->
-                <section id="settings" class="mt-10 flex md:flex-row flex-col gap-10 md:gap-[75px]">
-                    <div class="md:w-[289px] w-full px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Billing</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Subscription_Plan.html">Subscription Plan</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Payment_Methods.html">Payment Methods</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Billing_History.html">Billing History</a></li>
-                        </ul>
+                <section class="md:ms-8 mt-[30px]">
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Two-Step Verification</h1>
+                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">Secure your account by requiring an additional authentication method every time you sign-in. Sign in securely or receive sign-in verification codes by email or text message. If we detect an unusual login, we may email you a code to verify your identity even if you aren’t enrolled in two-step verification.</p>
+                    <div class="w-full max-w-[963px] bg-[white] pt-[26px] rounded-2xl mt-10">
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Verify With Email</h1>
+                            <div class="flex items-center justify-between mt-[18px]">
+                                <div class="flex relative">
+                                    <p class="text-[#656565]">email@email.com</p>
+                                    <button class="absolute -right-4">
+                                        <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg" alt="">
+                                    </button>
+                                </div>
+                                <div onclick="handleToggle('verifyEmailToggleContainer', 'verifyEmailToggle')"
+                                    id="verifyEmailToggleContainer" class="toggle-activate-container duration-500">
+                                    <div id="verifyEmailToggle" class="toggle-activate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr-10 pl-[29px] pb-[41px]">
+                            <div class="">
+                                <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Verify With Phone (SMS)</h1>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex relative">
+                                        <p id="phoneNumber" class="text-[#656565] pr-1">+44 7371945932</p>
+                                        <button class="absolute -right-3">
+                                            <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                    <div onclick="handleToggle('verifyPhoneToggleContainer', 'verifyPhoneToggle')"
+                                        id="verifyPhoneToggleContainer" class="toggle-deactivate-container duration-500">
+                                        <div id="verifyPhoneToggle" class="toggle-deactivate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Preferences</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Account_Communication_Preferences.html">Account Communication Preferences</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="Offers_And_Insights.html">Offer and Insights</a></li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-[289px] px-5 pt-7 pb-20 bg-white rounded-2xl h-fit">
-                        <h1 class="text-lg font-bold text-[#1E1E1E] mb-2">Account Settings</h1>
-                        <ul class="flex flex-col gap-3">
-                            <li class="text-sm text-[#1E1E1E]"><a href="Account_Verification.html">Account Verification</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Profile Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Privacy Settings</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Password and Security</a></li>
-                            <li class="text-sm text-[#1E1E1E]"><a href="#">Support and Help</a></li>
-                        </ul>
+                </section>
+                <section class="md:ms-8 mt-[105px]">
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Two-Step Verification</h1>
+                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">Secure your account by requiring an additional authentication method every time you sign-in. Sign in securely or receive sign-in verification codes by email or text message. If we detect an unusual login, we may email you a code to verify your identity even if you aren’t enrolled in two-step verification.</p>
+                    <div class="w-full max-w-[963px] bg-[white] pt-[26px] rounded-2xl mt-[59px]">
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
+                            <div class="flex items-center justify-between mt-[18px]">
+                                <div class="flex">
+                                    <img src="assets/icons/Image 2.svg" alt="">
+                                    <p>Google</p>
+                                </div>
+                                <div class="text-[#656565]">
+                                    <p class="">Connected as Jane Smith</p>
+                                    <p>Nov 29, 2023</p>
+                                </div>
+                                <div onclick="handleToggle('googleToggleContainer', 'googleToggle')"
+                                    id="googleToggleContainer" class="toggle-activate-container duration-500">
+                                    <div id="googleToggle" class="toggle-activate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Verify With Email</h1>
+                            <div class="flex items-center justify-between mt-[18px]">
+                                <div class="flex relative">
+                                    <p class="text-[#656565]">email@email.com</p>
+                                    <button class="absolute -right-4">
+                                        <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg" alt="">
+                                    </button>
+                                </div>
+                                <div onclick="handleToggle('verifyEmailToggleContainer', 'verifyEmailToggle')"
+                                    id="verifyEmailToggleContainer" class="toggle-activate-container duration-500">
+                                    <div id="verifyEmailToggle" class="toggle-activate"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr-10 pl-[29px] pb-[41px]">
+                            <div class="">
+                                <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Verify With Phone (SMS)</h1>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex relative">
+                                        <p id="phoneNumber" class="text-[#656565] pr-1">+44 7371945932</p>
+                                        <button class="absolute -right-3">
+                                            <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                    <div onclick="handleToggle('verifyPhoneToggleContainer', 'verifyPhoneToggle')"
+                                        id="verifyPhoneToggleContainer" class="toggle-deactivate-container duration-500">
+                                        <div id="verifyPhoneToggle" class="toggle-deactivate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- End Settings Item -->
