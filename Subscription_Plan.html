@@ -288,7 +288,7 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            <a href="Settings.html">Settings</a> > Account Communication Preferences
+                            <a href="Settings.html">Settings</a> > Subscription Plan
                         </h1>
                     </div>
                 </section>
@@ -296,27 +296,212 @@
 
                 <!-- Settings Item -->
                 <section class="md:ms-8 mt-[30px]">
-                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Account Communication Preferences</h1>
-                    <p class="text-xs md:text-sm text-[#656565]">SARScore needs to occasionally send you emails related to your
-                        account, like billing issues or security alerts. These emails will be sent to your primary email
-                        address. You can also opt to receive updates by text message (SMS).</p>
-                    <div class="w-full max-w-[963px] bg-[white] pt-[26px] pr-10 pb-[67px] pl-[29px] rounded-lg mt-10">
-                        <div class="mb-10">
-                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Email</h1>
-                            <div class="flex items-center justify-between mt-[18px]">
-                                <p class="text-[#656565]">email@email.com</p>
-                                <h6 class="text-xs md:text-sm text-[#656565] underline cursor-pointer"> (required) </h6>
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Your Plan</h1>
+                    <p class="text-xs md:text-sm text-[#656565]">Standard User (Free)</p>
+                    <div id="plan-container" class="mt-10 md:grid grid-cols-3 gap-12">
+                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]">Standard User (Free)
+                            </h1>
+                            <div class="pl-2">
+                                <p class="text-sm leading-7 mb-[19px]">Enough features to experience the value, but the
+                                    lack of in-depth analytics and Live Accessibility.</p>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <label class="checkbox-container pl-6">View ratings of a particular address
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Contribute
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Accessibility Rating Categories
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Total Accessibility Ratings
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Average Accessibility Score
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Top-Rated Locations
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Lowest-Rated Locations
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Submit Accessibility Ratings
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Provide Feedback on Ratings
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Filter by Location
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Filter by Category
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow flex items-end justify-center mb-[47px]">
+                                <button
+                                    class="w-[198px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Change
+                                    Plan</button>
                             </div>
                         </div>
-                        <div>
-                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
-                            <div class="flex items-center justify-between">
-                                <p class="text-[#656565]">+44 7371945932</p>
-                                <div onclick="handleToggle('phoneToggleContainer', 'phoneToggle')" id="phoneToggleContainer" class="toggle-activate-container duration-500">
-                                    <div id="phoneToggle" class="toggle-activate"></div>
-                                </div>
+                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]">Premium User
+                            </h1>
+                            <div class="pl-2">
+                                <p class="text-sm leading-7 mb-[19px]">The addition of analytics and Live Accessibility Rating offers a more complete experience, appealing to users who need more insight and real-time data.</p>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <label class="checkbox-container pl-6">Access to an extensive dashboard
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Live Accessibility Ratings
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Accessibility Rating Categories
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Accessibility Rating Categories
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View User Contributions
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Rating Distribution
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View User Feedback on Ratings
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">View Data Accuracy and Verification
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Geographic Heat-map
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Live Accessibility Rating
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow flex items-end justify-center mb-[47px]">
+                                <button
+                                    class="w-[198px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Change
+                                    Plan</button>
                             </div>
                         </div>
+                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]"> Corporate User 
+                            </h1>
+                            <div class="pl-2">
+                                <p class="text-sm leading-7 mb-[19px]">The ability to manage sub-accounts provides flexibility and control, making it suitable for organizations requiring varying access levels and more extensive oversight.</p>
+                                <ul class="flex flex-col gap-2">
+                                    <li>
+                                        <label class="checkbox-container pl-6">Comprehensive access to every feature
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Viewable Analytics
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Sub-account creation
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">Sub-account management
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-container pl-6">All features of Premium User
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="flex-grow flex items-end justify-center mb-[47px]">
+                                <button
+                                    class="w-[198px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Change
+                                    Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[116px] flex items-center justify-end">
+                        <h6 class="text-xs md:text-sm text-[#656565] underline cursor-pointer"> Cancel Plan </h6>
                     </div>
                 </section>
                 <!-- End Settings Item -->
