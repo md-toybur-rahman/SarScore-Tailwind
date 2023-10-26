@@ -15,6 +15,22 @@ function changeNumberField(inputValue) {
     phoneNumber.classList.remove('hidden');
     phoneNumberInput.classList.add('hidden');
 }
+function HandlePassword() {
+    const password = document.getElementById('password');
+    const passwordInput = document.getElementById('passwordInput');
+    passwordInput.value = password.value;
+    password.classList.add('hidden');
+    passwordInput.classList.remove('hidden');
+    passwordInput.focus();
+}
+
+function changePasswordField(inputValue) {
+    const password = document.getElementById('password');
+    const passwordInput = document.getElementById('passwordInput');
+    password.value = inputValue;
+    password.classList.remove('hidden');
+    passwordInput.classList.add('hidden');
+}
 function handleToggle(containerId, id) {
     const toggleContainer = document.getElementById(containerId);
     const toggle = document.getElementById(id);

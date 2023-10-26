@@ -297,9 +297,12 @@
                 <!-- Settings Item -->
                 <section class="md:ms-8 mt-[30px]">
                     <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Two-Step Verification</h1>
-                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">Secure your account by requiring an additional authentication method every time you sign-in. Sign in securely or receive sign-in verification codes by email or text message. If we detect an unusual login, we may email you a code to verify your identity even if you aren’t enrolled in two-step verification.</p>
+                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">Secure your account by requiring an
+                        additional authentication method every time you sign-in. Sign in securely or receive sign-in
+                        verification codes by email or text message. If we detect an unusual login, we may email you a
+                        code to verify your identity even if you aren’t enrolled in two-step verification.</p>
                     <div class="w-full max-w-[963px] bg-[white] pt-[26px] rounded-2xl mt-10">
-                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-5 pl-5 md:pr-10 md:pl-[29px]">
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Verify With Email</h1>
                             <div class="flex items-center justify-between mt-[18px]">
                                 <div class="flex relative">
@@ -314,9 +317,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pr-10 pl-[29px] pb-[41px]">
+                        <div class="pr-5 pl-5 md:pr-10 md:pl-[29px] pb-[41px]">
                             <div class="">
-                                <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Verify With Phone (SMS)</h1>
+                                <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Verify With Phone (SMS)
+                                </h1>
                                 <div class="flex items-center justify-between">
                                     <div class="flex relative">
                                         <p id="phoneNumber" class="text-[#656565] pr-1">+44 7371945932</p>
@@ -326,7 +330,8 @@
                                         </button>
                                     </div>
                                     <div onclick="handleToggle('verifyPhoneToggleContainer', 'verifyPhoneToggle')"
-                                        id="verifyPhoneToggleContainer" class="toggle-deactivate-container duration-500">
+                                        id="verifyPhoneToggleContainer"
+                                        class="toggle-deactivate-container duration-500">
                                         <div id="verifyPhoneToggle" class="toggle-deactivate"></div>
                                     </div>
                                 </div>
@@ -335,16 +340,18 @@
                     </div>
                 </section>
                 <section class="md:ms-8 mt-[105px]">
-                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Two-Step Verification</h1>
-                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">Secure your account by requiring an additional authentication method every time you sign-in. Sign in securely or receive sign-in verification codes by email or text message. If we detect an unusual login, we may email you a code to verify your identity even if you aren’t enrolled in two-step verification.</p>
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Social Sign-In</h1>
+                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">SConnect your SARScore account with your
+                        social media accounts for simple and secure sign-in. Social sign-in skips two-step verification
+                        and may reduce your account’s security.</p>
                     <div class="w-full max-w-[963px] bg-[white] pt-[26px] rounded-2xl mt-[59px]">
-                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-5 pl-5 md:pr-10 md:pl-[29px]">
                             <div class="flex items-center justify-between mt-[18px]">
-                                <div class="flex">
-                                    <img src="assets/icons/Image 2.svg" alt="">
+                                <div class="flex items-center gap-4 md:gap-8 text-[#656565]">
+                                    <img class="w-10 h-10 md:w-auto md:h-auto" src="assets/icons/Image 2.svg" alt="">
                                     <p>Google</p>
                                 </div>
-                                <div class="text-[#656565]">
+                                <div class="text-[#656565] text-xs md:text-sm">
                                     <p class="">Connected as Jane Smith</p>
                                     <p>Nov 29, 2023</p>
                                 </div>
@@ -354,36 +361,33 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
-                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Verify With Email</h1>
+                        <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-5 pl-5 md:pr-10 md:pl-[29px]">
                             <div class="flex items-center justify-between mt-[18px]">
-                                <div class="flex relative">
-                                    <p class="text-[#656565]">email@email.com</p>
-                                    <button class="absolute -right-4">
-                                        <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg" alt="">
-                                    </button>
+                                <div class="flex items-center gap-4 md:gap-8 text-[#656565]">
+                                    <img class="w-10 h-10 md:w-auto md:h-auto" src="assets/icons/Image 3.svg" alt="">
+                                    <p>Facebook</p>
                                 </div>
-                                <div onclick="handleToggle('verifyEmailToggleContainer', 'verifyEmailToggle')"
-                                    id="verifyEmailToggleContainer" class="toggle-activate-container duration-500">
-                                    <div id="verifyEmailToggle" class="toggle-activate"></div>
+                                <div class="text-[#656565] text-sm">
+
+                                </div>
+                                <div onclick="handleToggle('facebookToggleContainer', 'facebookToggle')"
+                                    id="facebookToggleContainer" class="toggle-deactivate-container duration-500">
+                                    <div id="facebookToggle" class="toggle-deactivate"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="pr-10 pl-[29px] pb-[41px]">
-                            <div class="">
-                                <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Verify With Phone (SMS)</h1>
-                                <div class="flex items-center justify-between">
-                                    <div class="flex relative">
-                                        <p id="phoneNumber" class="text-[#656565] pr-1">+44 7371945932</p>
-                                        <button class="absolute -right-3">
-                                            <img src="assets/icons/Icon ionic-ios-information-circle-outline.svg"
-                                                alt="">
-                                        </button>
-                                    </div>
-                                    <div onclick="handleToggle('verifyPhoneToggleContainer', 'verifyPhoneToggle')"
-                                        id="verifyPhoneToggleContainer" class="toggle-deactivate-container duration-500">
-                                        <div id="verifyPhoneToggle" class="toggle-deactivate"></div>
-                                    </div>
+                        <div class="pb-[31px] mb-4 pr-5 pl-5 md:pr-10 md:pl-[29px]">
+                            <div class="flex items-center justify-between mt-[18px]">
+                                <div class="flex items-center gap-4 md:gap-8 text-[#656565]">
+                                    <img class="w-10 h-10 md:w-auto md:h-auto" src="assets/icons/Image 4.svg" alt="">
+                                    <p>Apple</p>
+                                </div>
+                                <div class="text-[#656565] text-sm">
+
+                                </div>
+                                <div onclick="handleToggle('appleToggleContainer', 'appleToggle')"
+                                    id="appleToggleContainer" class="toggle-deactivate-container duration-500">
+                                    <div id="appleToggle" class="toggle-deactivate"></div>
                                 </div>
                             </div>
                         </div>
