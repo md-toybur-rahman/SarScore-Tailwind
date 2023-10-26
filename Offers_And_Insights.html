@@ -297,14 +297,16 @@
                 <!-- Settings Item -->
                 <section class="md:ms-8 mt-[30px]">
                     <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Latest From SARScore</h1>
-                    <p class="text-xs md:text-sm text-[#656565]">You can opt in to receive promotional messages from SARScore about
+                    <p class="text-xs md:text-sm text-[#656565]">You can opt in to receive promotional messages from
+                        SARScore about
                         events, news, app updates, service and research opportunities.</p>
                     <div class="w-full max-w-[963px] bg-[white] pt-[26px] pb-[67px] rounded-lg mt-10">
                         <div class="pb-[31px] border-b border-[#F3F3F3] mb-4 pr-10 pl-[29px]">
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Email</h1>
                             <div class="flex items-center justify-between mt-[18px]">
-                                <input class="text-[#656565]" type="email" value="email@email.com"
-                                    placeholder="Your Email">
+                                <!-- <input class="text-[#656565]" type="email" value="email@email.com"
+                                    placeholder="Your Email"> -->
+                                <p class="text-[#656565]">email@email.com</p>
                                 <div onclick="handleToggle('offerEmailToggleContainer', 'offerEmailToggle')"
                                     id="offerEmailToggleContainer" class="toggle-activate-container duration-500">
                                     <div id="offerEmailToggle" class="toggle-activate"></div>
@@ -316,9 +318,11 @@
                                 <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
                                 <div class="flex items-center justify-between">
                                     <div class="flex relative">
-                                        <input class="text-[#656565] w-[124px]" type="text" value="+44 7371945932"
-                                            placeholder="Your Phone Number">
-                                        <button class="absolute right-0">
+                                        <p id="phoneNumber" class="text-[#656565] pr-1">+44 7371945932</p>
+                                        <input onchange="changeNumberField(this.value)" id="phoneNumberInput"
+                                            class="text-[#656565] w-[120px] hidden px-1" type="text" value=""
+                                            placeholder="Your Phone Number" autofocus="autofocus">
+                                        <button onclick="HandlePhoneNumber()" class="absolute -right-3">
                                             <img src="assets/icons/Icon awesome-pencil-alt.svg" alt="">
                                         </button>
                                     </div>
@@ -330,13 +334,16 @@
                             </div>
                             <div>
                                 <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Instructional Email</h1>
-                                <p class="text-xs md:text-sm text-[#656565]">You may receive Instructional Emails. Check the box to
+                                <p class="text-xs md:text-sm text-[#656565]">You may receive Instructional Emails. Check
+                                    the box to
                                     change your Instructional Email preferences.</p>
                                 <div class="flex items-center justify-between mt-[18px]">
-                                    <input class="text-[#656565]" type="email" value="email@email.com"
-                                        placeholder="Your Email">
+                                    <!-- <input class="text-[#656565]" type="email" value="email@email.com"
+                                        placeholder="Your Email"> -->
+                                    <p class="text-[#656565]">email@email.com</p>
                                     <div onclick="handleToggle('offerInstructionalEmailToggleContainer', 'offerInstructionalEmailToggle')"
-                                        id="offerInstructionalEmailToggleContainer" class="toggle-activate-container duration-500">
+                                        id="offerInstructionalEmailToggleContainer"
+                                        class="toggle-activate-container duration-500">
                                         <div id="offerInstructionalEmailToggle" class="toggle-activate"></div>
                                     </div>
                                 </div>

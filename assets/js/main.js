@@ -1,8 +1,24 @@
 
-function handleToggle (containerId, id) {
+function HandlePhoneNumber() {
+    const phoneNumber = document.getElementById('phoneNumber');
+    const phoneNumberInput = document.getElementById('phoneNumberInput');
+    phoneNumberInput.value = phoneNumber.textContent;
+    phoneNumber.classList.add('hidden');
+    phoneNumberInput.classList.remove('hidden');
+    phoneNumberInput.focus();
+}
+
+function changeNumberField(inputValue) {
+    const phoneNumber = document.getElementById('phoneNumber');
+    const phoneNumberInput = document.getElementById('phoneNumberInput');
+    phoneNumber.textContent = inputValue;
+    phoneNumber.classList.remove('hidden');
+    phoneNumberInput.classList.add('hidden');
+}
+function handleToggle(containerId, id) {
     const toggleContainer = document.getElementById(containerId);
     const toggle = document.getElementById(id);
-    if(toggleContainer.classList.contains('toggle-deactivate-container')){
+    if (toggleContainer.classList.contains('toggle-deactivate-container')) {
         toggleContainer.classList.remove('toggle-deactivate-container');
         toggleContainer.classList.add('toggle-activate-container');
         toggle.classList.remove('toggle-deactivate');
