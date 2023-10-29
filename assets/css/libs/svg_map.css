@@ -76,6 +76,8 @@
     display: flex;
     overflow: hidden;
     border-radius: 20px;
+    background: white;
+    border: 1px solid #F3F3F3;
 }
 
 .svgMap-map-wrapper .svgMap-map-controls-move,
@@ -83,17 +85,29 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    border: 1px solid #F3F3F3;
 }
 
 .svgMap-map-wrapper .svgMap-control-button:first-child{
     background-color: #39CCCC;
     border-radius: 20px;
+    width: 23px;
     height: 30px;
 }
 .svgMap-map-wrapper .svgMap-control-button:last-child{
     border-radius: 20px;
     height: 30px;
+    width: 23px;
+}
+
+.svgMap-map-wrapper .svgMap-control-button:last-child.svgMap-zoom-button:after,
+.svgMap-map-wrapper .svgMap-control-button:last-child.svgMap-zoom-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1E1E1E;
+    transition: background-color 250ms
 }
 
 .svgMap-map-wrapper .svgMap-map-controls-move:last-child,
@@ -128,7 +142,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: lightgray;
+    background: white;
     transition: background-color 250ms
 }
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:before {
@@ -146,12 +160,12 @@
 
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:active:after,
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:active:before {
-    background: #111
+    background: #1E1E1E
 }
 
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button.svgMap-disabled:after,
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button.svgMap-disabled:before {
-    background: #ccc
+    background: #1E1E1E
 }
 
 

@@ -461,19 +461,90 @@
                     <div
                         class="w-full max-w-[963px] bg-[white] pt-[26px] pb-[67px] pr-5 pl-5 md:pr-10 md:pl-[29px] rounded-lg mt-10">
                         <div class="mb-10">
-                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Email</h1>
-                            <div class="flex items-center justify-between mt-[18px]">
-                                <p class="text-[#656565]">email@email.com</p>
-                                <h6 class="text-xs md:text-sm text-[#656565] underline cursor-pointer"> (required) </h6>
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Newsletter</h1>
+                            <div class="flex items-center justify-between mt-[18px] gap-10 text-justify">
+                                <div class="">
+                                    <p class="text-[#656565]">Yes, I’d like to subscribe to SARScores newsletter.</p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div class="">
+                                        <div onclick="handleToggle('newsletterSMSToggleContainer', 'newsletterSMSToggle')"
+                                            id="newsletterSMSToggleContainer" class="toggle-deactivate-container duration-500">
+                                            <div id="newsletterSMSToggle" class="toggle-deactivate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div onclick="handleToggle('newsletterEmailToggleContainer', 'newsletterEmailToggle')"
+                                            id="newsletterEmailToggleContainer" class="toggle-activate-container duration-500">
+                                            <div id="newsletterEmailToggle" class="toggle-activate"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
-                            <div class="flex items-center justify-between">
-                                <p class="text-[#656565]">+44 7371945932</p>
-                                <div onclick="handleToggle('phoneToggleContainer', 'phoneToggle')"
-                                    id="phoneToggleContainer" class="toggle-activate-container duration-500">
-                                    <div id="phoneToggle" class="toggle-activate"></div>
+                        <div class="mb-10">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Updates</h1>
+                            <div class="flex items-center justify-between mt-[18px] gap-10 text-justify">
+                                <div class="">
+                                    <p class="text-[#656565]">These are new updates and important information from SARScores team</p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div class="">
+                                        <div onclick="handleToggle('updatesSMSToggleContainer', 'updatesSMSToggle')"
+                                            id="updatesSMSToggleContainer" class="toggle-deactivate-container duration-500">
+                                            <div id="updatesSMSToggle" class="toggle-deactivate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div onclick="handleToggle('updatesEmailToggleContainer', 'updatesEmailToggle')"
+                                            id="updatesEmailToggleContainer" class="toggle-activate-container duration-500">
+                                            <div id="updatesEmailToggle" class="toggle-activate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">General Notifications </h1>
+                            <div class="flex items-center justify-between mt-[18px] gap-10 text-justify">
+                                <div class="">
+                                    <p class="text-[#656565]">Options to receive updates on support tickets, including status changes, comments, and resolutions.</p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div class="">
+                                        <div onclick="handleToggle('generalNotificationsSMSToggleContainer', 'generalNotificationsSMSToggle')"
+                                            id="generalNotificationsSMSToggleContainer" class="toggle-activate-container duration-500">
+                                            <div id="generalNotificationsSMSToggle" class="toggle-activate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div onclick="handleToggle('generalNotificationsEmailToggleContainer', 'generalNotificationsEmailToggle')"
+                                            id="generalNotificationsEmailToggleContainer" class="toggle-activate-container duration-500">
+                                            <div id="generalNotificationsEmailToggle" class="toggle-activate"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Accessibility Ratings Updates</h1>
+                            <div class="flex items-center justify-between mt-[18px] gap-10 text-justify">
+                                <div class="">
+                                    <p class="text-[#656565]">Options to receive updates on accessibility ratings for selected locations.</p>
+                                </div>
+                                <div class="flex items-center gap-5">
+                                    <div class="">
+                                        <div onclick="handleToggle('accessibilitySMSToggleContainer', 'accessibilitySMSToggle')"
+                                            id="accessibilitySMSToggleContainer" class="toggle-deactivate-container duration-500">
+                                            <div id="accessibilitySMSToggle" class="toggle-deactivate"></div>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div onclick="handleToggle('accessibilityEmailToggleContainer', 'accessibilityEmailToggle')"
+                                            id="accessibilityEmailToggleContainer" class="toggle-activate-container duration-500">
+                                            <div id="accessibilityEmailToggle" class="toggle-activate"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
