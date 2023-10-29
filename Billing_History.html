@@ -136,13 +136,75 @@
                         alt=""></a>
                 <div class="flex items-end gap-3">
                     <div class="flex items-center gap-3">
-                        <img class="w-[16px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
+                        <div class="dropdown dropdown-notification-mobile dropdown-end">
+                            <label tabindex="0">
+                                <img class="w-[16px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
+                            </label>
+                            <div tabindex="0"
+                                class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box w-[200px]">
+                                <div class="border-b border-[#707070]">
+                                    <div class="p-2 flex items-center justify-between">
+                                        <h2 class="text-[12px] text-[#1E1E1E] font-semibold">Notification</h2>
+                                        <h6 class="text-[9px] text-[#656565] underline cursor-pointer">Clear
+                                            All</h6>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">Today</h2>
+                                    <div>
+                                        <div class="bg-[#F4F4F4] p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                        <div class="p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">Yesterday</h2>
+                                    <div>
+                                        <div class="p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">23 SEPT 2023</h2>
+                                </div>
+                                <div class="border-t border-[#707070] flex justify-center">
+                                    <button
+                                        class="text-[13px] underline text-center text-[#1E1E1E] font-semibold py-3 px-2">
+                                        View All</button>
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <h4 class="font-bold text-sm">Joseph</h4>
                             <p class="text-xs text-right">Admin</p>
                         </div>
                     </div>
-                    <div class="dropdown dropdown-end cursor-pointer">
+                    <div class="dropdown dropdown-profile-mobile dropdown-end">
                         <label tabindex="0" class="">
                             <div class="relative cursor-pointer">
                                 <div class="w-9 h-9 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
@@ -152,12 +214,28 @@
                                 </div>
                             </div>
                         </label>
-                        <ul tabindex="0"
-                            class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
-                            <li><a href="#">My Profile</a></li>
-                            <li><a href="#">Billing</a></li>
-                            <li><a href="#">My Account</a></li>
-                        </ul>
+                        <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                            <div>
+                                <div>
+                                    <div class="p-3 flex items-center justify-between cursor-pointer">
+                                        <div class="flex items-center gap-[10px]">
+                                            <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                            <div>
+                                                <h2 class="text-[#656565] text-[13px] font-semibold">Joseph Smith
+                                                </h2>
+                                                <p class="text-[#656565] text-xs mt-2">email@email.com</p>
+                                            </div>
+                                        </div>
+                                        <a class="text-[10px] text-[#656565] underline cursor-pointer">View
+                                            Account</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-[#707070] flex justify-center">
+                                <button class="text-[13px] underline text-[#1E1E1E] font-semibold py-3 px-2">
+                                    Sign Out</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,7 +352,7 @@
                                     <div>
                                         <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Today</h2>
                                         <div>
-                                            <div class="bg-[#F4F4F4] p-[19px] flex justify-between">
+                                            <div class="bg-[#F4F4F4] p-[19px] flex justify-between cursor-pointer">
                                                 <div class="flex items-center gap-[14px]">
                                                     <img src="assets/icons/Group 4000.svg" alt="">
                                                     <div>
@@ -284,7 +362,7 @@
                                                 </div>
                                                 <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
                                             </div>
-                                            <div class="p-[19px] flex justify-between">
+                                            <div class="p-[19px] flex justify-between cursor-pointer">
                                                 <div class="flex items-center gap-[14px]">
                                                     <img src="assets/icons/Group 4000.svg" alt="">
                                                     <div>
@@ -299,7 +377,7 @@
                                     <div>
                                         <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Yesterday</h2>
                                         <div>
-                                            <div class="p-[19px] flex justify-between">
+                                            <div class="p-[19px] flex justify-between cursor-pointer">
                                                 <div class="flex items-center gap-[14px]">
                                                     <img src="assets/icons/Group 4000.svg" alt="">
                                                     <div>
@@ -314,10 +392,10 @@
                                     <div>
                                         <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">23 SEPT 2023</h2>
                                     </div>
-                                    <div class="border-t border-[#707070]">
-                                        <h2
+                                    <div class="border-t border-[#707070] flex justify-center">
+                                        <button
                                             class="text-[15px] underline text-center text-[#1E1E1E] font-semibold py-5 px-4">
-                                            View All</h2>
+                                            View All</button>
                                     </div>
                                 </div>
                             </div>
@@ -326,7 +404,7 @@
                                 <p class="text-xs md:text-sm text-right">Admin</p>
                             </div>
                         </div>
-                        <div class="dropdown dropdown-end">
+                        <div class="dropdown dropdown-profile dropdown-end">
                             <label tabindex="0" class="">
                                 <div class="relative cursor-pointer">
                                     <div class="w-12 h-12 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
@@ -336,12 +414,28 @@
                                     </div>
                                 </div>
                             </label>
-                            <ul tabindex="0"
-                                class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
-                                <li><a href="#">My Profile</a></li>
-                                <li><a href="#">Billing</a></li>
-                                <li><a href="#">My Account</a></li>
-                            </ul>
+                            <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                                <div>
+                                    <div>
+                                        <div class="p-[19px] flex items-center justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[14px]">
+                                                <img src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[15px] font-semibold">Joseph Smith
+                                                    </h2>
+                                                    <p class="text-[#656565] text-sm mt-2">email@email.com</p>
+                                                </div>
+                                            </div>
+                                            <a class="text-xs text-[#656565] underline cursor-pointer">View
+                                                Account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-t border-[#707070] flex justify-center">
+                                    <button class="text-[15px] underline text-[#1E1E1E] font-semibold py-5 px-4">
+                                        Sign Out</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

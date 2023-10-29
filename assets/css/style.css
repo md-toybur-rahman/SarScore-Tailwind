@@ -342,9 +342,33 @@ input[type=radio]:checked {
 
 .dropdown-notification .dropdown-content {
 	bottom: auto;
-	top: 45px;
+	top: 40px;
 	transform-origin: top;
 	border: 1px solid #656565;
 	width: 415px;
+	padding: 10px 0;
+}
+.dropdown-notification-mobile .dropdown-content {
+	bottom: auto;
+	top: 40px;
+	transform-origin: top;
+	border: 1px solid #656565;
+	width: 315px;
+	padding: 10px 0;
+}
+.dropdown-profile .dropdown-content {
+	bottom: auto;
+	top: 55px;
+	transform-origin: top;
+	border: 1px solid #656565;
+	width: 415px;
+	padding: 10px 0;
+}
+.dropdown-profile-mobile .dropdown-content {
+	bottom: auto;
+	top: 40px;
+	transform-origin: top;
+	border: 1px solid #656565;
+	width: 315px;
 	padding: 10px 0;
 }
