@@ -19,6 +19,12 @@
     <link rel="stylesheet" href="assets/css/libs/slimselect.css">
     <script src="assets/js/libs/slim_select/slimselect.min.js"></script>
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
+
 
     <script>
         tailwind.config = {
@@ -522,6 +528,46 @@
                         </div>
                         <!-- End user List menu section -->
 
+
+
+
+                        <!-- test table -->
+                        <table id="example" class="display" width="100%" data-page-length="25"
+                            data-order="[[ 1, &quot;asc&quot; ]]">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th data-orderable="false">Start date</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tiger Nixon</td>
+                                    <td>System Architect</td>
+                                    <td>Edinburgh</td>
+                                    <td>61</td>
+                                    <td>2011/04/25</td>
+                                    <td>$320,800</td>
+                                </tr>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    <td>63</td>
+                                    <td>2011/07/25</td>
+                                    <td>$170,750</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+
                         <!-- User List Table -->
 
                         <div class="overflow-x-scroll lg:overflow-x-hidden mt-10">
@@ -1005,6 +1051,11 @@
     <script src="assets/js/libs/datepicker/datepicker_customize.js"></script>
     <!-- SlimSelect -->
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
+
+
+    <script>
+        new DataTable('#example');
+    </script>
 </body>
 
 </html>
