@@ -258,7 +258,69 @@
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
                     <div class="hidden md:flex items-end gap-6">
                         <div class="flex items-center gap-5 md:gap-14">
-                            <img class="w-[18px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
+                            <div class="dropdown dropdown-notification dropdown-end">
+                                <label tabindex="0">
+                                    <img class="w-[18px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg"
+                                        alt="">
+                                </label>
+                                <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                                    <div class="border-b border-[#707070]">
+                                        <div class="p-4 flex items-center justify-between">
+                                            <h2 class="text-[15px] text-[#1E1E1E] font-semibold">Notification</h2>
+                                            <h6 class="text-[9px] text-[#656565] underline cursor-pointer">Clear
+                                                All</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Today</h2>
+                                        <div>
+                                            <div class="bg-[#F4F4F4] p-[19px] flex justify-between">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                            <div class="p-[19px] flex justify-between">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Yesterday</h2>
+                                        <div>
+                                            <div class="p-[19px] flex justify-between">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">23 SEPT 2023</h2>
+                                    </div>
+                                    <div class="border-t border-[#707070]">
+                                        <h2
+                                            class="text-[15px] underline text-center text-[#1E1E1E] font-semibold py-5 px-4">
+                                            View All</h2>
+                                    </div>
+                                </div>
+                            </div>
                             <div>
                                 <h4 class="font-bold text-sm md:text-base">Joseph</h4>
                                 <p class="text-xs md:text-sm text-right">Admin</p>
@@ -296,11 +358,14 @@
 
                 <!-- Settings Item -->
                 <section class="md:ms-8 mt-[30px]">
-                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Account Communication Preferences</h1>
-                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">SARScore needs to occasionally send you emails related to your
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Account Communication Preferences
+                    </h1>
+                    <p class="text-xs md:text-sm text-[#656565] max-w-[963px]">SARScore needs to occasionally send you
+                        emails related to your
                         account, like billing issues or security alerts. These emails will be sent to your primary email
                         address. You can also opt to receive updates by text message (SMS).</p>
-                    <div class="w-full max-w-[963px] bg-[white] pt-[26px] pb-[67px] pr-5 pl-5 md:pr-10 md:pl-[29px] rounded-lg mt-10">
+                    <div
+                        class="w-full max-w-[963px] bg-[white] pt-[26px] pb-[67px] pr-5 pl-5 md:pr-10 md:pl-[29px] rounded-lg mt-10">
                         <div class="mb-10">
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E]">Email</h1>
                             <div class="flex items-center justify-between mt-[18px]">
@@ -312,7 +377,8 @@
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-4">Phone (SMS)</h1>
                             <div class="flex items-center justify-between">
                                 <p class="text-[#656565]">+44 7371945932</p>
-                                <div onclick="handleToggle('phoneToggleContainer', 'phoneToggle')" id="phoneToggleContainer" class="toggle-activate-container duration-500">
+                                <div onclick="handleToggle('phoneToggleContainer', 'phoneToggle')"
+                                    id="phoneToggleContainer" class="toggle-activate-container duration-500">
                                     <div id="phoneToggle" class="toggle-activate"></div>
                                 </div>
                             </div>
