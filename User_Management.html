@@ -532,37 +532,165 @@
 
 
                         <!-- test table -->
-                        <table id="example" class="display" width="100%" data-page-length="25"
-                            data-order="[[ 1, &quot;asc&quot; ]]">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th data-orderable="false">Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
+                            <table id="example" class="table text-xs md:text-sm min-w-[950px]"
+                                data-page-length="25" data-order="[[ 1, &quot;asc&quot; ]]">
+                                <thead id="thead" class="border-b-[5px] border-[#FAFAFA]">
+                                    <tr class="bg-white text-xs md:text-sm ">
+                                        <th data-orderable="false" class="rounded-s-2xl">
+                                        </th>
+                                        <th>Full Name</th>
+                                        <th>Email</th>
+                                        <th>Username</th>
+                                        <th>Registration Date</th>
+                                        <th>Last Log In</th>
+                                        <th>User Role</th>
+                                        <th data-orderable="false" class="rounded-e-2xl">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody" class="bg-white ">
+                                    <!-- row 1 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Courtney Henry
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Soffner_19</td>
+                                        <td>19-05-23</td>
+                                        <td>19-05-23</td>
+                                        <td>Standard User</td>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                                    <li><a href="View_User-User_Management.html">View User</a></li>
+                                                    <li><a href="#">Edit User Role</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Jacob Jones
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Soffner_19</td>
+                                        <td>19-05-23</td>
+                                        <td>19-05-23</td>
+                                        <td>Contributor</td>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                                    <li><a href="View_User-User_Management.html">View User</a></li>
+                                                    <li><a href="#">Edit User Role</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Soffner_19</td>
+                                        <td>19-05-23</td>
+                                        <td>19-05-23</td>
+                                        <td>Contributor</td>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label tabindex="0" class="">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                                    <li><a href="View_User-User_Management.html">View User</a></li>
+                                                    <li><a href="#">Edit User Role</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 4 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Soffner_19</td>
+                                        <td>19-05-23</td>
+                                        <td>19-05-23</td>
+                                        <td>Premium User</td>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-top dropdown-end">
+                                                <label tabindex="0" class="">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                                    <li><a href="View_User-User_Management.html">View User</a></li>
+                                                    <li><a href="#">Edit User Role</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 5 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                        <th class="rounded-s-2xl">
+                                        <td>
+                                            Kristin Watson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Soffner_19</td>
+                                        <td>19-05-23</td>
+                                        <td>19-05-23</td>
+                                        <td>Admin</td>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-top dropdown-end">
+                                                <label tabindex="0" class="">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                                    <li><a href="View_User-User_Management.html">View User</a></li>
+                                                    <li><a href="#">Edit User Role</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
 
 
@@ -824,12 +952,13 @@
                         <!-- User registration management Table -->
 
 
-                        <div class="overflow-x-scroll lg:overflow-x-hidden mt-10">
-                            <table class="table text-xs md:text-sm min-w-[950px]">
+                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
+                            <table id="userRegistration" class="table text-xs md:text-sm min-w-[950px]"
+                                data-page-length="25" data-order="[[ 1, &quot;asc&quot; ]]">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
-                                        <th class="rounded-s-2xl">
+                                        <th data-orderable="false" class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
                                             </label>
@@ -841,7 +970,7 @@
                                         <th>Last Log In</th>
                                         <th>User Role</th>
                                         <th>Status</th>
-                                        <th class="rounded-e-2xl"></th>
+                                        <th data-orderable="false" class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
                                 <tbody id="tbody" class="bg-white ">
@@ -1055,6 +1184,7 @@
 
     <script>
         new DataTable('#example');
+        new DataTable('#userRegistration');
     </script>
 </body>
 

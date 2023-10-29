@@ -72,7 +72,7 @@ table.dataTable thead>tr>td.sorting_desc_disabled:before,
 table.dataTable thead>tr>td.sorting_desc_disabled:after {
     position: absolute;
     display: block;
-    opacity: .125;
+    opacity: 1;
     right: 10px;
     line-height: 9px;
     font-size: .8em
@@ -90,7 +90,7 @@ table.dataTable thead>tr>td.sorting_asc_disabled:before,
 table.dataTable thead>tr>td.sorting_desc_disabled:before {
     bottom: 50%;
     content: "▲";
-    content: "▲" /""
+    content: url(assets/icons/star-outline.svg)
 }
 
 table.dataTable thead>tr>th.sorting:after,
@@ -314,9 +314,6 @@ table.dataTable tbody td.dt-body-nowrap {
 table.dataTable {
     width: 100%;
     margin: 0 auto;
-    clear: both;
-    border-collapse: separate;
-    border-spacing: 0
 }
 
 table.dataTable thead th,
@@ -327,7 +324,6 @@ table.dataTable tfoot th {
 table.dataTable>thead>tr>th,
 table.dataTable>thead>tr>td {
     padding: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
 }
 
 table.dataTable>thead>tr>th:active,
@@ -362,12 +358,6 @@ table.dataTable tbody td {
     padding: 8px 10px
 }
 
-table.dataTable.row-border>tbody>tr>th,
-table.dataTable.row-border>tbody>tr>td,
-table.dataTable.display>tbody>tr>th,
-table.dataTable.display>tbody>tr>td {
-    border-top: 1px solid rgba(0, 0, 0, 0.15)
-}
 
 table.dataTable.row-border>tbody>tr:first-child>th,
 table.dataTable.row-border>tbody>tr:first-child>td,
@@ -381,33 +371,12 @@ table.dataTable.display>tbody>tr.selected+tr.selected>td {
     border-top-color: #0262ef
 }
 
-table.dataTable.cell-border>tbody>tr>th,
-table.dataTable.cell-border>tbody>tr>td {
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    border-right: 1px solid rgba(0, 0, 0, 0.15)
-}
-
-table.dataTable.cell-border>tbody>tr>th:first-child,
-table.dataTable.cell-border>tbody>tr>td:first-child {
-    border-left: 1px solid rgba(0, 0, 0, 0.15)
-}
 
 table.dataTable.cell-border>tbody>tr:first-child>th,
 table.dataTable.cell-border>tbody>tr:first-child>td {
     border-top: none
 }
 
-table.dataTable.stripe>tbody>tr.odd>*,
-table.dataTable.display>tbody>tr.odd>* {
-    box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.023);
-    box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-stripe), 0.023)
-}
-
-table.dataTable.stripe>tbody>tr.odd.selected>*,
-table.dataTable.display>tbody>tr.odd.selected>* {
-    box-shadow: inset 0 0 0 9999px rgba(13, 110, 253, 0.923);
-    box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-selected), 0.923)
-}
 
 table.dataTable.hover>tbody>tr:hover>*,
 table.dataTable.display>tbody>tr:hover>* {
@@ -549,10 +518,6 @@ table.dataTable.order-column.hover tbody tr:hover.selected>.sorting_3 {
     box-shadow: inset 0 0 0 9999px rgba(var(--dt-row-selected), 0.962)
 }
 
-table.dataTable.no-footer {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
-}
-
 table.dataTable.compact thead th,
 table.dataTable.compact thead td,
 table.dataTable.compact tfoot th,
@@ -573,11 +538,11 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_length {
-    float: left
+    float: left;
+    display: none;
 }
 
 .dataTables_wrapper .dataTables_length select {
-    border: 1px solid #aaa;
     border-radius: 3px;
     padding: 5px;
     background-color: transparent;
@@ -587,11 +552,11 @@ table.dataTable td {
 
 .dataTables_wrapper .dataTables_filter {
     float: right;
-    text-align: right
+    text-align: right;
+    display: none;
 }
 
 .dataTables_wrapper .dataTables_filter input {
-    border: 1px solid #aaa;
     border-radius: 3px;
     padding: 5px;
     background-color: transparent;
@@ -602,13 +567,15 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
-    padding-top: .755em
+    padding-top: .755em;
+    display: none;
 }
 
 .dataTables_wrapper .dataTables_paginate {
     float: right;
     text-align: right;
-    padding-top: .25em
+    padding-top: .25em;
+    display: none;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -621,7 +588,6 @@ table.dataTable td {
     text-decoration: none !important;
     cursor: pointer;
     color: inherit !important;
-    border: 1px solid transparent;
     border-radius: 2px;
     background: transparent
 }
@@ -710,10 +676,6 @@ table.dataTable td {
     padding: 0 !important
 }
 
-.dataTables_wrapper.no-footer .dataTables_scrollBody {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3)
-}
-
 .dataTables_wrapper.no-footer div.dataTables_scrollHead table.dataTable,
 .dataTables_wrapper.no-footer div.dataTables_scrollBody>table {
     border-bottom: none
@@ -759,47 +721,25 @@ html.dark {
     --dt-column-ordering: 255, 255, 255
 }
 
-html.dark table.dataTable>thead>tr>th,
-html.dark table.dataTable>thead>tr>td {
-    border-bottom: 1px solid rgb(89, 91, 94)
-}
 
 html.dark table.dataTable>thead>tr>th:active,
 html.dark table.dataTable>thead>tr>td:active {
     outline: none
 }
 
-html.dark table.dataTable>tfoot>tr>th,
-html.dark table.dataTable>tfoot>tr>td {
-    border-top: 1px solid rgb(89, 91, 94)
-}
-
-html.dark table.dataTable.row-border>tbody>tr>th,
-html.dark table.dataTable.row-border>tbody>tr>td,
-html.dark table.dataTable.display>tbody>tr>th,
-html.dark table.dataTable.display>tbody>tr>td {
-    border-top: 1px solid rgb(64, 67, 70)
-}
 
 html.dark table.dataTable.row-border>tbody>tr.selected+tr.selected>td,
 html.dark table.dataTable.display>tbody>tr.selected+tr.selected>td {
     border-top-color: #0257d5
 }
 
-html.dark table.dataTable.cell-border>tbody>tr>th,
-html.dark table.dataTable.cell-border>tbody>tr>td {
-    border-top: 1px solid rgb(64, 67, 70);
-    border-right: 1px solid rgb(64, 67, 70)
-}
-
 html.dark table.dataTable.cell-border>tbody>tr>th:first-child,
 html.dark table.dataTable.cell-border>tbody>tr>td:first-child {
-    border-left: 1px solid rgb(64, 67, 70)
+    /* border-left: 1px solid rgb(64, 67, 70) */
 }
 
 html.dark .dataTables_wrapper .dataTables_filter input,
 html.dark .dataTables_wrapper .dataTables_length select {
-    border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: var(--dt-html-background)
 }
 
@@ -816,10 +756,5 @@ html.dark .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:act
 }
 
 html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-    border: 1px solid rgb(53, 53, 53);
     background: rgb(53, 53, 53)
-}
-
-html.dark .dataTables_wrapper .dataTables_paginate .paginate_button:active {
-    background: #3a3a3a
 }
