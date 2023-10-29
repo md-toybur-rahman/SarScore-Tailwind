@@ -2099,6 +2099,7 @@ html {
 .dropdown-bottom .dropdown-content {
     bottom: auto;
     top: 100%;
+    /* top: 40px; */
     transform-origin: top}
 .dropdown-top .dropdown-content {
     bottom: 100%;
