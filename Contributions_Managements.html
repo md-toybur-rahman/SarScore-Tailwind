@@ -19,6 +19,11 @@
     <link rel="stylesheet" href="assets/css/libs/slimselect.css">
     <script src="assets/js/libs/slim_select/slimselect.min.js"></script>
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
 
     <script>
         tailwind.config = {
@@ -579,12 +584,13 @@
                         <!-- Contribution List Table -->
 
 
-                        <div class="overflow-x-scroll lg:overflow-x-hidden mt-10">
-                            <table class="table text-xs md:text-sm min-w-[950px]">
+                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
+                            <table id="contributionList" class="table text-xs md:text-sm min-w-[950px]" data-page-length="25"
+                                data-order="[[ 1, &quot;asc&quot; ]]">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
-                                        <th class="rounded-s-2xl">
+                                        <th data-orderable="false" class="rounded-s-2xl">
                                         </th>
                                         <th>Full Name</th>
                                         <th>Email</th>
@@ -593,12 +599,12 @@
                                         <th>Location</th>
                                         <th>Type</th>
                                         <th>Status</th>
-                                        <th class="rounded-e-2xl"></th>
+                                        <th data-orderable="false" class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
-                                <tbody id="tbody" class="bg-white ">
+                                <tbody  onmouseover="dropdownPositionHandler('contributionListTbody')" id="contributionListTbody" class="bg-white">
                                     <!-- row 1 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[68px]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -629,7 +635,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[68px]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -660,7 +666,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 3 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[68px]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -691,7 +697,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 4 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[68px]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         <td>
                                             Darlene Robertson
@@ -705,7 +711,7 @@
                                         <td>Feedback</td>
                                         <td>In Progress</td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>
@@ -721,7 +727,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 5 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[68px]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         <td>
                                             Kristin Watson
@@ -735,7 +741,7 @@
                                         <td>Support Ticket</td>
                                         <td>Approved</td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>
@@ -1072,6 +1078,10 @@
     <script src="assets/js/libs/datepicker/datepicker_customize.js"></script>
     <!-- SlimSelect -->
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
+
+    <script>
+        new DataTable('#contributionList');
+    </script>
 </body>
 
 </html>
