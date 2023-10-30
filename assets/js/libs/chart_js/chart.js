@@ -41,20 +41,7 @@ new Chart(registrationsChart, {
     }
 });
 const accessibilityChart = document.getElementById('accessibility-chart');
-const trendLine = {
-    id:'trendLine',
-    afterDatasetsDraw(chart, args, pluginOptions) {
-        const {ctx, chartArea: { top, bottom, left, right, width, height}, scales: {x, y} } = chart;
-        ctx.save();
-        ctx.beginPath();
-        ctx.lineWidth = 3;
-        ctx.strokeStyle = 'gray';
-        ctx.moveTo(left, y.getPixelForValue(18));
-        ctx.lineTo(x.getPixelForValue(3), y.getPixelForValue(0));
-        ctx.lineTo(right, y.getPixelForValue(9));
-        ctx-stroke();
-    }
-}
+
 new Chart(accessibilityChart, {
     type: 'bar',
     data: {
@@ -79,7 +66,11 @@ new Chart(accessibilityChart, {
         ]
     },
     options: {
-        plugins: [trendLine],
+        plugins: {
+            legend: {
+                display: false,
+            }
+        },
         scales: {
             y: { // defining min and max so hiding the dataset does not change scale range
                 min: 0,
@@ -90,6 +81,20 @@ new Chart(accessibilityChart, {
 });
 
 const accessibilityChart2 = document.getElementById('accessibility-chart2');
+const trendLine = {
+    id:'trendLine',
+    afterDatasetsDraw(accessibilityChart2, args, pluginOptions) {
+        const {ctx, chartArea: { top, bottom, left, right, width, height}, scales: {x, y} } = accessibilityChart2;
+        ctx.save();
+        ctx.beginPath();
+        ctx.lineWidth = 3;
+        ctx.strokeStyle = 'gray';
+        ctx.moveTo(left, y.getPixelForValue(18));
+        ctx.lineTo(x.getPixelForValue(3), y.getPixelForValue(0));
+        ctx.lineTo(right, y.getPixelForValue(9));
+        ctx.stroke();
+    }
+}
 new Chart(accessibilityChart2, {
     type: 'bar',
     data: {
@@ -114,11 +119,7 @@ new Chart(accessibilityChart2, {
         ]
     },
     options: {
-        plugins: {
-            legend: {
-                display: false,
-            }
-        },
+        plugins: [trendLine],
         scales: {
             y: { // defining min and max so hiding the dataset does not change scale range
                 min: 0,
