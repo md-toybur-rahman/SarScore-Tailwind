@@ -549,9 +549,9 @@
                                         </th>
                                     </tr>
                                 </thead>
-                                <tbody id="tbody" class="bg-white ">
+                                <tbody onmouseover="dropdownPositionHandler('userListTbody')" id="userListTbody" class="bg-white ">
                                     <!-- row 1 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -579,7 +579,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -607,7 +607,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 3 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         </th>
                                         <td>
@@ -635,7 +635,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 4 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         <td>
                                             Darlene Robertson
@@ -648,7 +648,7 @@
                                         <td>19-05-23</td>
                                         <td>Premium User</td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>
@@ -662,7 +662,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 5 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                         <td>
                                             Kristin Watson
@@ -675,7 +675,7 @@
                                         <td>19-05-23</td>
                                         <td>Admin</td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>
@@ -698,165 +698,7 @@
 
                         <!-- User List Table -->
 
-                        <div class="overflow-x-scroll lg:overflow-x-hidden mt-10">
-                            <table class="table text-xs md:text-sm min-w-[950px]">
-                                <!-- head -->
-                                <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
-                                    <tr class="bg-white text-xs md:text-sm">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <th>Full Name</th>
-                                        <th>Email</th>
-                                        <th>Username</th>
-                                        <th>Registration Date</th>
-                                        <th>Last Log In</th>
-                                        <th>User Role</th>
-                                        <th class="rounded-e-2xl">
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tbody" class="bg-white ">
-                                    <!-- row 1 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Courtney Henry
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Soffner_19</td>
-                                        <td>19-05-23</td>
-                                        <td>19-05-23</td>
-                                        <td>Standard User</td>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                    <li><a href="View_User-User_Management.html">View User</a></li>
-                                                    <li><a href="#">Edit User Role</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 2 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Jacob Jones
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Soffner_19</td>
-                                        <td>19-05-23</td>
-                                        <td>19-05-23</td>
-                                        <td>Contributor</td>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                    <li><a href="View_User-User_Management.html">View User</a></li>
-                                                    <li><a href="#">Edit User Role</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 3 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Soffner_19</td>
-                                        <td>19-05-23</td>
-                                        <td>19-05-23</td>
-                                        <td>Contributor</td>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label tabindex="0" class="">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                    <li><a href="View_User-User_Management.html">View User</a></li>
-                                                    <li><a href="#">Edit User Role</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 4 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
-                                        <th class="rounded-s-2xl">
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Soffner_19</td>
-                                        <td>19-05-23</td>
-                                        <td>19-05-23</td>
-                                        <td>Premium User</td>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
-                                                <label tabindex="0" class="">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                    <li><a href="View_User-User_Management.html">View User</a></li>
-                                                    <li><a href="#">Edit User Role</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 5 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
-                                        <th class="rounded-s-2xl">
-                                        <td>
-                                            Kristin Watson
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Soffner_19</td>
-                                        <td>19-05-23</td>
-                                        <td>19-05-23</td>
-                                        <td>Admin</td>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
-                                                <label tabindex="0" class="">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
-                                                    <li><a href="View_User-User_Management.html">View User</a></li>
-                                                    <li><a href="#">Edit User Role</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        
                         <div class="flex justify-center">
                             <button
                                 class="mt-[49px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
@@ -973,9 +815,9 @@
                                         <th data-orderable="false" class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
-                                <tbody id="tbody" class="bg-white ">
+                                <tbody onmouseover="dropdownPositionHandler('userRegistrationManagementTbody')" id="userRegistrationManagementTbody" class="bg-white ">
                                     <!-- row 1 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
@@ -1010,7 +852,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
@@ -1045,7 +887,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 3 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
@@ -1080,7 +922,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 4 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
@@ -1101,7 +943,7 @@
                                                 class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
                                         </td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>
@@ -1115,7 +957,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 5 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA]">
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
                                         <th class="rounded-s-2xl">
                                             <label>
                                                 <input type="checkbox" class="checkbox w-5 h-5" />
@@ -1136,7 +978,7 @@
                                                 class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">Pending</button>
                                         </td>
                                         <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-top dropdown-end">
+                                            <div class="dropdown dropdown-end">
                                                 <label tabindex="0" class="">
                                                     <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
                                                 </label>

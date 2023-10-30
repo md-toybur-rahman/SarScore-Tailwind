@@ -1,4 +1,15 @@
 
+function dropdownPositionHandler (id) {
+    const tbody = document.getElementById(id);
+    const dropdown = tbody.getElementsByClassName('dropdown');
+    dropdown[0].classList.remove('dropdown-top');
+    dropdown[1].classList.remove('dropdown-top');
+    dropdown[dropdown.length - 1].classList.add('dropdown-top');
+    dropdown[dropdown.length - 2].classList.add('dropdown-top')
+}
+
+
+
 function HandlePhoneNumber() {
     const phoneNumber = document.getElementById('phoneNumber');
     const phoneNumberInput = document.getElementById('phoneNumberInput');
