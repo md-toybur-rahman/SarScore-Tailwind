@@ -800,21 +800,26 @@
                             </div>
                             <div class="md:flex justify-end items-center gap-3">
                                 <div class="grid grid-cols-2 md:flex items-center gap-3 mb-2 md:mb-0">
-                                    <div class="relative bg-white md:px-1 rounded-lg md:rounded-xl">
-                                        <div class="md:px-2 bg-white font flex items-center justify-between px-2">
-                                            <p class="w-fit text-xs">Date: <input id="ticketDatepicker"
-                                                    class="outline-none w-24 md:w-20 h-[38px]" placeholder="Select"
-                                                    type="text" required>
-                                            </p>
+                                    <div
+                                        class="flex items-center bg-white px-1 md:px-4 h-[38px] rounded-lg md:rounded-xl">
+                                        <div class="bg-white flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                                id="selectElement41">
+                                                <option value="" selected disabled>Status</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="flex items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl">
-                                        <div class="bg-white flex items-center justify-between px-2 md:px-0">
-                                            <p class="w-fit text-xs md:text-sm">Type: </p>
+                                    <div
+                                        class="flex items-center bg-white px-1 md:px-4 h-[38px] rounded-lg md:rounded-xl">
+                                        <div class="bg-white flex items-center justify-between">
                                             <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-40 md:w-28 bg-white h-[38px]"
+                                                class="border-0 text-xs outline-none overflow-hidden w-40 md:w-28 bg-white"
                                                 id="selectElement14">
-                                                <option value=""></option>
+                                                <option value="" selected disabled>Type</option>
                                                 <option>Option 1</option>
                                                 <option>Option 2</option>
                                                 <option>Option 3</option>
@@ -824,10 +829,10 @@
                                 </div>
                                 <div class="grid grid-cols-4 md:flex items-center gap-3">
                                     <div
-                                        class="flex col-span-3 items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl">
-                                        <div class="bg-white flex items-center justify-between px-2 md:px-0">
+                                        class="flex col-span-3 items-center bg-white px-1 md:px-4 h-[38px] rounded-lg md:rounded-xl">
+                                        <div class="bg-white flex items-center justify-between">
                                             <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-32 md:w-28 bg-white h-[38px]"
+                                                class="border-0 text-xs outline-none overflow-hidden w-56 md:w-28 bg-white"
                                                 id="selectElement15">
                                                 <option value="" selected disabled>Category</option>
                                                 <option>Option 1</option>
@@ -836,6 +841,7 @@
                                             </select>
                                         </div>
                                     </div>
+                                    
                                     <a
                                         class="h-[38px] flex items-center justify-center md:px-4 px-2 py-1 text-xs md:text-sm rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
                                             src="assets/icons/Group 2618.svg" alt=""></a>
