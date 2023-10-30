@@ -148,22 +148,6 @@ new Chart(accuracyChart, {
             legend: {
                 display: false,
             },
-            tooltip: {
-                callbacks: {
-                    labelColor: function(context) {
-                        return {
-                            display: 'none',
-                            backgroundColor: 'rgb(255, 0, 0)',
-                            borderWidth: 2,
-                            borderDash: [2, 2],
-                            borderRadius: 2,
-                        };
-                    },
-                    labelTextColor: function(context) {
-                        return '#543453';
-                    }
-                }
-            }
         }
     }
 });

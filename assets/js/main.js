@@ -10,7 +10,6 @@ function dropdownPositionHandler (id) {
 }
 
 
-
 function HandlePhoneNumber() {
     const phoneNumber = document.getElementById('phoneNumber');
     const phoneNumberInput = document.getElementById('phoneNumberInput');
