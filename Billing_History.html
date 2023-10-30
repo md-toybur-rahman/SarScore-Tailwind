@@ -13,6 +13,11 @@
     <!-- Tailwind CSS -->
     <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -456,8 +461,9 @@
                     <p class="text-xs md:text-sm text-[#656565]">Review your billing history and manage your invoices.
                     </p>
 
-                    <div class="overflow-x-scroll md:overflow-x-hidden mt-[49px] text-[#656565]">
-                        <table class="w-full text-xs md:text-base min-w-[900px]">
+                    <div class="overflow-x-scroll md:overflow-x-hidden overflow-y-hidden mt-[49px] text-[#656565]">
+                        <table id="billingHistory" class="table text-xs md:text-sm min-w-[900px]"
+                                data-page-length="25" data-order="[[ 1, &quot;asc&quot; ]]">
                             <thead class="h-[44px]">
                                 <td class="text-start ps-9 text-sm">Date</td>
                                 <td class="text-start text-sm">Type</td>
@@ -468,7 +474,8 @@
                                 <th></th>
                                 <th></th>
                             </thead>
-                            <tbody class="bg-white rounded-2xl text-sm">
+                            <tbody  onmouseover="dropdownPositionHandler('billingHistoryTbody')"
+                            id="billingHistoryTbody" class="bg-white rounded-2xl text-sm">
                                 <tr class="h-[91px] border-b border-[#F3F3F3]">
                                     <td class="rounded-tl-2xl ps-9">Oct,16,2023</td>
                                     <td>Subscription</td>
@@ -541,6 +548,24 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr class="h-[91px]">
+                                    <td class="rounded-bl-2xl ps-9">Oct,16,2023</td>
+                                    <td>Subscription</td>
+                                    <td>185TGG6W56</td>
+                                    <td>Premium Plan</td>
+                                    <td>£19.99</td>
+                                    <td></td>
+                                    <td class="rounded-br-2xl">
+                                        <div class="flex items-center justify-end gap-2 me-[33px]">
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
+                                            <button
+                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
+                                                    src="assets/icons/Group 2618.svg" alt=""></button>
+                                        </div>
+                                    </td>
+                                </tr>
 
                             </tbody>
                         </table>
@@ -560,6 +585,8 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- Data Table -->
+    <script src="assets/js/libs/data_tables/data_table.js"></script>
 </body>
 
 </html>

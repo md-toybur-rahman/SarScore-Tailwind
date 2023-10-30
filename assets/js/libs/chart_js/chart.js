@@ -81,20 +81,6 @@ new Chart(accessibilityChart, {
 });
 
 const accessibilityChart2 = document.getElementById('accessibility-chart2');
-const trendLine = {
-    id:'trendLine',
-    afterDatasetsDraw(accessibilityChart2, args, pluginOptions) {
-        const {ctx, chartArea: { top, bottom, left, right, width, height}, scales: {x, y} } = accessibilityChart2;
-        ctx.save();
-        ctx.beginPath();
-        ctx.lineWidth = 3;
-        ctx.strokeStyle = 'gray';
-        ctx.moveTo(left, y.getPixelForValue(18));
-        ctx.lineTo(x.getPixelForValue(3), y.getPixelForValue(0));
-        ctx.lineTo(right, y.getPixelForValue(9));
-        ctx.stroke();
-    }
-}
 new Chart(accessibilityChart2, {
     type: 'bar',
     data: {
@@ -119,7 +105,11 @@ new Chart(accessibilityChart2, {
         ]
     },
     options: {
-        plugins: [trendLine],
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
         scales: {
             y: { // defining min and max so hiding the dataset does not change scale range
                 min: 0,
@@ -160,9 +150,18 @@ new Chart(accuracyChart, {
             },
             tooltip: {
                 callbacks: {
-                    label: ((tooltipItem, data) => {
-                        // console.log(tooltipItem.datasetIndex);
-                    })
+                    labelColor: function(context) {
+                        return {
+                            display: 'none',
+                            backgroundColor: 'rgb(255, 0, 0)',
+                            borderWidth: 2,
+                            borderDash: [2, 2],
+                            borderRadius: 2,
+                        };
+                    },
+                    labelTextColor: function(context) {
+                        return '#543453';
+                    }
                 }
             }
         }

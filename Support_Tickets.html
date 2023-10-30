@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/libs/slimselect.css">
     <script src="assets/js/libs/slim_select/slimselect.min.js"></script>
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
 
     <script>
         tailwind.config = {
@@ -644,25 +649,27 @@
                         <!-- End Contribution List menu section -->
 
                         <!-- Status Management management Table -->
-                        <div class="overflow-x-scroll md:overflow-x-auto mt-10 ">
-                            <table class="table text-xs md:text-base min-w-[900px]">
+                        <div class="overflow-x-scroll md:overflow-x-auto overflow-y-hidden mt-10 ">
+                            <table id="dashboardSupportTicket" class="table text-xs md:text-sm min-w-[900px]"
+                                data-page-length="25" data-order="[[ 1, &quot;asc&quot; ]]">
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
                                     <tr class="bg-white text-xs md:text-sm">
-                                        <th class="rounded-s-2xl">
+                                        <th data-orderable="false" class="rounded-s-2xl">
                                             <label>
                                                 <img src="assets/icons/Group 240.svg" alt="">
                                             </label>
                                         </th>
                                         <th>Customer</th>
-                                        <th>Subject</th>
+                                        <th data-orderable="false">Subject</th>
                                         <th>Status</th>
                                         <th>Timestamp</th>
-                                        <th class="rounded-e-2xl"></th>
+                                        <th data-orderable="false" class="rounded-e-2xl"></th>
                                     </tr>
                                 </thead>
-                                <tbody id="ticketList" class="">
+                                <tbody onmouseover="dropdownPositionHandler('supportTicketTbody')"
+                                id="supportTicketTbody" id="ticketList" class="">
                                     <!-- row 1 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -704,7 +711,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -747,7 +754,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -789,7 +796,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -831,7 +838,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -874,7 +881,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 1 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -916,7 +923,7 @@
                                         </th>
                                     </tr>
                                     <!-- row 2 -->
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -959,7 +966,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -1001,7 +1008,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -1043,7 +1050,7 @@
                                         </th>
                                     </tr>
 
-                                    <tr class="border-b border-[#C5C5C5] cursor-pointer">
+                                    <tr class="border-b border-[#C5C5C5] cursor-pointer h-[75px]">
                                         <td>
                                             <input type="checkbox" class="checkbox w-5 h-5" />
                                         </td>
@@ -1110,6 +1117,8 @@
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
     <!-- Support Ticket -->
     <script src="assets/js/support_ticket.js"></script>
+    <!-- Data Table -->
+    <script src="assets/js/libs/data_tables/data_table.js"></script>
 </body>
 
 </html>

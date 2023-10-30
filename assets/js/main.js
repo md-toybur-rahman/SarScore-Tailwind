@@ -6,6 +6,7 @@ function dropdownPositionHandler (id) {
     dropdown[1].classList.remove('dropdown-top');
     dropdown[dropdown.length - 1].classList.add('dropdown-top');
     dropdown[dropdown.length - 2].classList.add('dropdown-top')
+    dropdown[dropdown.length - 3].classList.add('dropdown-top')
 }
 
 

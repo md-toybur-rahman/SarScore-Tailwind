@@ -563,14 +563,11 @@
                                 </div>
                             </div>
                         </section>
-                        <!-- <div class="px-8 pb-7 rounded-2xl bg-white md:w-[1253px] md:hidden">
+                        <div class="px-8 pb-7 rounded-2xl bg-white md:w-[1253px] md:hidden">
                             <canvas style=" font-size:24px;" id="accessibility-chart"></canvas>
                         </div>
                         <div class="px-8 pb-7 rounded-2xl bg-white md:w-[1253px] hidden md:block">
                             <canvas style=" font-size:24px;" id="accessibility-chart2"></canvas>
-                        </div> -->
-                        <div class="chartBox">
-                            <canvas id="myChart"></canvas>
                         </div>
                     </section>
                     <!-- end  chart-->
@@ -983,76 +980,6 @@
     <!-- Chart js -->
     <script src="assets/js/libs/chart_js/chart_cdn.js"></script>
     <script src="assets/js/libs/chart_js/chart.js"></script>
-
-
-    <script>
-        // setup 
-        const data = {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Spt', 'Oct', 'Nov', 'Dec'],
-            datasets: [
-                {
-                    label: 'Daily',
-                    data: [20, 35, 15, 5, 30, 45, 10, 25, 45, 40, 15, 35],
-                    borderWidth: 1,
-                    backgroundColor: '#484E80',
-                    borderRadius: 5,
-                    barThickness: 25
-                },
-                {
-                    label: 'Weekly',
-                    data: [35, 15, 40, 40, 25, 10, 45, 30, 5, 15, 35, 20],
-                    borderWidth: 1,
-                    backgroundColor: '#39CCCC',
-                    borderRadius: 5,
-                    barThickness: 25
-                },
-            ]
-        };
-
-        const trendLine = {
-            id: 'trendLine',
-            afterDatasetsDraw(chart, args, pluginOptions) {
-                const { ctx, chartArea: { top, bottom, left, right, width, height }, scales: { x, y } } = chart;
-                ctx.save();
-                ctx.beginPath();
-                ctx.lineWidth = 3;
-                ctx.strokeStyle = 'gray';
-                ctx.moveTo(left, y.getPixelForValue(18));
-                ctx.lineTo(x.getPixelForValue(3), y.getPixelForValue(0));
-                ctx.lineTo(right, y.getPixelForValue(9));
-                ctx.stroke();
-            }
-        }
-
-        // config 
-        const config = {
-            type: 'bar',
-            data,
-            options: {
-                scales: {
-                    y: {
-                        min: 0,
-                        max: 50
-                    }
-                }
-            },
-            plugins: [trendLine]
-        };
-
-        // render init block
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
-
-        // Instantly assign Chart.js version
-        const chartVersion = document.getElementById('chartVersion');
-        chartVersion.innerText = Chart.version;
-    </script>
-
-
-
-
     <!-- main js -->
     <script src="assets/js/main.js"></script>
     <!-- accessibility_rating -->
