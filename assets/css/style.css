@@ -143,7 +143,6 @@ button.form-control {
 	height: 78px;
 }
 
-
 .active,
 #menubar a:hover {
 	color: white;
@@ -232,6 +231,16 @@ input[type=radio] {
 input[type=radio]:checked {
 	background-color: #656565;
 }
+
+
+table input[type=checkbox] {
+	appearance: none;
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	border: 1px solid #656565;
+}
+
 
 #settings {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

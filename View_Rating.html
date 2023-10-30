@@ -74,7 +74,8 @@
                         <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
                         <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
                     </div>
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
                 </a>
                 <a href="Contributions_Managements.html"
                     class="menuButton active h-[63px] px-3 flex items-center gap-2">
@@ -277,7 +278,8 @@
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">User
                             Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
                     </a>
-                    <a href="Contributions_Managements.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
+                    <a href="Contributions_Managements.html"
+                        class="menuButton active h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
                             <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
@@ -399,6 +401,22 @@
             </div>
         </div>
 
+        <div id="deleteConfirmationModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl p-[14px] w-[423px] h-[285px] z-30 flex items-center justify-center">
+                    <div class="flex flex-col items-center justify-center gap-5">
+                        <div class="w-[100px] h-[100px] border-[10px] rounded-full flex items-center justify-center">
+                            <h1 class="text-5xl text-[#28C66F]">✔</h1>
+                        </div>
+                        <h1 class="text-xl text-[#656565]">User Deleted Successfully</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Delete user modal -->
         <div id="deleteUserModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
             <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
@@ -415,7 +433,8 @@
                             delete
                             this user?</h3>
                         <div class="flex items-center justify-center gap-4 mb-[43px]">
-                            <button class="w-[60px] h-[36px] rounded-lg border border-[#656565]">Yes</button>
+                            <button onclick="handleDeleteConfirmationModal('deleteConfirmationModal')"
+                                class="w-[60px] h-[36px] rounded-lg border border-[#656565]">Yes</button>
                             <button onclick="HandleCloseButton('deleteUserModal')"
                                 class="w-[60px] h-[36px] rounded-lg border border-[#656565]">No</button>
                         </div>
@@ -451,7 +470,7 @@
                                 placeholder="If you have selected other, please explain why you want to delete this user."></textarea>
                         </div>
                         <div class="flex justify-center">
-                            <button onclick="HandleDeleteUserConfirmButton()"
+                            <button onclick="handleDeleteConfirmationModal('deleteConfirmationModal')"
                                 class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
                         </div>
                     </div>
@@ -653,24 +672,6 @@
                                                 <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
                                             </a>
                                         </button>
-
-
-
-                                        <!-- <button onclick="my_modal_1.showModal()">
-                                            <a class="mt-[2px]">
-                                                <h6 class="text-[10px] text-[#656565] underline">Change Status</h6>
-                                            </a></button>
-                                        <dialog id="my_modal_1" class="modal">
-                                            <div class="modal-box">
-                                                <h3 class="font-bold text-lg">Hello!</h3>
-                                                <p class="py-4">Press ESC key or click the button below to close</p>
-                                                <div class="modal-action">
-                                                    <form method="dialog">
-                                                        <button class="btn">Close</button>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </dialog> -->
                                     </div>
                                 </div>
                             </div>

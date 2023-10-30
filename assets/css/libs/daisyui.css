@@ -5759,6 +5759,18 @@ details.collapse summary::-webkit-details-marker {
     --tw-bg-opacity: 1;
     background-color: #FFAB00
 }
+.progress-custom9::-webkit-progress-value {
+    --tw-bg-opacity: 1;
+    background-color: #1AB0B0
+}
+.progress-custom10::-webkit-progress-value {
+    --tw-bg-opacity: 1;
+    background-color: #28C66F
+}
+.progress-custom11::-webkit-progress-value {
+    --tw-bg-opacity: 1;
+    background-color: #6259CE
+}
 
 .progress-warning::-webkit-progress-value {
     --tw-bg-opacity: 1;
