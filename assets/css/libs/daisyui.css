@@ -6557,9 +6557,9 @@ details.collapse summary::-webkit-details-marker {
 
 .table :where(thead, tbody) :where(tr:not(:last-child)),
 .table :where(thead, tbody) :where(tr:first-child:last-child) {
-    border-bottom-width: 1px;
-    --tw-border-opacity: 1;
-    border-bottom-color: hsl(var(--b2) / var(--tw-border-opacity))
+    /* border-bottom-width: 1px; */
+    /* --tw-border-opacity: 1; */
+    /* border-bottom-color: hsl(var(--b2) / var(--tw-border-opacity)) */
 }
 
 .table :where(thead, tfoot) {
