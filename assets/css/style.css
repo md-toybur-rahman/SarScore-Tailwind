@@ -393,5 +393,16 @@ table input[type=checkbox] {
 
   #newTicketModal ::placeholder {
 	color: #C5C5C5;
-	opacity: 1; /* Firefox */
+	opacity: 1;
+  }
+
+  #newTicketModal input::file-selector-button {
+	height: 26px;
+	width: 104px;
+	color: white;
+	background: #39CCCC;
+	border-radius: 8px;
+	border: none;
+	font-size: 11px;
+	font-weight: 500;
   }

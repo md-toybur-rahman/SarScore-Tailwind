@@ -348,37 +348,60 @@
 
         <!-- New Ticket Modal -->
 
-        <div id="newTicketModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+        <div id="newTicketModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
             <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
                 <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
                 </div>
-                <div class="bg-white rounded-xl p-[14px] w-[423px] z-30">
+                <div class="bg-white rounded-xl px-[14px] pt-[14px] pb-[102px] z-30">
                     <div onclick="HandleCloseButton('newTicketModal')"
                         class="flex items-center justify-end mb-7 cursor-pointer">
                         <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
                     </div>
-                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Submit A New Support Ticket</h3>
-                    <div class=" h-[38px] w-[314px] px-4 border border-[#F3F3F3] rounded-xl">
-                        <input class="outline-none h-full w-full text-[#C5C5C5] text-sm" type="text" name="" id="support" placeholder="Ticket Title">
-                    </div>
-                    <div class="bg-white flex items-center justify-center mb-11 w-[314px]">
-                        <select
-                            class=" text-sm text-[#C5C5C5] outline-none overflow-hidden w-full py-[10px] px-4 bg-white rounded-xl border border-[#F3F3F3]"
-                            id="selectElement31">
-                            <option selected disabled class="text-[#C5C5C5]">Ticket Title</option>
-                            <option>Regular User</option>
-                            <option>Contributor</option>
-                            <option>Premium User</option>
-                            <option>Admin</option>
-                        </select>
-                    </div>
-                    <div class=" h-[122px] w-[314px] px-4 border border-[#F3F3F3] rounded-xl">
-                        <textarea class="outline-none h-full w-full text-[#C5C5C5] text-sm resize-none" name="" id="" cols="" rows="" placeholder="Description"></textarea>
-                    </div>
-                    <div class="flex justify-center">
-                        <button onclick="HandleNewTicketConfirmButton()"
-                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    <div class="px-5 md:px-[128px]">
+                        <div class="w-[314px]">
+                            <h3 class="font-bold text-sm text-[#656565] text-center mb-9">Submit A New Support Ticket
+                            </h3>
+                            <div class=" h-[38px] w-[314px] px-4 border border-[#F3F3F3] rounded-xl mb-4">
+                                <input class="outline-none h-full w-full text-[#C5C5C5] text-sm" type="text" name=""
+                                    id="support" placeholder="Ticket Title">
+                            </div>
+                            <div class="bg-white flex items-center justify-center w-[314px] mb-[27px]">
+                                <select
+                                    class=" text-sm text-[#C5C5C5] outline-none overflow-hidden w-full py-[10px] px-4 bg-white rounded-xl border border-[#F3F3F3]"
+                                    id="selectElement42">
+                                    <option selected disabled class="text-[#C5C5C5]">Ticket Title</option>
+                                    <option>Regular User</option>
+                                    <option>Contributor</option>
+                                    <option>Premium User</option>
+                                    <option>Admin</option>
+                                </select>
+                            </div>
+                            <div class=" h-[122px] w-[314px] px-4 py-[11px] border border-[#F3F3F3] rounded-xl mb-4">
+                                <textarea class="outline-none h-full w-full text-[#C5C5C5] text-sm resize-none" name=""
+                                    id="" cols="" rows="" placeholder="Description"></textarea>
+                            </div>
+                            <div class="bg-white flex items-center justify-center w-[314px] mb-5">
+                                <select
+                                    class=" text-sm text-[#C5C5C5] outline-none overflow-hidden w-full py-[10px] px-4 bg-white rounded-xl border border-[#F3F3F3]"
+                                    id="selectElement43">
+                                    <option selected disabled class="text-[#C5C5C5]">Priority</option>
+                                    <option>Regular User</option>
+                                    <option>Contributor</option>
+                                    <option>Premium User</option>
+                                    <option>Admin</option>
+                                </select>
+                            </div>
+                            <form class="text-sm text-[#C5C5C5] mb-[25px]">
+                                <label class="mr-2" for="fileUpload">Attach Files: </label>
+                                <input class="w-[215px]" type="file" id="fileUpload" />
+                            </form>
+                            <div class="flex justify-end">
+                                <button onclick="HandleNewTicketConfirmButton()"
+                                    class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Submit
+                                    Ticket</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
