@@ -28,6 +28,9 @@
     <script src="assets/js/libs/data_tables/jquery.js"></script>
     <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
 
+    <!-- Carousel -->
+    <link rel="stylesheet" href="assets/css/libs/carousel.css">
+
 
     <script>
         tailwind.config = {
@@ -494,57 +497,113 @@
                 <!-- user panel -->
                 <!-- Dashboard Item -->
                 <section>
-                    <section class="grid grid-cols-3 gap-2 md:gap-5 mt-4">
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">Total Users</h5>
-                                <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">29,542</h1>
-                                <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649.png" alt="">
-                                    1.700</h6>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">Active Users</h5>
-                                <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198</h1>
-                                <h6 class="text-[#EC5453] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649 (1).png" alt="">
-                                    1.700</h6>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">New Registrations</h5>
-                                <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
-                                <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649.png" alt="">
-                                    1.700</h6>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="flex justify-end mt-3">
-                        <div class="flex items-center bg-white border border-[#F3F3F3] rounded-xl">
-                            <div class=" px-4 py-3 border-e border-[#F3F3F3]">
-                                <img src="assets/icons/Group 2514.svg" alt="">
-                            </div>
-                            <div class=" px-4 py-3">
-                                <img src="assets/icons/Group 2515.svg" alt="">
+                    <!-- carousel -->
+                    <div class="wrapper mt-4">
+                        <ul class="carousel">
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Total Users</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">29,542</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Active Users</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198</h1>
+                                        <h6 class="text-[#EC5453] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649 (1).png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">New Registrations</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">29,542</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198</h1>
+                                        <h6 class="text-[#EC5453] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649 (1).png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[40px] w-[40px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flex justify-end mt-3">
+                            <div class="flex items-center bg-white border border-[#F3F3F3] rounded-xl">
+                                <div id="left" class="arrow-btn px-2 py-1 md:px-4 md:py-3 border-e border-[#F3F3F3]">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2514.svg" alt="">
+                                </div>
+                                <div id="right" class="arrow-btn px-2 py-1 md:px-4 md:py-3">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2515.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end carousel -->
+
                     <!-- end user panel -->
 
                     <!-- registration chart and service progress bar -->
@@ -1242,6 +1301,8 @@
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
     <!-- Data Table -->
     <script src="assets/js/libs/data_tables/data_table.js"></script>
+    <!-- Carousel -->
+    <script src="assets/js/libs/carousel/carousel.js"></script>
 </body>
 
 </html>
