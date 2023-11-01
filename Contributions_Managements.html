@@ -24,6 +24,9 @@
     <script src="assets/js/libs/data_tables/jquery.js"></script>
     <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
 
+    <!-- Carousel -->
+    <link rel="stylesheet" href="assets/css/libs/carousel.css">
+
 
     <script>
         tailwind.config = {
@@ -501,59 +504,119 @@
                 <!-- user panel -->
                 <!-- Dashboard Item -->
                 <section>
-                    <section class="grid grid-cols-3 gap-2 md:gap-5 mt-4">
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
-                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Corporate</h1>
-                                <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649.png" alt="">
-                                    1.700</h6>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues Reported</h5>
-                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Time To Access
-                                </h1>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl">
-                            <div>
-                                <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
-                                <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">3 Days</h1>
-                                <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                        src="assets/icons/Path 649.png" alt="">
-                                    1.700</h6>
-                            </div>
-                            <div
-                                class="hidden md:h-[94px] md:w-[94px] h-[40px] w-[40px] md:flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
-                                <img class="w-[20px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="flex justify-end mt-3">
-                        <div class="flex items-center bg-white border border-[#F3F3F3] rounded-xl">
-                            <div class=" px-4 py-3 border-e border-[#F3F3F3]">
-                                <img src="assets/icons/Group 2514.svg" alt="">
-                            </div>
-                            <div class=" px-4 py-3">
-                                <img src="assets/icons/Group 2515.svg" alt="">
+                    <!-- carousel -->
+                    <div class="wrapper mt-4">
+                        <ul class="carousel">
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Corporate
+                                        </h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues Reported</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Time To Access
+                                        </h1>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">3 Days</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Corporate
+                                        </h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues Reported</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">Time To Access
+                                        </h1>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="flex items-center justify-between p-2 md:p-8 bg-white h-[100px] md:h-[158px] rounded-lg md:rounded-2xl">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
+                                        <h1 class="text-lg md:text-[22px] font-[inter] font-bold my-1 md:my-3">3 Days</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/Path 649.png" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flex justify-end mt-3">
+                            <div class="flex items-center bg-white border border-[#F3F3F3] rounded-xl">
+                                <div id="left" class="arrow-btn px-2 py-1 md:px-4 md:py-3 border-e border-[#F3F3F3]">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2514.svg" alt="">
+                                </div>
+                                <div id="right" class="arrow-btn px-2 py-1 md:px-4 md:py-3">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2515.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- end carousel -->
+
+
+
                     <!-- end user panel -->
 
                     <!-- Contribution List -->
-                    <section class="mt-2 md:mt-[92px] ">
+                    <section class="mt-2 md:mt-[42px] ">
                         <h1 class="text-lg md:text-2xl font-semibold md:ms-8">Contribution List</h1>
                         <!-- Contribution List menu section -->
                         <div class="mt-5 md:mt-10 md:flex items-center justify-between">
@@ -894,7 +957,7 @@
                                         <td>Parking Availability</td>
                                         <td>
                                             <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
                                         </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
@@ -930,7 +993,7 @@
                                         <td>Parking Availability</td>
                                         <td>
                                             <button
-                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#f39999] px-7 rounded-xl">Pending</button>
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#FADCDC] font-normal w-[82px] h-[21px] rounded-xl">Pending</button>
                                         </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
@@ -966,7 +1029,7 @@
                                         <td>Lift Availability</td>
                                         <td>
                                             <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
                                         </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-end">
@@ -1002,7 +1065,7 @@
                                         <td>Parking Availability</td>
                                         <td>
                                             <button
-                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#efc87a] px-7 rounded-xl">In
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#FEEDCB] font-normal w-[82px] h-[21px] rounded-xl">In
                                                 Progress</button>
                                         </td>
                                         <th class="rounded-e-2xl">
@@ -1039,7 +1102,7 @@
                                         <td>Parking Availability</td>
                                         <td>
                                             <button
-                                                class="text-success text-[9px] font-[inter] border border-success px-7 rounded-xl">Active</button>
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
                                         </td>
                                         <th class="rounded-e-2xl">
                                             <div class="dropdown dropdown-top dropdown-end">
@@ -1091,6 +1154,8 @@
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
     <!-- Data Table -->
     <script src="assets/js/libs/data_tables/data_table.js"></script>
+    <!-- Carousel -->
+    <script src="assets/js/libs/carousel/carousel.js"></script>
 </body>
 
 </html>
