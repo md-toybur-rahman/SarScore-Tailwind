@@ -10,6 +10,16 @@ function HandleChangeStatusConfirmButton() {
 }
 
 
+function handleNewTicketModal() {
+    const newTicketModal = document.getElementById('newTicketModal');
+    if (newTicketModal.classList.contains('hidden')) {
+        newTicketModal.classList.remove('hidden');
+    }
+}
+function HandleNewTicketConfirmButton() {
+    const newTicketModal = document.getElementById('newTicketModal');
+    newTicketModal.classList.add('hidden');
+}
 
 function handleUserCategoryModal() {
     const changeUserCategoryModal = document.getElementById('changeUserCategoryModal');

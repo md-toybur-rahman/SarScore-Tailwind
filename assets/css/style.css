@@ -390,3 +390,8 @@ table input[type=checkbox] {
 	border: solid 3px rgba(54, 162, 235, 1);
 	background: white;
   }
+
+  #newTicketModal ::placeholder {
+	color: #C5C5C5;
+	opacity: 1; /* Firefox */
+  }

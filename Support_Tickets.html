@@ -346,6 +346,50 @@
         <!-- End Mobile Menubar -->
 
 
+        <!-- New Ticket Modal -->
+
+        <div id="newTicketModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-white rounded-xl p-[14px] w-[423px] z-30">
+                    <div onclick="HandleCloseButton('newTicketModal')"
+                        class="flex items-center justify-end mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <h3 class="font-bold text-sm text-[#656565] text-center mb-10">Submit A New Support Ticket</h3>
+                    <div class=" h-[38px] w-[314px] px-4 border border-[#F3F3F3] rounded-xl">
+                        <input class="outline-none h-full w-full text-[#C5C5C5] text-sm" type="text" name="" id="support" placeholder="Ticket Title">
+                    </div>
+                    <div class="bg-white flex items-center justify-center mb-11 w-[314px]">
+                        <select
+                            class=" text-sm text-[#C5C5C5] outline-none overflow-hidden w-full py-[10px] px-4 bg-white rounded-xl border border-[#F3F3F3]"
+                            id="selectElement31">
+                            <option selected disabled class="text-[#C5C5C5]">Ticket Title</option>
+                            <option>Regular User</option>
+                            <option>Contributor</option>
+                            <option>Premium User</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>
+                    <div class=" h-[122px] w-[314px] px-4 border border-[#F3F3F3] rounded-xl">
+                        <textarea class="outline-none h-full w-full text-[#C5C5C5] text-sm resize-none" name="" id="" cols="" rows="" placeholder="Description"></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button onclick="HandleNewTicketConfirmButton()"
+                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End New Ticket Modal -->
+
+
+
+
+
         <!-- Support Ticket Navbar-->
 
         <section id="ticketMenu"
@@ -353,7 +397,8 @@
             <div
                 class="border-b border-[#D8D8D8] pb-4 flex md:gap-6 items-center justify-between md:justify-start w-full">
                 <h1 class=" text-[22px] font-bold">Tickets</h1>
-                <button class="h-[38px] w-[132px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">+
+                <button onclick="handleNewTicketModal()"
+                    class="h-[38px] w-[132px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">+
                     New Ticket</button>
             </div>
             <div onclick="handleTicketMenu()" class="flex justify-center mt-2 md:hidden">
@@ -617,7 +662,8 @@
 
                             <div class="grid grid-cols-2 md:flex justify-end items-center gap-3">
                                 <div class="md:flex items-center gap-3 mb-2 md:mb-0">
-                                    <div class="flex items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl border border-[#F3F3F3]">
+                                    <div
+                                        class="flex items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl border border-[#F3F3F3]">
                                         <div class="bg-white flex items-center justify-between px-2 md:px-0 h-[38px]">
                                             <select
                                                 class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
@@ -631,7 +677,8 @@
                                     </div>
                                 </div>
                                 <div class="md:flex items-center gap-3 mb-2 md:mb-0">
-                                    <div class="flex items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl  border border-[#F3F3F3]">
+                                    <div
+                                        class="flex items-center bg-white px-1 md:px-4 rounded-lg md:rounded-xl  border border-[#F3F3F3]">
                                         <div class="bg-white flex items-center justify-between px-2 md:px-0 h-[38px]">
                                             <select
                                                 class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28  bg-white"
@@ -1133,6 +1180,8 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- Modal js -->
+    <script src="assets/js/modal.js"></script>
     <!-- SlimSelect -->
     <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
     <!-- Support Ticket -->
