@@ -480,7 +480,16 @@
                     <div class="flex-grow bg-white rounded-xl">
                         <div class="border border-[#959090] flex items-center justify-between px-6 py-5 mb-[386px]">
                             <h1 class="ms-4 font-bold">Missing Rating</h1>
-                            <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                            <div class="dropdown dropdown-end">
+                                <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                    tabindex="0" class="dropdown-label">
+                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                </label>
+                                <ul tabindex="0"
+                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-36 font-bold">
+                                    <li><a href="#">Mark as solved</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="m-3 px-3 rounded-lg border border-[#959090] pt-[30px] pb-5">
                             <textarea class="w-full resize-none px-5 outline-none" placeholder="Enter Your Message"
