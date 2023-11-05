@@ -1,7 +1,16 @@
-const dropdownContent = document.getElementsByClassName('dropdown-content')
-console.log(dropdownContent);
-
-function dropdownPositionHandler (id) {
+// function dropdownToggleHandler(event) {
+//     const dropdownContent = event.parentNode.getElementsByClassName('dropdown-content')[0];
+//     if (dropdownContent.classList.contains('hidden')) {
+//         dropdownContent.classList.remove('hidden');
+//     }
+//     else {
+//         dropdownContent.classList.add('hidden');
+//     }
+// }
+// document.addEventListener('click', function (event) {
+//     console.log(event.target);
+// })
+function dropdownPositionHandler(id) {
     const tbody = document.getElementById(id);
     const dropdown = tbody.getElementsByClassName('dropdown');
     dropdown[0].classList.remove('dropdown-top');
