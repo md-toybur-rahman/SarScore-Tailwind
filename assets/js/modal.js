@@ -9,6 +9,17 @@ function HandleChangeStatusConfirmButton() {
     changeStatusModal.classList.add('hidden');
 }
 
+function handleDeleteAccountModal() {
+    const deleteAccountModal = document.getElementById('deleteAccountModal');
+    if (deleteAccountModal.classList.contains('hidden')) {
+        deleteAccountModal.classList.remove('hidden');
+    }
+}
+function HandleDeleteAccountConfirmButton() {
+    const deleteAccountModal = document.getElementById('deleteAccountModal');
+    deleteAccountModal.classList.add('hidden');
+}
+
 
 function handleNewTicketModal() {
     const newTicketModal = document.getElementById('newTicketModal');

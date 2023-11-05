@@ -328,6 +328,41 @@
             </div>
         </section>
         <!-- End Mobile Menubar -->
+
+
+        <!-- Delete Account Modal -->
+        <div id="deleteAccountModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-[#FEFEFE] rounded-xl p-[14px] w-[423px] md:w-[598px] h-[359px] z-30">
+                    <div onclick="HandleCloseButton('deleteAccountModal')"
+                        class="flex items-center justify-end mb-7 cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <div class="px-6">
+                        <h3 class="font-bold text-sm text-[#656565] text-center mb-11">Delete Your Account</h3>
+                        <div class="flex justify-center">
+                            <p class="w-[400px] text-base text-[#656565] font-normal text-center">
+                                Before you can request to permanently delete your account, you must cancel your active
+                                plans.
+                            </p>
+                        </div>
+                        <div
+                            class="flex justify-between items-center border border-[#F3F3F3] rounded-2xl px-[31px] py-[19px] mt-[46px]">
+                            <p class="text-[#656565] text-[10px]">SARScore account you are requesting to be deleted:</p>
+                            <button onclick="HandleDeleteAccountConfirmButton()"
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Delete Account Modal -->
+
+
+
         <div class="px-3 md:px-0 md:mx-5 w-full">
             <!-- Settings Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
@@ -523,7 +558,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <button
+                                            <button onclick="handleDeleteAccountModal()"
                                                 class="w-[138px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Confirm</button>
                                         </div>
                                     </div>
@@ -549,6 +584,8 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- Modal -->
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
