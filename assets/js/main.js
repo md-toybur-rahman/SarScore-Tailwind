@@ -1,3 +1,5 @@
+const dropdownContent = document.getElementsByClassName('dropdown-content')
+console.log(dropdownContent);
 
 function dropdownPositionHandler (id) {
     const tbody = document.getElementById(id);

@@ -406,3 +406,7 @@ table input[type=checkbox] {
 	font-size: 11px;
 	font-weight: 500;
   }
+
+  summary::marker{
+	display: none;
+  }
