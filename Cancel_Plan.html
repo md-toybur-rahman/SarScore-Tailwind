@@ -13,11 +13,6 @@
     <!-- Tailwind CSS -->
     <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
-    <!-- DataTables -->
-    <link rel="stylesheet" href="assets/css/libs/data_table.css">
-    <script src="assets/js/libs/data_tables/jquery.js"></script>
-    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -453,7 +448,7 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            <a href="Settings.html">Settings</a> > Billing History
+                            <a href="Settings.html">Settings</a> > <a href="Subscription_Plan.html">Subscription Plan</a> > Cancel Plan
                         </h1>
                     </div>
                 </section>
@@ -461,122 +456,80 @@
 
                 <!-- Settings Item -->
                 <section class="md:ms-8 mt-[30px]">
-                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Invoice And Billing History</h1>
-                    <p class="text-xs md:text-sm text-[#656565]">Review your billing history and manage your invoices.
-                    </p>
+                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">When You Cancel, You Lose Access To…</h1>
+                    <div id="plan-container" class="mt-10 md:grid grid-cols-3 gap-12 ms-[29px]">
+                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                            <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]">Standard User (Free)
+                            </h1>
+                            <div class="pl-2">
+                                <p class="text-sm leading-7 mb-[19px]">Enough features to experience the value, but the
+                                    lack of in-depth analytics and Live Accessibility.</p>
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View ratings of a particular address</h1>
 
-                    <div class="overflow-x-scroll md:overflow-x-hidden overflow-y-hidden mt-[49px] text-[#656565]">
-                        <table class="table text-xs md:text-sm min-w-[900px]">
-                            <thead class="h-[44px]">
-                                <td class="text-start ps-9 text-sm">Date</td>
-                                <td class="text-start text-sm">Type</td>
-                                <td class="text-start text-sm">Order Number</td>
-                                <td class="text-start text-sm">Plan</td>
-                                <td class="text-start text-sm">Amount</td>
-                                <th data-orderable="false"></th>
-                                <th data-orderable="false"></th>
-                                <th data-orderable="false"></th>
-                            </thead>
-                            <tbody onmouseover="dropdownPositionHandler('billingHistoryTbody')" id="billingHistoryTbody"
-                                class="bg-white rounded-2xl text-sm">
-                                <tr class="h-[91px] border-b border-[#F3F3F3]">
-                                    <td class="rounded-tl-2xl ps-9">Oct,16,2023</td>
-                                    <td>Subscription</td>
-                                    <td>185TGG6W56</td>
-                                    <td>Premium Plan</td>
-                                    <td>£19.99</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="rounded-tr-2xl">
-                                        <div class="flex items-center justify-end gap-2 me-[33px]">
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="h-[91px] border-b border-[#F3F3F3]">
-                                    <td class="ps-9">Oct,16,2023</td>
-                                    <td>Subscription</td>
-                                    <td>185TGG6W56</td>
-                                    <td>Premium Plan</td>
-                                    <td>£19.99</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <div class="flex items-center justify-end gap-2 me-[33px]">
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="h-[91px] border-b border-[#F3F3F3]">
-                                    <td class="ps-9">Oct,16,2023</td>
-                                    <td>Subscription</td>
-                                    <td>185TGG6W56</td>
-                                    <td>Premium Plan</td>
-                                    <td>£19.99</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <div class="flex items-center justify-end gap-2 me-[33px]">
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="h-[91px]">
-                                    <td class="rounded-bl-2xl ps-9">Oct,16,2023</td>
-                                    <td>Subscription</td>
-                                    <td>185TGG6W56</td>
-                                    <td>Premium Plan</td>
-                                    <td>£19.99</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="rounded-br-2xl">
-                                        <div class="flex items-center justify-end gap-2 me-[33px]">
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr class="h-[91px]">
-                                    <td class="rounded-bl-2xl ps-9">Oct,16,2023</td>
-                                    <td>Subscription</td>
-                                    <td>185TGG6W56</td>
-                                    <td>Premium Plan</td>
-                                    <td>£19.99</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="rounded-br-2xl">
-                                        <div class="flex items-center justify-end gap-2 me-[33px]">
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Icon awesome-eye.svg" alt=""></button>
-                                            <button
-                                                class="w-[49px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white flex items-center justify-center"><img
-                                                    src="assets/icons/Group 2618.svg" alt=""></button>
-                                        </div>
-                                    </td>
-                                </tr>
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>Contribute</h1>
 
-                            </tbody>
-                        </table>
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View Accessibility Rating Categories</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View Total Accessibility Ratings</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View Average Accessibility Score</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View Top-Rated Locations</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>View Lowest-Rated Locations</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>Submit Accessibility Ratings</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>Provide Feedback on Ratings</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>Filter by Location</h1>
+
+                                    </li>
+                                    <li class="flex items-center gap-1 text-[#656565]">
+                                        <img src="assets/icons/Group 4041.svg" alt="">
+                                        <h1>Filter by Category</h1>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-grow flex items-end justify-center mb-[47px]">
+                                <button class="w-[198px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Change
+                                    Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-[116px] flex items-center justify-end">
+                        <h6 class="text-xs md:text-sm text-[#656565] underline cursor-pointer"> Cancel Plan </h6>
                     </div>
                 </section>
                 <!-- End Settings Item -->
@@ -595,8 +548,6 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
-    <!-- Data Table -->
-    <script src="assets/js/libs/data_tables/data_table.js"></script>
 </body>
 
 </html>
