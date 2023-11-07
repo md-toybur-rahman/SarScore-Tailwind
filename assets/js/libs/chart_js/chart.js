@@ -1,3 +1,4 @@
+
 const registrationsChart = document.getElementById('registrations-chart');
 
 new Chart(registrationsChart, {
@@ -152,6 +153,8 @@ new Chart(accuracyChart, {
     }
 });
 
+
+
 const verificationChart = document.getElementById('verification-chart');
 
 new Chart(verificationChart, {
@@ -223,3 +226,5 @@ new Chart(globalChart, {
         }
     },
 });
+
+
