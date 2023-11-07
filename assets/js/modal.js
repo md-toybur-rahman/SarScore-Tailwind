@@ -1,3 +1,14 @@
+function handleAddressModal() {
+    const addressModal = document.getElementById('addressModal');
+    if (addressModal.classList.contains('hidden')) {
+        addressModal.classList.remove('hidden');
+    }
+}
+function HandleAddressSearchButton() {
+    const addressModal = document.getElementById('addressModal');
+    addressModal.classList.add('hidden');
+}
+
 function handleChangeStatusModal() {
     const changeStatusModal = document.getElementById('changeStatusModal');
     if (changeStatusModal.classList.contains('hidden')) {

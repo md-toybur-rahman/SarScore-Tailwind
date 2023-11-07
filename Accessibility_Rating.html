@@ -339,6 +339,37 @@
         </section>
         <!-- End Mobile Menubar -->
 
+
+        <!-- Address modal -->
+        <div id="addressModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-[#FEFEFE] rounded-xl p-[14px] z-30">
+                    <div onclick="HandleCloseButton('addressModal')"
+                        class="flex items-center justify-end cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <div class="py-[128px] px-[115px]">
+                        <h3 class="font-bold text-sm text-[#656565] text-center mb-[58px]">Search For An Address</h3>
+
+                        <div class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[66px]">
+                            <input class="outline-none text-sm" type="text" placeholder="Type Address">
+                            <button><img src="assets/icons/search-modal.svg" alt=""></button>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <button onclick="HandleAddressSearchButton()"
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <div id="main_content" class="px-3 md:px-0 md:mx-5 flex-grow">
             <!-- Accessibility Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
@@ -999,6 +1030,8 @@
     <script src="assets/js/libs/chart_js/verification_chart.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- modal js -->
+    <script src="assets/js/modal.js"></script>
     <!-- accessibility_rating -->
     <script src="assets/js/accessibility_rating.js"></script>
     <!-- Svg map -->
