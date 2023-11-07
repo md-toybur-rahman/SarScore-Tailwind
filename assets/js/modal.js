@@ -1,22 +1,19 @@
 function handleAddressModal() {
     const addressModal = document.getElementById('addressModal');
+    const resultModal = document.getElementById('resultModal');
     if (addressModal.classList.contains('hidden')) {
+        resultModal.classList.add('hidden');
         addressModal.classList.remove('hidden');
     }
 }
-function HandleAddressSearchButton() {
-    const addressModal = document.getElementById('addressModal');
-    addressModal.classList.add('hidden');
-}
+
 function handleResultModal() {
     const resultModal = document.getElementById('resultModal');
+    const addressModal = document.getElementById('addressModal');
     if (resultModal.classList.contains('hidden')) {
+        addressModal.classList.add('hidden');
         resultModal.classList.remove('hidden');
     }
-}
-function HandleNewSearchButton() {
-    const resultModal = document.getElementById('resultModal');
-    resultModal.classList.add('hidden');
 }
 
 function handleChangeStatusModal() {

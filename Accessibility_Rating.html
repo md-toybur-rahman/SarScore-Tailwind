@@ -60,14 +60,37 @@
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
                 </a>
-                <a href="Accessibility_Rating.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
-                    <div class="w-8 flex justify-center">
-                        <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                <div>
+                    <div onclick="accessibilityDropdownHandler('accessibilityDropdown', 'arrow')"
+                        class="menuButton active h-[63px] px-3 flex items-center justify-between">
+                        <a href="#" class="flex flex-grow h-full items-center gap-2">
+                            <div class="w-8 flex justify-center">
+                                <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
+                                <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                            </div>
+                            <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
+                                Rating</span>
+                        </a>
+                        <div>
+                            <img id="arrow" class="cursor-pointer duration-300"
+                                src="assets/icons/chevron-down-outline.svg" alt="">
+                        </div>
                     </div>
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
-                        Rating</span>
-                </a>
+                    <div id="accessibilityDropdown"
+                        class="flex flex-col gap-5 text-[#656565] overflow-hidden h-0 duration-300">
+                        <div onclick="handleAddressModal()" class="cursor-pointer px-3 flex items-center gap-2">
+                            <div class="w-8 flex justify-center">
+                            </div>
+                            <span class="flex justify-between items-center flex-grow text-sm">Rating
+                                Search</span>
+                        </div>
+                        <div href="#" class="cursor-pointer px-3 flex items-center gap-2">
+                            <div class="w-8 flex justify-center">
+                            </div>
+                            <span class="flex justify-between items-center flex-grow text-sm">Contribute</span>
+                        </div>
+                    </div>
+                </div>
                 <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
@@ -261,15 +284,39 @@
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
                     </a>
-                    <a href="Accessibility_Rating.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
-                        <div class="w-8 flex justify-center">
-                            <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                    <div>
+                        <div onclick="accessibilityDropdownHandler('accessibilityMobileDropdown', 'mobileArrow')"
+                            class="menuButton active h-[45px] px-3 flex items-center justify-between">
+                            <a href="#" class="flex flex-grow h-full items-center gap-2">
+                                <div class="w-8 flex justify-center">
+                                    <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
+                                    <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                                </div>
+                                <span
+                                    class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
+                                    Rating</span>
+                            </a>
+                            <div>
+                                <img id="mobileArrow" class="cursor-pointer duration-300"
+                                    src="assets/icons/chevron-down-outline.svg" alt="">
+                            </div>
                         </div>
-                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
-                            Rating</span>
-                    </a>
-                    <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                        <div id="accessibilityMobileDropdown"
+                            class="flex flex-col gap-3 text-[#656565] overflow-hidden h-0 duration-300">
+                            <div onclick="handleAddressModal()" class="cursor-pointer px-3 flex items-center gap-2">
+                                <div class="w-8 flex justify-center">
+                                </div>
+                                <span class="flex justify-between items-center flex-grow text-sm">Rating
+                                    Search</span>
+                            </div>
+                            <div href="#" class="cursor-pointer px-3 flex items-center gap-2">
+                                <div class="w-8 flex justify-center">
+                                </div>
+                                <span class="flex justify-between items-center flex-grow text-sm">Contribute</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="User_Management.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
                             <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
@@ -346,29 +393,33 @@
                 <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
                 </div>
-                <div class="bg-[#FEFEFE] rounded-xl p-[14px] z-30">
+                <div class="bg-[#FEFEFE] rounded-xl p-[14px] z-30 mx-5">
                     <div onclick="HandleCloseButton('addressModal')"
                         class="flex items-center justify-end cursor-pointer">
                         <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
                     </div>
-                    <div class="py-[128px] px-[115px]">
-                        <h3 class="font-bold text-sm text-[#656565] text-center mb-[58px]">Search For An Address</h3>
+                    <div class="py-[128px] px-10 md:px-0 md:w-[543px] flex justify-center">
+                        <div>
+                            <h3 class="font-bold text-sm text-[#656565] text-center mb-[58px]">Search For An Address
+                            </h3>
 
-                        <div class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[66px]">
-                            <input class="outline-none text-sm" type="text" placeholder="Type Address">
-                            <button><img src="assets/icons/search-modal.svg" alt=""></button>
-                        </div>
+                            <div
+                                class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[66px]">
+                                <input class="outline-none text-sm" type="text" placeholder="Type Address">
+                                <button><img src="assets/icons/search-modal.svg" alt=""></button>
+                            </div>
 
-                        <div class="flex justify-center">
-                            <button onclick="HandleAddressSearchButton()"
-                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
+                            <div class="flex justify-center">
+                                <button onclick="handleResultModal()"
+                                    class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Result Modal -->
-        <div id="resultModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+        <div id="resultModal" class="flex-grow fixed w-full z-20 max-w-[1573px] hidden">
             <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
                 <div class="w-full absolute z-20 bg-black h-full opacity-10">
 
@@ -380,7 +431,8 @@
                     </div>
                     <div class="pt-[69px] pb-[97px] md:w-[685px]">
                         <h3 class="font-bold text-sm text-[#656565] text-center mb-[46px]">Result</h3>
-                        <h3 class="font-medium text-lg text-[#1E1E1E] text-center mb-[49px]">123 APPLE STREET, SE236HD, LONDON, UNITED KINGDOM</h3>
+                        <h3 class="font-medium text-lg text-[#1E1E1E] text-center mb-[49px]">123 APPLE STREET, SE236HD,
+                            LONDON, UNITED KINGDOM</h3>
 
                         <div>
                             <div class="flex justify-center">
@@ -392,8 +444,9 @@
                         </div>
 
                         <div class="flex justify-center">
-                            <button onclick="HandleNewSearchButton()"
-                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">New Search</button>
+                            <button onclick="handleAddressModal()"
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">New
+                                Search</button>
                         </div>
                     </div>
                 </div>
