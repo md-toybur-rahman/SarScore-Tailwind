@@ -39,7 +39,7 @@
 	border-radius: 50%;
 	background:
 		radial-gradient(closest-side, white 84%, transparent 80% 100%),
-		conic-gradient(#28C66F 38%, #DEF6E9 0);
+		conic-gradient(#DEF6E9 75%,#28C66F  0);
 }
 
 .progress-bar-error::before {
@@ -63,6 +63,44 @@
 
 .progress-bar-response-time::before {
 	content: "50ms";
+	font-size: 36px;
+	font-weight: bold;
+	color: #656565;
+}
+.progress-bar-execution-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 188px;
+	height: 188px;
+	border-radius: 50%;
+	background:
+		radial-gradient(closest-side, white 84%, transparent 80% 100%),
+		conic-gradient(#ACE9E9 75%,#39CCCC  0);
+}
+
+.progress-bar-execution-time::before {
+	content: "10ms";
+	font-size: 36px;
+	font-weight: bold;
+	color: #656565;
+}
+.progress-bar-database {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 188px;
+	height: 188px;
+	border-radius: 50%;
+	background:
+		radial-gradient(closest-side, white 84%, transparent 80% 100%),
+		conic-gradient(#B3B6CA 75%,#484E80  0);
+}
+
+.progress-bar-database::before {
+	content: "1.5GB";
 	font-size: 36px;
 	font-weight: bold;
 	color: #656565;
