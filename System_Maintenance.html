@@ -13,6 +13,11 @@
     <!-- Tailwind CSS -->
     <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -91,12 +96,12 @@
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
                 </a>
-                <a href="Settings.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
+                <a href="Settings.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
                         <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
                     </div>
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings</span>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
                 </a>
                 <a href="#" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
@@ -107,13 +112,13 @@
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
                 </a>
 
-                <a href="System_Maintenance.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                <a href="System_Maintenance.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
                         <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
                     </div>
-                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<img
-                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
+                        Maintenance</span>
                 </a>
                 <a href="#" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
@@ -292,12 +297,12 @@
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
                             Center<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
                     </a>
-                    <a href="Settings.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
+                    <a href="Settings.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
                             <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
                         </div>
-                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings</span>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
                     </a>
                     <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
@@ -308,13 +313,13 @@
                             Stats<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
                     </a>
 
-                    <a href="System_Maintenance.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                    <a href="System_Maintenance.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
                             <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
-                            Maintenance<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                            Maintenance</span>
                     </a>
                     <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
@@ -448,31 +453,42 @@
                 <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
                     <div>
                         <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
-                            <a href="Settings.html">Settings</a> > Payment Method
+                             System Maintenance
                         </h1>
                     </div>
                 </section>
                 <!-- End Sorting Panel -->
 
                 <!-- Settings Item -->
-                <section class="md:ms-8 mt-[30px]">
-                    <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[28px]">Your Payment Method</h1>
-                    <div>
-                        <div class="w-[428px] p-[15px] border border-[#656565] rounded-xl flex items-center gap-[10px]">
-                            <img src="assets/icons/visaCard.svg" alt="">
-                            <div>
-                                <h1 class="font-semibold text-sm text-[#1E1E1E]">VISA ending in 4285</h1>
-                                <p class="text-sm text-[#656565]">Expires 11/27</p>
-                            </div>
+                <section class="md:ms-8 mt-[39px]">
+                    <div class="py-5 ps-5 pe-10 flex flex-wrap gap-5 items-center justify-between bg-[#FEFEFE] rounded-2xl max-w-[859px] mb-5">
+                        <div class="flex items-center gap-[23px]">
+                            <h1 class="text-lg font-medium text-[#1E1E1E]">Database Backup</h1>
+                            <p class="text-sm font-normal text-[#656565]">Last Backup: [Timestamp]</p>
                         </div>
-                        <div class="flex items-center gap-2 text-[#1E76E3] mt-[6px]">
-                            <button class="border-e border-[#656565] px-1 h-4">Add new</button>
-                            <button class=" px-1 h-4">Edit</button>
-                        </div>
-                        <div class="mt-[27px]">
-                            <button class="w-[110px] h-[38px] text-sm bg-[#39CCCC] rounded-xl text-white">Save</button>
+                        <div>
+                            <button class="w-[132px] h-[38px] bg-[#39CCCC] text-sm text-white rounded-xl">Run Backup</button>
                         </div>
                     </div>
+                    <div class="py-5 ps-5 pe-10 flex flex-wrap gap-5 items-center justify-between bg-[#FEFEFE] rounded-2xl max-w-[859px] mb-5">
+                        <div class="flex items-center gap-[23px]">
+                            <h1 class="text-lg font-medium text-[#1E1E1E]">Check For Updates</h1>
+                            <p class="text-sm font-normal text-[#656565]">[Last Checked]</p>
+                        </div>
+                        <div>
+                            <button class="w-[132px] h-[38px] bg-[#39CCCC] text-sm text-white rounded-xl">Check Now</button>
+                        </div>
+                    </div>
+                    <div class="py-5 ps-5 pe-10 flex flex-wrap gap-5 items-center justify-between bg-[#FEFEFE] rounded-2xl max-w-[859px] mb-5">
+                        <div class="flex items-center gap-[23px]">
+                            <h1 class="text-lg font-medium text-[#1E1E1E]">Server Optimization</h1>
+                            <p class="text-sm font-normal text-[#656565]">Last Optimization: [Timestamp]</p>
+                        </div>
+                        <div>
+                            <button class="w-[132px] h-[38px] bg-[#39CCCC] text-sm text-white rounded-xl">Check Now</button>
+                        </div>
+                    </div>
+                    
                 </section>
                 <!-- End Settings Item -->
             </div>
@@ -490,6 +506,8 @@
 
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <!-- Data Table -->
+    <script src="assets/js/libs/data_tables/data_table.js"></script>
 </body>
 
 </html>
