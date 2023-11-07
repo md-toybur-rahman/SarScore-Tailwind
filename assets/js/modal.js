@@ -8,6 +8,16 @@ function HandleAddressSearchButton() {
     const addressModal = document.getElementById('addressModal');
     addressModal.classList.add('hidden');
 }
+function handleResultModal() {
+    const resultModal = document.getElementById('resultModal');
+    if (resultModal.classList.contains('hidden')) {
+        resultModal.classList.remove('hidden');
+    }
+}
+function HandleNewSearchButton() {
+    const resultModal = document.getElementById('resultModal');
+    resultModal.classList.add('hidden');
+}
 
 function handleChangeStatusModal() {
     const changeStatusModal = document.getElementById('changeStatusModal');

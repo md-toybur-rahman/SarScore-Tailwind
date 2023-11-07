@@ -367,6 +367,38 @@
                 </div>
             </div>
         </div>
+        <!-- Result Modal -->
+        <div id="resultModal" class="flex-grow fixed w-full z-20 max-w-[1573px] ">
+            <div class="relative bg-transparent h-[100vh] flex items-center justify-center">
+                <div class="w-full absolute z-20 bg-black h-full opacity-10">
+
+                </div>
+                <div class="bg-[#FEFEFE] rounded-xl p-[14px] z-30 mx-5">
+                    <div onclick="HandleCloseButton('resultModal')"
+                        class="flex items-center justify-end cursor-pointer">
+                        <img src="assets/icons/Icon ionic-ios-close.svg" alt="">
+                    </div>
+                    <div class="pt-[69px] pb-[97px] md:w-[685px]">
+                        <h3 class="font-bold text-sm text-[#656565] text-center mb-[46px]">Result</h3>
+                        <h3 class="font-medium text-lg text-[#1E1E1E] text-center mb-[49px]">123 APPLE STREET, SE236HD, LONDON, UNITED KINGDOM</h3>
+
+                        <div>
+                            <div class="flex justify-center">
+                                <img src="assets/icons/Group 4117.svg" alt="">
+                            </div>
+                            <div class="text-center -mt-20 mb-[10px]">
+                                <h1 class="text-[#53CA7A] text-[87px] font-medium">1</h1>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center">
+                            <button onclick="HandleNewSearchButton()"
+                                class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">New Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
