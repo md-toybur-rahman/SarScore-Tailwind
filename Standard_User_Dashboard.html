@@ -463,48 +463,11 @@
                     </div>
                 </section>
 
-                <!-- Sorting panel -->
-                <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
-                    <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
-
-                    <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
-                        <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
-                            <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
-                                <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                        class="outline-none w-28 md:w-20" placeholder="Select" type="text" required>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="relative bg-white px-2 md:px-1 py-[7px] rounded-xl">
-                            <div class="px-2 bg-white flex items-center justify-between">
-                                <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
-                                        class="outline-none w-28 md:w-28" type="text" required></p>
-                            </div>
-                        </div>
-                        <div class="flex items-center bg-white px-2 md:px-4 h-8 md:h-[36px] rounded-xl">
-                            <div class="bg-white flex items-center justify-between">
-                                <select
-                                    class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
-                                    id="selectElement">
-                                    <option value="" disabled selected>Type</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <button onclick="refreshSorting()"
-                        class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
-                </section>
-                <!-- End Sorting Panel -->
-
                 <!-- user panel -->
                 <!-- Dashboard Item -->
                 <section>
                     <!-- carousel -->
-                    <div class="wrapper mt-4">
+                    <div class="wrapper mt-10">
                         <ul class="carousel cursor-grab">
                             <li class="card">
                                 <div
@@ -626,45 +589,47 @@
 
 
                     <!-- Address Section -->
-                    <section class="mt-10 flex items-center gap-[21px] h-[392px]">
-                        <div class="bg-[#FEFEFE] rounded-xl max-w-[417px] md:w-[417px] h-full">
-                            <div class="pt-[100px] pb-[92px] px-[51px]">
+                    <section class="mt-10 flex flex-wrap md:flex-nowrap items-center gap-[21px] md:h-[392px]">
+                        <div class="bg-[#FEFEFE] rounded-xl w-full md:max-w-[417px] md:w-[417px] h-full">
+                            <div class="pt-[100px] pb-[92px] flex items-center justify-center">
                                 <div>
-                                    <h3 class="font-bold text-sm text-[#656565] text-center mb-[49px]">Search For An
+                                    <h3
+                                        class="font-bold text-xs md:text-sm text-[#656565] text-center mb-[30px] md:mb-[49px]">
+                                        Search For An
                                         Address
                                     </h3>
 
                                     <div
-                                        class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[66px]">
-                                        <input class="outline-none text-sm" type="text" placeholder="Type Address">
+                                        class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[54px]">
+                                        <input class="outline-none text-xs md:text-sm" type="text"
+                                            placeholder="Type Address">
                                         <button><img src="assets/icons/search-modal.svg" alt=""></button>
                                     </div>
 
                                     <div class="flex justify-center">
                                         <button onclick="handleResultModal()"
-                                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
+                                            class="h-[31px] md:h-[38px] w-[100px] md:w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-[#FEFEFE] rounded-xl p-[14px] h-full">
-                            <div class="pt-[69px] pb-[97px]">
-                                <h3 class="font-bold text-sm text-[#656565] text-center mb-[46px]">Result</h3>
-                                <h3 class="font-medium text-lg text-[#1E1E1E] text-center mb-[49px]">123 APPLE STREET,
+                        <div class="bg-[#FEFEFE] rounded-xl py-[55px] h-full flex-grow ">
+                            <div class="flex flex-col items-center justify-center">
+                                <h3 class="font-medium text-base md:text-lg text-[#1E1E1E] text-center mb-[38px]">123
+                                    APPLE STREET,
                                     SE236HD,
                                     LONDON, UNITED KINGDOM</h3>
 
-                                <div class="flex flex-col items-center justify-center">
-                                    <div class="w-[243px]">
-                                        <img class="w-full" src="assets/icons/Group 4117.svg" alt="">
-                                    </div>
-                                    <div class="mb-[10px]">
-                                        <h1 class="text-[#53CA7A] text-[87px] font-medium">1</h1>
-                                    </div>
+                                <div class="w-[243px]">
+                                    <img class="w-full" src="assets/icons/Group 4117.svg" alt="">
                                 </div>
-
-                                <div class="flex justify-center">
-                                    <button class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">New
+                                <h1 class="text-[#53CA7A] text-[52px] font-medium -mt-[25px] mb-[33px]">1</h1>
+                                <div class="flex items-center gap-[21px]">
+                                    <button
+                                        class="h-[31px] md:h-[38px] w-[138px] text-xs md:text-sm bg-[#39CCCC] rounded-lg text-white">View
+                                        Live Score</button>
+                                    <button
+                                        class="h-[31px] md:h-[38px] w-[138px] text-xs md:text-sm bg-transparent border border-[#707070] rounded-lg text-[#272727]">New
                                         Search</button>
                                 </div>
                             </div>
@@ -672,70 +637,192 @@
                     </section>
                     <!-- End Address Section -->
 
-                    <!-- registration chart and service progress bar -->
-                    <section class="md:grid grid-cols-3 mt-10 md:mt-20 gap-5">
-                        <div class="col-span-2 p-3 md:px-8 md:py-7 rounded-lg md:rounded-2xl bg-white">
-                            <div class="md:flex items-center justify-between mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold mb-2 md:mb-0">New User Registration</h1>
-                                <div class="flex items-center gap-5 md:gap-10 text-xs md:text-lg text-[#656565]">
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#A960D6] rounded-full"></div>
-                                        <h3>Daily</h3>
-                                    </div>
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#39CCCC] rounded-full"></div>
-                                        <h3>Weekly</h3>
-                                    </div>
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#484E80] rounded-full"></div>
-                                        <h3>Monthly</h3>
-                                    </div>
+
+                    <section class="mt-[50px]">
+                        <div class="flex flex-col items-center justify-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-[15px]">
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Access Time To Entrance From Parking Area Or
+                                        Street</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Less than 1 minute</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/time.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
                                 </div>
                             </div>
-                            <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
+                            
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Parking Availability</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Abundant</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/car.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Public Transportation Access</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Excellent</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/train.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Risk Of Parking Penalties</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Very low</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/car.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Building Type </p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Ground Floor Acce</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/building.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Lift Availability</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Available</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/lift.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Wheelchair Access</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Fully accessible</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/wheelchair.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Road And Terrain Conditions</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Paved and smooth</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/road.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Sidewalk Conditions</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Excellent</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/sidewalk.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Exposure To Elements</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Fully sheltered</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/exposure.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Safety And Security</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Very safe</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/safety.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Signage And Way-Finding</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">Excellent</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/signage.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex justify-between items-center gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Congestion Charge Zone</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">No</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/Charge.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white rounded-2xl ps-6 pe-[10px] py-[10px] w-full sm:max-w-[295px] h-[97px] flex items-center justify-between gap-5">
+                                <div class="flex flex-col gap-[6px] max-w-[212px]">
+                                    <p class="text-[#656565] text-[11px]">Ultra Low Emission Zone</p>
+                                    <h1 class="text-[22px] font-bold text-[#1E1E1E]">No</h1>
+                                </div>
+                                <div class="relative w-[26px] h-full">
+                                    <img class="w-100%" src="assets/icons/emission.svg" alt="">
+                                    <img class="absolute bottom-0 right-0" src="assets/icons/lock.svg" alt="">
+                                </div>
+                            </div>
+
+
                         </div>
-                        <div class="md:px-8 md:py-7 py-4 bg-white p-3 rounded-lg md:rounded-2xl">
-                            <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold">Service Requests</h1>
-                                <div class="dropdown dropdown-end">
-                                    <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
-                                        tabindex="0" class="dropdown-label">
-                                        <img class="cursor-pointer" src="assets/icons/horizontal-3dot.svg" alt="">
-                                    </label>
-                                    <ul tabindex="0"
-                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
-                                        <li><a href="#">View</a></li>
-                                        <li><a href="#">Export CSV</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex justify-center">
-                                <div class="progress-bar">
-                                    <progress value="75" min="0" max="100"
-                                        style="visibility:hidden;height:0;width:0;">38%</progress>
-                                </div>
-                            </div>
-                            <div class="flex justify-between items-end mt-7">
-                                <div>
-                                    <h1 class="text-xs md:text-sm text-[#656565]">Total Service Requests</h1>
-                                    <h1 class="text-2xl md:text-[34px] font-[inter] font-bold mt-2">50,246</h1>
-                                </div>
-                                <div>
-                                    <h1 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
-                                            src="assets/icons/up.svg" alt="">
-                                        62%</h1>
-                                    <p class="text-xs text-[#656565]">More than last month</p>
-                                </div>
-                            </div>
+                        <div class="flex justify-center mt-[60px]">
+                            <button
+                                class="h-[31px] md:h-[38px] w-[100px] md:w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Upgrade
+                                Plan</button>
                         </div>
                     </section>
-                    <!-- end registration chart and service progress bar -->
 
                     <!-- Popular Location -->
                     <section class="md:grid grid-cols-6 gap-5 mt-7 md:mt-[50px]">
                         <div class="col-span-2 bg-white md:px-6 py-7 p-3 rounded-lg md:rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold">Popular Locations</h1>
+                                <h1 class="text-lg md:text-2xl font-semibold">Sentiment Analysis</h1>
                                 <div class="dropdown dropdown-end">
                                     <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
                                         tabindex="0" class="dropdown-label">
@@ -751,7 +838,7 @@
                             <div class="flex flex-col gap-4">
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">London, UK</h1>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Parking Availability</h1>
                                         <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
@@ -763,7 +850,7 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Manhattan, NY</h1>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Exposure to Elements</h1>
                                         <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
@@ -775,7 +862,7 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Dublin, IRE</h1>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Wheelchair Accessibility</h1>
                                         <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
@@ -789,7 +876,7 @@
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div>
-                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Melbourne, AUS</h1>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Signage and Way finding</h1>
                                         <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
                                     </div>
                                     <div class="text-end">
@@ -804,349 +891,90 @@
                                 <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
-                            <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
-                            <div class="md:grid grid-cols-12 justify-center">
-                                <div class="col-span-9">
-                                    <div id="svgMap">
-
+                        <div class=" col-span-4">
+                            <div class="md:p-6 bg-white p-3 rounded-lg md:rounded-2xl">
+                                <div class="flex justify-between items-center mb-5">
+                                    <h1 class="text-lg md:text-2xl font-semibold">Overview Global Ratings</h1>
+                                    <div class="dropdown dropdown-end">
+                                        <label onclick="dropdownToggleHandler(this)"
+                                            onmouseover="dropdownMouseOver(this)" tabindex="0" class="">
+                                            <img class="cursor-pointer" src="assets/icons/horizontal-3dot.svg" alt="">
+                                        </label>
+                                        <ul tabindex="0"
+                                            class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
+                                            <li><a href="#">View</a></li>
+                                            <li><a href="#">Export CSV</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-span-1"></div>
-                                <div class="col-span-2 md:w-[110px] mt-2 md:mt-0">
-                                    <div class="flex md:flex-col justify-between gap-1">
-                                        <div>
-                                            <div class="flex gap-2 md:gap-3 items-center">
-                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#60D684] rounded-full"></div>
-                                                <h3 class="text-[10px]">London, UK</h3>
-                                            </div>
-                                            <progress class="progress progress-custom1 w-full my-1" value="70"
-                                                max="100"></progress>
-                                            <h1 class="text-[10px]">6.48%</h1>
-                                        </div>
-                                        <div>
-                                            <div class="flex gap-2 md:gap-3 items-center">
-                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#39CCCC] rounded-full"></div>
-                                                <h3 class="text-[10px]">Manhattan, NY</h3>
-                                            </div>
-                                            <progress class="progress progress-custom2 w-full my-1" value="70"
-                                                max="100"></progress>
-                                            <h1 class="text-[10px]">6.48%</h1>
-                                        </div>
-                                        <div>
-                                            <div class="flex gap-2 md:gap-3 items-center">
-                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#A960D6] rounded-full"></div>
-                                                <h3 class="text-[10px]">Melbourne, AUS</h3>
-                                            </div>
-                                            <progress class="progress progress-custom3 w-full my-1" value="70"
-                                                max="100"></progress>
-                                            <h1 class="text-[10px]">6.48%</h1>
-                                        </div>
-                                        <div>
-                                            <div class="flex gap-2 md:gap-3 items-center">
-                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#484E80] rounded-full"></div>
-                                                <h3 class="text-[10px]">Texas, DW</h3>
-                                            </div>
-                                            <progress class="progress progress-custom4 w-full my-1" value="70"
-                                                max="100"></progress>
-                                            <h1 class="text-[10px]">6.48%</h1>
-                                        </div>
-                                    </div>
+                                <div class="py-1 rounded-2xl bg-white">
+                                    <canvas style=" font-size:24px;" height="475px" width="812px"
+                                        id="global-chart"></canvas>
                                 </div>
+                            </div>
+                            <div class="col-span-1 hidden md:block">
                             </div>
                         </div>
                     </section>
                     <!-- End Popular Location -->
 
-                    <!-- Support Tickets -->
-                    <section class="mt-8 md:mt-12">
-                        <h1 class="text-lg md:text-2xl font-semibold">Support Tickets</h1>
-                        <!-- Support Ticket menu section -->
-                        <div class="mt-5 lg:mt-10 lg:flex items-center justify-between">
-                            <div class="md:flex items-center gap-2 md:gap-5 mb-2 md:mb-0">
-                                <div
-                                    class="text-base w-fit bg-white rounded-xl flex items-center md:justify-between mb-2 md:mb-0 border border-[#F3F3F3]">
-                                    <a href="#" class=" md:py-3 md:px-4 px-2 py-[11px] rounded-md md:rounded-xl"><img
-                                            class="w-3 md:w-4" src="assets/icons/grid-outline.svg" alt=""></a>
-                                    <a href="#"
-                                        class=" md:py-3 md:px-4 px-2 py-[11px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
-                                            class="w-3 md:w-5" src="assets/icons/list-outline.svg" alt=""></a>
-                                </div>
-                                <div class=" bg-white rounded-xl flex lg:justify-between w-fit border border-[#F3F3F3]">
-                                    <a
-                                        class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl bg-[#39CCCC] text-white">All</a>
-                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Open</a>
-                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">In
-                                        Progress</a>
-                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Pending</a>
-                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Resolved</a>
-                                </div>
-                            </div>
-                            <div class="lg:flex justify-end items-center gap-2">
-                                <div class="grid grid-cols-2 lg:flex items-center gap-3 mb-2 lg:mb-0">
-                                    <div class="relative bg-white lg:px-1 py-[7px] rounded-lg lg:rounded-xl">
-                                        <div class="lg:px-2 bg-white font flex items-center justify-between px-2">
-                                            <p class="w-fit text-xs">Date <input id="ticketDatepicker"
-                                                    class="outline-none w-16 lg:w-16 h-6" placeholder="Select"
-                                                    type="text" required>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex col-span-3 items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
-                                                id="selectElement1">
-                                                <option value="" disabled selected>Priority</option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 lg:flex items-center gap-3">
-                                    <div
-                                        class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg md:rounded-xl  border border-[#F3F3F3]">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
-                                                id="selectElement2">
-                                                <option value="" disabled selected>Type</option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
-                                        <div class="bg-white flex items-center justify-between">
-                                            <select
-                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
-                                                id="selectElement3">
-                                                <option value="" disabled selected>Category</option>
-                                                <option>Option 1</option>
-                                                <option>Option 2</option>
-                                                <option>Option 3</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Support Ticket menu section -->
 
-                        <!-- Support Table -->
-                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
-                            <table class="table text-xs md:text-sm min-w-[950px]">
-                                <!-- head -->
-                                <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
-                                    <tr class="bg-white text-xs md:text-sm">
-                                        <th data-orderable="false" class="rounded-s-2xl">
-                                            <label class="flex items-center justify-center">
-                                                <input type="checkbox" class="checkbox w-5 h-5" />
-                                            </label>
-                                        </th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Category</th>
-                                        <th>Priority</th>
-                                        <th>Type</th>
-                                        <th>Status</th>
-                                        <th data-orderable="false" class="rounded-e-2xl"></th>
-                                    </tr>
-                                </thead>
-                                <tbody onmouseover="dropdownPositionHandler('dashboardSupportTicketTbody')"
-                                    id="dashboardSupportTicketTbody" class="bg-white ">
-                                    <!-- row 1 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Service Provider</td>
-                                        <td>Medium</td>
-                                        <td>Accessibility Ratings</td>
-                                        <th>
-                                            <button
-                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
-                                        </th>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label onclick="dropdownToggleHandler(this)"
-                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
-                                                    class="dropdown-label">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
-                                                    <li><a href="#">View</a></li>
-                                                    <li><a href="#">Mark as pending</a></li>
-                                                    <li><a href="#">Mark as on hold</a></li>
-                                                    <li><a href="#">Mark as on resolved</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 2 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Jacob Jones
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Regular User</td>
-                                        <td>High</td>
-                                        <td>User Inquiries</td>
-                                        <th>
-                                            <button
-                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#FADCDC] font-normal w-[82px] h-[21px] rounded-xl">Pending</button>
-                                        </th>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label onclick="dropdownToggleHandler(this)"
-                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
-                                                    class="dropdown-label">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
-                                                    <li><a href="#">View</a></li>
-                                                    <li><a href="#">Mark as pending</a></li>
-                                                    <li><a href="#">Mark as on hold</a></li>
-                                                    <li><a href="#">Mark as on resolved</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 3 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
-                                        <th class="rounded-s-2xl">
-                                        </th>
-                                        <td>
-                                            Guy Hawkins
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Service Provider</td>
-                                        <td>Medium</td>
-                                        <td>Accessibility Ratings</td>
-                                        <th>
-                                            <button
-                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
-                                        </th>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label onclick="dropdownToggleHandler(this)"
-                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
-                                                    class="dropdown-label">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
-                                                    <li><a href="#">View</a></li>
-                                                    <li><a href="#">Mark as pending</a></li>
-                                                    <li><a href="#">Mark as on hold</a></li>
-                                                    <li><a href="#">Mark as on resolved</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 4 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
-                                        <th class="rounded-s-2xl">
-                                        <td>
-                                            Darlene Robertson
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Service Provider</td>
-                                        <td>Low</td>
-                                        <td>Service Provider Support</td>
-                                        <th>
-                                            <button
-                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#FEEDCB] font-normal w-[82px] h-[21px] rounded-xl">In
-                                                Progress</button>
-                                        </th>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label onclick="dropdownToggleHandler(this)"
-                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
-                                                    class="dropdown-label">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
-                                                    <li><a href="#">View</a></li>
-                                                    <li><a href="#">Mark as pending</a></li>
-                                                    <li><a href="#">Mark as on hold</a></li>
-                                                    <li><a href="#">Mark as on resolved</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                    <!-- row 5 -->
-                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
-                                        <th class="rounded-s-2xl">
-                                        <td>
-                                            Kristin Watson
-                                        </td>
-                                        <td>
-                                            soffner19@mac.com
-                                        </td>
-                                        <td>Contributor</td>
-                                        <td>Critical</td>
-                                        <td>User Inquiries</td>
-                                        <th>
-                                            <button
-                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
-                                        </th>
-                                        <th class="rounded-e-2xl">
-                                            <div class="dropdown dropdown-end">
-                                                <label onclick="dropdownToggleHandler(this)"
-                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
-                                                    class="dropdown-label">
-                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
-                                                </label>
-                                                <ul tabindex="0"
-                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
-                                                    <li><a href="#">View</a></li>
-                                                    <li><a href="#">Mark as pending</a></li>
-                                                    <li><a href="#">Mark as on hold</a></li>
-                                                    <li><a href="#">Mark as on resolved</a></li>
-                                                    <li><a href="#">Delete</a></li>
-                                                </ul>
-                                            </div>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="flex justify-end">
-                            <button
-                                class="mt-2 px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
-                                All</button>
-                        </div>
-                        <!-- End Support Table -->
-                    </section>
-                    <!-- End Support Tickets -->
+
                     <!-- Announcements Tickets -->
-                    <section class="mt-7">
+                    <section class="mt-[50px]">
+                        <div class="lg:flex items-center gap-2 mb-[35px]">
+                            <div class="grid grid-cols-2 lg:flex items-center gap-3 mb-2 lg:mb-0">
+                                <div class="relative bg-white lg:px-1 py-[7px] rounded-lg lg:rounded-xl">
+                                    <div class="lg:px-2 bg-white font flex items-center justify-between px-2">
+                                        <p class="w-fit text-xs">Date <input id="ticketDatepicker"
+                                                class="outline-none w-16 lg:w-16 h-6" placeholder="Select" type="text"
+                                                required>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex  items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <select
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                            id="selectElement45">
+                                            <option value="" disabled selected>Priority</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 lg:flex items-center gap-3">
+                                <div
+                                    class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg md:rounded-xl  border border-[#F3F3F3]">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <select
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                            id="selectElement46">
+                                            <option value="" disabled selected>Type</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
+                                    <div class="bg-white flex items-center justify-between">
+                                        <select
+                                            class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                            id="selectElement47">
+                                            <option value="" disabled selected>Category</option>
+                                            <option>Option 1</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class=" bg-white md:px-7 py-10 rounded-2xl">
                             <h1 class="text-lg md:text-2xl font-semibold">Announcements</h1>
                             <!-- Support Table -->
@@ -1393,7 +1221,7 @@
 
     <!-- Chart js -->
     <script src="assets/js/libs/chart_js/chart_cdn.js"></script>
-    <script src="assets/js/libs/chart_js/registration-chart.js"></script>
+    <script src="assets/js/libs/chart_js/global_chart.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
     <!-- Svg map -->
