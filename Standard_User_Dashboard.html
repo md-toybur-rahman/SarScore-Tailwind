@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="assets/css/libs/datepicker.css">
+    <!-- Daisyui -->
+    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+    <!-- SVG Map -->
+    <link href="assets/css/libs/svg_map.css" rel="stylesheet">
+    <script src="assets/js/libs/svg_map/svg_map_zoom.js"></script>
+    <script src="assets/js/libs/svg_map/svg_map.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+
+    <!-- Slim Select -->
+    <link rel="stylesheet" href="assets/css/libs/slimselect.css">
+    <script src="assets/js/libs/slim_select/slimselect.min.js"></script>
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="assets/css/libs/data_table.css">
+    <script src="assets/js/libs/data_tables/jquery.js"></script>
+    <script src="assets/js/libs/data_tables/data_tables_jquery.js"></script>
+
+    <!-- Carousel -->
+    <link rel="stylesheet" href="assets/css/libs/carousel.css">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'montserrat': ['Montserrat', 'sans-serif'],
+                    'poppins': ['Poppins', 'sans-serif'],
+                    'inter': ['Inter', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>SARScore</title>
+</head>
+
+<body class="max-w-[1573px] min-w-[360px] mx-auto">
+    <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
+        <!-- Menubar Start -->
+        <div id="dashboard" class="hidden md:block row-span-full w-[350px] duration-500 bg-white">
+            <div class="flex justify-between mt-[60px] px-5">
+                <a href="Dashboard.html"><img id="logo" src="assets/icons/Group 2319.svg" alt=""></a>
+                <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer flex justify-center"
+                    src="assets/icons/Group 2318.svg" alt="">
+            </div>
+            <div id="menubar" class="mt-14 font-[poppins]">
+                <a href="Dashboard.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="Accessibility_Rating.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility Rating<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="Contributions_Managements.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
+                        Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+
+                <a href="Support_Tickets.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="Notification_Center.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="Settings.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="System_Stats.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="System_Maintenance.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+                <a href="#" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <div class="w-8 flex justify-center">
+                        <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
+                        <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                    </div>
+                    <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
+                            src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                </a>
+            </div>
+        </div>
+        <!-- Menubar End -->
+
+        <!-- Mobile menubar -->
+        <section id="menubar_container" class="fixed top-0 z-20 md:hidden bg-white">
+            <div class="flex justify-between items-center px-5 py-3 w-[100vw]">
+                <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
+                    src="assets/icons/Group 2318.svg" alt="">
+                <a href="Dashboard.html"><img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.svg"
+                        alt=""></a>
+                <div class="flex items-end gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="dropdown dropdown-notification-mobile dropdown-end">
+                            <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                tabindex="0" class="dropdown-label">
+                                <img class="w-[16px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg" alt="">
+                            </label>
+                            <div tabindex="0"
+                                class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box w-[200px]">
+                                <div class="border-b border-[#707070]">
+                                    <div class="p-2 flex items-center justify-between">
+                                        <h2 class="text-[12px] text-[#1E1E1E] font-semibold">Notification</h2>
+                                        <h6 class="text-[9px] text-[#656565] underline cursor-pointer">Clear
+                                            All</h6>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">Today</h2>
+                                    <div>
+                                        <div class="bg-[#F4F4F4] p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                        <div class="p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">Yesterday</h2>
+                                    <div>
+                                        <div class="p-3 flex justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[10px]">
+                                                <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[13px] font-semibold">Admin</h2>
+                                                    <p class="text-[#656565] text-xs mt-1">New user registration</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-[9px] text-[#656565] font-semibold">1 min ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2 class="text-[13px] text-[#1E1E1E] font-semibold p-2">23 SEPT 2023</h2>
+                                </div>
+                                <div class="border-t border-[#707070] flex justify-center">
+                                    <button
+                                        class="text-[13px] underline text-center text-[#1E1E1E] font-semibold py-3 px-2">
+                                        View All</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm">Joseph</h4>
+                            <p class="text-xs text-right">Admin</p>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-profile-mobile dropdown-end">
+                        <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)" tabindex="0"
+                            class="dropdown-label">
+                            <div class="relative cursor-pointer">
+                                <div class="w-9 h-9 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
+                                </div>
+                                <div
+                                    class="absolute right-0 bottom-0 w-3 h-3 md:h-4 bg-[#28C66F] rounded-full border-2">
+                                </div>
+                            </div>
+                        </label>
+                        <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                            <div>
+                                <div>
+                                    <div class="p-3 flex items-center justify-between cursor-pointer">
+                                        <div class="flex items-center gap-[10px]">
+                                            <img class="w-9 h-9" src="assets/icons/Group 4000.svg" alt="">
+                                            <div>
+                                                <h2 class="text-[#656565] text-[13px] font-semibold">Joseph Smith
+                                                </h2>
+                                                <p class="text-[#656565] text-xs mt-2">email@email.com</p>
+                                            </div>
+                                        </div>
+                                        <a class="text-[10px] text-[#656565] underline cursor-pointer">View
+                                            Account</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t border-[#707070] flex justify-center">
+                                <button class="text-[13px] underline text-[#1E1E1E] font-semibold py-3 px-2">
+                                    Sign Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10">
+                    <a href="Dashboard.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
+                                src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="Accessibility_Rating.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
+                            Rating<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
+                                src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="Contributions_Managements.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
+                            Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="Support_Tickets.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
+                            Tickets<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="Notification_Center.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
+                            Center<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="Settings.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
+                                src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="System_Stats.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
+                            Stats<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+
+                    <a href="System_Maintenance.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
+                            Maintenance<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                    <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
+                        <div class="w-8 flex justify-center">
+                            <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
+                            <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                        </div>
+                        <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
+                                src="assets/icons/chevron-down-outline.svg" alt=""></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Mobile Menubar -->
+        <div class="px-3 md:px-0 md:mx-5 w-full">
+            <!-- Dashboard Contain Start -->
+            <div class="font-[poppins] text-sm pb-20">
+                <!-- Search panel -->
+                <section
+                    class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
+                    <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368.svg" alt="">
+                    <input class="flex-grow outline-none mx-2 h-6" type="text">
+                    <div class="hidden md:flex items-end gap-6">
+                        <div class="flex items-center gap-5 md:gap-14">
+                            <div class="dropdown dropdown-notification dropdown-end">
+                                <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                    tabindex="0" class="dropdown-label">
+                                    <img class="w-[18px] md:w-auto cursor-pointer" src="assets/icons/Group 2372.svg"
+                                        alt="">
+                                </label>
+                                <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                                    <div class="border-b border-[#707070]">
+                                        <div class="p-4 flex items-center justify-between">
+                                            <h2 class="text-[15px] text-[#1E1E1E] font-semibold">Notification</h2>
+                                            <h6 class="text-[9px] text-[#656565] underline cursor-pointer">Clear
+                                                All</h6>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Today</h2>
+                                        <div>
+                                            <div class="bg-[#F4F4F4] p-[19px] flex justify-between cursor-pointer">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                            <div class="p-[19px] flex justify-between cursor-pointer">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">Yesterday</h2>
+                                        <div>
+                                            <div class="p-[19px] flex justify-between cursor-pointer">
+                                                <div class="flex items-center gap-[14px]">
+                                                    <img src="assets/icons/Group 4000.svg" alt="">
+                                                    <div>
+                                                        <h2 class="text-[#656565] text-[15px] font-semibold">Admin</h2>
+                                                        <p class="text-[#656565] text-sm mt-2">New user registration</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-xs text-[#656565] font-semibold">1 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 class="text-[15px] text-[#1E1E1E] font-semibold py-3 px-4">23 SEPT 2023</h2>
+                                    </div>
+                                    <div class="border-t border-[#707070] flex justify-center">
+                                        <button
+                                            class="text-[15px] underline text-center text-[#1E1E1E] font-semibold py-5 px-4">
+                                            View All</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm md:text-base">Joseph</h4>
+                                <p class="text-xs md:text-sm text-right">Admin</p>
+                            </div>
+                        </div>
+                        <div class="dropdown dropdown-profile dropdown-end">
+                            <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                tabindex="0" class="dropdown-label">
+                                <div class="relative cursor-pointer">
+                                    <div class="w-12 h-12 rounded-full bg-[url('assets/icons/profile.jpg')] bg-cover">
+                                    </div>
+                                    <div
+                                        class="absolute right-0 bottom-0 w-4 h-3 md:h-4 bg-[#28C66F] rounded-full border-2">
+                                    </div>
+                                </div>
+                            </label>
+                            <div tabindex="0" class="dropdown-content z-[1] menu shadow bg-base-100 rounded-box">
+                                <div>
+                                    <div>
+                                        <div class="p-[19px] flex items-center justify-between cursor-pointer">
+                                            <div class="flex items-center gap-[14px]">
+                                                <img src="assets/icons/Group 4000.svg" alt="">
+                                                <div>
+                                                    <h2 class="text-[#656565] text-[15px] font-semibold">Joseph Smith
+                                                    </h2>
+                                                    <p class="text-[#656565] text-sm mt-2">email@email.com</p>
+                                                </div>
+                                            </div>
+                                            <a class="text-xs text-[#656565] underline cursor-pointer">View
+                                                Account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-t border-[#707070] flex justify-center">
+                                    <button class="text-[15px] underline text-[#1E1E1E] font-semibold py-5 px-4">
+                                        Sign Out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sorting panel -->
+                <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
+                    <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
+
+                    <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
+                        <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
+                            <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
+                                <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
+                                        class="outline-none w-28 md:w-20" placeholder="Select" type="text" required>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="relative bg-white px-2 md:px-1 py-[7px] rounded-xl">
+                            <div class="px-2 bg-white flex items-center justify-between">
+                                <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
+                                        class="outline-none w-28 md:w-28" type="text" required></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white px-2 md:px-4 h-8 md:h-[36px] rounded-xl">
+                            <div class="bg-white flex items-center justify-between">
+                                <select
+                                    class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                    id="selectElement">
+                                    <option value="" disabled selected>Type</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="refreshSorting()"
+                        class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
+                </section>
+                <!-- End Sorting Panel -->
+
+                <!-- user panel -->
+                <!-- Dashboard Item -->
+                <section>
+                    <!-- carousel -->
+                    <div class="wrapper mt-4">
+                        <ul class="carousel cursor-grab">
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Total Users</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">29,542
+                                        </h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Active Users</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198
+                                        </h1>
+                                        <h6 class="text-[#EC5453] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/down.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">New Registrations</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Top Contributors</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">29,542
+                                        </h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#E7FAFC] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2495.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Most Common Issues</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">2198
+                                        </h1>
+                                        <h6 class="text-[#EC5453] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/down.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#DEF6E9] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2496.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div
+                                    class="flex items-center justify-between p-2 md:p-8 bg-white rounded-lg md:rounded-2xl h-[100px] md:h-[158px]">
+                                    <div>
+                                        <h5 class="text-xs md:text-base text-[#656565]">Resolution Times</h5>
+                                        <h1 class="text-2xl md:text-[34px] font-[inter] font-bold my-1 md:my-3">127</h1>
+                                        <h6 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt="">
+                                            1.700</h6>
+                                    </div>
+                                    <div
+                                        class="md:h-[94px] md:w-[94px] h-[50px] w-[50px] flex items-center justify-center bg-[#F0D6CA] rounded-lg md:rounded-2xl">
+                                        <img class="w-[25px] md:w-auto" src="assets/icons/Group 2497.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="flex justify-end mt-3">
+                            <div class="flex items-center bg-white border border-[#F3F3F3] rounded-xl">
+                                <div id="left"
+                                    class="arrow-btn px-2 py-1 md:px-4 md:py-3 border-e border-[#F3F3F3] cursor-pointer">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2514.svg" alt="">
+                                </div>
+                                <div id="right" class="arrow-btn px-2 py-1 md:px-4 md:py-3 cursor-pointer">
+                                    <img class="w-[15px] md:w-auto" src="assets/icons/Group 2515.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end carousel -->
+
+                    <!-- end user panel -->
+
+
+
+                    <!-- Address Section -->
+                    <section class="mt-10 flex items-center gap-[21px] h-[392px]">
+                        <div class="bg-[#FEFEFE] rounded-xl max-w-[417px] md:w-[417px] h-full">
+                            <div class="pt-[100px] pb-[92px] px-[51px]">
+                                <div>
+                                    <h3 class="font-bold text-sm text-[#656565] text-center mb-[49px]">Search For An
+                                        Address
+                                    </h3>
+
+                                    <div
+                                        class="px-4 py-[11px] w-[314px] h-[38px] border border-[#F3F3F3] flex items-center justify-between rounded-xl mb-[66px]">
+                                        <input class="outline-none text-sm" type="text" placeholder="Type Address">
+                                        <button><img src="assets/icons/search-modal.svg" alt=""></button>
+                                    </div>
+
+                                    <div class="flex justify-center">
+                                        <button onclick="handleResultModal()"
+                                            class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#FEFEFE] rounded-xl p-[14px] h-full">
+                            <div class="pt-[69px] pb-[97px]">
+                                <h3 class="font-bold text-sm text-[#656565] text-center mb-[46px]">Result</h3>
+                                <h3 class="font-medium text-lg text-[#1E1E1E] text-center mb-[49px]">123 APPLE STREET,
+                                    SE236HD,
+                                    LONDON, UNITED KINGDOM</h3>
+
+                                <div class="flex flex-col items-center justify-center">
+                                    <div class="w-[243px]">
+                                        <img class="w-full" src="assets/icons/Group 4117.svg" alt="">
+                                    </div>
+                                    <div class="mb-[10px]">
+                                        <h1 class="text-[#53CA7A] text-[87px] font-medium">1</h1>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center">
+                                    <button class="h-[31px] w-[138px] text-[11px] md:text-sm bg-[#39CCCC] rounded-lg text-white">New
+                                        Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Address Section -->
+
+                    <!-- registration chart and service progress bar -->
+                    <section class="md:grid grid-cols-3 mt-10 md:mt-20 gap-5">
+                        <div class="col-span-2 p-3 md:px-8 md:py-7 rounded-lg md:rounded-2xl bg-white">
+                            <div class="md:flex items-center justify-between mb-5">
+                                <h1 class="text-lg md:text-2xl font-semibold mb-2 md:mb-0">New User Registration</h1>
+                                <div class="flex items-center gap-5 md:gap-10 text-xs md:text-lg text-[#656565]">
+                                    <div class="flex gap-2 md:gap-4 items-center">
+                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#A960D6] rounded-full"></div>
+                                        <h3>Daily</h3>
+                                    </div>
+                                    <div class="flex gap-2 md:gap-4 items-center">
+                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#39CCCC] rounded-full"></div>
+                                        <h3>Weekly</h3>
+                                    </div>
+                                    <div class="flex gap-2 md:gap-4 items-center">
+                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#484E80] rounded-full"></div>
+                                        <h3>Monthly</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
+                        </div>
+                        <div class="md:px-8 md:py-7 py-4 bg-white p-3 rounded-lg md:rounded-2xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-lg md:text-2xl font-semibold">Service Requests</h1>
+                                <div class="dropdown dropdown-end">
+                                    <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                        tabindex="0" class="dropdown-label">
+                                        <img class="cursor-pointer" src="assets/icons/horizontal-3dot.svg" alt="">
+                                    </label>
+                                    <ul tabindex="0"
+                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
+                                        <li><a href="#">View</a></li>
+                                        <li><a href="#">Export CSV</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="progress-bar">
+                                    <progress value="75" min="0" max="100"
+                                        style="visibility:hidden;height:0;width:0;">38%</progress>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-end mt-7">
+                                <div>
+                                    <h1 class="text-xs md:text-sm text-[#656565]">Total Service Requests</h1>
+                                    <h1 class="text-2xl md:text-[34px] font-[inter] font-bold mt-2">50,246</h1>
+                                </div>
+                                <div>
+                                    <h1 class="text-[#28C66F] text-xs md:text-base flex items-center gap-1"><img
+                                            src="assets/icons/up.svg" alt="">
+                                        62%</h1>
+                                    <p class="text-xs text-[#656565]">More than last month</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end registration chart and service progress bar -->
+
+                    <!-- Popular Location -->
+                    <section class="md:grid grid-cols-6 gap-5 mt-7 md:mt-[50px]">
+                        <div class="col-span-2 bg-white md:px-6 py-7 p-3 rounded-lg md:rounded-2xl">
+                            <div class="flex justify-between items-center mb-5">
+                                <h1 class="text-lg md:text-2xl font-semibold">Popular Locations</h1>
+                                <div class="dropdown dropdown-end">
+                                    <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
+                                        tabindex="0" class="dropdown-label">
+                                        <img class="cursor-pointer" src="assets/icons/horizontal-3dot.svg" alt="">
+                                    </label>
+                                    <ul tabindex="0"
+                                        class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-32 font-bold">
+                                        <li><a href="#">View</a></li>
+                                        <li><a href="#">Export CSV</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">London, UK</h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]  text-sm md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt=""> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Manhattan, NY</h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]  text-sm md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt=""> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Improved</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Dublin, IRE</h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h6
+                                            class="text-[#EC5453]  text-sm md:text-base flex items-center justify-end gap-1">
+                                            <img src="assets/icons/down.svg" alt=""></i>
+                                            6.48%
+                                        </h6>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Decreased</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h1 class="text-sm md:text-base text-[#1E1E1E]">Melbourne, AUS</h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Last 30 Days</p>
+                                    </div>
+                                    <div class="text-end">
+                                        <h1 class="text-[#28C66F]  text-sm md:text-base flex items-center gap-1"><img
+                                                src="assets/icons/up.svg" alt=""> 6.48%
+                                        </h1>
+                                        <p class="text-[#656565]  text-xs md:text-sm">Improved</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-center mt-10">
+                                <button class="underline">View All</button>
+                            </div>
+                        </div>
+                        <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
+                            <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
+                            <div class="md:grid grid-cols-12 justify-center">
+                                <div class="col-span-9">
+                                    <div id="svgMap">
+
+                                    </div>
+                                </div>
+                                <div class="col-span-1"></div>
+                                <div class="col-span-2 md:w-[110px] mt-2 md:mt-0">
+                                    <div class="flex md:flex-col justify-between gap-1">
+                                        <div>
+                                            <div class="flex gap-2 md:gap-3 items-center">
+                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#60D684] rounded-full"></div>
+                                                <h3 class="text-[10px]">London, UK</h3>
+                                            </div>
+                                            <progress class="progress progress-custom1 w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
+                                        <div>
+                                            <div class="flex gap-2 md:gap-3 items-center">
+                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#39CCCC] rounded-full"></div>
+                                                <h3 class="text-[10px]">Manhattan, NY</h3>
+                                            </div>
+                                            <progress class="progress progress-custom2 w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
+                                        <div>
+                                            <div class="flex gap-2 md:gap-3 items-center">
+                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#A960D6] rounded-full"></div>
+                                                <h3 class="text-[10px]">Melbourne, AUS</h3>
+                                            </div>
+                                            <progress class="progress progress-custom3 w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
+                                        <div>
+                                            <div class="flex gap-2 md:gap-3 items-center">
+                                                <div class="md:w-3 md:h-3 w-2 h-2 bg-[#484E80] rounded-full"></div>
+                                                <h3 class="text-[10px]">Texas, DW</h3>
+                                            </div>
+                                            <progress class="progress progress-custom4 w-full my-1" value="70"
+                                                max="100"></progress>
+                                            <h1 class="text-[10px]">6.48%</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Popular Location -->
+
+                    <!-- Support Tickets -->
+                    <section class="mt-8 md:mt-12">
+                        <h1 class="text-lg md:text-2xl font-semibold">Support Tickets</h1>
+                        <!-- Support Ticket menu section -->
+                        <div class="mt-5 lg:mt-10 lg:flex items-center justify-between">
+                            <div class="md:flex items-center gap-2 md:gap-5 mb-2 md:mb-0">
+                                <div
+                                    class="text-base w-fit bg-white rounded-xl flex items-center md:justify-between mb-2 md:mb-0 border border-[#F3F3F3]">
+                                    <a href="#" class=" md:py-3 md:px-4 px-2 py-[11px] rounded-md md:rounded-xl"><img
+                                            class="w-3 md:w-4" src="assets/icons/grid-outline.svg" alt=""></a>
+                                    <a href="#"
+                                        class=" md:py-3 md:px-4 px-2 py-[11px] rounded-md md:rounded-xl bg-[#39CCCC] text-white"><img
+                                            class="w-3 md:w-5" src="assets/icons/list-outline.svg" alt=""></a>
+                                </div>
+                                <div class=" bg-white rounded-xl flex lg:justify-between w-fit border border-[#F3F3F3]">
+                                    <a
+                                        class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl bg-[#39CCCC] text-white">All</a>
+                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Open</a>
+                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">In
+                                        Progress</a>
+                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Pending</a>
+                                    <a class="md:py-3 px-2 md:px-4 py-2 text-xs rounded-md md:rounded-xl">Resolved</a>
+                                </div>
+                            </div>
+                            <div class="lg:flex justify-end items-center gap-2">
+                                <div class="grid grid-cols-2 lg:flex items-center gap-3 mb-2 lg:mb-0">
+                                    <div class="relative bg-white lg:px-1 py-[7px] rounded-lg lg:rounded-xl">
+                                        <div class="lg:px-2 bg-white font flex items-center justify-between px-2">
+                                            <p class="w-fit text-xs">Date <input id="ticketDatepicker"
+                                                    class="outline-none w-16 lg:w-16 h-6" placeholder="Select"
+                                                    type="text" required>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex col-span-3 items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
+                                        <div class="bg-white flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                                id="selectElement1">
+                                                <option value="" disabled selected>Priority</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 lg:flex items-center gap-3">
+                                    <div
+                                        class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg md:rounded-xl  border border-[#F3F3F3]">
+                                        <div class="bg-white flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                                id="selectElement2">
+                                                <option value="" disabled selected>Type</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center bg-white px-1 lg:px-4 h-[38px] rounded-lg lg:rounded-xl  border border-[#F3F3F3]">
+                                        <div class="bg-white flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs outline-none overflow-hidden w-40 lg:w-24 bg-white"
+                                                id="selectElement3">
+                                                <option value="" disabled selected>Category</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Support Ticket menu section -->
+
+                        <!-- Support Table -->
+                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
+                            <table class="table text-xs md:text-sm min-w-[950px]">
+                                <!-- head -->
+                                <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
+                                    <tr class="bg-white text-xs md:text-sm">
+                                        <th data-orderable="false" class="rounded-s-2xl">
+                                            <label class="flex items-center justify-center">
+                                                <input type="checkbox" class="checkbox w-5 h-5" />
+                                            </label>
+                                        </th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Category</th>
+                                        <th>Priority</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th data-orderable="false" class="rounded-e-2xl"></th>
+                                    </tr>
+                                </thead>
+                                <tbody onmouseover="dropdownPositionHandler('dashboardSupportTicketTbody')"
+                                    id="dashboardSupportTicketTbody" class="bg-white ">
+                                    <!-- row 1 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Service Provider</td>
+                                        <td>Medium</td>
+                                        <td>Accessibility Ratings</td>
+                                        <th>
+                                            <button
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
+                                        </th>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label onclick="dropdownToggleHandler(this)"
+                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
+                                                    class="dropdown-label">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Jacob Jones
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Regular User</td>
+                                        <td>High</td>
+                                        <td>User Inquiries</td>
+                                        <th>
+                                            <button
+                                                class="text-[#EC5453] text-[9px] font-[inter] border border-[#FADCDC] font-normal w-[82px] h-[21px] rounded-xl">Pending</button>
+                                        </th>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label onclick="dropdownToggleHandler(this)"
+                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
+                                                    class="dropdown-label">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 3 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
+                                        <th class="rounded-s-2xl">
+                                        </th>
+                                        <td>
+                                            Guy Hawkins
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Service Provider</td>
+                                        <td>Medium</td>
+                                        <td>Accessibility Ratings</td>
+                                        <th>
+                                            <button
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
+                                        </th>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label onclick="dropdownToggleHandler(this)"
+                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
+                                                    class="dropdown-label">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 4 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
+                                        <th class="rounded-s-2xl">
+                                        <td>
+                                            Darlene Robertson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Service Provider</td>
+                                        <td>Low</td>
+                                        <td>Service Provider Support</td>
+                                        <th>
+                                            <button
+                                                class="text-[#FFAB00] text-[9px] font-[inter] border border-[#FEEDCB] font-normal w-[82px] h-[21px] rounded-xl">In
+                                                Progress</button>
+                                        </th>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label onclick="dropdownToggleHandler(this)"
+                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
+                                                    class="dropdown-label">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <!-- row 5 -->
+                                    <tr class="border-y-[10px] border-[#FAFAFA] h-[78px]">
+                                        <th class="rounded-s-2xl">
+                                        <td>
+                                            Kristin Watson
+                                        </td>
+                                        <td>
+                                            soffner19@mac.com
+                                        </td>
+                                        <td>Contributor</td>
+                                        <td>Critical</td>
+                                        <td>User Inquiries</td>
+                                        <th>
+                                            <button
+                                                class="text-[#28C66F] text-[9px] font-[inter] border border-[#D3F3E1] font-normal w-[82px] h-[21px] rounded-xl">Active</button>
+                                        </th>
+                                        <th class="rounded-e-2xl">
+                                            <div class="dropdown dropdown-end">
+                                                <label onclick="dropdownToggleHandler(this)"
+                                                    onmouseover="dropdownMouseOver(this)" tabindex="0"
+                                                    class="dropdown-label">
+                                                    <img class="cursor-pointer" src="assets/icons/3dot-icon.svg" alt="">
+                                                </label>
+                                                <ul tabindex="0"
+                                                    class="dropdown-content z-[1] menu p-1 shadow bg-base-100 rounded-lg w-[190px] font-bold">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Mark as pending</a></li>
+                                                    <li><a href="#">Mark as on hold</a></li>
+                                                    <li><a href="#">Mark as on resolved</a></li>
+                                                    <li><a href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex justify-end">
+                            <button
+                                class="mt-2 px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
+                                All</button>
+                        </div>
+                        <!-- End Support Table -->
+                    </section>
+                    <!-- End Support Tickets -->
+                    <!-- Announcements Tickets -->
+                    <section class="mt-7">
+                        <div class=" bg-white md:px-7 py-10 rounded-2xl">
+                            <h1 class="text-lg md:text-2xl font-semibold">Announcements</h1>
+                            <!-- Support Table -->
+                            <div class="overflow-x-scroll md:overflow-x-hidden mt-10 h-[300px] overflow-y-scroll">
+                                <table class="table text-xs md:text-base min-w-[900px]">
+                                    <tbody class="bg-white">
+                                        <!-- row 1 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td class="font-bold">
+                                                Daila Ouldcott
+                                            </td>
+                                            <td class="font-bold">
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#6259CE] font-normal text-[10px] font-[inter] h-[21px] px-3 rounded-xl float-right bg-[#DFDDF4] flex items-center justify-center">Company</button>
+                                            </th>
+                                            <td class="text-xs font-bold text-[#656565]">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Jacob Jones
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#28C66F] font-normal text-[10px] font-[inter] h-[21px] px-4 rounded-xl float-right bg-[#D3F3E1] flex items-center justify-center">Contributor</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Guy Hawkins
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#EC5453] font-normal text-[10px] font-[inter] h-[21px] px-3 rounded-xl float-right bg-[#FADCDC] flex items-center justify-center">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 4 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#FFAB00] font-normal text-[10px] font-[inter] h-[21px] px-4 rounded-xl float-right bg-[#FEEDCB] flex items-center justify-center">News</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td class="font-bold">
+                                                Daila Ouldcott
+                                            </td>
+                                            <td class="font-bold">
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#6259CE] font-normal text-[10px] font-[inter] h-[21px] px-3 rounded-xl float-right bg-[#DFDDF4] flex items-center justify-center">Company</button>
+                                            </th>
+                                            <td class="text-xs font-bold text-[#656565]">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Jacob Jones
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#28C66F] font-normal text-[10px] font-[inter] h-[21px] px-4 rounded-xl float-right bg-[#D3F3E1] flex items-center justify-center">Contributor</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Guy Hawkins
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#EC5453] font-normal text-[10px] font-[inter] h-[21px] px-3 rounded-xl float-right bg-[#FADCDC] flex items-center justify-center">New
+                                                    Release</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                09:57 AM
+                                            </td>
+                                        </tr>
+                                        <!-- row 4 -->
+                                        <tr class="border-b-2 border-[#FAFAFA]">
+                                            <th>
+                                                <img class="border-2 rounded-md" src="assets/icons/star-outline.svg"
+                                                    alt="">
+                                            </th>
+                                            <td>
+                                                Darlene Robertson
+                                            </td>
+                                            <td>
+                                                <a href="#">
+                                                    <h5 class="font-semibold">campimetrical lentisk excluding portlet
+                                                        coccinellid</h5>
+                                                    <h5 class="text-[#656565] text-[10px] md:text-base">Hey John,
+                                                        wellish
+                                                        laminable ineunt popshop catalyte prismatize</h5>
+                                                </a>
+                                            </td>
+                                            <th>
+                                                <button
+                                                    class="text-[#FFAB00] font-normal text-[10px] font-[inter] h-[21px] px-4 rounded-xl float-right bg-[#FEEDCB] flex items-center justify-center">News</button>
+                                            </th>
+                                            <td class="text-xs">
+                                                2 Sep 2021
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Announcements Table -->
+                        </div>
+                        <div class="flex justify-end">
+                            <button
+                                class="mt-2 px-5 py-1 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white">View
+                                All</button>
+                        </div>
+                    </section>
+                    <!-- End Support Tickets -->
+                </section>
+                <!-- End Dashboard Item -->
+            </div>
+            <!-- Dashboard Contain End -->
+            <footer
+                class="border-t-2 border-[#EAEAEA] flex justify-between py-5 md:py-10 mt-10 md:mt-[179px] text-xs md:text-base">
+                <h3>2023 &copy; SARSocore</h3>
+                <a href="#">
+                    <h3>Help & Support</h3>
+                </a>
+            </footer>
+        </div>
+
+    </main>
+
+    <!-- Chart js -->
+    <script src="assets/js/libs/chart_js/chart_cdn.js"></script>
+    <script src="assets/js/libs/chart_js/registration-chart.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <!-- Svg map -->
+    <script src="assets/js/libs/svg_map/svg_map_customize.js"></script>
+    <!-- Datepicker -->
+    <script src="assets/js/libs/datepicker/datepicker.js"></script>
+    <script src="assets/js/libs/datepicker/datepicker_customize.js"></script>
+    <!-- SlimSelect -->
+    <script src="assets/js/libs/slim_select/slimselect_customize.js"></script>
+    <!-- Data Table -->
+    <script src="assets/js/libs/data_tables/data_table.js"></script>
+    <!-- Carousel -->
+    <script src="assets/js/libs/carousel/carousel.js"></script>
+</body>
+
+</html>
