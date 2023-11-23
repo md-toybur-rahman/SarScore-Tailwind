@@ -6847,6 +6847,11 @@ details.collapse summary::-webkit-details-marker {
     display: none
 }
 
+.tooltip.tooltip-custom {
+    --tooltip-color: white;
+    --tooltip-text-color: #656565;
+}
+
 .tooltip.tooltip-primary {
     --tooltip-color: hsl(var(--p));
     --tooltip-text-color: hsl(var(--pc))
@@ -41004,7 +41009,7 @@ details.collapse summary::-webkit-details-marker {
 .tooltip-top:before {
     transform: translateX(-50%);
     top: auto;
-    left: 50%;
+    left: 0;
     right: auto;
     bottom: var(--tooltip-offset)
 }
@@ -41477,15 +41482,16 @@ details.collapse summary::-webkit-details-marker {
 .tooltip:before {
     max-width: 20rem;
     border-radius: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 0.875rem;
     line-height: 1.25rem;
     background-color: var(--tooltip-color);
     color: var(--tooltip-text-color);
-    width: max-content
+    width: max-content;
+    border: 1px solid #39CCCC;
 }
 
 .tooltip.tooltip-open:before,
