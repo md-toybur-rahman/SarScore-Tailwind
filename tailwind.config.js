@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
+      'inter': ['Inter', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        clifford: '#da373d',
+      }
+    }
   },
   plugins: [],
 }

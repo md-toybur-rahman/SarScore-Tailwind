@@ -15,6 +15,23 @@ function accessibilityDropdownHandler (id, arrow) {
     }
 }
 
+function showPasswordHandler () {
+    const show = document.getElementById('show');
+    const hide = document.getElementById('hide');
+    const password = document.getElementById('password')
+    if(show.classList.contains('hidden')) {
+        hide.classList.add('hidden');
+        show.classList.remove('hidden');
+        password.type= "text";
+
+    }
+    else{
+        hide.classList.remove('hidden');
+        show.classList.add('hidden');
+        password.type= "password";
+
+    }
+}
 
 function dropdownMouseOver (event) {
     const dropdownContent = event.parentNode.getElementsByClassName('dropdown-content')[0];

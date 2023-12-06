@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+
+    <!-- Daisyui -->
+    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS -->
+    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+
+    <title>SARScore</title>
+</head>
+
+<body class="max-w-[1573px] min-w-[360px] mx-auto">
+
+    <section class="flex items-center justify-center h-fit bg-[#FBFBFB]">
+        <div class=" flex-grow hidden md:flex items-center justify-center h-full px-10">
+            <img class="w-[300px] lg:w-auto" src="assets/icons/sign_in_page_logo.svg" alt="">
+        </div>
+        <div class="max-w-[619px] w-full h-full relative pt-[100px] sm:pt-[121px] sm:flex flex-col items-center justify-center bg-white">
+            <div class="px-10 md:px-0 w-full sm:w-[370px] lg:w-[420px] m-auto">
+                <h1 class="text-[32px] text-center">Sign In</h1>
+                <button
+                    class="bg-[#F5F5F5] border border-[#C4C4C4] max-w-[420px] w-full h-[48px] flex items-center justify-center rounded-lg mt-[57px] font-semibold">Sign
+                    In using Google</button>
+                <div class="flex items-center gap-5 mt-[43px]">
+                    <div class="h-[1px] bg-[#E5E5E5] max-w-[105px] w-full hidden md:block"></div>
+                    <p class="text-[15px] flex-grow text-center">or sign in with email</p>
+                    <div class="h-[1px] bg-[#E5E5E5] max-w-[105px] w-full hidden md:block"></div>
+                </div>
+                <form class="mt-[48px]">
+                    <div class="grid grid-cols-2 gap-9">
+                        <div class="flex flex-col gap-[9px]">
+                            <label>
+                                <span class="text-[15px] font-medium text-[#575757]">Name</span>
+                            </label>
+                            <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center">
+                                <input class="outline-none w-full" type="email" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[9px]">
+                            <label>
+                                <span class="text-[15px] font-medium text-[#575757]">Surname</span>
+                            </label>
+                            <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center">
+                                <input class="outline-none w-full" type="email" placeholder="Surname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[9px] mt-[17px]">
+                        <label>
+                            <span class="text-[15px] font-medium text-[#575757]">Phone Number</span>
+                        </label>
+                        <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center">
+                            <input class="outline-none" type="email" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[9px] mt-[17px]">
+                        <label>
+                            <span class="text-[15px] font-medium text-[#575757]">Email Address</span>
+                        </label>
+                        <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center">
+                            <input class="outline-none" type="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[9px] mt-[17px]">
+                        <label>
+                            <span class="text-[15px] font-medium text-[#575757]">Location</span>
+                        </label>
+                        <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center">
+                            <input class="outline-none" type="email" placeholder="Type Location">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[9px] mt-9">
+                        <label class="flex items-center justify-between">
+                            <span class="text-base font-medium text-[#575757]">Password</span>
+                            <button class="text-[#0266D6] text-[15px] underline">Forget Password? </button>
+                        </label>
+                        <div class="border border-[#C1C1C1] rounded-lg px-4 h-[48px] bg-white flex items-center justify-between">
+                            <input id="password" class="outline-none" type="password" placeholder="Password">
+                            <img id="hide" onclick="showPasswordHandler()" class="cursor-pointer" src="assets/icons/hide_password.svg" alt="">
+                            <img id="show" onclick="showPasswordHandler()" class="hidden cursor-pointer" src="assets/icons/show_password.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="mt-5 flex items-center gap-7">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#575757] font-medium">By Signing Up I agree with </span><a href="#" class="text-[#0266D6] underline">Terms & Conditions</a></label>
+                    </div>
+                    <button
+                        class="text-base text-white rounded-lg bg-[#3ACCCC] border border-[##2EA3A3] text-center w-full h-[48px] mt-[26px]">Sign
+                        In</button>
+                </form>
+
+                <div class="mt-[59px]">
+                    <p class="text-[15px] text-center">Already have an account ? <a href="Sign_In.html" class="text-[#0266D6] underline">Sign In</a></p>
+                </div>
+            </div>
+
+
+            <footer class="px-8 flex-wrap md:flex-nowrap flex gap-2 sm:gap-7 items-center justify-center md:justify-between mt-[64px] w-full mb-[23px]">
+                <div>
+                    <p class="text-[#A6A6A6]">&copy; 2023 sarscore.com</p>
+                </div>
+                <div class="flex  items-center gap-[30px]">
+                    <a href="#" class="text-[#0266D6] underline">Terms & Conditions</a>
+                    <a href="#" class="text-[#0266D6] underline">Privacy Policy</a>
+                </div>
+            </footer>
+        </div>
+
+    </section>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
