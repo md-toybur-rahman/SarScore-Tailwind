@@ -123,12 +123,13 @@ const refreshSorting = () => {
 
 function menuButtonHandler() {
     const dashboard = document.getElementById('dashboard');
-    const dashboardStyle = dashboard.style.width;
+    // const dashboardStyle = dashboard.style.width;
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
     const menuButton = document.querySelectorAll(".menuButton");
-    if (dashboardStyle != '81px') {
-        dashboard.style.width = '81px'
+    if (dashboard.classList.contains('min-w-[320px]')) {
+        dashboard.classList.remove('min-w-[320px]');
+        dashboard.classList.add('w-[81px]');
         logo.style.display = 'none';
         menuTitle.forEach(title => {
             title.style.display = 'none'
@@ -138,7 +139,8 @@ function menuButtonHandler() {
         })
     }
     else {
-        dashboard.style.width = '350px'
+        dashboard.classList.remove('w-[81px]');
+        dashboard.classList.add('min-w-[320px]');
         logo.style.display = 'block';
         menuTitle.forEach(title => {
             title.style.display = 'flex'

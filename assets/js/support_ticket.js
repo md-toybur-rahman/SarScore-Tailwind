@@ -54,13 +54,14 @@ function handleTicketMenu() {
 
 function menuButtonHandler2() {
     const dashboard = document.getElementById('dashboard');
-    const dashboardStyle = dashboard.style.width;
+    // const dashboardStyle = dashboard.style.width;
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
     const menuButton = document.querySelectorAll(".menuButton");
     const hamburg = document.getElementById("hamburg");
-    if (dashboardStyle != '350px') {
-        dashboard.style.width = '350px'
+    if (dashboard.classList.contains('min-w-[320px]')) {
+        dashboard.classList.remove('min-w-[320px]');
+        dashboard.classList.add('w-[81px]');
         logo.style.display = 'block';
         hamburg.classList.remove('mx-auto');
         menuTitle.forEach(title => {
@@ -71,7 +72,8 @@ function menuButtonHandler2() {
         })
     }
     else {
-        dashboard.style.width = '81px'
+        dashboard.classList.remove('w-[81px]');
+        dashboard.classList.add('min-w-[320px]');
         logo.style.display = 'none';
         hamburg.classList.add('mx-auto');
         menuTitle.forEach(title => {
