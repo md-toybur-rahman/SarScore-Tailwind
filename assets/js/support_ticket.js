@@ -59,28 +59,28 @@ function menuButtonHandler2() {
     const menuTitle = document.querySelectorAll(".menuTitle");
     const menuButton = document.querySelectorAll(".menuButton");
     const hamburg = document.getElementById("hamburg");
-    if (dashboard.classList.contains('min-w-[320px]')) {
-        dashboard.classList.remove('min-w-[320px]');
+    if (dashboard.classList.contains('min-w-[280px]')) {
+        dashboard.classList.remove('min-w-[280px]');
         dashboard.classList.add('w-[81px]');
-        logo.style.display = 'block';
-        hamburg.classList.remove('mx-auto');
+        logo.style.display = 'none';
+        hamburg.classList.add('mx-auto');
         menuTitle.forEach(title => {
-            title.style.display = 'flex'
+            title.style.display = 'none';
         })
         menuButton.forEach(button => {
-            button.classList.remove('justify-center')
+            button.classList.add('justify-center');
         })
     }
     else {
         dashboard.classList.remove('w-[81px]');
-        dashboard.classList.add('min-w-[320px]');
-        logo.style.display = 'none';
-        hamburg.classList.add('mx-auto');
+        dashboard.classList.add('min-w-[280px]');
+        logo.style.display = 'block';
+        hamburg.classList.remove('mx-auto');
         menuTitle.forEach(title => {
-            title.style.display = 'none'
+            title.style.display = 'flex';
         })
         menuButton.forEach(button => {
-            button.classList.add('justify-center')
+            button.classList.remove('justify-center');
         })
     }
 }

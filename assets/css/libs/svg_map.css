@@ -87,13 +87,14 @@
     border-radius: 20px;
 }
 
-.svgMap-map-wrapper .svgMap-control-button:first-child{
+.svgMap-map-wrapper .svgMap-control-button:first-child {
     background-color: #39CCCC;
     border-radius: 20px;
     width: 23px;
     height: 30px;
 }
-.svgMap-map-wrapper .svgMap-control-button:last-child{
+
+.svgMap-map-wrapper .svgMap-control-button:last-child {
     border-radius: 20px;
     height: 30px;
     width: 23px;
@@ -145,18 +146,13 @@
     background: white;
     transition: background-color 250ms
 }
+
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:before {
     width: 9px;
     height: 2px;
 }
 
-@media (hover:hover) {
 
-    .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:hover:after,
-    .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:hover:before {
-        /* background: #111 */
-    }
-}
 
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:active:after,
 .svgMap-map-wrapper .svgMap-control-button.svgMap-zoom-button:active:before {

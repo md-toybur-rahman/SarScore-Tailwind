@@ -145,3 +145,12 @@ new SlimSelect({
 new SlimSelect({
     select: '#selectElement48'
 })
+new SlimSelect({
+    select: '#selectElement49'
+})
+new SlimSelect({
+    select: '#selectElement50'
+})
+new SlimSelect({
+    select: '#selectElement51'
+})

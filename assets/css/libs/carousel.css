@@ -1,7 +1,7 @@
 
 .wrapper {
   max-width: 1251px;
-  width: 100%;
+  width: 70vw;
   position: relative;
 }
 .wrapper .carousel{
@@ -35,12 +35,20 @@
   flex-direction: column;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
+  .wrapper{
+    width: 95%;
+  }
   .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
+    grid-auto-columns: calc((100% / 2.2) - 9px);
   }
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 1.5) - 9px);

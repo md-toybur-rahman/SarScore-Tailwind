@@ -20,17 +20,19 @@
 <body class="max-w-[1573px] min-w-[360px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div id="dashboard" class="hidden md:block row-span-full min-w-[320px] duration-500 bg-white">
+        <div id="dashboard" class="hidden xl:block row-span-full min-w-[280px] duration-500 bg-white">
             <div class="flex justify-between mt-[60px] px-5">
-                <a href="Dashboard.html"><img id="logo" src="assets/icons/Group 2319.svg" alt=""></a>
+                <a href="index.html"><img id="logo" src="assets/icons/Group 2319.svg" alt=""></a>
                 <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer flex justify-center"
                     src="assets/icons/Group 2318.svg" alt="">
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
-                <a href="Dashboard.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                <a href="index.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Dashboard">
+                            <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -38,7 +40,9 @@
                 <a href="Accessibility_Rating.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Accessability Rating">
+                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility Rating<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -46,7 +50,9 @@
                 <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="User Management">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -54,7 +60,9 @@
                 <a href="Contributions_Managements.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Contribution Management">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
                         Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -63,7 +71,9 @@
                 <a href="Support_Tickets.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Support Ticket">
+                            <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -71,7 +81,9 @@
                 <a href="Notification_Center.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Notification Center">
+                            <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -79,7 +91,9 @@
                 <a href="Settings.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Settings">
+                            <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -87,7 +101,9 @@
                 <a href="System_Stats.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="System Stats">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -96,7 +112,9 @@
                 <a href="System_Maintenance.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="System Maintenance">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -104,7 +122,9 @@
                 <a href="#" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Log Out">
+                            <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -114,11 +134,11 @@
         <!-- Menubar End -->
 
         <!-- Mobile menubar -->
-        <section id="menubar_container" class="fixed top-0 z-20 md:hidden bg-white">
+        <section id="menubar_container" class="fixed top-0 z-20 xl:hidden bg-white">
             <div class="flex justify-between items-center px-5 py-3 w-[100vw]">
                 <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
                     src="assets/icons/Group 2318.svg" alt="">
-                <a href="Dashboard.html"><img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.svg"
+                <a href="index.html"><img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.svg"
                         alt=""></a>
                 <div class="flex items-end gap-3">
                     <div class="flex items-center gap-3">
@@ -229,10 +249,12 @@
             </div>
             <div class="relative">
                 <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10">
-                    <a href="Dashboard.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
+                    <a href="index.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Dashboard">
+                                <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -240,7 +262,9 @@
                     <a href="Accessibility_Rating.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Accessability Rating">
+                                <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
                             Rating<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -248,7 +272,9 @@
                     <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="User Management">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -256,7 +282,9 @@
                     <a href="Contributions_Managements.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Contribution Management">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
                             Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -265,7 +293,9 @@
                     <a href="Support_Tickets.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Support Ticket">
+                                <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
                             Tickets<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -273,7 +303,9 @@
                     <a href="Notification_Center.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Notification Center">
+                                <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
                             Center<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -281,7 +313,9 @@
                     <a href="Settings.html" class="menuButton active h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Settings">
+                                <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -289,7 +323,9 @@
                     <a href="System_Stats.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="System Stats">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
                             Stats<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -298,7 +334,9 @@
                     <a href="System_Maintenance.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="System Maintenance">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
                             Maintenance<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -306,7 +344,9 @@
                     <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Log Out">
+                                <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -315,12 +355,12 @@
             </div>
         </section>
         <!-- End Mobile Menubar -->
-        <div class="px-3 md:px-0 md:mx-5 w-full">
+        <div class="px-3 w-full">
             <!-- Settings Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
                 <section
-                    class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
+                    class="hidden xl:flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
                     <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368.svg" alt="">
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
                     <div class="hidden md:flex items-end gap-6">
@@ -432,9 +472,9 @@
                 </section>
 
                 <!-- Sorting panel -->
-                <section class="md:flex justify-between items-center gap-[10px] mt-5 md:mt-12">
+                <section class="xl:flex justify-between items-center gap-[10px] mt-20 xl:mt-12">
                     <div>
-                        <h1 class="text-[#656565] text-xs md:text-sm md:ms-8"><a href="Dashboard.html">Breadcrumb </a> >
+                        <h1 class="text-[#656565] text-xs md:text-sm xl:ms-8"><a href="index.html">Breadcrumb </a> >
                             <a href="Settings.html">Settings</a> > Subscription Plan
                         </h1>
                     </div>
@@ -445,13 +485,21 @@
                 <section class="md:ms-8 mt-[30px]">
                     <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-2">Your Plan</h1>
                     <p class="text-xs md:text-sm text-[#656565]">Standard User (Free)</p>
-                    <div id="plan-container" class="mt-10 md:grid grid-cols-3 gap-12">
-                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                    <div id="plan-container" class="mt-10 flex flex-wrap gap-12">
+                        <div class="rounded-2xl bg-[#FEFEFE] pt-7 pl-5 px-6 w-[365px] h-[753px] flex flex-col relative">
+                            <div
+                                class="w-[49px] h-[49px] bg-[#3ACCCC] flex items-center justify-center rounded-full absolute -top-3 -right-3">
+                                <p class="text-white text-[9px] leading-3 font-medium text-center">Your<br>Plan</p>
+                            </div>
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]">Standard User (Free)
                             </h1>
                             <div class="pl-2">
-                                <p class="text-sm leading-7 mb-[19px]">Enough features to experience the value, but the
+                                <p class="text-sm leading-7 mb-[28px]">Enough features to experience the value, but the
                                     lack of in-depth analytics and Live Accessibility.</p>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <h1 class="text-[#1E1E1E] text-[34px] font-medium">£0 - FREE</h1>
+                                </div>
+                                <h5 class="text-black text-sm mb-6">Everything from Standard user and:</h5>
                                 <ul class="flex flex-col gap-2">
                                     <li class="flex items-center gap-1 text-[#656565]">
                                         <img src="assets/icons/Group 4041.svg" alt="">
@@ -515,13 +563,23 @@
                                     Plan</button>
                             </div>
                         </div>
-                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                        <div
+                            class="rounded-2xl bg-[#FEFEFE] pt-7 pl-5 px-6 w-[365px] h-[753px] flex flex-col relative border border-[#707070]">
+                            <div
+                                class="w-[49px] h-[49px] bg-[#3ACCCC] flex items-center justify-center rounded-full absolute -top-3 -right-3">
+                                <p class="text-white text-[9px] leading-3 font-medium text-center">Most<br>Popular</p>
+                            </div>
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]">Premium User
                             </h1>
                             <div class="pl-2">
-                                <p class="text-sm leading-7 mb-[19px]">The addition of analytics and Live Accessibility
+                                <p class="text-sm leading-7 mb-[28px]">The addition of analytics and Live Accessibility
                                     Rating offers a more complete experience, appealing to users who need more insight
                                     and real-time data.</p>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <h1 class="text-[#1E1E1E] text-[34px] font-medium">£9</h1>
+                                    <p class="text-[#656565] text-sm">Per month + VAT</p>
+                                </div>
+                                <h5 class="text-black text-sm mb-6">Everything from Standard user and:</h5>
                                 <ul class="flex flex-col gap-2">
                                     <li class="flex items-center gap-1 text-[#656565]">
                                         <img src="assets/icons/Group 4041.svg" alt="">
@@ -580,13 +638,14 @@
                                     Plan</button>
                             </div>
                         </div>
-                        <div class="rounded-2xl bg-[white] pt-7 pl-5 px-6 h-[653px] flex flex-col">
+                        <div class="rounded-2xl bg-[#FEFEFE] pt-7 pl-5 px-6 w-[365px] h-[753px] flex flex-col">
                             <h1 class="text-base md:text-lg font-bold text-[#1E1E1E] mb-[18px]"> Corporate User
                             </h1>
                             <div class="pl-2">
-                                <p class="text-sm leading-7 mb-[19px]">The ability to manage sub-accounts provides
+                                <p class="text-sm leading-7 mb-[28px]">The ability to manage sub-accounts provides
                                     flexibility and control, making it suitable for organizations requiring varying
                                     access levels and more extensive oversight.</p>
+                                £0 - FREE
                                 <ul class="flex flex-col gap-2">
                                     <li class="flex items-center gap-1 text-[#656565]">
                                         <img src="assets/icons/Group 4041.svg" alt="">

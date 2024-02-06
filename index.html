@@ -39,17 +39,19 @@
 <body class="max-w-[1573px] min-w-[360px] mx-auto">
     <main class="flex h-auto bg-[#FAFAFA] font-[poppins]">
         <!-- Menubar Start -->
-        <div id="dashboard" class="hidden md:block row-span-full min-w-[320px] duration-500 bg-white">
+        <div id="dashboard" class="hidden xl:block row-span-full min-w-[280px] duration-500 bg-white">
             <div class="flex justify-between mt-[60px] px-5">
-                <a href="Dashboard.html"><img id="logo" src="assets/icons/Group 2319.svg" alt=""></a>
+                <a href="index.html"><img id="logo" src="assets/icons/Group 2319.svg" alt=""></a>
                 <img onclick="menuButtonHandler()" class="h-4 w-6 cursor-pointer flex justify-center"
                     src="assets/icons/Group 2318.svg" alt="">
             </div>
             <div id="menubar" class="mt-14 font-[poppins]">
-                <a href="Dashboard.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
+                <a href="index.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Dashboard">
+                            <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -57,7 +59,9 @@
                 <a href="Accessibility_Rating.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Accessability Rating">
+                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility Rating<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -65,7 +69,9 @@
                 <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="User Management">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -73,7 +79,9 @@
                 <a href="Contributions_Managements.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Contribution Management">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
                         Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -82,7 +90,9 @@
                 <a href="Support_Tickets.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Support Ticket">
+                            <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support Tickets<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -90,7 +100,9 @@
                 <a href="Notification_Center.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Notification Center">
+                            <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification Center<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -98,7 +110,9 @@
                 <a href="Settings.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Settings">
+                            <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -106,7 +120,9 @@
                 <a href="System_Stats.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="System Stats">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Stats<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -114,7 +130,9 @@
                 <a href="System_Maintenance.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="System Maintenance">
+                            <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">System Maintenance<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -122,7 +140,9 @@
                 <a href="#" class="menuButton h-[63px] px-3 flex items-center gap-2">
                     <div class="w-8 flex justify-center">
                         <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
-                        <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                        <div class="tooltip tooltip-right" data-tip="Log Out">
+                            <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                        </div>
                     </div>
                     <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
                             src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -132,11 +152,11 @@
         <!-- Menubar End -->
 
         <!-- Mobile menubar -->
-        <section id="menubar_container" class="fixed top-0 z-20 md:hidden bg-white">
+        <section id="menubar_container" class="fixed top-0 z-20 xl:hidden bg-white">
             <div class="flex justify-between items-center px-5 py-3 w-[100vw]">
                 <img onclick="mobileMenuButtonHandler()" class="h-3 w-4 md:h-4 md:w-6 cursor-pointer"
                     src="assets/icons/Group 2318.svg" alt="">
-                <a href="Dashboard.html"><img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.svg"
+                <a href="index.html"><img class="w-[90px] md:w-auto" id="logo" src="assets/icons/Group 2319.svg"
                         alt=""></a>
                 <div class="flex items-end gap-3">
                     <div class="flex items-center gap-3">
@@ -247,10 +267,12 @@
             </div>
             <div class="relative">
                 <div id="mobile_menubar" class="font-[poppins] absolute bg-white duration-500 -left-72 z-10">
-                    <a href="Dashboard.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
+                    <a href="index.html" class="menuButton active h-[63px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Path 628.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Dashboard">
+                                <img class="lightIcon" src="assets/icons/Path 628-svg.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Dashboard<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -258,7 +280,9 @@
                     <a href="Accessibility_Rating.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/accessibility-dark.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Accessability Rating">
+                                <img class="lightIcon" src="assets/icons/accessibility-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Accessibility
                             Rating<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -266,7 +290,9 @@
                     <a href="User_Management.html" class="menuButton h-[63px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-user.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="User Management">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-user-svg.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">User Management<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -274,7 +300,9 @@
                     <a href="Contributions_Managements.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-users-dark-svg.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Contribution Management">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-users.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Contribution
                             Management<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -282,7 +310,9 @@
                     <a href="Support_Tickets.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Group 2792.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Support Ticket">
+                                <img class="lightIcon" src="assets/icons/Group 2792-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Support
                             Tickets<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -290,7 +320,9 @@
                     <a href="Notification_Center.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Group 53.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Notification Center">
+                                <img class="lightIcon" src="assets/icons/Group 53-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Notification
                             Center<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -298,7 +330,9 @@
                     <a href="Settings.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon ionic-ios-settings.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Settings">
+                                <img class="lightIcon" src="assets/icons/Icon ionic-ios-settings-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Settings<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -306,7 +340,9 @@
                     <a href="System_Stats.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-chart-bar.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="System Stats">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-chart-bar-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
                             Stats<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -315,7 +351,9 @@
                     <a href="System_Maintenance.html" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon awesome-tools.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="System Maintenance">
+                                <img class="lightIcon" src="assets/icons/Icon awesome-tools-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">System
                             Maintenance<img src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -323,7 +361,9 @@
                     <a href="#" class="menuButton h-[45px] px-3 flex items-center gap-2">
                         <div class="w-8 flex justify-center">
                             <img class="darkIcon" src="assets/icons/Icon feather-log-out.svg" alt="">
-                            <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                            <div class="tooltip tooltip-right" data-tip="Log Out">
+                                <img class="lightIcon" src="assets/icons/Icon feather-log-out-light.svg" alt="">
+                            </div>
                         </div>
                         <span class="menuTitle flex justify-between items-center flex-grow text-sm">Log Out<img
                                 src="assets/icons/chevron-down-outline.svg" alt=""></span>
@@ -332,15 +372,15 @@
             </div>
         </section>
         <!-- End Mobile Menubar -->
-        <div class="px-3 md:px-0 md:mx-5 w-full">
+        <div class="px-3 w-full">
             <!-- Dashboard Contain Start -->
             <div class="font-[poppins] text-sm pb-20">
                 <!-- Search panel -->
                 <section
-                    class="flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white md:mt-8 h-[50px] md:h-[80px]">
+                    class="hidden xl:flex items-center justify-between px-3 md:px-7 rounded-xl text-base md:text-xl bg-white xl:mt-8 h-[50px] xl:h-[80px]">
                     <img class="w-[18px] md:w-auto" src="assets/icons/Group 2368.svg" alt="">
                     <input class="flex-grow outline-none mx-2 h-6" type="text">
-                    <div class="hidden md:flex items-end gap-6">
+                    <div class="hidden xl:flex items-end gap-6">
                         <div class="flex items-center gap-5 md:gap-14">
                             <div class="dropdown dropdown-notification dropdown-end">
                                 <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
@@ -449,39 +489,43 @@
                 </section>
 
                 <!-- Sorting panel -->
-                <section class="md:flex justify-end items-center gap-[10px] mt-5 md:mt-12">
-                    <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
+                <section class="lg:flex flex-wrap justify-between items-center gap-[10px] mt-5 md:mt-12">
+                    <h1 class="text-lg md:text-[24px] font-medium text-[#1E1E1E] mb-4 lg:mb-0">Dashboard</h1>
+                    <div class="md:flex items-center">
+                        <h3 class="text-xs md:text-sm text[#656565] mr-[10px]">Sort by Date Range: </h3>
 
-                    <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
-                        <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
-                            <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
-                                <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
-                                        class="outline-none w-28 md:w-20" placeholder="Select" type="text" required>
-                                </p>
+                        <div class="grid grid-cols-2 md:flex items-center gap-2 md:gap-[10px] mt-2 md:mt-0">
+                            <div class="relative bg-white md:px-1 py-[7px] rounded-xl">
+                                <div class="px-2 md:px-2 bg-white font flex items-center justify-between">
+                                    <p class="w-fit text-xs md:text-sm">From: <input id="fromDatepicker"
+                                            class="outline-none w-28 md:w-20" placeholder="Select" type="text" required>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="relative bg-white px-2 md:px-1 py-[7px] rounded-xl">
-                            <div class="px-2 bg-white flex items-center justify-between">
-                                <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker" placeholder="Select"
-                                        class="outline-none w-28 md:w-28" type="text" required></p>
+                            <div class="relative bg-white px-2 md:px-1 py-[7px] rounded-xl">
+                                <div class="px-2 bg-white flex items-center justify-between">
+                                    <p class="w-fit text-xs md:text-sm">To: <input id="toDatepicker"
+                                            placeholder="Select" class="outline-none w-28 md:w-28" type="text" required>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center bg-white px-2 md:px-4 h-8 md:h-[36px] rounded-xl">
+                                <div class="bg-white flex items-center justify-between">
+                                    <select
+                                        class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
+                                        id="selectElement">
+                                        <option value="" disabled selected>Type</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center bg-white px-2 md:px-4 h-8 md:h-[36px] rounded-xl">
-                            <div class="bg-white flex items-center justify-between">
-                                <select
-                                    class="border-0 text-xs md:text-sm outline-none overflow-hidden w-40 md:w-28 bg-white"
-                                    id="selectElement">
-                                    <option value="" disabled selected>Type</option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                        </div>
+                        <button onclick="refreshSorting()"
+                            class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                     </div>
-                    <button onclick="refreshSorting()"
-                        class="md:ml-[35px] px-5 py-2 md:px-10 md:py-[10px] text-xs md:text-sm bg-[#39CCCC] rounded-xl text-white mt-2 md:mt-0">Refresh</button>
                 </section>
                 <!-- End Sorting Panel -->
 
@@ -609,30 +653,54 @@
                     <!-- end user panel -->
 
                     <!-- registration chart and service progress bar -->
-                    <section class="md:grid grid-cols-3 mt-10 md:mt-20 gap-5">
-                        <div class="col-span-2 p-3 md:px-8 md:py-7 rounded-lg md:rounded-2xl bg-white">
-                            <div class="md:flex items-center justify-between mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold mb-2 md:mb-0">New User Registration</h1>
-                                <div class="flex items-center gap-5 md:gap-10 text-xs md:text-lg text-[#656565]">
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#A960D6] rounded-full"></div>
-                                        <h3>Daily</h3>
+                    <section class="lg:grid grid-cols-3 mt-10 lg:mt-20 gap-5">
+                        <div class="col-span-2 p-3 lg:px-8 lg:py-7 rounded-lg lg:rounded-2xl bg-white">
+                            <div class="lg:flex items-center justify-between mb-5">
+                                <div class="flex">
+                                    <h1 class="text-lg md:text-2xl font-semibold mb-2 lg:mb-0 text-[#1E1E1E]">New User Registrations</h1>
+                                    <img class="ms-1 -mt-6 cursor-pointer" src="assets/icons/information.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-9 ">
+                                    <div class="flex items-center gap-4 text-xs text-[#656565]">
+                                        <div class="flex gap-2 items-center">
+                                            <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#A960D6] rounded-full">
+                                            </div>
+                                            <h3>Standard</h3>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#39CCCC] rounded-full">
+                                            </div>
+                                            <h3>Premium</h3>
+                                        </div>
+                                        <div class="flex gap-2 items-center">
+                                            <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#484E80] rounded-full">
+                                            </div>
+                                            <h3>Corporate</h3>
+                                        </div>
                                     </div>
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#39CCCC] rounded-full"></div>
-                                        <h3>Weekly</h3>
-                                    </div>
-                                    <div class="flex gap-2 md:gap-4 items-center">
-                                        <div class="md:w-[14px] md:h-[14px] w-2 h-2 bg-[#484E80] rounded-full"></div>
-                                        <h3>Monthly</h3>
+                                    <div
+                                        class="flex items-center bg-[#F3F3F3] px-2 h-8 md:h-[36px] rounded-xl border border-[#656565]">
+                                        <div class="bg-[#F3F3F3] flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs text-[#1E1E1E] outline-none overflow-hidden w-20 bg-[#F3F3F3]"
+                                                id="selectElement49">
+                                                <option value="" disabled selected>Year</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                                <option>2023</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <canvas style="height:333px; width:900px" id="registrations-chart"></canvas>
                         </div>
-                        <div class="md:px-8 md:py-7 py-4 bg-white p-3 rounded-lg md:rounded-2xl">
+                        <div class="lg:px-8 lg:py-7 py-4 bg-white p-3 rounded-lg lg:rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold">Service Requests</h1>
+                                <div class="flex">
+                                    <h1 class="text-lg md:text-2xl font-semibold mb-2 lg:mb-0 text-[#1E1E1E]">Accessibility Ratings</h1>
+                                    <img class="ms-1 -mt-6 cursor-pointer" src="assets/icons/information.svg" alt="">
+                                </div>
                                 <div class="dropdown dropdown-end">
                                     <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
                                         tabindex="0" class="dropdown-label">
@@ -668,10 +736,13 @@
                     <!-- end registration chart and service progress bar -->
 
                     <!-- Popular Location -->
-                    <section class="md:grid grid-cols-6 gap-5 mt-7 md:mt-[50px]">
-                        <div class="col-span-2 bg-white md:px-6 py-7 p-3 rounded-lg md:rounded-2xl">
+                    <section class="lg:grid grid-cols-6 gap-5 mt-7 lg:mt-[50px]">
+                        <div class="col-span-2 bg-white lg:px-6 py-7 p-3 rounded-lg lg:rounded-2xl">
                             <div class="flex justify-between items-center mb-5">
-                                <h1 class="text-lg md:text-2xl font-semibold">Popular Locations</h1>
+                                <div class="flex">
+                                    <h1 class="text-lg md:text-2xl font-semibold mb-2 lg:mb-0 text-[#1E1E1E]">Sentiment Analysis</h1>
+                                    <img class="ms-1 -mt-6 cursor-pointer" src="assets/icons/information.svg" alt="">
+                                </div>
                                 <div class="dropdown dropdown-end">
                                     <label onclick="dropdownToggleHandler(this)" onmouseover="dropdownMouseOver(this)"
                                         tabindex="0" class="dropdown-label">
@@ -740,17 +811,50 @@
                                 <button class="underline">View All</button>
                             </div>
                         </div>
-                        <div class="col-span-4  bg-white md:px-[33px] md:py-7 p-3 rounded-lg md:rounded-2xl">
-                            <h1 class="text-lg md:text-2xl font-semibold mb-5">Map View</h1>
-                            <div class="md:grid grid-cols-12 justify-center">
+                        <div class="col-span-4  bg-white lg:px-[33px] lg:py-7 p-3 rounded-lg lg:rounded-2xl">
+                            <div class="flex items-center justify-between mb-5">
+                                <div class="flex">
+                                    <h1 class="text-lg md:text-2xl font-semibold mb-2 lg:mb-0 text-[#1E1E1E]">Map View</h1>
+                                    <img class="ms-1 -mt-6 cursor-pointer" src="assets/icons/information.svg" alt="">
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="flex items-center bg-[#F3F3F3] px-2 h-8 md:h-[36px] rounded-xl border border-[#656565]">
+                                        <div class="bg-[#F3F3F3] flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs text-[#1E1E1E] outline-none overflow-hidden w-[108px] bg-[#F3F3F3]"
+                                                id="selectElement50">
+                                                <option value="" disabled selected>Country</option>
+                                                <option>America</option>
+                                                <option>Australia</option>
+                                                <option>Japan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex items-center bg-[#F3F3F3] px-2 h-8 md:h-[36px] rounded-xl border border-[#656565]">
+                                        <div class="bg-[#F3F3F3] flex items-center justify-between">
+                                            <select
+                                                class="border-0 text-xs text-[#1E1E1E] outline-none overflow-hidden w-[109px] bg-[#F3F3F3]"
+                                                id="selectElement51">
+                                                <option value="" disabled selected>Location</option>
+                                                <option>Melbourne</option>
+                                                <option>Texas</option>
+                                                <option>London</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:grid grid-cols-12 justify-center">
                                 <div class="col-span-9">
                                     <div id="svgMap">
 
                                     </div>
                                 </div>
                                 <div class="col-span-1"></div>
-                                <div class="col-span-2 md:w-[110px] mt-2 md:mt-0">
-                                    <div class="flex md:flex-col justify-between gap-1">
+                                <div class="col-span-2 lg:w-[110px] mt-2 md:mt-0">
+                                    <div class="flex lg:flex-col justify-between gap-1">
                                         <div>
                                             <div class="flex gap-2 md:gap-3 items-center">
                                                 <div class="md:w-3 md:h-3 w-2 h-2 bg-[#60D684] rounded-full"></div>
@@ -875,7 +979,7 @@
                         <!-- End Support Ticket menu section -->
 
                         <!-- Support Table -->
-                        <div class="overflow-x-scroll lg:overflow-x-hidden overflow-y-hidden mt-10">
+                        <div class="overflow-x-scroll xl:overflow-x-hidden overflow-y-hidden mt-10">
                             <table class="table text-xs md:text-sm min-w-[950px]">
                                 <!-- head -->
                                 <thead id="thead" class="border-y-[5px] border-[#FAFAFA]">
@@ -1086,7 +1190,7 @@
                         <div class=" bg-white md:px-7 py-10 rounded-2xl">
                             <h1 class="text-lg md:text-2xl font-semibold">Announcements</h1>
                             <!-- Support Table -->
-                            <div class="overflow-x-scroll md:overflow-x-hidden mt-10 h-[300px] overflow-y-scroll">
+                            <div class="overflow-x-scroll xl:overflow-x-hidden mt-10 h-[300px] overflow-y-scroll">
                                 <table class="table text-xs md:text-base min-w-[900px]">
                                     <tbody class="bg-white">
                                         <!-- row 1 -->

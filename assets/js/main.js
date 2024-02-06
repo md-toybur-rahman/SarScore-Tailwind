@@ -58,34 +58,34 @@ function dropdownPositionHandler(id) {
 }
 
 
-function HandlePhoneNumber() {
-    const phoneNumber = document.getElementById('phoneNumber');
-    const phoneNumberInput = document.getElementById('phoneNumberInput');
+function HandleInputChanger(contentId, inputId) {
+    const phoneNumber = document.getElementById(contentId);
+    const phoneNumberInput = document.getElementById(inputId);
     phoneNumberInput.value = phoneNumber.textContent;
     phoneNumber.classList.add('hidden');
     phoneNumberInput.classList.remove('hidden');
     phoneNumberInput.focus();
 }
 
-function changeNumberField(inputValue) {
-    const phoneNumber = document.getElementById('phoneNumber');
-    const phoneNumberInput = document.getElementById('phoneNumberInput');
+function ChangeInputFieldValue(inputValue, contentId, inputId) {
+    const phoneNumber = document.getElementById(contentId);
+    const phoneNumberInput = document.getElementById(inputId);
     phoneNumber.textContent = inputValue;
     phoneNumber.classList.remove('hidden');
     phoneNumberInput.classList.add('hidden');
 }
-function HandlePassword() {
-    const password = document.getElementById('password');
-    const passwordInput = document.getElementById('passwordInput');
+function HandlePassword(passwordId, inputId) {
+    const password = document.getElementById(passwordId);
+    const passwordInput = document.getElementById(inputId);
     passwordInput.value = password.value;
     password.classList.add('hidden');
     passwordInput.classList.remove('hidden');
     passwordInput.focus();
 }
 
-function changePasswordField(inputValue) {
-    const password = document.getElementById('password');
-    const passwordInput = document.getElementById('passwordInput');
+function changePasswordField(inputValue, passwordId, inputId) {
+    const password = document.getElementById(passwordId);
+    const passwordInput = document.getElementById(inputId);
     password.value = inputValue;
     password.classList.remove('hidden');
     passwordInput.classList.add('hidden');
@@ -127,8 +127,8 @@ function menuButtonHandler() {
     const logo = document.getElementById('logo');
     const menuTitle = document.querySelectorAll(".menuTitle");
     const menuButton = document.querySelectorAll(".menuButton");
-    if (dashboard.classList.contains('min-w-[320px]')) {
-        dashboard.classList.remove('min-w-[320px]');
+    if (dashboard.classList.contains('min-w-[280px]')) {
+        dashboard.classList.remove('min-w-[280px]');
         dashboard.classList.add('w-[81px]');
         logo.style.display = 'none';
         menuTitle.forEach(title => {
@@ -140,7 +140,7 @@ function menuButtonHandler() {
     }
     else {
         dashboard.classList.remove('w-[81px]');
-        dashboard.classList.add('min-w-[320px]');
+        dashboard.classList.add('min-w-[280px]');
         logo.style.display = 'block';
         menuTitle.forEach(title => {
             title.style.display = 'flex'
